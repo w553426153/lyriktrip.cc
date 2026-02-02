@@ -1,0 +1,7 @@
+{
+  "name": "LyrikTrip v4.2 - Your Local Friend in China",
+  "description": "A premium travel consultation platform designed to eliminate travel anxiety for Western tourists visiting China through personalized butler services and survival tools.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
