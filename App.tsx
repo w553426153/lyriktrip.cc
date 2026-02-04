@@ -15,7 +15,6 @@ import DestinationDetail from './components/DestinationDetail';
 import TourDetail from './components/TourDetail';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
-import ButlerChat from './components/ButlerChat';
 import { TOURS, DESTINATIONS } from './constants';
 
 const App: React.FC = () => {
@@ -25,7 +24,6 @@ const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('en');
   
   const [isConsultModalOpen, setIsConsultModalOpen] = useState(false);
-  const [isAiChatOpen, setIsAiChatOpen] = useState(false);
   const [consultSource, setConsultSource] = useState('');
   
   const [wishlist, setWishlist] = useState<string[]>(() => {
@@ -183,11 +181,7 @@ const App: React.FC = () => {
 
       <Footer language={language} />
       
-      <FloatingContact onOpenAiChat={() => setIsAiChatOpen(true)} />
-
-      {isAiChatOpen && (
-        <ButlerChat onClose={() => setIsAiChatOpen(false)} />
-      )}
+      <FloatingContact />
 
       {isConsultModalOpen && (
         <SmartFormModal 

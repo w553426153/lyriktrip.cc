@@ -94,8 +94,3 @@ export enum Page {
   TourDetail = 'tour-detail',
   Wishlist = 'wishlist'
 }
-
-export interface ChatMessage {
-  role: 'user' | 'model';
-  parts: { text: string }[];
-}

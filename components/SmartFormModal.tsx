@@ -113,17 +113,20 @@ China Readiness Quiz Result:
     const wishlistSummary = getWishlistSummary();
 
     try {
-      // Use 'no-cors' and 'text/plain' to bypass browser CORS restrictions for Feishu
-      await fetch('https://www.feishu.cn/flow/api/trigger-webhook/d30785e01310c5bf56f410bb3b96484c', {
+      // Send to our server-side proxy to avoid exposing the Feishu webhook URL in the browser.
+      const res = await fetch('/api/feishu', {
         method: 'POST',
-        mode: 'no-cors', 
-        headers: { 'Content-Type': 'text/plain' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: message,
           email: formData.email,
           wishlist: wishlistSummary
         }),
       });
+      if (!res.ok) {
+        const details = await res.text().catch(() => '');
+        throw new Error(`Feishu proxy failed: ${res.status} ${details}`);
+      }
     } catch (error) {
       console.error('Webhook failed:', error);
     } finally {

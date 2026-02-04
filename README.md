@@ -2,11 +2,9 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# LyrikTrip Website (Vite + React)
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1nfbWcpoU7B6F10CAa8tnUR1vxC2Gw72m
+This repo is a Vite + React static website, deployed on Cloudflare Pages.
 
 ## Run Locally
 
@@ -15,6 +13,20 @@ View your app in AI Studio: https://ai.studio/apps/drive/1nfbWcpoU7B6F10CAa8tnUR
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app:
    `npm run dev`
+
+## Deploy to Cloudflare Pages
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+### Environment variables (Cloudflare Pages -> Settings -> Environment variables)
+
+These are used by Pages Functions to securely forward the form submission to Feishu without exposing your webhook URL in the browser:
+
+- `FEISHU_WEBHOOK_URL`: your Feishu trigger webhook URL
+- `ALLOWED_ORIGINS`: comma-separated allowed Origins (exact match), e.g.
+  - `https://yourdomain.com,https://your-project.pages.dev,http://localhost:3000`
+
+After setting env vars, deploy again to apply them.

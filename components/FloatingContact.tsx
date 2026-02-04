@@ -1,11 +1,7 @@
 
 import React, { useState } from 'react';
 
-interface FloatingContactProps {
-  onOpenAiChat: () => void;
-}
-
-const FloatingContact: React.FC<FloatingContactProps> = ({ onOpenAiChat }) => {
+const FloatingContact: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,22 +12,6 @@ const FloatingContact: React.FC<FloatingContactProps> = ({ onOpenAiChat }) => {
             Chat with Your Local Friend
           </div>
           <div className="p-2">
-            <button 
-              onClick={() => {
-                onOpenAiChat();
-                setIsOpen(false);
-              }}
-              className="w-full flex items-center space-x-3 p-3 hover:bg-orange-50 rounded-lg transition-colors group text-left"
-            >
-              <div className="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform">
-                <i className="fa-solid fa-robot"></i>
-              </div>
-              <div className="flex-1">
-                <div className="font-bold text-sm text-brand-blue">AI Butler Sarah</div>
-                <div className="text-xs text-gray-500">Instant answers 24/7</div>
-              </div>
-            </button>
-            
             <a href="#" className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors group">
               <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform"><i className="fa-brands fa-whatsapp"></i></div>
               <div className="flex-1">
