@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers (Deploy from Git) config.
+  // - `npm run build` produces `dist/` (Vite static assets)
+  // - Worker serves assets and provides `/api/feishu` to proxy the Feishu webhook securely
+  "name": "lyriktrip",
+  "compatibility_date": "2026-02-04",
+  "main": "src/worker.ts",
+  "assets": {
+    "directory": "./dist"
+  }
+}
+

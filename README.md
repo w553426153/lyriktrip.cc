@@ -2,9 +2,11 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# LyrikTrip Website (Vite + React)
+# LyrikTrip Website (Vite + React) + Cloudflare Worker
 
-This repo is a Vite + React static website, deployed on Cloudflare Pages.
+This repo is a Vite + React static website. It is deployed via **Cloudflare Workers (Deploy from Git)**:
+- Vite builds static assets into `dist/`
+- A Worker serves those assets and exposes `/api/feishu` to forward form submissions to Feishu **without exposing the webhook URL in the browser**
 
 ## Run Locally
 
@@ -16,14 +18,18 @@ This repo is a Vite + React static website, deployed on Cloudflare Pages.
 2. Run the app:
    `npm run dev`
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare Workers (Deploy from Git)
+
+In the Cloudflare dashboard (the "Create a Worker" -> "Connect to Git" flow):
 
 - Build command: `npm run build`
-- Output directory: `dist`
+- Deploy command: `npx wrangler deploy`
 
-### Environment variables (Cloudflare Pages -> Settings -> Environment variables)
+The deployment is configured by `wrangler.jsonc` and `src/worker.ts`.
 
-These are used by Pages Functions to securely forward the form submission to Feishu without exposing your webhook URL in the browser:
+### Environment variables (Cloudflare -> Worker -> Settings -> Variables)
+
+These are used by the Worker to securely forward the form submission to Feishu without exposing your webhook URL in the browser:
 
 - `FEISHU_WEBHOOK_URL`: your Feishu trigger webhook URL
 - `ALLOWED_ORIGINS`: comma-separated allowed Origins (exact match), e.g.
