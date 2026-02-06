@@ -10,6 +10,7 @@ interface DestinationDetailPageProps {
   wishlist: string[];
   onToggleWishlist: (id: string) => void;
   onSelectTour: (id: string) => void;
+  onSelectRestaurant: (id: string) => void;
   onBack: () => void;
 }
 
@@ -20,6 +21,7 @@ const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
   wishlist,
   onToggleWishlist,
   onSelectTour,
+  onSelectRestaurant,
   onBack
 }) => {
   const [destination, setDestination] = useState<Destination | null>(null);
@@ -77,10 +79,10 @@ const DestinationDetailPage: React.FC<DestinationDetailPageProps> = ({
       wishlist={wishlist}
       onToggleWishlist={onToggleWishlist}
       onSelectTour={onSelectTour}
+      onSelectRestaurant={onSelectRestaurant}
       onBack={onBack}
     />
   );
 };
 
 export default DestinationDetailPage;
-

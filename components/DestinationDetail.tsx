@@ -1,8 +1,70 @@
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Destination, Tour, Attraction, Food } from '../types';
 import FeaturedTours from './FeaturedTours';
 import ScenicSpotCardExpanded from './ScenicSpotCardExpanded';
+
+type FoodRestaurantRef = {
+  id?: string | null;
+  name: string;
+  address?: string | null;
+};
+
+type AggregatedFood = Food & {
+  restaurants: FoodRestaurantRef[];
+};
+
+function aggregateFoodsByName(foods: Food[]): AggregatedFood[] {
+  const byName = new Map<string, Food[]>();
+
+  for (const food of foods) {
+    const key = String(food?.name || '').trim();
+    if (!key) continue;
+    const list = byName.get(key);
+    if (list) list.push(food);
+    else byName.set(key, [food]);
+  }
+
+  const aggregated: AggregatedFood[] = [];
+
+  for (const [name, list] of byName) {
+    // Pick a representative item for the card body.
+    const base =
+      list.find((f) => String(f.image || '').trim() && String(f.reason || '').trim()) ||
+      list.find((f) => String(f.image || '').trim()) ||
+      list.find((f) => String(f.reason || '').trim()) ||
+      list[0];
+
+    const restaurantsByKey = new Map<string, FoodRestaurantRef>();
+    for (const f of list) {
+      const restName = String((f as Food).restaurantName || '').trim();
+      if (!restName) continue;
+      const restId = (f as Food).restaurantId || null;
+      const restAddr = (f as Food).restaurantAddress || null;
+
+      const dedupeKey = restId ? `id:${restId}` : `name:${restName}|addr:${restAddr || ''}`;
+      if (!restaurantsByKey.has(dedupeKey)) {
+        restaurantsByKey.set(dedupeKey, { id: restId, name: restName, address: restAddr });
+      }
+    }
+
+    const restaurants = Array.from(restaurantsByKey.values()).sort((a, b) => a.name.localeCompare(b.name));
+
+    aggregated.push({
+      ...base,
+      name,
+      restaurants
+    });
+  }
+
+  aggregated.sort((a, b) => {
+    const byCount = (b.restaurants?.length || 0) - (a.restaurants?.length || 0);
+    if (byCount !== 0) return byCount;
+    return a.name.localeCompare(b.name);
+  });
+
+  return aggregated;
+}
 
 interface DestinationDetailProps {
   destination: Destination;
@@ -11,6 +73,7 @@ interface DestinationDetailProps {
   wishlist: string[];
   onToggleWishlist: (id: string) => void;
   onSelectTour: (id: string) => void;
+  onSelectRestaurant: (id: string) => void;
   onBack: () => void;
 }
 
@@ -21,10 +84,13 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   wishlist,
   onToggleWishlist,
   onSelectTour,
+  onSelectRestaurant,
   onBack
 }) => {
   const fallbackImage =
     'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
+
+  const foods = useMemo(() => aggregateFoodsByName(destination.famousFoods || []), [destination.famousFoods]);
   return (
     <div className="bg-white">
       {/* Hero */}
@@ -81,12 +147,15 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                 Taste of {destination.name}
               </h3>
               <div className="grid grid-cols-1 gap-8">
-                {(destination.famousFoods || []).map((food, i) => {
+                {foods.map((food, i) => {
                   const isLiked = wishlist.includes(food.id);
                   return (
-                    <div key={i} className="bg-gray-50/50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row">
+                    <div
+                      key={food.name || i}
+                      className="bg-gray-50/50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row"
+                    >
                       <div className="md:w-1/3 h-64 md:h-auto relative">
-                        <img src={food.image} alt={food.name} className="w-full h-full object-cover" />
+                        <img src={food.image || fallbackImage} alt={food.name} className="w-full h-full object-cover" />
                         <button 
                           onClick={(e) => {
                             e.stopPropagation();
@@ -125,6 +194,42 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                             <div>
                               <p>"{food.topReview}"</p>
                               <span className="text-[9px] font-bold uppercase text-gray-400 mt-1 block">Verified Feedback</span>
+                            </div>
+                          </div>
+                        )}
+
+                        {(food.restaurants || []).length > 0 && (
+                          <div className="mt-6">
+                            <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-3 flex items-center">
+                              <i className="fa-solid fa-location-dot text-brand-orange mr-2"></i>
+                              Recommended Restaurants
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              {(food.restaurants || []).map((r) => {
+                                const clickable = Boolean(r.id);
+                                const label = r.name;
+                                return (
+                                  <button
+                                    key={`${r.id || r.name}`}
+                                    type="button"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      if (!r.id) return;
+                                      onSelectRestaurant(r.id);
+                                    }}
+                                    className={`text-xs font-bold px-3 py-1 rounded-full border transition-colors ${
+                                      clickable
+                                        ? 'bg-white border-gray-200 text-brand-blue hover:bg-orange-50'
+                                        : 'bg-gray-100 border-gray-100 text-gray-400 cursor-default'
+                                    }`}
+                                    title={r.address || label}
+                                    aria-disabled={!clickable}
+                                    disabled={!clickable}
+                                  >
+                                    {label}
+                                  </button>
+                                );
+                              })}
                             </div>
                           </div>
                         )}

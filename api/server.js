@@ -130,17 +130,30 @@ app.get('/api/v1/destinations/:id', async (request, reply) => {
         .query(
           `
           SELECT
-            id,
-            name,
-            image_url AS image,
-            COALESCE(tags, ARRAY[]::text[]) AS tags,
-            price_range AS "priceRange",
-            reviews,
-            reason,
-            top_review AS "topReview"
-          FROM foods
-          WHERE destination_id = $1
-          ORDER BY reviews DESC NULLS LAST, name ASC
+            f.id,
+            f.name,
+            f.image_url AS image,
+            COALESCE(f.tags, ARRAY[]::text[]) AS tags,
+            f.price_range AS "priceRange",
+            f.reviews,
+            f.reason,
+            f.top_review AS "topReview",
+            f.restaurant_name AS "restaurantName",
+            f.restaurant_address AS "restaurantAddress",
+            rest.id AS "restaurantId"
+          FROM foods f
+          LEFT JOIN LATERAL (
+            SELECT r.id
+            FROM restaurants r
+            WHERE r.destination_id = f.destination_id
+              AND r.name = f.restaurant_name
+            ORDER BY
+              (r.address IS NOT DISTINCT FROM f.restaurant_address) DESC,
+              (r.phone IS NOT DISTINCT FROM f.phone) DESC
+            LIMIT 1
+          ) rest ON TRUE
+          WHERE f.destination_id = $1
+          ORDER BY f.reviews DESC NULLS LAST, f.name ASC
         `,
           [id]
         )
@@ -206,6 +219,46 @@ app.get('/api/v1/destinations/:id', async (request, reply) => {
   }
 
   reply.send(destination);
+});
+
+app.get('/api/v1/restaurants/:id', async (request, reply) => {
+  const id = String(request.params?.id || '').trim();
+  if (!id) return reply.code(400).send({ ok: false, error: 'id is required' });
+
+  const restRes = await pool.query(
+    `
+      SELECT
+        id,
+        destination_id AS "destinationId",
+        name,
+        photo_url AS "photoUrl",
+        cuisine_type AS "cuisineType",
+        COALESCE(recommended_dishes, ARRAY[]::text[]) AS "recommendedDishes",
+        address,
+        lat,
+        lng,
+        nearby_transport AS "nearbyTransport",
+        phone,
+        opening_hours AS "openingHours",
+        must_eat_index AS "mustEatIndex",
+        avg_cost AS "avgCost",
+        queue_status AS "queueStatus",
+        COALESCE(nearby_attractions, ARRAY[]::text[]) AS "nearbyAttractions",
+        price_range AS "priceRange",
+        rating,
+        COALESCE(tags, ARRAY[]::text[]) AS tags,
+        image_url AS image
+      FROM restaurants
+      WHERE id = $1
+      LIMIT 1
+    `,
+    [id]
+  );
+
+  const restaurant = restRes.rows[0];
+  if (!restaurant) return reply.code(404).send({ ok: false, error: 'Restaurant not found' });
+
+  reply.send(restaurant);
 });
 
 // Optional: split-list endpoints (handy for pagination/filtering)

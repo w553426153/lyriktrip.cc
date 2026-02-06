@@ -12,6 +12,7 @@ import FloatingContact from './components/FloatingContact';
 import ContactPage from './components/ContactPage';
 import DestinationsPage from './components/DestinationsPage';
 import DestinationDetailPage from './components/DestinationDetailPage';
+import RestaurantDetailPage from './components/RestaurantDetailPage';
 import TourDetail from './components/TourDetail';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>(Page.Home);
   const [selectedDestinationId, setSelectedDestinationId] = useState<string | null>(null);
   const [selectedTourId, setSelectedTourId] = useState<string | null>(null);
+  const [selectedRestaurantId, setSelectedRestaurantId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>('en');
   
   const [isConsultModalOpen, setIsConsultModalOpen] = useState(false);
@@ -65,6 +67,12 @@ const App: React.FC = () => {
     window.scrollTo(0, 0);
   };
 
+  const handleSelectRestaurant = (id: string) => {
+    setSelectedRestaurantId(id);
+    setCurrentPage(Page.RestaurantDetail);
+    window.scrollTo(0, 0);
+  };
+
   const renderPage = () => {
     switch (currentPage) {
       case Page.Home:
@@ -97,7 +105,19 @@ const App: React.FC = () => {
             wishlist={wishlist}
             onToggleWishlist={toggleWishlist}
             onSelectTour={handleSelectTour}
+            onSelectRestaurant={handleSelectRestaurant}
             onBack={() => setCurrentPage(Page.Destinations)}
+          />
+        );
+      case Page.RestaurantDetail:
+        if (!selectedRestaurantId) {
+          // Fallback: no restaurant selected, go back to destinations.
+          return <DestinationsPage onNavigate={setCurrentPage} onSelectDestination={handleSelectDestination} />;
+        }
+        return (
+          <RestaurantDetailPage
+            restaurantId={selectedRestaurantId}
+            onBack={() => setCurrentPage(Page.DestinationDetail)}
           />
         );
       case Page.Tours:

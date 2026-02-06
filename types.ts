@@ -60,6 +60,34 @@ export interface Food {
   reviews: number;
   reason: string;
   topReview?: string;
+
+  // Optional restaurant reference fields (returned by API when available).
+  restaurantName?: string | null;
+  restaurantAddress?: string | null;
+  restaurantId?: string | null;
+}
+
+export interface Restaurant {
+  id: string;
+  destinationId?: string;
+  name: string;
+  image?: string | null;
+  photoUrl?: string | null;
+  cuisineType?: string | null;
+  recommendedDishes?: string[];
+  address?: string | null;
+  lat?: number | string | null;
+  lng?: number | string | null;
+  nearbyTransport?: string | null;
+  phone?: string | null;
+  openingHours?: string | null;
+  mustEatIndex?: number | string | null;
+  avgCost?: string | null;
+  queueStatus?: string | null;
+  nearbyAttractions?: string[];
+  priceRange?: string | null;
+  rating?: number | string | null;
+  tags?: string[];
 }
 
 export interface Destination {
@@ -70,6 +98,7 @@ export interface Destination {
   highlights?: string[]; // Deprecated for attractions
   attractions?: Attraction[];
   famousFoods?: Food[];
+  restaurants?: Restaurant[];
   image: string;
   tourCount: number;
 }
@@ -107,6 +136,7 @@ export enum Page {
   Contact = 'contact',
   Destinations = 'destinations',
   DestinationDetail = 'destination-detail',
+  RestaurantDetail = 'restaurant-detail',
   Tours = 'tours',
   TourDetail = 'tour-detail',
   Wishlist = 'wishlist'

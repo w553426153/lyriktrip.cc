@@ -429,7 +429,8 @@ function normalizeRestaurants(rows) {
   for (const row of rows) {
     const name = row['餐厅名称'] || '';
     if (!String(name).trim()) continue;
-    const photo = row['餐厅照片'] || '';
+    // Accept both variants: 数据文件里可能用「餐厅图片」或「餐厅照片」。
+    const photo = row['餐厅照片'] || row['餐厅图片'] || '';
     const cuisineType = row['菜品类型'] || '';
     const recommendedDishes = row['推荐菜品'];
     const address = row['餐厅地址'] || '';
@@ -478,8 +479,10 @@ function normalizeFoods(rows) {
     const name = row['菜品名称'] || '';
     if (!String(name).trim()) continue;
     const photo = row['菜品照片'] || '';
-    const reason = row['菜品简介'] || '';
-    const restaurantName = row['推荐餐厅名称'] || '';
+    // Accept both variants: 数据文件里可能用「餐品简介」或「菜品简介」。
+    const reason = row['菜品简介'] || row['餐品简介'] || '';
+    // Accept both variants: 数据文件里可能用「推荐餐厅」或「推荐餐厅名称」。
+    const restaurantName = row['推荐餐厅名称'] || row['推荐餐厅'] || '';
     const restaurantAddress = row['餐厅地址'] || '';
     const phone = row['联系电话'] || '';
     const lng = row['经度'];

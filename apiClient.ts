@@ -1,4 +1,4 @@
-import type { Destination } from './types';
+import type { Destination, Restaurant } from './types';
 
 export type DestinationsListResponse = {
   page: number;
@@ -32,3 +32,6 @@ export function fetchDestinationDetail(id: string, include?: string[]) {
   return apiGetJson<Destination>(`/api/v1/destinations/${encodeURIComponent(id)}${qs ? `?${qs}` : ''}`);
 }
 
+export function fetchRestaurantDetail(id: string) {
+  return apiGetJson<Restaurant>(`/api/v1/restaurants/${encodeURIComponent(id)}`);
+}
