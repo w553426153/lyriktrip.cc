@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - lyriktripcn:/var/lib/postgresql/data
       - ./db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
@@ -28,7 +28,7 @@ services:
       db:
         condition: service_healthy
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:${API_PORT}/healthz >/dev/null 2>&1 || exit 1"]
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:${API_PORT}/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
       interval: 10s
       timeout: 3s
       retries: 10
@@ -41,8 +41,8 @@ services:
       DOMAIN: ${DOMAIN}
       API_PORT: ${API_PORT}
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
     volumes:
       - ../dist:/usr/share/nginx/html:ro
       - letsencrypt:/etc/letsencrypt
@@ -61,6 +61,6 @@ services:
     profiles: ["manual"]
 
 volumes:
-  pgdata:
+  lyriktripcn:
   letsencrypt:
   certbot_www:
