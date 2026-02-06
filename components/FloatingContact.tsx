@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
+import { WHATSAPP_BUTLER_PHONE_E164, WHATSAPP_DEFAULT_MESSAGE, buildWhatsAppChatUrl } from '../config';
 
 const FloatingContact: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const whatsappUrl = buildWhatsAppChatUrl(WHATSAPP_BUTLER_PHONE_E164, WHATSAPP_DEFAULT_MESSAGE);
 
   return (
     <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end">
@@ -12,7 +14,12 @@ const FloatingContact: React.FC = () => {
             Chat with Your Local Friend
           </div>
           <div className="p-2">
-            <a href="#" className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors group">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors group"
+            >
               <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl shadow-sm group-hover:scale-110 transition-transform"><i className="fa-brands fa-whatsapp"></i></div>
               <div className="flex-1">
                 <div className="font-bold text-sm text-brand-blue">Human Butler</div>

@@ -1,7 +1,9 @@
 
 import React from 'react';
+import { WHATSAPP_BUTLER_PHONE_E164, WHATSAPP_DEFAULT_MESSAGE, buildWhatsAppChatUrl } from '../config';
 
 const ContactPage: React.FC = () => {
+  const whatsappUrl = buildWhatsAppChatUrl(WHATSAPP_BUTLER_PHONE_E164, WHATSAPP_DEFAULT_MESSAGE);
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -24,7 +26,14 @@ const ContactPage: React.FC = () => {
             <div className="w-16 h-16 bg-brand-orange text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-md"><i className="fa-brands fa-whatsapp"></i></div>
             <h3 className="text-xl font-bold text-brand-blue mb-4">Chat on WhatsApp</h3>
             <p className="text-gray-600 mb-6 text-sm">Fastest for quick questions and real-time support.</p>
-            <a href="#" className="inline-block bg-brand-orange text-white px-6 py-2 rounded-md font-bold hover:bg-brand-darkOrange transition-all">Start Chat</a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block bg-brand-orange text-white px-6 py-2 rounded-md font-bold hover:bg-brand-darkOrange transition-all"
+            >
+              Start Chat
+            </a>
           </div>
           <div className="bg-brand-lightBlue p-8 rounded-2xl text-center border border-gray-100 hover:shadow-lg transition-all">
             <div className="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-md"><i className="fa-solid fa-envelope"></i></div>
