@@ -10,8 +10,102 @@ const app = Fastify({
 
 const pool = createPool();
 
+function jsonReply(reply, status, body, extraHeaders = {}) {
+  return reply
+    .code(status)
+    .headers({ 'Content-Type': 'application/json; charset=utf-8', ...extraHeaders })
+    .send(body);
+}
+
+function getAllowedOrigins() {
+  return String(process.env.ALLOWED_ORIGINS || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+function corsHeaders(origin) {
+  return {
+    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+    'Vary': 'Origin',
+  };
+}
+
+function assertOriginAllowed(request, reply) {
+  // Prefer Origin; fall back to Referer for some same-origin requests.
+  let origin = request.headers?.origin || '';
+  if (!origin) {
+    const referer = request.headers?.referer || '';
+    try {
+      if (referer) origin = new URL(referer).origin;
+    } catch {
+      // ignore
+    }
+  }
+
+  const allowed = getAllowedOrigins();
+  if (allowed.length === 0) {
+    return { ok: false, response: jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: ALLOWED_ORIGINS is not set.' }) };
+  }
+  if (!origin || !allowed.includes(origin)) {
+    return { ok: false, response: jsonReply(reply, 403, { ok: false, error: 'Forbidden origin.' }) };
+  }
+  return { ok: true, origin };
+}
+
 app.get('/healthz', async () => {
   return { ok: true };
+});
+
+app.options('/api/feishu', async (request, reply) => {
+  const check = assertOriginAllowed(request, reply);
+  if (!check.ok) return check.response;
+  reply.code(204).headers(corsHeaders(check.origin)).send();
+});
+
+app.post('/api/feishu', async (request, reply) => {
+  const check = assertOriginAllowed(request, reply);
+  if (!check.ok) return check.response;
+
+  const webhook = String(process.env.FEISHU_WEBHOOK_URL || '').trim();
+  if (!webhook) {
+    return jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: FEISHU_WEBHOOK_URL is not set.' }, corsHeaders(check.origin));
+  }
+
+  const body = request.body && typeof request.body === 'object' ? request.body : {};
+  const email = typeof body.email === 'string' ? body.email.trim() : '';
+  const message = typeof body.message === 'string' ? body.message.trim() : '';
+  const wishlist = typeof body.wishlist === 'string' ? body.wishlist.trim() : '';
+
+  if (!email || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
+    return jsonReply(reply, 400, { ok: false, error: 'Invalid email.' }, corsHeaders(check.origin));
+  }
+  if (!message) {
+    return jsonReply(reply, 400, { ok: false, error: 'Message is required.' }, corsHeaders(check.origin));
+  }
+  if (message.length > 5000 || wishlist.length > 5000) {
+    return jsonReply(reply, 413, { ok: false, error: 'Payload too large.' }, corsHeaders(check.origin));
+  }
+
+  const upstream = await fetch(webhook, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, email, wishlist }),
+  });
+
+  if (!upstream.ok) {
+    return jsonReply(
+      reply,
+      502,
+      { ok: false, error: 'Upstream webhook failed.', status: upstream.status },
+      corsHeaders(check.origin)
+    );
+  }
+
+  return jsonReply(reply, 200, { ok: true }, corsHeaders(check.origin));
 });
 
 app.get('/api/v1/destinations', async (request, reply) => {
@@ -257,6 +351,23 @@ app.get('/api/v1/restaurants/:id', async (request, reply) => {
 
   const restaurant = restRes.rows[0];
   if (!restaurant) return reply.code(404).send({ ok: false, error: 'Restaurant not found' });
+
+  // Aggregate recommended dishes from the restaurants table (some datasets store one dish per row).
+  // We aggregate by (destinationId, name) so the "Recommended Dishes" section is complete.
+  const dishesRes = await pool.query(
+    `
+      SELECT
+        COALESCE(ARRAY_AGG(DISTINCT dish ORDER BY dish), ARRAY[]::text[]) AS dishes
+      FROM (
+        SELECT unnest(COALESCE(recommended_dishes, ARRAY[]::text[])) AS dish
+        FROM restaurants
+        WHERE destination_id = $1 AND name = $2
+      ) t
+    `,
+    [restaurant.destinationId, restaurant.name]
+  );
+
+  restaurant.recommendedDishes = dishesRes.rows[0]?.dishes ?? restaurant.recommendedDishes ?? [];
 
   reply.send(restaurant);
 });

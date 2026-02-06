@@ -1,5 +1,5 @@
 
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Destination, Tour, Attraction, Food } from '../types';
 import FeaturedTours from './FeaturedTours';
 import ScenicSpotCardExpanded from './ScenicSpotCardExpanded';
@@ -125,10 +125,17 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   const fallbackImage =
     'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
 
+  const [showAllHighlights, setShowAllHighlights] = useState(false);
+  const [showAllFoods, setShowAllFoods] = useState(false);
+
   const foods = useMemo(
     () => aggregateFoodsByName(destination.famousFoods || [], destination.restaurants),
     [destination.famousFoods, destination.restaurants]
   );
+
+  const attractions = destination.attractions || [];
+  const visibleAttractions = showAllHighlights ? attractions : attractions.slice(0, 5);
+  const visibleFoods = showAllFoods ? foods : foods.slice(0, 5);
   return (
     <div className="bg-white">
       {/* Hero */}
@@ -164,7 +171,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                 Must-Visit Highlights
               </h3>
               <div className="grid grid-cols-1 gap-10">
-                {(destination.attractions || []).map((attr, i) => {
+                {visibleAttractions.map((attr, i) => {
                   const isLiked = wishlist.includes(attr.id);
                   return (
                     <ScenicSpotCardExpanded
@@ -176,6 +183,19 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                   );
                 })}
               </div>
+
+              {attractions.length > 5 && (
+                <div className="mt-10 text-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowAllHighlights((v) => !v)}
+                    className="bg-white border-2 border-brand-orange text-brand-orange px-10 py-3 rounded-full font-bold hover:bg-orange-50 transition-all"
+                  >
+                    {showAllHighlights ? 'View less' : 'View more'}
+                    <i className={`fa-solid ${showAllHighlights ? 'fa-chevron-up' : 'fa-chevron-down'} ml-2`}></i>
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Local Cuisine */}
@@ -185,7 +205,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                 Taste of {destination.name}
               </h3>
               <div className="grid grid-cols-1 gap-8">
-                {foods.map((food, i) => {
+                {visibleFoods.map((food, i) => {
                   const isLiked = wishlist.includes(food.id);
                   return (
                     <div
@@ -283,6 +303,19 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                   );
                 })}
               </div>
+
+              {foods.length > 5 && (
+                <div className="mt-10 text-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowAllFoods((v) => !v)}
+                    className="bg-white border-2 border-brand-orange text-brand-orange px-10 py-3 rounded-full font-bold hover:bg-orange-50 transition-all"
+                  >
+                    {showAllFoods ? 'View less' : 'View more'}
+                    <i className={`fa-solid ${showAllFoods ? 'fa-chevron-up' : 'fa-chevron-down'} ml-2`}></i>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
