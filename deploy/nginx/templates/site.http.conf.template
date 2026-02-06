@@ -5,7 +5,7 @@ upstream api_upstream {
 
 server {
   listen 80;
-  server_name ${DOMAIN};
+  server_name _;
 
   # ACME challenge (Let's Encrypt)
   location ^~ /.well-known/acme-challenge/ {
@@ -40,4 +40,3 @@ server {
     proxy_pass http://api_upstream;
   }
 }
-

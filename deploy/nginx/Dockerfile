@@ -4,3 +4,6 @@ FROM nginx:1.27-alpine
 # (which would generate both HTTP/HTTPS configs and break first-time bootstrap).
 COPY ./templates /opt/nginx-templates
 COPY ./docker-entrypoint.d /docker-entrypoint.d
+
+# Remove the default vhost to avoid shadowing our generated config.
+RUN rm -f /etc/nginx/conf.d/default.conf
