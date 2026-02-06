@@ -54,17 +54,25 @@ export interface Attraction {
 export interface Food {
   id: string;
   name: string;
-  image: string;
-  tags: string[];
-  priceRange: string;
-  reviews: number;
-  reason: string;
+  image?: string | null;
+  tags?: string[];
+  priceRange?: string | null;
+  reviews?: number | null;
+  reason?: string | null;
   topReview?: string;
 
   // Optional restaurant reference fields (returned by API when available).
   restaurantName?: string | null;
   restaurantAddress?: string | null;
   restaurantId?: string | null;
+
+  // Optional extended fields from foods table (not always returned by API).
+  phone?: string | null;
+  nearbyTransport?: string | null;
+  openingHours?: string | null;
+  mustEatIndex?: number | string | null;
+  avgCost?: string | null;
+  queueStatus?: string | null;
 }
 
 export interface Restaurant {

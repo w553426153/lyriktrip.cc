@@ -10,15 +10,26 @@ type FoodRestaurantRef = {
   address?: string | null;
 };
 
-type AggregatedFood = Food & {
+type AggregatedFood = {
+  id: string;
+  name: string;
+  image?: string | null;
+  reason?: string | null;
   restaurants: FoodRestaurantRef[];
 };
 
-function aggregateFoodsByName(foods: Food[]): AggregatedFood[] {
+function normalizeKey(input: unknown): string {
+  return String(input || '')
+    .normalize('NFKC')
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+function aggregateFoodsByName(foods: Food[], destinationRestaurants?: Array<{ id: string; name: string; address?: string | null }>): AggregatedFood[] {
   const byName = new Map<string, Food[]>();
 
   for (const food of foods) {
-    const key = String(food?.name || '').trim();
+    const key = normalizeKey(food?.name);
     if (!key) continue;
     const list = byName.get(key);
     if (list) list.push(food);
@@ -27,20 +38,42 @@ function aggregateFoodsByName(foods: Food[]): AggregatedFood[] {
 
   const aggregated: AggregatedFood[] = [];
 
+  const restaurantsByName = new Map<string, Array<{ id: string; name: string; address?: string | null }>>();
+  for (const r of destinationRestaurants || []) {
+    const k = normalizeKey(r.name).toLowerCase();
+    if (!k) continue;
+    const list = restaurantsByName.get(k);
+    if (list) list.push(r);
+    else restaurantsByName.set(k, [r]);
+  }
+
   for (const [name, list] of byName) {
     // Pick a representative item for the card body.
     const base =
-      list.find((f) => String(f.image || '').trim() && String(f.reason || '').trim()) ||
-      list.find((f) => String(f.image || '').trim()) ||
-      list.find((f) => String(f.reason || '').trim()) ||
+      list.find((f) => normalizeKey(f.image) && normalizeKey(f.reason)) ||
+      list.find((f) => normalizeKey(f.image)) ||
+      list.find((f) => normalizeKey(f.reason)) ||
       list[0];
 
     const restaurantsByKey = new Map<string, FoodRestaurantRef>();
     for (const f of list) {
-      const restName = String((f as Food).restaurantName || '').trim();
+      const restNameRaw = (f as Food).restaurantName;
+      const restName = normalizeKey(restNameRaw);
       if (!restName) continue;
-      const restId = (f as Food).restaurantId || null;
+      let restId = (f as Food).restaurantId || null;
       const restAddr = (f as Food).restaurantAddress || null;
+
+      // If backend didn't provide restaurantId, try resolving by name within this destination's restaurants list.
+      if (!restId) {
+        const candidates = restaurantsByName.get(restName.toLowerCase()) || [];
+        if (candidates.length === 1) {
+          restId = candidates[0].id;
+        } else if (candidates.length > 1) {
+          const addrKey = normalizeKey(restAddr).toLowerCase();
+          const exact = addrKey ? candidates.find((c) => normalizeKey(c.address).toLowerCase() === addrKey) : undefined;
+          restId = exact?.id || candidates[0].id;
+        }
+      }
 
       const dedupeKey = restId ? `id:${restId}` : `name:${restName}|addr:${restAddr || ''}`;
       if (!restaurantsByKey.has(dedupeKey)) {
@@ -51,8 +84,10 @@ function aggregateFoodsByName(foods: Food[]): AggregatedFood[] {
     const restaurants = Array.from(restaurantsByKey.values()).sort((a, b) => a.name.localeCompare(b.name));
 
     aggregated.push({
-      ...base,
+      id: base.id,
       name,
+      image: base.image || null,
+      reason: base.reason || null,
       restaurants
     });
   }
@@ -90,7 +125,10 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   const fallbackImage =
     'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
 
-  const foods = useMemo(() => aggregateFoodsByName(destination.famousFoods || []), [destination.famousFoods]);
+  const foods = useMemo(
+    () => aggregateFoodsByName(destination.famousFoods || [], destination.restaurants),
+    [destination.famousFoods, destination.restaurants]
+  );
   return (
     <div className="bg-white">
       {/* Hero */}
@@ -152,7 +190,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                   return (
                     <div
                       key={food.name || i}
-                      className="bg-gray-50/50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row"
+                      className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row"
                     >
                       <div className="md:w-1/3 h-64 md:h-auto relative">
                         <img src={food.image || fallbackImage} alt={food.name} className="w-full h-full object-cover" />
@@ -164,42 +202,40 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                           className={`absolute top-4 right-4 w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition-all transform active:scale-90 z-10 ${
                             isLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
                           }`}
+                          aria-pressed={isLiked}
                         >
                           <i className={`${isLiked ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
                         </button>
                       </div>
                       <div className="md:w-2/3 p-8">
-                        <div className="flex justify-between items-start mb-4">
-                          <div>
-                            <h4 className="text-xl font-bold text-brand-blue mb-1">{food.name}</h4>
-                            <div className="flex items-center space-x-3 text-xs text-gray-400">
-                               <span className="flex items-center text-brand-orange font-bold">{food.priceRange}</span>
-                               <span>•</span>
-                               <span>{food.reviews}+ Reviews</span>
+                        <div className="flex items-start justify-between gap-6 mb-4">
+                          <div className="min-w-0">
+                            <h4 className="text-2xl font-bold text-brand-blue leading-tight">{food.name}</h4>
+                            <div className="text-xs text-gray-400 mt-2 flex items-center gap-2">
+                              <span className="inline-flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange"></span>
+                                Foods
+                              </span>
+                              <span className="text-gray-300">•</span>
+                              <span>{(food.restaurants || []).length} Restaurants</span>
                             </div>
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            {(food.tags || []).map((t, ti) => (
-                              <span key={ti} className="bg-white border border-gray-200 text-gray-500 text-[10px] px-2 py-0.5 rounded-full font-bold">{t}</span>
-                            ))}
                           </div>
                         </div>
-                        <p className="text-gray-600 text-sm mb-6 leading-relaxed">"{food.reason}"</p>
-                        
-                        {food.topReview && (
-                          <div className="bg-white p-4 rounded-2xl border border-gray-100 text-xs text-gray-500 italic flex items-start space-x-3">
-                            <div className="w-8 h-8 rounded-full bg-brand-lightBlue flex items-center justify-center text-brand-orange shrink-0">
-                              <i className="fa-solid fa-comment-dots"></i>
-                            </div>
-                            <div>
-                              <p>"{food.topReview}"</p>
-                              <span className="text-[9px] font-bold uppercase text-gray-400 mt-1 block">Verified Feedback</span>
-                            </div>
-                          </div>
-                        )}
 
-                        {(food.restaurants || []).length > 0 && (
-                          <div className="mt-6">
+                        {/* 餐品简介 */}
+                        <div className="bg-gray-50/50 p-5 rounded-2xl border border-gray-100 mb-6">
+                          <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2 flex items-center">
+                            <i className="fa-solid fa-quote-left text-brand-orange mr-2"></i>
+                            Intro
+                          </div>
+                          <p className="text-gray-700 text-sm leading-relaxed">
+                            {food.reason || '（暂无简介）'}
+                          </p>
+                        </div>
+                        
+                        {/* 推荐餐厅（聚合） */}
+                        {(food.restaurants || []).length > 0 ? (
+                          <div>
                             <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-3 flex items-center">
                               <i className="fa-solid fa-location-dot text-brand-orange mr-2"></i>
                               Recommended Restaurants
@@ -207,7 +243,6 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                             <div className="flex flex-wrap gap-2">
                               {(food.restaurants || []).map((r) => {
                                 const clickable = Boolean(r.id);
-                                const label = r.name;
                                 return (
                                   <button
                                     key={`${r.id || r.name}`}
@@ -217,19 +252,29 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                                       if (!r.id) return;
                                       onSelectRestaurant(r.id);
                                     }}
-                                    className={`text-xs font-bold px-3 py-1 rounded-full border transition-colors ${
+                                    className={`text-xs font-bold px-3 py-1.5 rounded-full border transition-colors ${
                                       clickable
                                         ? 'bg-white border-gray-200 text-brand-blue hover:bg-orange-50'
                                         : 'bg-gray-100 border-gray-100 text-gray-400 cursor-default'
                                     }`}
-                                    title={r.address || label}
+                                    title={r.address || r.name}
                                     aria-disabled={!clickable}
                                     disabled={!clickable}
                                   >
-                                    {label}
+                                    {r.name}
                                   </button>
                                 );
                               })}
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="bg-white p-4 rounded-2xl border border-gray-100 text-xs text-gray-500 italic flex items-start space-x-3">
+                            <div className="w-8 h-8 rounded-full bg-brand-lightBlue flex items-center justify-center text-brand-orange shrink-0">
+                              <i className="fa-solid fa-circle-info"></i>
+                            </div>
+                            <div>
+                              <p>该美食暂未匹配到推荐餐厅数据（请确认 foods 表已导入“推荐餐厅”列）。</p>
+                              <span className="text-[9px] font-bold uppercase text-gray-400 mt-1 block">Data Hint</span>
                             </div>
                           </div>
                         )}
