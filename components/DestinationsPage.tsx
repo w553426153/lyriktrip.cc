@@ -6,7 +6,7 @@ import { fetchDestinations } from '../apiClient';
 
 interface DestinationsPageProps {
   onNavigate: (page: Page) => void;
-  onSelectDestination: (id: string) => void;
+  onSelectDestination: (id: string, name?: string) => void;
 }
 
 const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelectDestination }) => {
@@ -74,7 +74,7 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
             <div 
               key={dest.id} 
               className="group cursor-pointer bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all"
-              onClick={() => onSelectDestination(dest.id)}
+              onClick={() => onSelectDestination(dest.id, dest.name)}
             >
               <div className="relative h-72 overflow-hidden">
                 <img 

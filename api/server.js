@@ -75,7 +75,29 @@ app.post('/api/feishu', async (request, reply) => {
     return jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: FEISHU_WEBHOOK_URL is not set.' }, corsHeaders(check.origin));
   }
 
-  const body = request.body && typeof request.body === 'object' ? request.body : {};
+  // Fastify usually parses JSON bodies into an object, but depending on proxy/content-type
+  // it can still arrive as a string/buffer. Be defensive so we don't drop fields silently.
+  let body = request.body;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      body = {};
+    }
+  } else if (body && typeof body === 'object') {
+    // If it's a Buffer-like object, attempt to parse it as JSON.
+    // (We avoid importing node types; runtime check only.)
+    const ctor = body.constructor && typeof body.constructor === 'function' ? body.constructor.name : '';
+    if (ctor === 'Buffer' && typeof body.toString === 'function') {
+      try {
+        body = JSON.parse(body.toString('utf8'));
+      } catch {
+        body = {};
+      }
+    }
+  }
+  if (!body || typeof body !== 'object') body = {};
+
   const email = typeof body.email === 'string' ? body.email.trim() : '';
   const message = typeof body.message === 'string' ? body.message.trim() : '';
   const wishlist = typeof body.wishlist === 'string' ? body.wishlist.trim() : '';

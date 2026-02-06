@@ -425,7 +425,7 @@ function normalizeAttractions(rows) {
 }
 
 function normalizeRestaurants(rows) {
-  const out = [];
+  const byId = new Map();
   for (const row of rows) {
     const name = row['餐厅名称'] || '';
     if (!String(name).trim()) continue;
@@ -447,7 +447,7 @@ function normalizeRestaurants(rows) {
     const stableKey = [name, address, phone].filter(Boolean).join('|') || name;
     const id = makeId('rest', stableKey);
 
-    out.push({
+    const next = {
       id,
       destinationId: null,
       name: String(name).trim(),
@@ -468,9 +468,39 @@ function normalizeRestaurants(rows) {
       rating: toNumberOrNull(mustEatIndex),
       tags: splitMulti(cuisineType) || [],
       image: String(photo || '').trim() || null
-    });
+    };
+
+    const prev = byId.get(id);
+    if (!prev) {
+      byId.set(id, next);
+      continue;
+    }
+
+    // Merge rows: some CSVs list one recommended dish per row for the same restaurant.
+    const mergeUniq = (a, b) => Array.from(new Set([...(a || []), ...(b || [])].filter(Boolean)));
+
+    prev.photo = prev.photo || next.photo;
+    prev.image = prev.image || next.image;
+    prev.cuisineType = prev.cuisineType || next.cuisineType;
+    prev.address = prev.address || next.address;
+    prev.phone = prev.phone || next.phone;
+    prev.nearbyTransport = prev.nearbyTransport || next.nearbyTransport;
+    prev.openingHours = prev.openingHours || next.openingHours;
+    prev.avgCost = prev.avgCost || next.avgCost;
+    prev.queueStatus = prev.queueStatus || next.queueStatus;
+    prev.priceRange = prev.priceRange || next.priceRange;
+    prev.lat = prev.lat != null ? prev.lat : next.lat;
+    prev.lng = prev.lng != null ? prev.lng : next.lng;
+
+    prev.recommendedDishes = mergeUniq(prev.recommendedDishes, next.recommendedDishes);
+    prev.tags = mergeUniq(prev.tags, next.tags);
+    prev.nearbyAttractions = mergeUniq(prev.nearbyAttractions, next.nearbyAttractions);
+
+    // Keep max for numeric-ish indicators.
+    prev.mustEatIndex = Math.max(prev.mustEatIndex || 0, next.mustEatIndex || 0) || prev.mustEatIndex || next.mustEatIndex;
+    prev.rating = Math.max(prev.rating || 0, next.rating || 0) || prev.rating || next.rating;
   }
-  return out;
+  return Array.from(byId.values());
 }
 
 function normalizeFoods(rows) {
