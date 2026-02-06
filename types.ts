@@ -32,6 +32,23 @@ export interface Attraction {
   reason: string;
   rating: number;
   topReview?: string;
+
+  // Scenic spot extended fields (used by the desktop expanded card).
+  nameZh?: string; // 景点名称（中文）
+  nameEn?: string; // 景点名称（英文）
+  region?: string; // 省市区
+  address?: string; // 地址
+  category?: string; // 景区分类
+  nearbyTransport?: string; // 附近交通
+  openingHours?: string; // 开放时间
+  ticketPrice?: string; // 门票价格
+  ticketPurchase?: string; // 购票方式
+  suggestedDuration?: string; // 建议浏览时长
+  bestVisitDate?: string; // 最佳浏览日期
+  introduction?: string; // 景区介绍
+  suitableFor?: string[]; // 适合人群
+  sellingPoints?: string[]; // 景区卖点
+  photos?: string[]; // 景点照片（补充图）
 }
 
 export interface Food {

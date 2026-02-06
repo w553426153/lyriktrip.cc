@@ -2,6 +2,7 @@
 import React from 'react';
 import { Destination, Tour, Attraction, Food } from '../types';
 import FeaturedTours from './FeaturedTours';
+import ScenicSpotCardExpanded from './ScenicSpotCardExpanded';
 
 interface DestinationDetailProps {
   destination: Destination;
@@ -22,11 +23,13 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   onSelectTour,
   onBack
 }) => {
+  const fallbackImage =
+    'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
   return (
     <div className="bg-white">
       {/* Hero */}
       <div className="relative h-[55vh] min-h-[450px] overflow-hidden">
-        <img src={destination.image} alt={destination.name} className="w-full h-full object-cover" />
+        <img src={destination.image || fallbackImage} alt={destination.name} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-6 mt-16">
             <h1 className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-2xl">{destination.name}</h1>
@@ -60,44 +63,12 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                 {(destination.attractions || []).map((attr, i) => {
                   const isLiked = wishlist.includes(attr.id);
                   return (
-                    <div key={i} className="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all flex flex-col md:flex-row min-h-[300px]">
-                      <div className="md:w-2/5 relative overflow-hidden h-64 md:h-auto">
-                        <img src={attr.image} alt={attr.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                        <div className="absolute top-4 left-4 bg-brand-orange text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">
-                          <i className="fa-solid fa-star mr-1"></i> {attr.rating} Rating
-                        </div>
-                        <button 
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onToggleWishlist(attr.id);
-                          }}
-                          className={`absolute top-4 right-4 w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition-all transform active:scale-90 z-10 ${
-                            isLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
-                          }`}
-                        >
-                          <i className={`${isLiked ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
-                        </button>
-                      </div>
-                      <div className="md:w-3/5 p-8 flex flex-col justify-between">
-                        <div>
-                          <div className="flex flex-wrap gap-2 mb-4">
-                            {attr.tags.map((tag, ti) => (
-                              <span key={ti} className="text-[10px] bg-brand-lightBlue text-brand-blue px-3 py-1 rounded-full font-bold uppercase tracking-widest">{tag}</span>
-                            ))}
-                          </div>
-                          <h4 className="text-2xl font-bold text-brand-blue mb-3">{attr.name}</h4>
-                          <p className="text-gray-500 mb-6 leading-relaxed">{attr.reason}</p>
-                        </div>
-                        
-                        {attr.topReview && (
-                          <div className="bg-orange-50/50 p-4 rounded-2xl border-l-4 border-brand-orange italic text-sm text-gray-600 relative">
-                            <i className="fa-solid fa-quote-left absolute -top-2 -left-1 text-brand-orange/20 text-3xl"></i>
-                            <p className="relative z-10">"{attr.topReview}"</p>
-                            <div className="text-[10px] font-bold text-brand-orange mt-2 uppercase tracking-tighter">— Top Traveler Review</div>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                    <ScenicSpotCardExpanded
+                      key={attr.id || i}
+                      spot={attr}
+                      isLiked={isLiked}
+                      onToggleWishlist={onToggleWishlist}
+                    />
                   );
                 })}
               </div>
@@ -139,7 +110,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                             </div>
                           </div>
                           <div className="flex flex-wrap gap-2">
-                            {food.tags.map((t, ti) => (
+                            {(food.tags || []).map((t, ti) => (
                               <span key={ti} className="bg-white border border-gray-200 text-gray-500 text-[10px] px-2 py-0.5 rounded-full font-bold">{t}</span>
                             ))}
                           </div>

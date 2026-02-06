@@ -1,7 +1,8 @@
 
-import React from 'react';
-import { DESTINATIONS } from '../constants';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Page } from '../types';
+import type { Destination } from '../types';
+import { fetchDestinations } from '../apiClient';
 
 interface DestinationsPageProps {
   onNavigate: (page: Page) => void;
@@ -9,6 +10,39 @@ interface DestinationsPageProps {
 }
 
 const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelectDestination }) => {
+  const [items, setItems] = useState<Destination[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string>('');
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setError('');
+
+    fetchDestinations({ page: 1, pageSize: 200 })
+      .then((res) => {
+        if (cancelled) return;
+        setItems(Array.isArray(res.items) ? res.items : []);
+      })
+      .catch((e) => {
+        if (cancelled) return;
+        setError(e instanceof Error ? e.message : String(e));
+        setItems([]);
+      })
+      .finally(() => {
+        if (cancelled) return;
+        setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const destinations = useMemo(() => items, [items]);
+  const fallbackImage =
+    'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -26,8 +60,17 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
       </div>
 
       <div className="container mx-auto px-6 py-20">
+        {loading && (
+          <div className="text-center text-gray-500 py-10">Loading destinations...</div>
+        )}
+        {!loading && error && (
+          <div className="text-center text-red-500 py-10">
+            Failed to load destinations: {error}
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {DESTINATIONS.map((dest) => (
+          {destinations.map((dest) => (
             <div 
               key={dest.id} 
               className="group cursor-pointer bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all"
@@ -35,13 +78,13 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
             >
               <div className="relative h-72 overflow-hidden">
                 <img 
-                  src={dest.image} 
+                  src={dest.image || fallbackImage} 
                   alt={dest.name} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                 <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-brand-blue shadow-sm">
-                  {dest.tourCount} Tours Available
+                  {dest.tourCount || 0} Tours Available
                 </div>
               </div>
               <div className="p-8">

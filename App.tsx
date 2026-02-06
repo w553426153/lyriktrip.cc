@@ -11,11 +11,11 @@ import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import ContactPage from './components/ContactPage';
 import DestinationsPage from './components/DestinationsPage';
-import DestinationDetail from './components/DestinationDetail';
+import DestinationDetailPage from './components/DestinationDetailPage';
 import TourDetail from './components/TourDetail';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
-import { TOURS, DESTINATIONS } from './constants';
+import { TOURS } from './constants';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>(Page.Home);
@@ -87,12 +87,11 @@ const App: React.FC = () => {
       case Page.Destinations:
         return <DestinationsPage onNavigate={setCurrentPage} onSelectDestination={handleSelectDestination} />;
       case Page.DestinationDetail:
-        const dest = DESTINATIONS.find(d => d.id === selectedDestinationId);
-        if (!dest) return <DestinationsPage onNavigate={setCurrentPage} onSelectDestination={handleSelectDestination} />;
-        const related = TOURS.filter(t => t.destinationId === dest.id);
+        if (!selectedDestinationId) return <DestinationsPage onNavigate={setCurrentPage} onSelectDestination={handleSelectDestination} />;
+        const related = TOURS.filter(t => t.destinationId === selectedDestinationId);
         return (
-          <DestinationDetail 
-            destination={dest} 
+          <DestinationDetailPage
+            destinationId={selectedDestinationId}
             relatedTours={related}
             onOpenConsult={handleOpenConsult}
             wishlist={wishlist}

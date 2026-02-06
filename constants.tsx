@@ -10,7 +10,30 @@ export const DESTINATIONS: Destination[] = [
     description: 'The political and cultural heart of China, home to the Forbidden City and Great Wall.',
     longDescription: 'Beijing, China’s sprawling capital, has history stretching back 3 millennia. Yet it’s known as much for modern architecture as its ancient sites such as the grand Forbidden City complex, the imperial palace during the Ming and Qing dynasties.',
     attractions: [
-      { id: 'attr-bj-1', name: '故宫博物院', tags: ['世界文化遗产', '皇家宫殿'], rating: 4.9, reason: '中国明清两代的皇家宫殿，世界五大宫之首。', image: getUnsplash('1540914124281-342587941389') },
+      {
+        id: 'attr-bj-1',
+        name: '故宫博物院',
+        nameZh: '故宫博物院',
+        nameEn: 'The Palace Museum (Forbidden City)',
+        region: '北京市 · 东城区',
+        // 示例字段：用于展示“Expanded 景点卡片”的信息结构。可按你的真实数据替换。
+        address: '北京市东城区景山前街4号（示例）',
+        category: '历史文化景区',
+        nearbyTransport: '地铁1号线 天安门东站（示例）',
+        openingHours: '08:30-17:00（以季节/公告为准）',
+        ticketPrice: '￥60（示例）',
+        ticketPurchase: '官网/小程序预约（以政策为准）',
+        suggestedDuration: '2-4小时',
+        bestVisitDate: '春秋/工作日更佳',
+        suitableFor: ['历史爱好者', '亲子', '拍照'],
+        sellingPoints: ['明清皇家宫殿群', '国宝级馆藏', '中轴线核心地标'],
+        introduction:
+          '中国明清两代的皇家宫殿，世界五大宫之首。建议提前规划路线：中轴线必打卡，热门展馆可根据当日预约情况调整。',
+        tags: ['世界文化遗产', '皇家宫殿'],
+        rating: 4.9,
+        reason: '中国明清两代的皇家宫殿，世界五大宫之首。',
+        image: getUnsplash('1540914124281-342587941389')
+      },
       { id: 'attr-bj-2', name: '八达岭长城', tags: ['世界七大奇迹', '历史地标'], rating: 4.8, reason: '长城最具代表性的地段，气势磅礴。', image: getUnsplash('1508804185872-d7badad00f7d') },
       { id: 'attr-bj-3', name: '天坛公园', tags: ['祭天建筑', '历史遗迹'], rating: 4.7, reason: '明清两代皇帝祭天、祈谷的场所，建筑结构独特。', image: getUnsplash('1529921879218-f99546d03a9d') },
       { id: 'attr-bj-4', name: '颐和园', tags: ['皇家园林', '建筑艺术'], rating: 4.8, reason: '保存最完整的皇家行宫御苑，被誉为“皇家园林博物馆”。', image: getUnsplash('1599571028712-4299b8602994') },
