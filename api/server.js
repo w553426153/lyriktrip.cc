@@ -114,7 +114,7 @@ app.post('/api/feishu', async (request, reply) => {
   const message = typeof body.message === 'string' ? body.message.trim() : '';
   const wishlist = typeof body.wishlist === 'string' ? body.wishlist.trim() : '';
 
-  if (!email || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     request.log.warn(
       { contentType, bodyType: typeof request.body, parsedKeys: keys, emailType: typeof body.email },
       'Feishu payload invalid email'
