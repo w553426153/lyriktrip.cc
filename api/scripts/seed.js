@@ -392,7 +392,7 @@ function normalizeAttractions(rows) {
 
     out.push({
       id,
-      destinationKey: `${province}|${city}`,
+      destinationKey: `${city}`,
       name: String(nameZh || nameEn || '').trim(),
       nameZh: String(nameZh || '').trim() || null,
       nameEn: String(nameEn || '').trim() || null,
@@ -553,16 +553,15 @@ async function main() {
 
     const destinationsByKey = new Map();
     for (const a of attractions) {
-      const province = a.province || '';
       const city = a.city || '';
-      const key = `${province}|${city}`;
+      const key = `${city}`;
       if (!destinationsByKey.has(key)) {
-        const display = city || province || 'Other';
+        const display = city || 'Other';
         const id = makeId('dest', key || display);
         destinationsByKey.set(key, {
           id,
           name: display,
-          description: province && city ? `${city}, ${province}` : display,
+          description: display,
           longDescription: null,
           image: null,
           tourCount: 0
