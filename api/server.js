@@ -95,6 +95,14 @@ app.post('/api/feishu', async (request, reply) => {
         body = {};
       }
     }
+    // Some setups may pass a Uint8Array (or similar) instead of a Buffer.
+    if (ctor === 'Uint8Array') {
+      try {
+        body = JSON.parse(Buffer.from(body).toString('utf8'));
+      } catch {
+        body = {};
+      }
+    }
   }
   if (!body || typeof body !== 'object') body = {};
 

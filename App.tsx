@@ -50,30 +50,39 @@ const App: React.FC = () => {
     localStorage.setItem('lyriktrip_wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
 
+  // Keep Unicode letters/numbers so Chinese destination names can form stable slugs.
+  // (The final URL segment is still encoded via encodeURIComponent.)
   const slugify = (name: string) =>
     String(name || '')
       .normalize('NFKC')
       .trim()
       .toLowerCase()
       .replace(/['"]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/[^\p{L}\p{N}]+/gu, '-')
       .replace(/^-+|-+$/g, '');
 
   const parsePath = (pathname: string): { page: Page; params?: Record<string, string> } => {
     const clean = (pathname || '/').split('?')[0].split('#')[0];
     const parts = clean.split('/').filter(Boolean);
+    const safeDecode = (s: string) => {
+      try {
+        return decodeURIComponent(s);
+      } catch {
+        return s;
+      }
+    };
 
     if (parts.length === 0) return { page: Page.Home };
 
     if (parts[0] === 'contact') return { page: Page.Contact };
     if (parts[0] === 'tours') {
-      if (parts[1]) return { page: Page.TourDetail, params: { id: parts[1] } };
+      if (parts[1]) return { page: Page.TourDetail, params: { id: safeDecode(parts[1]) } };
       return { page: Page.Tours };
     }
     if (parts[0] === 'wishlist') return { page: Page.Wishlist };
-    if (parts[0] === 'restaurants' && parts[1]) return { page: Page.RestaurantDetail, params: { id: parts[1] } };
+    if (parts[0] === 'restaurants' && parts[1]) return { page: Page.RestaurantDetail, params: { id: safeDecode(parts[1]) } };
     if (parts[0] === 'destinations') {
-      if (parts[1]) return { page: Page.DestinationDetail, params: { slug: parts[1] } };
+      if (parts[1]) return { page: Page.DestinationDetail, params: { slug: safeDecode(parts[1]) } };
       return { page: Page.Destinations };
     }
 
