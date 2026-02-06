@@ -75,6 +75,8 @@ app.post('/api/feishu', async (request, reply) => {
     return jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: FEISHU_WEBHOOK_URL is not set.' }, corsHeaders(check.origin));
   }
 
+  const contentType = String(request.headers?.['content-type'] || '');
+
   // Fastify usually parses JSON bodies into an object, but depending on proxy/content-type
   // it can still arrive as a string/buffer. Be defensive so we don't drop fields silently.
   let body = request.body;
@@ -106,15 +108,53 @@ app.post('/api/feishu', async (request, reply) => {
   }
   if (!body || typeof body !== 'object') body = {};
 
+  const keys = body && typeof body === 'object' ? Object.keys(body).slice(0, 30) : [];
+
   const email = typeof body.email === 'string' ? body.email.trim() : '';
   const message = typeof body.message === 'string' ? body.message.trim() : '';
   const wishlist = typeof body.wishlist === 'string' ? body.wishlist.trim() : '';
 
   if (!email || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
-    return jsonReply(reply, 400, { ok: false, error: 'Invalid email.' }, corsHeaders(check.origin));
+    request.log.warn(
+      { contentType, bodyType: typeof request.body, parsedKeys: keys, emailType: typeof body.email },
+      'Feishu payload invalid email'
+    );
+    return jsonReply(
+      reply,
+      400,
+      {
+        ok: false,
+        error: 'Invalid email.',
+        debug: {
+          contentType,
+          bodyType: typeof request.body,
+          parsedKeys: keys,
+          emailType: typeof body.email,
+        },
+      },
+      corsHeaders(check.origin)
+    );
   }
   if (!message) {
-    return jsonReply(reply, 400, { ok: false, error: 'Message is required.' }, corsHeaders(check.origin));
+    request.log.warn(
+      { contentType, bodyType: typeof request.body, parsedKeys: keys, messageType: typeof body.message },
+      'Feishu payload missing message'
+    );
+    return jsonReply(
+      reply,
+      400,
+      {
+        ok: false,
+        error: 'Message is required.',
+        debug: {
+          contentType,
+          bodyType: typeof request.body,
+          parsedKeys: keys,
+          messageType: typeof body.message,
+        },
+      },
+      corsHeaders(check.origin)
+    );
   }
   if (message.length > 5000 || wishlist.length > 5000) {
     return jsonReply(reply, 413, { ok: false, error: 'Payload too large.' }, corsHeaders(check.origin));
