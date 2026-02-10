@@ -1073,12 +1073,14 @@ async function seedRoute(pool, route) {
 
       if (node.nodeType === 'attraction') {
         const a = node.attraction || {};
+        // pg treats JS arrays as Postgres arrays, not JSON. We must serialize JSONB payloads ourselves.
+        const highlightsJson = a.highlights != null ? JSON.stringify(a.highlights) : null;
         await pool.query(
           `
             INSERT INTO attraction_nodes (
               node_id, name, address, opening_hours, ticket_price, suggested_duration,
               description, highlights, images, best_season, lat, lng, notes
-            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)
+            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8::jsonb,$9,$10,$11,$12,$13)
           `,
           [
             nodeId,
@@ -1088,7 +1090,7 @@ async function seedRoute(pool, route) {
             a.ticketPrice || null,
             a.suggestedDuration || null,
             a.description || null,
-            a.highlights != null ? a.highlights : null,
+            highlightsJson,
             a.images || [],
             a.bestSeason || null,
             a.lat != null ? Number(a.lat) : null,
@@ -1100,12 +1102,14 @@ async function seedRoute(pool, route) {
 
       if (node.nodeType === 'restaurant') {
         const r = node.restaurant || {};
+        // Same as above: ensure JSONB is sent as valid JSON text.
+        const dishesJson = r.recommendedDishes != null ? JSON.stringify(r.recommendedDishes) : null;
         await pool.query(
           `
             INSERT INTO restaurant_nodes (
               node_id, name, address, avg_cost, must_eat_rating, queue_status, phone, business_hours,
               background, recommended_dishes, images, lat, lng, notes
-            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)
+            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10::jsonb,$11,$12,$13,$14)
           `,
           [
             nodeId,
@@ -1117,7 +1121,7 @@ async function seedRoute(pool, route) {
             r.phone || null,
             r.businessHours || null,
             r.background || null,
-            r.recommendedDishes != null ? r.recommendedDishes : null,
+            dishesJson,
             r.images || [],
             r.lat != null ? Number(r.lat) : null,
             r.lng != null ? Number(r.lng) : null,
