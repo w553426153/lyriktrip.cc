@@ -1,10 +1,17 @@
-import type { Destination, Restaurant } from './types';
+import type { Destination, Restaurant, RouteDetail, RouteSummary } from './types';
 
 export type DestinationsListResponse = {
   page: number;
   pageSize: number;
   total: number;
   items: Destination[];
+};
+
+export type RoutesListResponse = {
+  page: number;
+  pageSize: number;
+  total: number;
+  items: RouteSummary[];
 };
 
 async function apiGetJson<T>(path: string): Promise<T> {
@@ -34,4 +41,17 @@ export function fetchDestinationDetail(id: string, include?: string[]) {
 
 export function fetchRestaurantDetail(id: string) {
   return apiGetJson<Restaurant>(`/api/v1/restaurants/${encodeURIComponent(id)}`);
+}
+
+export function fetchRoutes(params?: { q?: string; page?: number; pageSize?: number }) {
+  const search = new URLSearchParams();
+  if (params?.q) search.set('q', params.q);
+  if (params?.page) search.set('page', String(params.page));
+  if (params?.pageSize) search.set('pageSize', String(params.pageSize));
+  const qs = search.toString();
+  return apiGetJson<RoutesListResponse>(`/api/v1/routes${qs ? `?${qs}` : ''}`);
+}
+
+export function fetchRouteDetail(id: string) {
+  return apiGetJson<RouteDetail>(`/api/v1/routes/${encodeURIComponent(id)}`);
 }

@@ -498,6 +498,216 @@ app.get('/api/v1/foods', async (request, reply) => {
   reply.send({ page, pageSize, items: listRes.rows });
 });
 
+app.get('/api/v1/routes', async (request, reply) => {
+  const { page, pageSize, offset } = parsePageParams(request.query);
+  const q = typeof request.query?.q === 'string' ? request.query.q.trim() : '';
+
+  const where = [];
+  const params = [];
+
+  if (q) {
+    params.push(`%${q}%`);
+    where.push(`(route_name ILIKE $${params.length} OR COALESCE(route_alias, '') ILIKE $${params.length})`);
+  }
+
+  const whereSql = where.length ? `WHERE ${where.join(' AND ')}` : '';
+
+  const countSql = `SELECT COUNT(*)::int AS count FROM routes ${whereSql}`;
+  const listSql = `
+    SELECT
+      id,
+      route_name AS "routeName",
+      route_alias AS "routeAlias",
+      price,
+      price_unit AS "priceUnit",
+      COALESCE(highlights, ARRAY[]::text[]) AS highlights,
+      COALESCE(cover_images, ARRAY[]::text[]) AS "coverImages",
+      total_days AS "totalDays",
+      status
+    FROM routes
+    ${whereSql}
+    ORDER BY created_at DESC, route_name ASC
+    LIMIT $${params.length + 1} OFFSET $${params.length + 2}
+  `;
+
+  const listParams = params.concat([pageSize, offset]);
+
+  const [countRes, listRes] = await Promise.all([pool.query(countSql, params), pool.query(listSql, listParams)]);
+
+  reply.send({
+    page,
+    pageSize,
+    total: countRes.rows[0]?.count ?? 0,
+    items: listRes.rows
+  });
+});
+
+app.get('/api/v1/routes/:id', async (request, reply) => {
+  const id = String(request.params?.id || '').trim();
+  if (!id) return reply.code(400).send({ ok: false, error: 'id is required' });
+
+  const routeRes = await pool.query(
+    `
+      SELECT
+        id,
+        route_name AS "routeName",
+        route_alias AS "routeAlias",
+        price,
+        price_unit AS "priceUnit",
+        recommendation,
+        introduction,
+        COALESCE(highlights, ARRAY[]::text[]) AS highlights,
+        COALESCE(cover_images, ARRAY[]::text[]) AS "coverImages",
+        route_overview AS "routeOverview",
+        service_content AS "serviceContent",
+        total_days AS "totalDays",
+        status
+      FROM routes
+      WHERE id = $1
+      LIMIT 1
+    `,
+    [id]
+  );
+
+  const route = routeRes.rows[0];
+  if (!route) return reply.code(404).send({ ok: false, error: 'Route not found' });
+
+  const daysRes = await pool.query(
+    `
+      SELECT
+        id,
+        day_number AS "dayNumber",
+        day_title AS "dayTitle",
+        day_subtitle AS "daySubtitle"
+      FROM route_days
+      WHERE route_id = $1
+      ORDER BY day_number ASC
+    `,
+    [id]
+  );
+
+  const days = daysRes.rows;
+  const dayIds = days.map((d) => d.id);
+  if (dayIds.length === 0) {
+    route.days = [];
+    return reply.send(route);
+  }
+
+  const nodesRes = await pool.query(
+    `
+      SELECT
+        id,
+        day_id AS "dayId",
+        node_order AS "nodeOrder",
+        node_type AS "nodeType",
+        start_time AS "startTime",
+        duration_minutes AS "durationMinutes"
+      FROM route_nodes
+      WHERE day_id = ANY($1::text[])
+      ORDER BY day_id ASC, node_order ASC
+    `,
+    [dayIds]
+  );
+
+  const nodes = nodesRes.rows;
+  const nodeIds = nodes.map((n) => n.id);
+
+  const [transportRes, attractionRes, restaurantRes] = await Promise.all([
+    pool.query(
+      `
+        SELECT
+          node_id AS "nodeId",
+          from_location AS "fromLocation",
+          to_location AS "toLocation",
+          transport_method AS "transportMethod",
+          route_detail AS "routeDetail",
+          cost,
+          notes
+        FROM transport_nodes
+        WHERE node_id = ANY($1::text[])
+      `,
+      [nodeIds]
+    ),
+    pool.query(
+      `
+        SELECT
+          node_id AS "nodeId",
+          name,
+          address,
+          opening_hours AS "openingHours",
+          ticket_price AS "ticketPrice",
+          suggested_duration AS "suggestedDuration",
+          description,
+          highlights,
+          COALESCE(images, ARRAY[]::text[]) AS images,
+          best_season AS "bestSeason",
+          lat,
+          lng,
+          notes
+        FROM attraction_nodes
+        WHERE node_id = ANY($1::text[])
+      `,
+      [nodeIds]
+    ),
+    pool.query(
+      `
+        SELECT
+          node_id AS "nodeId",
+          name,
+          address,
+          avg_cost AS "avgCost",
+          must_eat_rating AS "mustEatRating",
+          queue_status AS "queueStatus",
+          phone,
+          business_hours AS "businessHours",
+          background,
+          recommended_dishes AS "recommendedDishes",
+          COALESCE(images, ARRAY[]::text[]) AS images,
+          lat,
+          lng,
+          notes
+        FROM restaurant_nodes
+        WHERE node_id = ANY($1::text[])
+      `,
+      [nodeIds]
+    )
+  ]);
+
+  const transportById = new Map(
+    transportRes.rows.map((row) => {
+      const { nodeId, ...detail } = row;
+      return [nodeId, detail];
+    })
+  );
+  const attractionById = new Map(
+    attractionRes.rows.map((row) => {
+      const { nodeId, ...detail } = row;
+      return [nodeId, detail];
+    })
+  );
+  const restaurantById = new Map(
+    restaurantRes.rows.map((row) => {
+      const { nodeId, ...detail } = row;
+      return [nodeId, detail];
+    })
+  );
+
+  const nodesByDay = new Map();
+  for (const n of nodes) {
+    if (n.nodeType === 'transport') n.transport = transportById.get(n.id) || null;
+    if (n.nodeType === 'attraction') n.attraction = attractionById.get(n.id) || null;
+    if (n.nodeType === 'restaurant') n.restaurant = restaurantById.get(n.id) || null;
+
+    const arr = nodesByDay.get(n.dayId) || [];
+    arr.push(n);
+    nodesByDay.set(n.dayId, arr);
+  }
+
+  route.days = days.map((d) => ({ ...d, nodes: nodesByDay.get(d.id) || [] }));
+
+  reply.send(route);
+});
+
 app.addHook('onClose', async () => {
   await pool.end();
 });

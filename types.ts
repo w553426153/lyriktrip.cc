@@ -24,6 +24,100 @@ export interface Tour {
   destinationId?: string;
 }
 
+export type RouteNodeType = 'transport' | 'attraction' | 'restaurant';
+
+export interface RouteTransportNode {
+  fromLocation?: string | null;
+  toLocation?: string | null;
+  transportMethod?: string | null;
+  routeDetail?: string | null;
+  cost?: number | string | null;
+  notes?: string | null;
+}
+
+export interface RouteAttractionHighlight {
+  title: string;
+  content?: string | null;
+}
+
+export interface RouteAttractionNode {
+  name: string;
+  address?: string | null;
+  openingHours?: string | null;
+  ticketPrice?: string | null;
+  suggestedDuration?: string | null;
+  description?: string | null;
+  highlights?: RouteAttractionHighlight[] | null;
+  images?: string[];
+  bestSeason?: string | null;
+  lat?: number | string | null;
+  lng?: number | string | null;
+  notes?: string | null;
+}
+
+export interface RouteRestaurantDish {
+  name: string;
+  description?: string | null;
+  image?: string | null;
+  price?: string | null;
+}
+
+export interface RouteRestaurantNode {
+  name: string;
+  address?: string | null;
+  avgCost?: number | string | null;
+  mustEatRating?: number | null;
+  queueStatus?: string | null;
+  phone?: string | null;
+  businessHours?: string | null;
+  background?: string | null;
+  recommendedDishes?: RouteRestaurantDish[] | null;
+  images?: string[];
+  lat?: number | string | null;
+  lng?: number | string | null;
+  notes?: string | null;
+}
+
+export interface RouteNode {
+  id: string;
+  dayId?: string;
+  nodeOrder: number;
+  nodeType: RouteNodeType;
+  startTime?: string | null;
+  durationMinutes?: number | null;
+  transport?: RouteTransportNode | null;
+  attraction?: RouteAttractionNode | null;
+  restaurant?: RouteRestaurantNode | null;
+}
+
+export interface RouteDay {
+  id: string;
+  dayNumber: number;
+  dayTitle?: string | null;
+  daySubtitle?: string | null;
+  nodes: RouteNode[];
+}
+
+export interface RouteSummary {
+  id: string;
+  routeName: string;
+  routeAlias?: string | null;
+  price?: number | string | null;
+  priceUnit?: string | null;
+  highlights: string[];
+  coverImages: string[];
+  totalDays: number;
+  status?: number;
+}
+
+export interface RouteDetail extends RouteSummary {
+  recommendation?: string | null;
+  introduction?: string | null;
+  routeOverview?: string | null;
+  serviceContent?: string | null;
+  days: RouteDay[];
+}
+
 export interface Attraction {
   id: string;
   name: string;

@@ -198,6 +198,29 @@ export const TOURS: Tour[] = [
     reviews: 150,
     image: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&q=80&w=800',
     destinationId: 'bj'
+  },
+  {
+    id: 'shanghai-5d',
+    title: 'Shanghai 5 Days 4 Nights (Roadbook)',
+    tagline: 'Yu Garden → The Bund → Zhujiajiao → Xintiandi → Lujiazui — minute-by-minute navigation.',
+    description:
+      'A high-precision digital guide for guests staying near Nanjing East Road. Built around time blocks, transport micro-steps, and culture/food deep dives.',
+    highlights: ['Precision Timing', 'Night Skyline', 'Food Deep Dive', 'Closed-Loop Route'],
+    itinerary: [
+      { day: 1, title: 'Old Town & The Bund', description: 'Yu Garden, Nanxiang buns, Bund architecture, night cruise.' },
+      { day: 2, title: 'Water Town & Shikumen', description: 'Zhujiajiao canals, Xintiandi lanes.' },
+      { day: 3, title: 'Lujiazui Skyline', description: 'Shanghai Tower, Oriental Pearl, city lights.' },
+      { day: 4, title: 'Creative Shanghai', description: 'Wukang Road, Tianzifang, Jing’an Temple.' },
+      { day: 5, title: 'Museums & Return', description: 'Shanghai Museum, last-minute shopping, back to hotel.' }
+    ],
+    included: ['Digital roadbook', 'Precise navigation cues', 'Curated food recommendations'],
+    excluded: ['Flights', 'Hotel booking', 'Attraction tickets'],
+    audience: 'First-timers who want a precise plan',
+    price: 999,
+    rating: 5.0,
+    reviews: 42,
+    image: getUnsplash('1474181487882-5abf3f0ba6c2'),
+    destinationId: 'sh'
   }
 ];
 

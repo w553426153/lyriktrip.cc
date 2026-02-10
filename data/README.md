@@ -11,6 +11,7 @@
 - `data/foods.csv` / `data/foods.json`：美食列表（每条包含 destinationId）
 - `data/restaurants.csv` / `data/restaurants.json`：餐厅列表（每条包含 destinationId）
 - `data/hotels.csv` / `data/hotels.json`：酒店列表（每条包含 destinationId）
+- `data/routes/*.md`：线路行程（Markdown）。文件名（不含扩展名）会作为 `routes.id`，用于 `/api/v1/routes/:id`
 
 ## CSV 约定（默认规则）
 

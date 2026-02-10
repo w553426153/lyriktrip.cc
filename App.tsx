@@ -13,7 +13,7 @@ import ContactPage from './components/ContactPage';
 import DestinationsPage from './components/DestinationsPage';
 import DestinationDetailPage from './components/DestinationDetailPage';
 import RestaurantDetailPage from './components/RestaurantDetailPage';
-import TourDetail from './components/TourDetail';
+import RouteDetailPage from './components/RouteDetailPage';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
 import { TOURS } from './constants';
@@ -325,11 +325,12 @@ const App: React.FC = () => {
           </div>
         );
       case Page.TourDetail:
-        const tour = TOURS.find(t => t.id === selectedTourId);
-        if (!tour) return <div className="pt-32 text-center h-screen">Tour Not Found</div>;
+        if (!selectedTourId) return <div className="pt-32 text-center h-screen">Tour Not Found</div>;
+        const fallbackTour = TOURS.find(t => t.id === selectedTourId) || null;
         return (
-          <TourDetail 
-            tour={tour}
+          <RouteDetailPage 
+            routeId={selectedTourId}
+            fallbackTour={fallbackTour}
             onOpenConsult={handleOpenConsult}
             wishlist={wishlist}
             onToggleWishlist={toggleWishlist}
