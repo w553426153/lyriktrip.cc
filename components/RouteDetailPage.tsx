@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import type { RouteDay, RouteDetail, RouteNode, RouteNodeType, Tour } from '../types';
+import type { RouteAttractionHighlight, RouteDay, RouteDetail, RouteNode, RouteNodeType, Tour } from '../types';
 import { fetchRouteDetail } from '../apiClient';
 import TourDetail from './TourDetail';
 
@@ -76,6 +76,59 @@ function SafeText({ text, className }: { text?: string | null; className?: strin
   return <div className={className ? className : ''}>{text}</div>;
 }
 
+function extractImageUrlFromLine(line?: string | null): string | null {
+  const s = String(line || '').trim();
+  if (!s) return null;
+  const labeled = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  if (labeled) return labeled[1].trim();
+  const markdownImage = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
+  if (markdownImage) return markdownImage[1].trim();
+  const bareUrl = s.match(/^(https?:\/\/\S+)$/u);
+  if (bareUrl) return bareUrl[1].trim();
+  return null;
+}
+
+function normalizeAttractionHighlights(node: RouteNode): RouteAttractionHighlight[] {
+  const raw = node.attraction?.highlights;
+  if (!Array.isArray(raw) || raw.length === 0) return [];
+
+  const fallbackImages = Array.isArray(node.attraction?.images) ? node.attraction!.images : [];
+  const out: RouteAttractionHighlight[] = [];
+
+  raw.forEach((item, idx) => {
+    let title = '';
+    let contentRaw = '';
+    let image: string | null = null;
+
+    if (typeof item === 'string') {
+      title = item.trim();
+    } else if (item && typeof item === 'object') {
+      title = String(item.title || '').trim();
+      contentRaw = typeof item.content === 'string' ? item.content : item.content == null ? '' : String(item.content);
+      if (typeof item.image === 'string' && item.image.trim()) {
+        image = item.image.trim();
+      }
+    }
+
+    const kept: string[] = [];
+    for (const line of contentRaw.split(/\r?\n/g)) {
+      const maybeImage = extractImageUrlFromLine(line);
+      if (maybeImage) {
+        if (!image) image = maybeImage;
+        continue;
+      }
+      kept.push(line);
+    }
+
+    const content = kept.join('\n').trim() || null;
+    const finalTitle = title || `要点 ${idx + 1}`;
+    const finalImage = image || fallbackImages[idx] || null;
+    out.push({ title: finalTitle, content, image: finalImage });
+  });
+
+  return out;
+}
+
 function DayPills({
   days,
   activeDay,
@@ -121,6 +174,7 @@ function NodeCard({
   const title = getNodeTitle(node);
   const time = formatHhmm(node.startTime);
   const dur = formatDuration(node.durationMinutes ?? null);
+  const attractionHighlights = useMemo(() => normalizeAttractionHighlights(node), [node]);
 
   return (
     <div className="relative">
@@ -248,22 +302,22 @@ function NodeCard({
                 className="whitespace-pre-line leading-relaxed text-sm text-slate-700"
               />
 
-              {!!(node.attraction?.highlights && node.attraction.highlights.length) && (
+              {!!attractionHighlights.length && (
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                     <div className="font-display font-semibold text-slate-900">游览要点</div>
                   </div>
                   <div className="grid grid-cols-1 gap-3">
-                    {node.attraction!.highlights!.map((h, idx) => (
+                    {attractionHighlights.map((h, idx) => (
                       <div key={idx} className="rounded-xl bg-white ring-1 ring-slate-200/70 p-4">
                         <div className="font-semibold text-slate-900">{h.title}</div>
-                        {(h.image || node.attraction?.images?.[idx]) && (
+                        {h.image && (
                           <div className="mt-3 overflow-hidden rounded-lg ring-1 ring-slate-200/80">
                             <img
-                              src={h.image || node.attraction?.images?.[idx]}
+                              src={h.image}
                               alt={`${node.attraction?.name || '景点'} · ${h.title}`}
-                              className="h-44 w-full object-cover"
+                              className="h-44 w-full object-cover bg-slate-100"
                               loading="lazy"
                             />
                           </div>

@@ -34,6 +34,57 @@ function corsHeaders(origin) {
   };
 }
 
+function extractImageUrlFromLine(line) {
+  const s = String(line || '').trim();
+  if (!s) return null;
+  const labeled = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  if (labeled) return labeled[1].trim();
+  const markdownImage = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
+  if (markdownImage) return markdownImage[1].trim();
+  const bareUrl = s.match(/^(https?:\/\/\S+)$/u);
+  if (bareUrl) return bareUrl[1].trim();
+  return null;
+}
+
+function normalizeAttractionHighlights(highlights, images) {
+  const list = Array.isArray(highlights) ? highlights : [];
+  const fallbackImages = Array.isArray(images) ? images : [];
+  const out = [];
+
+  for (let i = 0; i < list.length; i++) {
+    const item = list[i];
+    let title = '';
+    let contentRaw = '';
+    let image = null;
+
+    if (typeof item === 'string') {
+      title = item.trim();
+    } else if (item && typeof item === 'object') {
+      title = String(item.title || '').trim();
+      contentRaw = typeof item.content === 'string' ? item.content : item.content == null ? '' : String(item.content);
+      if (typeof item.image === 'string' && item.image.trim()) image = item.image.trim();
+    }
+
+    const kept = [];
+    for (const line of String(contentRaw || '').split(/\r?\n/g)) {
+      const maybeImage = extractImageUrlFromLine(line);
+      if (maybeImage) {
+        if (!image) image = maybeImage;
+        continue;
+      }
+      kept.push(line);
+    }
+
+    out.push({
+      title: title || `要点 ${i + 1}`,
+      content: kept.join('\n').trim() || null,
+      image: image || fallbackImages[i] || null
+    });
+  }
+
+  return out;
+}
+
 function assertOriginAllowed(request, reply) {
   // Prefer Origin; fall back to Referer for some same-origin requests.
   let origin = request.headers?.origin || '';
@@ -571,6 +622,8 @@ app.get('/api/v1/routes/:id', async (request, reply) => {
 
   const route = routeRes.rows[0];
   if (!route) return reply.code(404).send({ ok: false, error: 'Route not found' });
+  // Route detail hero chips are deprecated on frontend; keep detail payload stable even for older builds.
+  route.highlights = [];
 
   const daysRes = await pool.query(
     `
@@ -682,7 +735,9 @@ app.get('/api/v1/routes/:id', async (request, reply) => {
   const attractionById = new Map(
     attractionRes.rows.map((row) => {
       const { nodeId, ...detail } = row;
-      return [nodeId, detail];
+      const images = Array.isArray(detail.images) ? detail.images.filter(Boolean) : [];
+      const highlights = normalizeAttractionHighlights(detail.highlights, images);
+      return [nodeId, { ...detail, images, highlights }];
     })
   );
   const restaurantById = new Map(
