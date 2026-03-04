@@ -638,7 +638,7 @@ app.get('/api/v1/routes/:id', async (request, reply) => {
           ticket_price AS "ticketPrice",
           suggested_duration AS "suggestedDuration",
           description,
-          highlights,
+          COALESCE(highlights, '[]'::jsonb) AS highlights,
           COALESCE(images, ARRAY[]::text[]) AS images,
           best_season AS "bestSeason",
           lat,

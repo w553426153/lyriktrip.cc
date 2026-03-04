@@ -61,6 +61,8 @@
 如果你已经在服务器上创建过 `pgdata` 并且更新了 schema（例如新增经纬度/必吃指数字段），需要执行迁移或删除 volume 重新初始化：
 
 - 删除并重建（会丢数据）：`docker volume rm <项目名>_pgdata`
+- 增量迁移（推荐，无需删库）示例：
+  - `docker compose --env-file .env exec -T db psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" < db/migrations/20260304_route_highlights_default.sql`
 
 
 ## 日常更新

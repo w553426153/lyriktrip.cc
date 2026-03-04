@@ -38,6 +38,7 @@ export interface RouteTransportNode {
 export interface RouteAttractionHighlight {
   title: string;
   content?: string | null;
+  image?: string | null;
 }
 
 export interface RouteAttractionNode {
@@ -201,7 +202,7 @@ export interface Destination {
   attractions?: Attraction[];
   famousFoods?: Food[];
   restaurants?: Restaurant[];
-  image: string;
+  image?: string | null;
   tourCount: number;
 }
 

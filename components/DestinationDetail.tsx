@@ -3,6 +3,7 @@ import React, { useMemo, useState } from 'react';
 import { Destination, Tour, Attraction, Food } from '../types';
 import FeaturedTours from './FeaturedTours';
 import ScenicSpotCardExpanded from './ScenicSpotCardExpanded';
+import { DESTINATION_HERO_IMAGE_FALLBACKS_BY_ID } from '../config';
 
 type FoodRestaurantRef = {
   id?: string | null;
@@ -125,6 +126,10 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   const fallbackImage =
     'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
 
+  const dbImage = typeof destination.image === 'string' ? destination.image.trim() : '';
+  const manualFallbackImage = String(DESTINATION_HERO_IMAGE_FALLBACKS_BY_ID[destination.id] || '').trim();
+  const heroImage = dbImage || manualFallbackImage || fallbackImage;
+
   const [showAllHighlights, setShowAllHighlights] = useState(false);
   const [showAllFoods, setShowAllFoods] = useState(false);
 
@@ -140,7 +145,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
     <div className="bg-white">
       {/* Hero */}
       <div className="relative h-[55vh] min-h-[450px] overflow-hidden">
-        <img src={destination.image || fallbackImage} alt={destination.name} className="w-full h-full object-cover" />
+        <img src={heroImage} alt={destination.name} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-6 mt-16">
             <h1 className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-2xl">{destination.name}</h1>

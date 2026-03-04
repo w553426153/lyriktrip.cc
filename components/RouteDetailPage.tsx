@@ -258,6 +258,16 @@ function NodeCard({
                     {node.attraction!.highlights!.map((h, idx) => (
                       <div key={idx} className="rounded-xl bg-white ring-1 ring-slate-200/70 p-4">
                         <div className="font-semibold text-slate-900">{h.title}</div>
+                        {(h.image || node.attraction?.images?.[idx]) && (
+                          <div className="mt-3 overflow-hidden rounded-lg ring-1 ring-slate-200/80">
+                            <img
+                              src={h.image || node.attraction?.images?.[idx]}
+                              alt={`${node.attraction?.name || '景点'} · ${h.title}`}
+                              className="h-44 w-full object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
                         {h.content && <div className="mt-1.5 text-sm leading-relaxed text-slate-700 whitespace-pre-line">{h.content}</div>}
                       </div>
                     ))}
@@ -500,17 +510,6 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
               </h1>
 
               {route?.routeAlias && <div className="mt-4 text-lg md:text-xl text-slate-700 font-medium">{route.routeAlias}</div>}
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {(route?.highlights || []).slice(0, 6).map((h, idx) => (
-                  <span
-                    key={`${h}-${idx}`}
-                    className="rounded-full bg-white/70 ring-1 ring-slate-200/70 backdrop-blur px-3 py-1 text-[11px] font-bold text-slate-700"
-                  >
-                    {h}
-                  </span>
-                ))}
-              </div>
 
               {error && !loading && (
                 <div className="mt-6 rounded-2xl bg-red-50 ring-1 ring-red-200 p-4 text-sm text-red-800">

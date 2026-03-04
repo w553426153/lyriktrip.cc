@@ -13,6 +13,15 @@
 - `data/hotels.csv` / `data/hotels.json`：酒店列表（每条包含 destinationId）
 - `data/routes/*.md`：线路行程（Markdown）。文件名（不含扩展名）会作为 `routes.id`，用于 `/api/v1/routes/:id`
 
+### 路线 Markdown（游览要点图片）
+
+在“游览要点”中，每个要点标题下可选增加一行图片地址，seed 时会写入 `attraction_nodes.highlights` 的 `image` 字段：
+
+- `图片：https://example.com/spot.jpg`
+- `![图片说明](https://example.com/spot.jpg)`
+
+如果未提供图片，seed 会尝试按景点名称从 `attractions` 数据中自动匹配并补全图片。
+
 ## CSV 约定（默认规则）
 
 - 编码：UTF-8（可带 BOM）

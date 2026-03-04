@@ -197,7 +197,7 @@ CREATE TABLE IF NOT EXISTS attraction_nodes (
   ticket_price       TEXT,
   suggested_duration TEXT,
   description        TEXT,
-  highlights         JSONB,
+  highlights         JSONB NOT NULL DEFAULT '[]'::jsonb,
   images             TEXT[],
   best_season        TEXT,
   lat                NUMERIC(10,8),

@@ -623,6 +623,16 @@ function isEmojiTitleLine(line) {
   return /^\p{Extended_Pictographic}/u.test(s);
 }
 
+function extractImageUrl(line) {
+  const s = String(line || '').trim();
+  if (!s) return null;
+  const imageLabelMatch = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  if (imageLabelMatch) return imageLabelMatch[1].trim();
+  const markdownImageMatch = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
+  if (markdownImageMatch) return markdownImageMatch[1].trim();
+  return null;
+}
+
 function collectSectionText(lines, startIdx, endIdxExclusive) {
   const slice = lines.slice(startIdx, endIdxExclusive);
   return slice
@@ -639,6 +649,38 @@ function collectKeyValue(lines, key) {
     if (v) return v;
   }
   return null;
+}
+
+function normalizeNameToken(value) {
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[\s\-—_()（）【】\[\]《》"'`.,，。:：·•]/g, '');
+}
+
+function buildAttractionImageResolver(attractions) {
+  const imageByName = new Map();
+  for (const a of attractions || []) {
+    const images = [...new Set([a?.image, ...(a?.photos || [])].map((x) => String(x || '').trim()).filter(Boolean))];
+    if (!images.length) continue;
+    const keys = [a?.name, a?.nameZh, a?.nameEn]
+      .map((x) => normalizeNameToken(x))
+      .filter(Boolean);
+    for (const key of keys) {
+      if (!imageByName.has(key)) imageByName.set(key, images);
+    }
+  }
+
+  const imageEntries = Array.from(imageByName.entries()).sort((a, b) => b[0].length - a[0].length);
+  return (name) => {
+    const token = normalizeNameToken(name);
+    if (!token) return [];
+    if (imageByName.has(token)) return imageByName.get(token) || [];
+    for (const [key, images] of imageEntries) {
+      if (token.includes(key) || key.includes(token)) return images;
+    }
+    return [];
+  };
 }
 
 function parseRouteMarkdown(routeId, markdown) {
@@ -825,21 +867,28 @@ function parseRouteMarkdown(routeId, markdown) {
           const rest = block.slice(highlightMarkerIdx + 1).map((l) => String(l || '').trimEnd());
           const items = [];
           let current = null;
+          let currentImage = null;
           let buf = [];
           for (const l of rest) {
             const s = String(l || '').trim();
             if (!s) continue;
             if (isEmojiTitleLine(s)) {
               if (current) {
-                items.push({ title: current, content: buf.join('\n').trim() || null });
+                items.push({ title: current, content: buf.join('\n').trim() || null, image: currentImage });
               }
               current = s;
+              currentImage = null;
               buf = [];
             } else if (current) {
-              buf.push(s);
+              const imageUrl = extractImageUrl(s);
+              if (imageUrl) {
+                currentImage = imageUrl;
+              } else {
+                buf.push(s);
+              }
             }
           }
-          if (current) items.push({ title: current, content: buf.join('\n').trim() || null });
+          if (current) items.push({ title: current, content: buf.join('\n').trim() || null, image: currentImage });
           highlightItems = items.length ? items : null;
         }
 
@@ -1074,7 +1123,7 @@ async function seedRoute(pool, route) {
       if (node.nodeType === 'attraction') {
         const a = node.attraction || {};
         // pg treats JS arrays as Postgres arrays, not JSON. We must serialize JSONB payloads ourselves.
-        const highlightsJson = a.highlights != null ? JSON.stringify(a.highlights) : null;
+        const highlightsJson = JSON.stringify(a.highlights || []);
         await pool.query(
           `
             INSERT INTO attraction_nodes (
@@ -1166,6 +1215,28 @@ async function main() {
     const attractions = normalizeAttractions(attractionsRaw);
     const restaurants = normalizeRestaurants(restaurantsRaw);
     const foods = normalizeFoods(foodsRaw);
+    const resolveAttractionImages = buildAttractionImageResolver(attractions);
+
+    for (const route of routesMd) {
+      for (const day of route.days || []) {
+        for (const node of day.nodes || []) {
+          if (node.nodeType !== 'attraction' || !node.attraction) continue;
+          const images = resolveAttractionImages(node.attraction.name);
+          if (!images.length) continue;
+
+          if (!Array.isArray(node.attraction.images) || node.attraction.images.length === 0) {
+            node.attraction.images = images.slice(0, 12);
+          }
+
+          if (Array.isArray(node.attraction.highlights) && node.attraction.highlights.length > 0) {
+            node.attraction.highlights = node.attraction.highlights.map((item, idx) => {
+              if (item && item.image) return item;
+              return { ...item, image: images[idx % images.length] };
+            });
+          }
+        }
+      }
+    }
 
     const destinationsByKey = new Map();
     for (const a of attractions) {
