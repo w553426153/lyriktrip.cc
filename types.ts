@@ -198,6 +198,8 @@ export interface Destination {
   name: string;
   description: string;
   longDescription?: string;
+  province?: string;
+  city?: string;
   highlights?: string[]; // Deprecated for attractions
   attractions?: Attraction[];
   famousFoods?: Food[];

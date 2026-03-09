@@ -57,6 +57,54 @@ function toJson(v) {
   }
 }
 
+const MUNICIPALITY_NAME_MAP = new Map([
+  ['北京', '北京市'],
+  ['北京市', '北京市'],
+  ['上海', '上海市'],
+  ['上海市', '上海市'],
+  ['天津', '天津市'],
+  ['天津市', '天津市'],
+  ['重庆', '重庆市'],
+  ['重庆市', '重庆市']
+]);
+
+function normalizeLocationToken(v) {
+  if (v == null) return '';
+  return String(v)
+    .normalize('NFKC')
+    .trim()
+    .replace(/\s+/g, '');
+}
+
+function normalizeProvinceName(v) {
+  const p = normalizeLocationToken(v);
+  if (!p) return '';
+  return MUNICIPALITY_NAME_MAP.get(p) || p;
+}
+
+function normalizeCityName(cityRaw, provinceRaw) {
+  const c = normalizeLocationToken(cityRaw);
+  const province = normalizeProvinceName(provinceRaw);
+
+  if (!c) {
+    if (MUNICIPALITY_NAME_MAP.has(province)) return province;
+    return '';
+  }
+
+  const mapped = MUNICIPALITY_NAME_MAP.get(c);
+  if (mapped) return mapped;
+
+  const provinceMapped = MUNICIPALITY_NAME_MAP.get(province);
+  if (provinceMapped) {
+    const provinceBase = provinceMapped.replace(/市$/, '');
+    if (c === provinceBase || c === provinceMapped) return provinceMapped;
+  }
+
+  if (/(特别行政区|地区|自治州|盟|林区|县)$/u.test(c)) return c;
+  if (/市$/u.test(c)) return c;
+  return `${c}市`;
+}
+
 async function loadJson(filePath) {
   const raw = await readFile(filePath, 'utf8');
   return JSON.parse(raw);
@@ -402,8 +450,8 @@ function normalizeAttractions(rows) {
   for (const row of rows) {
     const nameZh = firstNonEmpty(row, ['景点名称（中文）', '景点名称']) || '';
     const nameEn = row['景点名称（英文）'] || '';
-    const province = firstNonEmpty(row, ['省', '所属省份']) || '';
-    const city = firstNonEmpty(row, ['市', '所属地级市']) || '';
+    const provinceRaw = firstNonEmpty(row, ['省', '所属省份']) || '';
+    const cityRaw = firstNonEmpty(row, ['市', '所属地级市']) || '';
     const district = firstNonEmpty(row, ['区', '所属区县']) || '';
     const regionFromSource = firstNonEmpty(row, ['所属区域']) || '';
     const address = firstNonEmpty(row, ['地址', '详细地址']) || '';
@@ -424,21 +472,30 @@ function normalizeAttractions(rows) {
     const themeTags = firstNonEmpty(row, ['主题标签']);
     const scenicLevel = firstNonEmpty(row, ['景区等级']);
     const feeType = firstNonEmpty(row, ['是否收费']);
+    const province = normalizeProvinceName(provinceRaw);
+    const city = normalizeCityName(cityRaw, provinceRaw);
+    const cityForKey = city || province || 'Other';
 
     const stableKey = [nameZh, address, province, city, district].filter(Boolean).join('|') || nameZh || nameEn;
     const id = makeId('attr', stableKey);
 
     const regionParts = [province, city, district].map((x) => String(x || '').trim()).filter(Boolean);
-    const region = String(regionFromSource || '').trim() || (regionParts.length ? regionParts.join(' · ') : null);
+    const region = regionParts.length ? regionParts.join(' · ') : (String(regionFromSource || '').trim() || null);
 
     const photosArr = splitMulti(photos);
     const tags = Array.from(
-      new Set([...(splitMulti(coreCategory) || []), ...(splitMulti(themeTags) || []), ...(splitMulti(scenicLevel) || []), ...(splitMulti(feeType) || [])])
+      new Set([
+        ...(splitMulti(coreCategory) || []),
+        ...(splitMulti(themeTags) || []),
+        ...(splitMulti(scenicLevel) || []),
+        ...(splitMulti(feeType) || []),
+        ...(splitMulti(regionFromSource) || [])
+      ])
     );
 
     out.push({
       id,
-      destinationKey: `${city}`,
+      destinationKey: `${province || 'Other'}|${cityForKey}`,
       name: String(nameZh || nameEn || '').trim(),
       nameZh: String(nameZh || '').trim() || null,
       nameEn: String(nameEn || '').trim() || null,
@@ -1287,19 +1344,24 @@ async function main() {
 
     const destinationsByKey = new Map();
     for (const a of attractions) {
-      const city = a.city || '';
-      const key = `${city}`;
+      const key = String(a.destinationKey || `${a.province || 'Other'}|${a.city || a.province || 'Other'}`);
       if (!destinationsByKey.has(key)) {
-        const display = city || 'Other';
+        const display = a.city || a.province || 'Other';
+        const cover = a.image || ((Array.isArray(a.photos) && a.photos.length > 0) ? a.photos[0] : null) || null;
         const id = makeId('dest', key || display);
         destinationsByKey.set(key, {
           id,
           name: display,
-          description: display,
+          description: a.province && a.province !== display ? `${a.province} · ${display}` : display,
           longDescription: null,
-          image: null,
+          image: cover,
           tourCount: 0
         });
+      } else {
+        const current = destinationsByKey.get(key);
+        if (current && !current.image) {
+          current.image = a.image || ((Array.isArray(a.photos) && a.photos.length > 0) ? a.photos[0] : null) || null;
+        }
       }
     }
 

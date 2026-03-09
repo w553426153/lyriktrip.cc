@@ -164,7 +164,7 @@ const App: React.FC = () => {
     setResolveDestinationLoading(true);
     setResolveDestinationError('');
 
-    fetchDestinations({ page: 1, pageSize: 500 })
+    fetchDestinations({ page: 1, pageSize: 1000 })
       .then((res) => {
         if (cancelled) return;
         const items = Array.isArray(res.items) ? res.items : [];

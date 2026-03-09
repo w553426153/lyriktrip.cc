@@ -238,23 +238,66 @@ app.get('/api/v1/destinations', async (request, reply) => {
 
   if (q) {
     params.push(`%${q}%`);
-    where.push(`(name ILIKE $${params.length} OR description ILIKE $${params.length})`);
+    where.push(`(
+      d.name ILIKE $${params.length}
+      OR d.description ILIKE $${params.length}
+      OR meta.province ILIKE $${params.length}
+      OR meta.city ILIKE $${params.length}
+    )`);
   }
 
   const whereSql = where.length ? `WHERE ${where.join(' AND ')}` : '';
 
-  const countSql = `SELECT COUNT(*)::int AS count FROM destinations ${whereSql}`;
+  const countSql = `
+    SELECT COUNT(*)::int AS count
+    FROM destinations d
+    JOIN LATERAL (
+      SELECT
+        COALESCE(NULLIF(a.province, ''), 'Other') AS province,
+        COALESCE(NULLIF(a.city, ''), d.name) AS city,
+        COALESCE(
+          NULLIF(a.image_url, ''),
+          CASE
+            WHEN a.photos IS NOT NULL AND array_length(a.photos, 1) > 0 THEN a.photos[1]
+            ELSE NULL
+          END
+        ) AS image
+      FROM attractions a
+      WHERE a.destination_id = d.id
+      ORDER BY a.created_at ASC, a.id ASC
+      LIMIT 1
+    ) meta ON TRUE
+    ${whereSql}
+  `;
   const listSql = `
     SELECT
-      id,
-      name,
-      description,
-      long_description AS "longDescription",
-      cover_image_url AS image,
-      tour_count AS "tourCount"
-    FROM destinations
+      d.id,
+      d.name,
+      d.description,
+      d.long_description AS "longDescription",
+      COALESCE(d.cover_image_url, meta.image) AS image,
+      d.tour_count AS "tourCount",
+      meta.province,
+      meta.city
+    FROM destinations d
+    JOIN LATERAL (
+      SELECT
+        COALESCE(NULLIF(a.province, ''), 'Other') AS province,
+        COALESCE(NULLIF(a.city, ''), d.name) AS city,
+        COALESCE(
+          NULLIF(a.image_url, ''),
+          CASE
+            WHEN a.photos IS NOT NULL AND array_length(a.photos, 1) > 0 THEN a.photos[1]
+            ELSE NULL
+          END
+        ) AS image
+      FROM attractions a
+      WHERE a.destination_id = d.id
+      ORDER BY a.created_at ASC, a.id ASC
+      LIMIT 1
+    ) meta ON TRUE
     ${whereSql}
-    ORDER BY name ASC
+    ORDER BY meta.province ASC, meta.city ASC, d.name ASC
     LIMIT $${params.length + 1} OFFSET $${params.length + 2}
   `;
 
@@ -283,14 +326,32 @@ app.get('/api/v1/destinations/:id', async (request, reply) => {
   const destRes = await pool.query(
     `
       SELECT
-        id,
-        name,
-        description,
-        long_description AS "longDescription",
-        cover_image_url AS image,
-        tour_count AS "tourCount"
-      FROM destinations
-      WHERE id = $1
+        d.id,
+        d.name,
+        d.description,
+        d.long_description AS "longDescription",
+        COALESCE(d.cover_image_url, meta.image) AS image,
+        d.tour_count AS "tourCount",
+        meta.province,
+        meta.city
+      FROM destinations d
+      LEFT JOIN LATERAL (
+        SELECT
+          COALESCE(NULLIF(a.province, ''), 'Other') AS province,
+          COALESCE(NULLIF(a.city, ''), d.name) AS city,
+          COALESCE(
+            NULLIF(a.image_url, ''),
+            CASE
+              WHEN a.photos IS NOT NULL AND array_length(a.photos, 1) > 0 THEN a.photos[1]
+              ELSE NULL
+            END
+          ) AS image
+        FROM attractions a
+        WHERE a.destination_id = d.id
+        ORDER BY a.created_at ASC, a.id ASC
+        LIMIT 1
+      ) meta ON TRUE
+      WHERE d.id = $1
       LIMIT 1
     `,
     [id]
