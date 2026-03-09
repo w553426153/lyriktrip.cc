@@ -104,6 +104,16 @@ async function loadDataOptional(dataDir, baseName) {
   return [];
 }
 
+async function loadAttractionsData(dataDir) {
+  const nationwideRows = await loadDataOptional(dataDir, '全国景点数据');
+  if (Array.isArray(nationwideRows) && nationwideRows.length > 0) {
+    // eslint-disable-next-line no-console
+    console.log('Using attractions source: data/全国景点数据.(csv|json)');
+    return nationwideRows;
+  }
+  return await loadDataOptional(dataDir, 'attractions');
+}
+
 async function upsertDestination(pool, d) {
   await pool.query(
     `
@@ -359,35 +369,53 @@ async function upsertHotel(pool, h) {
 }
 
 function normalizeAttractions(rows) {
+  const firstNonEmpty = (row, keys) => {
+    for (const key of keys) {
+      const value = row[key];
+      if (value == null) continue;
+      if (typeof value === 'string' && !value.trim()) continue;
+      return value;
+    }
+    return '';
+  };
+
   const out = [];
   for (const row of rows) {
-    const nameZh = row['景点名称（中文）'] || '';
+    const nameZh = firstNonEmpty(row, ['景点名称（中文）', '景点名称']) || '';
     const nameEn = row['景点名称（英文）'] || '';
-    const province = row['省'] || '';
-    const city = row['市'] || '';
-    const district = row['区'] || '';
-    const address = row['地址'] || '';
+    const province = firstNonEmpty(row, ['省', '所属省份']) || '';
+    const city = firstNonEmpty(row, ['市', '所属地级市']) || '';
+    const district = firstNonEmpty(row, ['区', '所属区县']) || '';
+    const regionFromSource = firstNonEmpty(row, ['所属区域']) || '';
+    const address = firstNonEmpty(row, ['地址', '详细地址']) || '';
     const lng = row['经度'];
     const lat = row['纬度'];
-    const category = row['景区分类'] || '';
-    const nearbyTransport = row['附近交通'] || '';
-    const openingHours = row['开放时间'] || '';
-    const ticketPrice = row['门票价格'] || '';
-    const ticketPurchase = row['购票方式'] || '';
-    const suggestedDuration = row['建议游览时长'] || '';
-    const bestVisitDate = row['最佳游览日期'] || '';
-    const introduction = row['景区介绍'] || '';
-    const suitableFor = row['适合人群'];
-    const sellingPoints = row['景区卖点'];
-    const photos = row['景点照片'];
+    const category = firstNonEmpty(row, ['景区分类']) || '';
+    const nearbyTransport = firstNonEmpty(row, ['附近交通']) || '';
+    const openingHours = firstNonEmpty(row, ['开放时间']) || '';
+    const ticketPrice = firstNonEmpty(row, ['门票价格']) || '';
+    const ticketPurchase = firstNonEmpty(row, ['购票方式']) || '';
+    const suggestedDuration = firstNonEmpty(row, ['建议游览时长']) || '';
+    const bestVisitDate = firstNonEmpty(row, ['最佳游览日期', '最佳游览月份']) || '';
+    const introduction = firstNonEmpty(row, ['景区介绍']) || '';
+    const suitableFor = firstNonEmpty(row, ['适合人群']);
+    const sellingPoints = firstNonEmpty(row, ['景区卖点']);
+    const photos = firstNonEmpty(row, ['景点照片', '景点照片URL']);
+    const coreCategory = firstNonEmpty(row, ['核心分类']);
+    const themeTags = firstNonEmpty(row, ['主题标签']);
+    const scenicLevel = firstNonEmpty(row, ['景区等级']);
+    const feeType = firstNonEmpty(row, ['是否收费']);
 
     const stableKey = [nameZh, address, province, city, district].filter(Boolean).join('|') || nameZh || nameEn;
     const id = makeId('attr', stableKey);
 
     const regionParts = [province, city, district].map((x) => String(x || '').trim()).filter(Boolean);
-    const region = regionParts.length ? regionParts.join(' · ') : null;
+    const region = String(regionFromSource || '').trim() || (regionParts.length ? regionParts.join(' · ') : null);
 
     const photosArr = splitMulti(photos);
+    const tags = Array.from(
+      new Set([...(splitMulti(coreCategory) || []), ...(splitMulti(themeTags) || []), ...(splitMulti(scenicLevel) || []), ...(splitMulti(feeType) || [])])
+    );
 
     out.push({
       id,
@@ -412,7 +440,7 @@ function normalizeAttractions(rows) {
       introduction: String(introduction || '').trim() || null,
       suitableFor: splitMulti(suitableFor),
       sellingPoints: splitMulti(sellingPoints),
-      tags: [],
+      tags,
       photos: photosArr,
       image: (photosArr || [])[0] || null,
       rating: null,
@@ -1201,13 +1229,13 @@ async function main() {
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
   try {
-    const attractionsRaw = await loadDataOptional(dataDir, 'attractions');
+    const attractionsRaw = await loadAttractionsData(dataDir);
     const restaurantsRaw = await loadDataOptional(dataDir, 'restaurants');
     const foodsRaw = await loadDataOptional(dataDir, 'foods');
     const hotels = await loadDataOptional(dataDir, 'hotels');
     const routesMd = await loadRouteMarkdownFiles(dataDir);
 
-    if (!Array.isArray(attractionsRaw)) throw new Error('data/attractions.(csv|json) must be an array');
+    if (!Array.isArray(attractionsRaw)) throw new Error('data/attractions.(csv|json) or data/全国景点数据.(csv|json) must be an array');
     if (!Array.isArray(restaurantsRaw)) throw new Error('data/restaurants.(csv|json) must be an array');
     if (!Array.isArray(foodsRaw)) throw new Error('data/foods.(csv|json) must be an array');
     if (!Array.isArray(hotels)) throw new Error('data/hotels.(csv|json) must be an array');
