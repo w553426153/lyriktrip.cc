@@ -68,19 +68,30 @@ async function loadCsv(filePath) {
     columns: true,
     skip_empty_lines: true,
     bom: true,
-    trim: true
+    trim: true,
+    // Some upstream CSVs contain unescaped quotes in plain text fields.
+    // Keep parser tolerant to avoid silently dropping to fallback data source.
+    relax_quotes: true
   });
 }
 
 async function loadData(dataDir, baseName) {
   const csvPath = path.join(dataDir, `${baseName}.csv`);
   const jsonPath = path.join(dataDir, `${baseName}.json`);
+  let hasCsv = false;
 
   try {
     await access(csvPath);
-    return await loadCsv(csvPath);
+    hasCsv = true;
   } catch {
     // ignore
+  }
+  if (hasCsv) {
+    try {
+      return await loadCsv(csvPath);
+    } catch (err) {
+      throw new Error(`Failed to parse CSV file: ${csvPath}. ${err?.message || err}`);
+    }
   }
 
   return await loadJson(jsonPath);
@@ -89,11 +100,19 @@ async function loadData(dataDir, baseName) {
 async function loadDataOptional(dataDir, baseName) {
   const csvPath = path.join(dataDir, `${baseName}.csv`);
   const jsonPath = path.join(dataDir, `${baseName}.json`);
+  let hasCsv = false;
   try {
     await access(csvPath);
-    return await loadCsv(csvPath);
+    hasCsv = true;
   } catch {
     // ignore
+  }
+  if (hasCsv) {
+    try {
+      return await loadCsv(csvPath);
+    } catch (err) {
+      throw new Error(`Failed to parse CSV file: ${csvPath}. ${err?.message || err}`);
+    }
   }
   try {
     await access(jsonPath);
