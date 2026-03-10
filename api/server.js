@@ -236,6 +236,8 @@ app.get('/api/v1/destinations', async (request, reply) => {
   const where = [];
   const params = [];
 
+  where.push(`d.id <> 'dest_other'`);
+
   if (q) {
     params.push(`%${q}%`);
     where.push(`(

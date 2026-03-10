@@ -79,7 +79,12 @@ function normalizeLocationToken(v) {
 function normalizeProvinceName(v) {
   const p = normalizeLocationToken(v);
   if (!p) return '';
-  return MUNICIPALITY_NAME_MAP.get(p) || p;
+  const mapped = MUNICIPALITY_NAME_MAP.get(p);
+  if (mapped) return mapped;
+  if (/特别行政区$/u.test(p)) return p.replace(/特别行政区$/u, '');
+  if (/自治区$/u.test(p)) return p.replace(/自治区$/u, '');
+  if (/省$/u.test(p)) return p.replace(/省$/u, '');
+  return p;
 }
 
 function normalizeCityName(cityRaw, provinceRaw) {
@@ -105,17 +110,6 @@ function normalizeCityName(cityRaw, provinceRaw) {
   return `${c}市`;
 }
 
-function normalizeDestinationName(nameRaw) {
-  const name = normalizeLocationToken(nameRaw);
-  if (!name) return '';
-  // Keep ASCII names untouched (defensive for any future English labels).
-  if (/^[A-Za-z0-9 .,'-]+$/.test(name)) return name;
-  const mapped = MUNICIPALITY_NAME_MAP.get(name);
-  if (mapped) return mapped;
-  if (/(特别行政区|地区|自治州|盟|林区|县)$/u.test(name)) return name;
-  if (/市$/u.test(name)) return name;
-  return `${name}市`;
-}
 
 async function loadJson(filePath) {
   const raw = await readFile(filePath, 'utf8');
@@ -1390,41 +1384,6 @@ async function main() {
     };
     destinationsByKey.set('__other__', otherDest);
 
-    const canonicalNameToId = new Map();
-    const duplicateDestinationIds = new Set();
-    const existingDestinations = await pool.query(`SELECT id, name FROM destinations`);
-    const existingByNormalized = new Map();
-
-    for (const row of existingDestinations.rows || []) {
-      const normalized = normalizeDestinationName(row.name);
-      if (!normalized) continue;
-      const list = existingByNormalized.get(normalized) || [];
-      list.push({ id: row.id, name: row.name });
-      existingByNormalized.set(normalized, list);
-    }
-
-    for (const dest of destinationsByKey.values()) {
-      if (!dest || dest.id === otherDest.id) continue;
-      const normalized = normalizeDestinationName(dest.name);
-      if (!normalized) continue;
-
-      const existing = existingByNormalized.get(normalized) || [];
-      const exact = existing.find((item) => item.name === normalized);
-      const chosenId = exact?.id || existing[0]?.id || dest.id;
-      canonicalNameToId.set(normalized, chosenId);
-      dest.id = chosenId;
-    }
-
-    for (const list of existingByNormalized.values()) {
-      for (const item of list) {
-        const normalized = normalizeDestinationName(item.name);
-        const canonicalId = canonicalNameToId.get(normalized);
-        if (canonicalId && item.id !== canonicalId) {
-          duplicateDestinationIds.add(item.id);
-        }
-      }
-    }
-
     const attractionNameToDestinationId = new Map();
     for (const a of attractions) {
       const destId = destinationsByKey.get(a.destinationKey)?.id || otherDest.id;
@@ -1464,11 +1423,6 @@ async function main() {
       await upsertDestination(pool, d);
     }
 
-    if (duplicateDestinationIds.size > 0) {
-      const ids = Array.from(duplicateDestinationIds);
-      await pool.query(`DELETE FROM destinations WHERE id = ANY($1)`, [ids]);
-    }
-
     for (const a of attractions) {
       if (!a?.id) throw new Error('attraction.id is required');
       if (!a?.destinationId) throw new Error(`attraction.destinationId is required (id=${a.id})`);
@@ -1492,6 +1446,15 @@ async function main() {
       if (!h?.destinationId) throw new Error(`hotel.destinationId is required (id=${h.id})`);
       await upsertHotel(pool, h);
     }
+
+    await pool.query(`
+      DELETE FROM destinations d
+      WHERE d.id <> 'dest_other'
+        AND NOT EXISTS (SELECT 1 FROM attractions a WHERE a.destination_id = d.id)
+        AND NOT EXISTS (SELECT 1 FROM foods f WHERE f.destination_id = d.id)
+        AND NOT EXISTS (SELECT 1 FROM restaurants r WHERE r.destination_id = d.id)
+        AND NOT EXISTS (SELECT 1 FROM hotels h WHERE h.destination_id = d.id)
+    `);
 
     let routesSeeded = 0;
     let routeDaysSeeded = 0;
