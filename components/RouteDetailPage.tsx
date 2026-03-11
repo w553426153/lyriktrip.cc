@@ -161,6 +161,51 @@ function DayPills({
   );
 }
 
+function ImageBlock({
+  src,
+  alt,
+  heightClass = 'h-44',
+  icon,
+  tone,
+  label = '暂无图片'
+}: {
+  src?: string | null;
+  alt: string;
+  heightClass?: string;
+  icon: string;
+  tone: string;
+  label?: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  const showImage = !!src && !failed;
+
+  if (showImage) {
+    return (
+      <img
+        src={src as string}
+        alt={alt}
+        className={`${heightClass} w-full object-cover bg-slate-100`}
+        loading="lazy"
+        onError={() => setFailed(true)}
+      />
+    );
+  }
+
+  return (
+    <div
+      className={[
+        heightClass,
+        'w-full grid place-items-center bg-gradient-to-br from-white via-slate-50 to-slate-100 text-slate-500'
+      ].join(' ')}
+    >
+      <div className="flex items-center gap-2 text-sm font-semibold">
+        <i className={[icon, tone].join(' ')}></i>
+        <span>{label}</span>
+      </div>
+    </div>
+  );
+}
+
 function NodeCard({
   node,
   open,
@@ -175,6 +220,8 @@ function NodeCard({
   const time = formatHhmm(node.startTime);
   const dur = formatDuration(node.durationMinutes ?? null);
   const attractionHighlights = useMemo(() => normalizeAttractionHighlights(node), [node]);
+  const attractionCover = node.attraction?.images && node.attraction.images.length ? node.attraction.images[0] : null;
+  const restaurantCover = node.restaurant?.images && node.restaurant.images.length ? node.restaurant.images[0] : null;
 
   return (
     <div className="relative">
@@ -265,6 +312,15 @@ function NodeCard({
 
           {node.nodeType === 'attraction' && (
             <div className="space-y-4">
+              <div className="overflow-hidden rounded-xl ring-1 ring-emerald-100/80 bg-white">
+                <ImageBlock
+                  src={attractionCover}
+                  alt={node.attraction?.name || '景点'}
+                  icon="fa-regular fa-image"
+                  tone="text-emerald-600"
+                />
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div className="rounded-xl bg-emerald-50/60 ring-1 ring-emerald-100 p-4">
                   <div className="text-[11px] uppercase tracking-widest text-emerald-700/80 font-bold mb-1">地址</div>
@@ -312,16 +368,15 @@ function NodeCard({
                     {attractionHighlights.map((h, idx) => (
                       <div key={idx} className="rounded-xl bg-white ring-1 ring-slate-200/70 p-4">
                         <div className="font-semibold text-slate-900">{h.title}</div>
-                        {h.image && (
-                          <div className="mt-3 overflow-hidden rounded-lg ring-1 ring-slate-200/80">
-                            <img
-                              src={h.image}
-                              alt={`${node.attraction?.name || '景点'} · ${h.title}`}
-                              className="h-44 w-full object-cover bg-slate-100"
-                              loading="lazy"
-                            />
-                          </div>
-                        )}
+                        <div className="mt-3 overflow-hidden rounded-lg ring-1 ring-slate-200/80">
+                          <ImageBlock
+                            src={h.image}
+                            alt={`${node.attraction?.name || '景点'} · ${h.title}`}
+                            heightClass="h-40"
+                            icon="fa-regular fa-image"
+                            tone="text-emerald-600"
+                          />
+                        </div>
                         {h.content && <div className="mt-1.5 text-sm leading-relaxed text-slate-700 whitespace-pre-line">{h.content}</div>}
                       </div>
                     ))}
@@ -333,6 +388,15 @@ function NodeCard({
 
           {node.nodeType === 'restaurant' && (
             <div className="space-y-4">
+              <div className="overflow-hidden rounded-xl ring-1 ring-orange-100/80 bg-white">
+                <ImageBlock
+                  src={restaurantCover}
+                  alt={node.restaurant?.name || '餐厅'}
+                  icon="fa-regular fa-image"
+                  tone="text-orange-600"
+                />
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div className="rounded-xl bg-orange-50/60 ring-1 ring-orange-100 p-4">
                   <div className="text-[11px] uppercase tracking-widest text-orange-700/80 font-bold mb-1">地址</div>
