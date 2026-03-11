@@ -13,6 +13,9 @@ from xml.etree import ElementTree as ET
 DAY_RE = re.compile(r"^第\s*(\d+)\s*天\s*(.*)$")
 DAY_FALLBACK_RE = re.compile(r"^D\s*(\d+)\b", re.IGNORECASE)
 ATTRACTION_RE = re.compile(r"^景点\s*[·•:：]\s*(.+)$")
+MEAL_HEADER_RE = re.compile(r"^(早餐|午餐|晚餐|正餐)\s*[:：]")
+MEAL_RECOMMEND_RE = re.compile(r"^(早餐|午餐|晚餐)\s*推荐\s*[:：]\s*(.+)$")
+RESTAURANT_RE = re.compile(r"^(推荐餐厅|餐厅推荐)\s*[:：]?\s*(.*)$")
 TIME_RE = re.compile(r"(?<!\d)(\d{1,2})[:：](\d{2})(?!\d)")
 PRICE_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(元|人民币|美金|美元|USD|RMB)")
 
@@ -70,6 +73,15 @@ class AttractionBlock:
     idx: int
     name: str
     lines: List[str] = field(default_factory=list)
+
+
+@dataclass
+class NodeBlock:
+    idx: int
+    node_type: str
+    name: str
+    lines: List[str] = field(default_factory=list)
+    meal_label: Optional[str] = None
 
 
 @dataclass
@@ -221,6 +233,20 @@ def add_minutes(hhmm: str, minutes: int) -> str:
     return f"{total // 60:02d}:{total % 60:02d}"
 
 
+def default_meal_start(meal_label: Optional[str]) -> Optional[str]:
+    if not meal_label:
+        return None
+    if meal_label == "早餐":
+        return "08:00"
+    if meal_label == "午餐":
+        return "12:00"
+    if meal_label == "晚餐":
+        return "18:00"
+    if meal_label == "正餐":
+        return "12:00"
+    return None
+
+
 def find_local_times(times: List[Tuple[int, str]], block_idx: int, window: int = 8) -> Tuple[Optional[str], Optional[str]]:
     if not times:
         return None, None
@@ -241,23 +267,107 @@ def parse_attraction_header(text: str) -> Tuple[str, Optional[str]]:
     return text, duration_text
 
 
-def split_attraction_blocks(day_lines: List[str]) -> List[AttractionBlock]:
-    blocks: List[AttractionBlock] = []
-    indices = []
+def extract_restaurant_marker(line: str) -> Optional[Tuple[Optional[str], Optional[str]]]:
+    s = str(line or "").strip()
+    if not s:
+        return None
+    m = MEAL_RECOMMEND_RE.match(s)
+    if m:
+        return m.group(1), m.group(2).strip()
+    m = RESTAURANT_RE.match(s)
+    if m:
+        name = m.group(2).strip() if m.group(2) else None
+        return None, name or None
+    if "推荐餐厅" in s:
+        return None, None
+    return None
+
+
+def infer_restaurant_name(lines: List[str]) -> Tuple[Optional[str], Optional[str]]:
+    for line in lines:
+        s = str(line or "").strip()
+        if not s:
+            continue
+        if s.startswith("餐厅名称") and "：" in s:
+            name = s.split("：", 1)[1].strip()
+            return (name or None, None)
+        m = MEAL_RECOMMEND_RE.match(s)
+        if m and m.group(2):
+            return (m.group(2).strip(), None)
+        m = RESTAURANT_RE.match(s)
+        if m and m.group(2):
+            return (m.group(2).strip(), None)
+        if "餐厅" in s and ("-" in s or "—" in s):
+            parts = re.split(r"[-—–]", s, maxsplit=1)
+            name = parts[0].strip()
+            note = parts[1].strip() if len(parts) > 1 else None
+            return (name or None, note or None)
+    return (None, None)
+
+
+def split_day_nodes(day_lines: List[str]) -> Tuple[List[NodeBlock], List[AttractionBlock]]:
+    markers = []
+    last_meal_label: Optional[str] = None
+
     for idx, line in enumerate(day_lines):
-        m = ATTRACTION_RE.match(line)
+        s = str(line or "").strip()
+        meal_m = MEAL_HEADER_RE.match(s)
+        if meal_m:
+            last_meal_label = meal_m.group(1)
+
+        m = ATTRACTION_RE.match(s)
         if m:
             name, duration_text = parse_attraction_header(m.group(1))
-            indices.append((idx, name, duration_text))
+            markers.append(("attraction", idx, name, duration_text, None))
+            continue
 
-    for i, (idx, name, duration_text) in enumerate(indices):
-        next_idx = indices[i + 1][0] if i + 1 < len(indices) else len(day_lines)
+        rest = extract_restaurant_marker(s)
+        if rest is not None:
+            meal_label, name = rest
+            markers.append(("restaurant", idx, name or "", None, meal_label or last_meal_label))
+
+    markers.sort(key=lambda x: x[1])
+    filtered_markers = []
+    for marker in markers:
+        if (
+            filtered_markers
+            and marker[0] == "restaurant"
+            and filtered_markers[-1][0] == "restaurant"
+            and marker[1] - filtered_markers[-1][1] <= 2
+            and not filtered_markers[-1][2]
+        ):
+            filtered_markers[-1] = marker
+            continue
+        filtered_markers.append(marker)
+    markers = filtered_markers
+    blocks: List[NodeBlock] = []
+    attraction_blocks: List[AttractionBlock] = []
+
+    for i, (node_type, idx, name, duration_text, meal_label) in enumerate(markers):
+        next_idx = markers[i + 1][1] if i + 1 < len(markers) else len(day_lines)
         block_lines = day_lines[idx + 1:next_idx]
-        block = AttractionBlock(idx=idx, name=name, lines=block_lines)
-        if duration_text:
-            block.lines.insert(0, f"建议游览时间：{duration_text}")
-        blocks.append(block)
-    return blocks
+        if node_type == "attraction":
+            block = AttractionBlock(idx=idx, name=name, lines=list(block_lines))
+            if duration_text:
+                block.lines.insert(0, f"建议游览时间：{duration_text}")
+            attraction_blocks.append(block)
+            blocks.append(NodeBlock(idx=idx, node_type="attraction", name=name, lines=block.lines))
+        else:
+            inferred_name, inferred_note = infer_restaurant_name(block_lines)
+            final_name = name.strip() or inferred_name or (f"{meal_label}推荐" if meal_label else "用餐推荐")
+            if inferred_note:
+                block_lines = list(block_lines) + [inferred_note]
+            blocks.append(
+                NodeBlock(
+                    idx=idx,
+                    node_type="restaurant",
+                    name=final_name,
+                    lines=list(block_lines),
+                    meal_label=meal_label,
+                )
+            )
+
+    return blocks, attraction_blocks
 
 
 def is_ignorable(line: str) -> bool:
@@ -327,7 +437,7 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
                 break
 
         day_title = day.day_title or f"Day {day.day_number}"
-        attraction_blocks = split_attraction_blocks(trimmed_lines)
+        node_blocks, attraction_blocks = split_day_nodes(trimmed_lines)
         attraction_names = [b.name for b in attraction_blocks if b.name]
         day_subtitle = summarize_day_subtitle(attraction_names)
 
@@ -339,7 +449,7 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
         fallback_step = 120
         times = extract_times(trimmed_lines)
 
-        if not attraction_blocks:
+        if not node_blocks:
             description = "\n".join([l for l in trimmed_lines if not is_ignorable(l)])
             start = fallback_start
             end = add_minutes(start, 240)
@@ -350,7 +460,7 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
             md_lines.append("")
             continue
 
-        for idx, block in enumerate(attraction_blocks):
+        for idx, block in enumerate(node_blocks):
             duration = None
             address = None
             opening_hours = None
@@ -359,30 +469,52 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
             best_season = None
             description_lines: List[str] = []
 
-            for line in block.lines:
-                if "游玩时长" in line or "建议时间" in line or "建议游览时间" in line:
-                    duration = parse_duration_minutes(line) or duration
-                    if "：" in line:
-                        suggested = line.split("：", 1)[1].strip() or suggested
-                    continue
-                if line.startswith("地址") and "：" in line:
-                    address = line.split("：", 1)[1].strip()
-                    continue
-                if line.startswith("开放时间") and "：" in line:
-                    opening_hours = line.split("：", 1)[1].strip()
-                    continue
-                if line.startswith("门票") and "：" in line:
-                    ticket_price = line.split("：", 1)[1].strip()
-                    continue
-                if line.startswith("建议游览时间") and "：" in line:
-                    suggested = line.split("：", 1)[1].strip()
-                    continue
-                if line.startswith("最佳游览季节") and "：" in line:
-                    best_season = line.split("：", 1)[1].strip()
-                    continue
-                if is_ignorable(line):
-                    continue
-                description_lines.append(line)
+            if block.node_type == "attraction":
+                for line in block.lines:
+                    if "游玩时长" in line or "建议时间" in line or "建议游览时间" in line:
+                        duration = parse_duration_minutes(line) or duration
+                        if "：" in line:
+                            suggested = line.split("：", 1)[1].strip() or suggested
+                        continue
+                    if line.startswith("地址") and "：" in line:
+                        address = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("开放时间") and "：" in line:
+                        opening_hours = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("门票") and "：" in line:
+                        ticket_price = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("建议游览时间") and "：" in line:
+                        suggested = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("最佳游览季节") and "：" in line:
+                        best_season = line.split("：", 1)[1].strip()
+                        continue
+                    if is_ignorable(line):
+                        continue
+                    description_lines.append(line)
+            else:
+                for line in block.lines:
+                    if "建议时间" in line or "用餐时间" in line:
+                        duration = parse_duration_minutes(line) or duration
+                        continue
+                    if MEAL_HEADER_RE.match(line):
+                        continue
+                    if RESTAURANT_RE.match(line) or MEAL_RECOMMEND_RE.match(line) or "推荐餐厅" in line:
+                        continue
+                    if line.startswith("地址") and "：" in line:
+                        address = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("营业时间") and "：" in line:
+                        opening_hours = line.split("：", 1)[1].strip()
+                        continue
+                    if line.startswith("人均") and "：" in line:
+                        ticket_price = line.split("：", 1)[1].strip()
+                        continue
+                    if is_ignorable(line):
+                        continue
+                    description_lines.append(line)
 
             block_times = [t for _, t in extract_times(block.lines)]
             if block_times:
@@ -394,8 +526,17 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
                     start_time = local_before
                     end_time = local_after
                 else:
-                    start_time = add_minutes(fallback_start, fallback_step * idx)
-                    end_time = None
+                    if block.node_type == "restaurant":
+                        meal_start = default_meal_start(block.meal_label)
+                        if meal_start:
+                            start_time = meal_start
+                            end_time = add_minutes(start_time, duration or 60)
+                        else:
+                            start_time = add_minutes(fallback_start, fallback_step * idx)
+                            end_time = None
+                    else:
+                        start_time = add_minutes(fallback_start, fallback_step * idx)
+                        end_time = None
 
             if not start_time:
                 start_time = add_minutes(fallback_start, fallback_step * idx)
@@ -406,21 +547,34 @@ def build_markdown_for_docx(path: Path, overwrite: bool) -> Optional[Path]:
             if end_time is None:
                 end_time = add_minutes(start_time, fallback_step)
 
-            md_lines.append(f"📍 {start_time}-{end_time} | {block.name}")
-            if address:
-                md_lines.append(f"地址：{address}")
-            if opening_hours:
-                md_lines.append(f"开放时间：{opening_hours}")
-            if ticket_price:
-                md_lines.append(f"门票：{ticket_price}")
-            if suggested:
-                md_lines.append(f"建议游览时间：{suggested}")
-            if best_season:
-                md_lines.append(f"最佳游览季节：{best_season}")
-            if description_lines:
-                md_lines.append("景点介绍")
-                md_lines.extend(description_lines)
-            md_lines.append("")
+            if block.node_type == "attraction":
+                md_lines.append(f"📍 {start_time}-{end_time} | {block.name}")
+                if address:
+                    md_lines.append(f"地址：{address}")
+                if opening_hours:
+                    md_lines.append(f"开放时间：{opening_hours}")
+                if ticket_price:
+                    md_lines.append(f"门票：{ticket_price}")
+                if suggested:
+                    md_lines.append(f"建议游览时间：{suggested}")
+                if best_season:
+                    md_lines.append(f"最佳游览季节：{best_season}")
+                if description_lines:
+                    md_lines.append("景点介绍")
+                    md_lines.extend(description_lines)
+                md_lines.append("")
+            else:
+                md_lines.append(f"🍜 {start_time}-{end_time} | {block.name}")
+                if address:
+                    md_lines.append(f"地址：{address}")
+                if opening_hours:
+                    md_lines.append(f"营业时间：{opening_hours}")
+                if ticket_price:
+                    md_lines.append(f"人均消费：{ticket_price}")
+                if description_lines:
+                    md_lines.append("餐厅背景")
+                    md_lines.extend(description_lines)
+                md_lines.append("")
 
     out_path = path.with_suffix(".md")
     if out_path.exists() and not overwrite:

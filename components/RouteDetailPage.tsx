@@ -368,15 +368,6 @@ function NodeCard({
                     {attractionHighlights.map((h, idx) => (
                       <div key={idx} className="rounded-xl bg-white ring-1 ring-slate-200/70 p-4">
                         <div className="font-semibold text-slate-900">{h.title}</div>
-                        <div className="mt-3 overflow-hidden rounded-lg ring-1 ring-slate-200/80">
-                          <ImageBlock
-                            src={h.image}
-                            alt={`${node.attraction?.name || '景点'} · ${h.title}`}
-                            heightClass="h-40"
-                            icon="fa-regular fa-image"
-                            tone="text-emerald-600"
-                          />
-                        </div>
                         {h.content && <div className="mt-1.5 text-sm leading-relaxed text-slate-700 whitespace-pre-line">{h.content}</div>}
                       </div>
                     ))}

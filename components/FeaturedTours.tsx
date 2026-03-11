@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { TOURS } from '../constants';
-import { Tour } from '../types';
+import { RouteSummary, Tour } from '../types';
 
 interface FeaturedToursProps {
   onOpenConsult: (source: string) => void;
@@ -10,9 +10,16 @@ interface FeaturedToursProps {
   onSelectTour: (tourId: string) => void;
   title?: string;
   subtitle?: string;
-  items?: Tour[];
+  items?: Array<Tour | RouteSummary>;
   hideViewAll?: boolean;
 }
+
+const DEFAULT_ROUTE_IMAGE =
+  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1600';
+
+const isRouteSummary = (item: Tour | RouteSummary): item is RouteSummary => {
+  return 'routeName' in item;
+};
 
 const FeaturedTours: React.FC<FeaturedToursProps> = ({ 
   onOpenConsult, 
@@ -47,24 +54,35 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {items.map((tour) => {
-              const isInWishlist = wishlist.includes(tour.id);
+            {items.map((item) => {
+              const isRoute = isRouteSummary(item);
+              const id = item.id;
+              const titleText = isRoute ? item.routeName : item.title;
+              const tagline = isRoute ? item.routeAlias || 'Curated multi-day route' : item.tagline;
+              const highlights = item.highlights || [];
+              const image = isRoute ? item.coverImages?.[0] || DEFAULT_ROUTE_IMAGE : item.image;
+              const priceLabel = isRoute
+                ? item.price != null
+                  ? `${item.price}${item.priceUnit ? ` ${item.priceUnit}` : ''}`
+                  : 'Contact'
+                : `From $${item.price}`;
+              const isInWishlist = wishlist.includes(id);
               return (
                 <div 
-                  key={tour.id} 
+                  key={id} 
                   className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all group flex flex-col h-full border border-gray-100 cursor-pointer"
-                  onClick={() => onSelectTour(tour.id)}
+                  onClick={() => onSelectTour(id)}
                 >
                   <div className="relative h-64 overflow-hidden">
                     <img 
-                      src={tour.image} 
-                      alt={tour.title} 
+                      src={image} 
+                      alt={titleText} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();
-                        onToggleWishlist(tour.id);
+                        onToggleWishlist(id);
                       }}
                       className={`absolute top-4 right-4 p-2.5 rounded-full shadow-md transition-all active:scale-90 z-10 ${
                         isInWishlist ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
@@ -75,15 +93,21 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="flex justify-between items-center mb-3">
-                      <div className="flex items-center text-yellow-500 text-xs font-bold">
-                        <i className="fa-solid fa-star mr-1"></i> {tour.rating} ({tour.reviews})
-                      </div>
-                      <div className="text-brand-orange font-extrabold text-xl">From ${tour.price}</div>
+                      {isRoute ? (
+                        <div className="flex items-center text-slate-500 text-xs font-bold">
+                          <i className="fa-solid fa-calendar-day mr-1"></i> {item.totalDays} Days
+                        </div>
+                      ) : (
+                        <div className="flex items-center text-yellow-500 text-xs font-bold">
+                          <i className="fa-solid fa-star mr-1"></i> {item.rating} ({item.reviews})
+                        </div>
+                      )}
+                      <div className="text-brand-orange font-extrabold text-xl">{priceLabel}</div>
                     </div>
-                    <h3 className="text-xl font-bold text-brand-blue mb-2 leading-snug">{tour.title}</h3>
-                    <p className="text-gray-500 text-sm mb-4 font-light">{tour.tagline}</p>
+                    <h3 className="text-xl font-bold text-brand-blue mb-2 leading-snug">{titleText}</h3>
+                    <p className="text-gray-500 text-sm mb-4 font-light">{tagline}</p>
                     <div className="flex flex-wrap gap-2 mb-8">
-                      {tour.highlights.slice(0, 3).map((h, i) => (
+                      {highlights.slice(0, 3).map((h, i) => (
                         <span key={i} className="text-[10px] bg-brand-lightBlue text-brand-blue px-2 py-1 rounded-full uppercase tracking-tighter font-bold">{h}</span>
                       ))}
                     </div>
@@ -91,7 +115,7 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
                        <button 
                         onClick={(e) => {
                           e.stopPropagation();
-                          onOpenConsult(`Tour: ${tour.title}`);
+                          onOpenConsult(`Tour: ${titleText}`);
                         }}
                         className="w-full bg-brand-orange text-white py-3 rounded-md font-bold hover:bg-brand-darkOrange transition-all shadow-md hover:shadow-lg"
                       >

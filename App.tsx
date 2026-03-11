@@ -1,6 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
-import { Page, Language } from './types';
+import { Page, Language, RouteSummary } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhyTrust from './components/WhyTrust';
@@ -19,7 +19,7 @@ import RouteDetailPage from './components/RouteDetailPage';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
 import { TOURS } from './constants';
-import { fetchDestinations } from './apiClient';
+import { fetchDestinations, fetchRoutes } from './apiClient';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>(Page.Home);
@@ -32,6 +32,10 @@ const App: React.FC = () => {
   const [selectedDestinationSlug, setSelectedDestinationSlug] = useState<string | null>(null);
   const [resolveDestinationLoading, setResolveDestinationLoading] = useState(false);
   const [resolveDestinationError, setResolveDestinationError] = useState<string>('');
+
+  const [routesList, setRoutesList] = useState<RouteSummary[]>([]);
+  const [routesLoading, setRoutesLoading] = useState(false);
+  const [routesError, setRoutesError] = useState('');
   
   const [isConsultModalOpen, setIsConsultModalOpen] = useState(false);
   const [consultSource, setConsultSource] = useState('');
@@ -199,6 +203,32 @@ const App: React.FC = () => {
     };
   }, [currentPage, routeDestinationSlug, selectedDestinationId, selectedDestinationSlug]);
 
+  useEffect(() => {
+    if (currentPage !== Page.Tours) return;
+    let cancelled = false;
+    setRoutesLoading(true);
+    setRoutesError('');
+
+    fetchRoutes({ page: 1, pageSize: 1000 })
+      .then((res) => {
+        if (cancelled) return;
+        const items = Array.isArray(res.items) ? res.items : [];
+        setRoutesList(items);
+      })
+      .catch((e) => {
+        if (cancelled) return;
+        setRoutesError(e instanceof Error ? e.message : String(e));
+      })
+      .finally(() => {
+        if (cancelled) return;
+        setRoutesLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [currentPage]);
+
   const toggleWishlist = (id: string) => {
     setWishlist(prev => 
       prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
@@ -315,16 +345,30 @@ const App: React.FC = () => {
                   <p className="text-xl opacity-90 max-w-2xl mx-auto">Browse our full collection of hand-crafted Chinese journeys.</p>
                 </div>
               </div>
-            <FeaturedTours 
-              onOpenConsult={handleOpenConsult} 
-              wishlist={wishlist}
-              onToggleWishlist={toggleWishlist}
-              onSelectTour={handleSelectTour}
-              title="Hand-crafted Itineraries"
-              subtitle="Every route is tested and verified by our local experts."
-              items={TOURS}
-              hideViewAll
-            />
+            {routesError && (
+              <div className="container mx-auto px-6 pt-12">
+                <div className="rounded-2xl bg-red-50 ring-1 ring-red-200 p-4 text-sm text-red-800">
+                  <div className="font-bold mb-1">无法加载线路列表</div>
+                  <div className="opacity-90">{routesError}</div>
+                </div>
+              </div>
+            )}
+            {routesLoading ? (
+              <div className="container mx-auto px-6 py-20 text-center text-slate-500">
+                正在加载线路数据…
+              </div>
+            ) : (
+              <FeaturedTours 
+                onOpenConsult={handleOpenConsult} 
+                wishlist={wishlist}
+                onToggleWishlist={toggleWishlist}
+                onSelectTour={handleSelectTour}
+                title="Hand-crafted Itineraries"
+                subtitle="Every route is tested and verified by our local experts."
+                items={routesList}
+                hideViewAll
+              />
+            )}
             <div className="container mx-auto px-6 py-20 text-center border-t border-gray-100">
               <h2 className="text-3xl font-bold mb-8 text-brand-blue">Didn't find your perfect match?</h2>
               <button 
