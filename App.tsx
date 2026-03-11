@@ -10,6 +10,8 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import ContactPage from './components/ContactPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import BookingTermsPage from './components/BookingTermsPage';
 import DestinationsPage from './components/DestinationsPage';
 import DestinationDetailPage from './components/DestinationDetailPage';
 import RestaurantDetailPage from './components/RestaurantDetailPage';
@@ -75,6 +77,8 @@ const App: React.FC = () => {
     if (parts.length === 0) return { page: Page.Home };
 
     if (parts[0] === 'contact') return { page: Page.Contact };
+    if (parts[0] === 'privacy-policy') return { page: Page.PrivacyPolicy };
+    if (parts[0] === 'booking-terms') return { page: Page.BookingTerms };
     if (parts[0] === 'tours') {
       if (parts[1]) return { page: Page.TourDetail, params: { id: safeDecode(parts[1]) } };
       return { page: Page.Tours };
@@ -95,6 +99,10 @@ const App: React.FC = () => {
         return '/';
       case Page.Contact:
         return '/contact';
+      case Page.PrivacyPolicy:
+        return '/privacy-policy';
+      case Page.BookingTerms:
+        return '/booking-terms';
       case Page.Tours:
         return '/tours';
       case Page.Wishlist:
@@ -242,6 +250,10 @@ const App: React.FC = () => {
         );
       case Page.Contact:
         return <ContactPage />;
+      case Page.PrivacyPolicy:
+        return <PrivacyPolicyPage />;
+      case Page.BookingTerms:
+        return <BookingTermsPage />;
       case Page.Destinations:
         return <DestinationsPage onNavigate={handleNavigate} onSelectDestination={handleSelectDestination} />;
       case Page.DestinationDetail:
@@ -367,7 +379,7 @@ const App: React.FC = () => {
         {renderPage()}
       </main>
 
-      <Footer language={language} />
+      <Footer language={language} onNavigate={handleNavigate} />
       
       <FloatingContact />
 

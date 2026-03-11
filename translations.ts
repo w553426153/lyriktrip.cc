@@ -34,7 +34,9 @@ export const TRANSLATIONS: Record<Language, any> = {
     footer: {
       about: 'Your local friend in China. We bridge the gap between curiosity and confidence.',
       support: 'Customer Support',
-      contact: 'Contact Us'
+      contact: 'Contact Us',
+      privacy: 'Privacy Policy',
+      bookingTerms: 'Booking Terms'
     }
   },
   de: {
@@ -69,7 +71,9 @@ export const TRANSLATIONS: Record<Language, any> = {
     footer: {
       about: 'Ihr lokaler Freund in China. Wir schließen die Lücke zwischen Neugier und Vertrauen.',
       support: 'Kundensupport',
-      contact: 'Kontaktieren Sie uns'
+      contact: 'Kontaktieren Sie uns',
+      privacy: 'Datenschutzrichtlinie',
+      bookingTerms: 'Buchungsbedingungen'
     }
   },
   ru: {
@@ -104,7 +108,9 @@ export const TRANSLATIONS: Record<Language, any> = {
     footer: {
       about: 'Ваш местный друг в Китае. Мы превращаем любопытство в уверенность.',
       support: 'Поддержка',
-      contact: 'Связаться с нами'
+      contact: 'Связаться с нами',
+      privacy: 'Политика конфиденциальности',
+      bookingTerms: 'Условия бронирования'
     }
   }
 };
