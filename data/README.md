@@ -13,6 +13,16 @@
 - `data/hotels.csv` / `data/hotels.json`：酒店列表（每条包含 destinationId）
 - `data/routes/*.md`：线路行程（Markdown）。文件名（不含扩展名）会作为 `routes.id`，用于 `/api/v1/routes/:id`
 
+### 路线 Markdown（封面图）
+
+在头部可新增「封面图」段，支持多行 URL，导入后写入 `routes.cover_images`：
+
+```
+封面图
+https://example.com/cover-1.jpg
+https://example.com/cover-2.jpg
+```
+
 ### 路线 Markdown（游览要点图片）
 
 在“游览要点”中，每个要点标题下可选增加一行图片地址，seed 时会写入 `attraction_nodes.highlights` 的 `image` 字段：

@@ -262,7 +262,7 @@ function NodeCard({
                 </span>
               )}
             </div>
-            <div className="mt-1.5 font-display text-[15px] md:text-[16px] font-semibold text-slate-900 truncate">
+            <div className="mt-1.5 font-display text-[14px] md:text-[15px] font-semibold text-slate-900 truncate">
               {title}
             </div>
           </div>
@@ -489,7 +489,7 @@ function Itinerary({
       <div className="flex items-end justify-between gap-4">
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">Itinerary</div>
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">行程安排</h2>
+          <h2 className="font-display text-xl md:text-2xl font-bold text-slate-900 mt-2">行程安排</h2>
         </div>
       </div>
 
@@ -614,11 +614,11 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                 ROADBOOK • LYR I KTRIP
               </div>
 
-              <h1 className="mt-5 font-display text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.02]">
+              <h1 className="mt-5 font-display text-3xl md:text-5xl font-extrabold text-slate-900 leading-[1.02]">
                 {route?.routeName || (loading ? 'Loading…' : 'Route')}
               </h1>
 
-              {route?.routeAlias && <div className="mt-4 text-lg md:text-xl text-slate-700 font-medium">{route.routeAlias}</div>}
+              {route?.routeAlias && <div className="mt-4 text-base md:text-lg text-slate-700 font-medium">{route.routeAlias}</div>}
 
               {error && !loading && (
                 <div className="mt-6 rounded-2xl bg-red-50 ring-1 ring-red-200 p-4 text-sm text-red-800">
@@ -648,7 +648,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">Overview</div>
-                  <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">行程概览</h2>
+                  <h2 className="font-display text-xl md:text-2xl font-bold text-slate-900 mt-2">行程概览</h2>
                 </div>
                 <button
                   onClick={() => onToggleWishlist(routeId)}

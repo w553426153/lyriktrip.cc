@@ -1,30 +1,44 @@
 
 import React, { useState } from 'react';
 import { SURVIVAL_KITS } from '../constants';
-import { SurvivalKit, Language } from '../types';
+import { SurvivalKit } from '../types';
 import { TRANSLATIONS } from '../translations';
 
 interface SurvivalKitsProps {
   onOpenConsult: (source: string) => void;
-  language: Language;
 }
 
-const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult, language }) => {
+const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult }) => {
   const [showModal, setShowModal] = useState<SurvivalKit | null>(null);
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const t = TRANSLATIONS[language].survival;
+  const [errorMessage, setErrorMessage] = useState('');
+  const t = TRANSLATIONS.en.survival;
 
-  const handleDownload = (e: React.FormEvent) => {
+  const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setSubmitted(true);
-    setTimeout(() => {
+    setErrorMessage('');
+    try {
+      const res = await fetch('/api/brevo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      if (!res.ok) {
+        const details = await res.text().catch(() => '');
+        throw new Error(details || `Request failed: ${res.status}`);
+      }
       setShowModal(null);
-      setSubmitted(false);
       setEmail('');
       alert('Check your inbox! The guide is on its way.');
-    }, 1500);
+    } catch (err) {
+      console.error('Brevo request failed:', err);
+      setErrorMessage('We could not send the guide. Please try again.');
+    } finally {
+      setSubmitted(false);
+    }
   };
 
   return (
@@ -88,6 +102,7 @@ const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult, language }) 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                {errorMessage && <div className="text-xs text-red-500 mb-3">{errorMessage}</div>}
                 <button 
                   type="submit"
                   disabled={submitted}

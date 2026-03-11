@@ -8,6 +8,7 @@ interface FeaturedToursProps {
   wishlist: string[];
   onToggleWishlist: (tourId: string) => void;
   onSelectTour: (tourId: string) => void;
+  onViewAll?: () => void;
   title?: string;
   subtitle?: string;
   items?: Array<Tour | RouteSummary>;
@@ -26,6 +27,7 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
   wishlist, 
   onToggleWishlist,
   onSelectTour,
+  onViewAll,
   title = "Popular China Tours",
   subtitle = "Hand-picked itineraries designed for unforgettable experiences.",
   items = TOURS,
@@ -40,7 +42,10 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
             <p className="text-gray-600">{subtitle}</p>
           </div>
           {!hideViewAll && (
-            <button className="mt-6 md:mt-0 text-brand-orange font-bold flex items-center hover:translate-x-1 transition-transform">
+            <button
+              onClick={() => onViewAll?.()}
+              className="mt-6 md:mt-0 text-brand-orange font-bold flex items-center hover:translate-x-1 transition-transform"
+            >
               View All Tours <i className="fa-solid fa-arrow-right ml-2"></i>
             </button>
           )}

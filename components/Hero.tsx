@@ -1,15 +1,13 @@
 
 import React from 'react';
-import { Language } from '../types';
 import { TRANSLATIONS } from '../translations';
 
 interface HeroProps {
   onStartQuiz: () => void;
-  language: Language;
 }
 
-const Hero: React.FC<HeroProps> = ({ onStartQuiz, language }) => {
-  const t = TRANSLATIONS[language].hero;
+const Hero: React.FC<HeroProps> = ({ onStartQuiz }) => {
+  const t = TRANSLATIONS.en.hero;
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}

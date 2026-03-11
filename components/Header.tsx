@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Page, Language } from '../types';
+import { Page } from '../types';
 import { TRANSLATIONS } from '../translations';
 
 interface HeaderProps {
@@ -8,21 +8,16 @@ interface HeaderProps {
   onNavigate: (page: Page) => void;
   onOpenConsult: () => void;
   wishlistCount: number;
-  language: Language;
-  onLanguageChange: (lang: Language) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ 
   currentPage, 
   onNavigate, 
   onOpenConsult, 
-  wishlistCount, 
-  language,
-  onLanguageChange 
+  wishlistCount
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showLangMenu, setShowLangMenu] = useState(false);
-  const t = TRANSLATIONS[language].nav;
+  const t = TRANSLATIONS.en.nav;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -33,12 +28,6 @@ const Header: React.FC<HeaderProps> = ({
   const navClasses = isScrolled 
     ? "bg-white text-brand-blue shadow-md py-3" 
     : "bg-transparent text-white py-5";
-
-  const languages: { code: Language; label: string }[] = [
-    { code: 'en', label: 'EN' },
-    { code: 'de', label: 'DE' },
-    { code: 'ru', label: 'RU' }
-  ];
 
   return (
     <header className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${navClasses}`}>
@@ -70,32 +59,6 @@ const Header: React.FC<HeaderProps> = ({
 
         <div className="flex items-center space-x-4">
           <div className="hidden lg:flex items-center space-x-4 border-r pr-4 border-gray-300">
-            {/* Language Switcher */}
-            <div className="relative">
-              <button 
-                onClick={() => setShowLangMenu(!showLangMenu)}
-                className="flex items-center space-x-1 hover:text-brand-orange transition-colors uppercase font-bold text-sm"
-              >
-                <i className="fa-solid fa-globe"></i> <span>{language}</span>
-              </button>
-              {showLangMenu && (
-                <div className="absolute top-full mt-2 right-0 bg-white shadow-xl rounded-lg overflow-hidden border border-gray-100 min-w-[80px] animate-scale-in">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        onLanguageChange(lang.code);
-                        setShowLangMenu(false);
-                      }}
-                      className={`w-full px-4 py-2 text-left text-sm hover:bg-orange-50 transition-colors ${language === lang.code ? 'text-brand-orange font-bold' : 'text-gray-600'}`}
-                    >
-                      {lang.label}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
             <div 
               className="relative cursor-pointer group"
               onClick={() => onNavigate(Page.Wishlist)}
