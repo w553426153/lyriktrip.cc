@@ -1,5 +1,5 @@
 Privacy Policy
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from http://82.156.82.59:8080/ (the “Site”).
+This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from https://lyriktrip.cn/ (the “Site”).
 
 PERSONAL INFORMATION WE COLLECT
 
@@ -12,7 +12,6 @@ We collect Device Information using the following technologies:
 - INSERT DESCRIPTIONS OF OTHER TYPES OF TRACKING TECHNOLOGIES USED
 Additionally when you make a purchase or attempt to make a purchase through the Site, we collect certain information from you, including your name, billing address, shipping address, payment information (including credit card numbers INSERT ANY OTHER PAYMENT TYPES ACCEPTED), email address, and phone number. We refer to this information as “Order Information”.
 
-[[INSERT ANY OTHER INFORMATION YOU COLLECT: OFFLINE DATA, PURCHASED MARKETING DATA/LISTS]]
 
 When we talk about “Personal Information” in this Privacy Policy, we are talking both about Device Information and Order Information.
 HOW DO WE USE YOUR PERSONAL INFORMATION?
@@ -24,7 +23,6 @@ We use the Order Information that we collect generally to fulfill any orders pla
 - INSERT OTHER USES OF ORDER INFORMATION
 We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns).
 
-[[INSERT OTHER USES OF DEVICE INFORMATION, INCLUDING: ADVERTISING/RETARGETING]]
 
 SHARING YOUR PERSONAL INFORMATION
 
@@ -60,14 +58,12 @@ CHANGES
 
 We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.
 
-{AgeStart}
+
 MINORS
 
-The Site is not intended for individuals under the age of {Age} .
-{AgeEnd}
+The Site is not intended for individuals under the age of 6 .
+
 CONTACT US
 
-For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at http://82.156.82.59:8080/ or by mail using the details provided below:
-Olove-tour
-[Re: Privacy Compliance Officer]
-{Address}
+For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at https://lyriktrip.cn/ or by mail using the details provided below:
+media@lyriktrip.cn
