@@ -1,4 +1,6 @@
 
+export type Language = 'en' | 'de' | 'ru';
+
 export interface ItineraryDay {
   day: number;
   title: string;

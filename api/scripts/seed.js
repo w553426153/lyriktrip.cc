@@ -754,20 +754,6 @@ function collectSectionText(lines, startIdx, endIdxExclusive) {
     .join('\n');
 }
 
-function collectSectionLines(lines, key, stopKeys) {
-  const idx = lines.findIndex((l) => String(l || '').trim() === key);
-  if (idx === -1) return [];
-  const out = [];
-  for (let i = idx + 1; i < lines.length; i++) {
-    const s = String(lines[i] || '').trim();
-    if (!s) continue;
-    if (stopKeys.has(s)) break;
-    if (s.startsWith('🗓️') || s.startsWith('📅 Day')) break;
-    out.push(s);
-  }
-  return out;
-}
-
 function collectKeyValue(lines, key) {
   const idx = lines.findIndex((l) => String(l || '').trim() === key);
   if (idx === -1) return null;
@@ -827,27 +813,12 @@ function parseRouteMarkdown(routeId, markdown) {
   const firstDayIdx = dayMarkers.length ? dayMarkers[0].idx : lines.length;
   const headerLines = lines.slice(0, firstDayIdx);
 
-  const headerKeys = new Set([
-    '行程主标题',
-    '行程副标题',
-    '价格',
-    '封面图',
-    '推荐理由',
-    '行程简介',
-    '核心亮点'
-  ]);
-
   const routeName = collectKeyValue(headerLines, '行程主标题') || routeId;
   const routeAlias = collectKeyValue(headerLines, '行程副标题');
 
   const priceRaw = collectKeyValue(headerLines, '价格');
   const price = priceRaw ? parseMoneyNumber(priceRaw) : null;
   const priceUnit = priceRaw ? String(priceRaw).replace(/^[\s\d.]+/, '').trim() || null : null;
-
-  const coverImages = collectSectionLines(headerLines, '封面图', headerKeys)
-    .map((line) => extractImageUrl(line) || line)
-    .map((line) => String(line || '').trim())
-    .filter((line) => /^https?:\/\//i.test(line));
 
   const recIdx = headerLines.findIndex((l) => String(l || '').trim() === '推荐理由');
   const introIdx = headerLines.findIndex((l) => String(l || '').trim() === '行程简介');
@@ -1153,7 +1124,7 @@ function parseRouteMarkdown(routeId, markdown) {
     recommendation,
     introduction,
     highlights,
-    coverImages,
+    coverImages: [],
     totalDays: days.length || dayMarkers.length || null,
     status: 1,
     days

@@ -1,970 +1,970 @@
-Shanghai 5 days 4 evening schedule
+上海 5 天 4 晚行程安排
 📍 产品概述
 行程主标题
-Shanghai Metropolitan Foods Tour
+上海都市观光美食之旅
 行程副标题
-Five days in Shanghai and one day in the garden - Outside Beach - Pointe Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu Zhu
+5天上海一地豫园-外滩-朱家角-石库门-陆家嘴-东方明珠
 价格
-$999 per person
+999美金/人起
 推荐理由
-//According individual recommendation rationale
-This journey is suitable for international friends visiting Shanghai for their first visit, both to learn about the Modén in Shanghai and to have a deep experience of local life in Shanghai. The total journey is larger and suitable for adults.
+//定制师个人推荐理由
+这个行程适合初次到访上海的国际友人，既能了解上海的摩登，又能深入上海本地生活进行深度体验。整体行程步行量比较大，适合成人。
 行程简介
-The project aims to provide an extremely precise, encyclopedia-type five-day evening digital guidebook for visitors to the “Kinwana Hotel” in Nanjing East Road, Shanghai. By optimizing traffic routes, reinforcing time nodes, and in-depth analysis of cultural details, the pain of tourists during Shanghai tourism is addressed by “difficulties in finding roads, choosing vegetables, making appointments and returning to their homes”.
-Hotel location: 427 Huangpur, Shanghai (near Nanjing East Road station, metro 2-10)
+本项目旨在为入住“上海南京东路铂金万澳酒店”的游客提供一份极致精准、百科式的 5 天 4 晚数字导览手册。通过优化交通动线、强化时间节点、深度解析文化细节，解决游客在上海旅游期间“找路难、选菜难、预约难、返程急”的痛点。
+🏨 酒店位置：上海市黄浦区福州路 427 号（地铁 2 号线/10 号线南京东路站附近）
 核心亮点
-• Physical closed loops: all motion lines are starting and ending at the Pelicans. Points
-• Full time coverage: process from 10 a.m. to around 21 p.m.
-• High-precision orientation: precise to specific subway gates, walking distance, entry and exit points
-• Encyclopedia: a sensory description of the history of the site, the background of the restaurant and the branded dish
-• Nightscape security: a daily schedule of nightscapes and a full experience of Shanghai nightlight
+•物理闭环：所有动线均以铂金万澳酒店为始发点和终到点
+•时段全覆盖：行程从早 10:00 延伸至晚 21:00 左右
+•高精度导览：精确到具体地铁站口、步行距离、上车点与下车点
+•百科式体验：提供景点历史、餐厅背景及招牌菜品的感官描述
+•夜景保障：每日安排夜景观赏时段，充分体验上海璀璨夜色
 
-5-day process overview
+🗓️ 五日行程总览
 
-Click on a picture to view the complete spreadsheet
+点击图片可查看完整电子表格
 
 📅 Day 1: 海派起源·外滩夜色
-Wandering Gardens - Outside Beach - Yellowpool Cruiser
-The hotel leaves at 10:00.
+豫园->外滩->黄浦江游船
+⏰ 10:00 | 酒店出发
 📍 出发地点：🏨 铂金万澳酒店（福州路 427 号）
 
 🚇 10:00-10:15 | 交通：前往豫园
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-• Route by:
-• Subway 2 (in the direction of Pudong International Airport) Station
-• Subway 10 (in the direction of the Rainbow Bridge train station) 1 station
-Out of the car: 3 minutes to the garden.
-Total time spent: about 15 minutes
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：
+•地铁 2 号线（往浦东国际机场方向）→ 1 站 → 南京东路站
+•站内换乘地铁 10 号线（往虹桥火车站方向）→ 1 站 → 豫园站
+🔴 下车地点：豫园站 1 号口出站，步行 3 分钟至豫园
+⏱️ 总耗时：约 15 分钟 | 💰 票价：3 元
 
 📍 10:15-13:00 | 豫园老城厢
-地址：On Ain Street, Huangpur, Shanghai. 132nd.
-开放时间：09:00-17:30 (17:00 stop entering the park)
-门票：Swing season 40 yuan/person, late season 30 yuan/person
-建议游览时间：2-3 hours
+地址：上海市黄浦区安仁街 132 号
+开放时间：09:00-17:30（17:00 停止入园）
+门票：旺季 40 元/人，淡季 30 元/人
+建议游览时间：2-3 小时
 景点介绍
-It is located in the north-east of the old city of Shanghai. It is an outstanding representative of the ancient garden of Gangnam. It was built in Ming Dynasty during the calendar year (1559). It was built by Ming Dynasty Officer Pan Yunty for the purpose of being good to the parents, and is known as the “preparation garden”. More than 30 acres of land, over 400 years of wind and wind, have been lost and are still typical of Mingqing Nan Park.
-The landscape is well organized, using the technique of “small- and medium-sized” gardening, to create the artistic effects of trajectories in a limited space. The pavilion, the fake mountain marsh, the ancient tree, the beams, is the home of the idea that the Gangnam Gardens “are made from heaven”. It was opened to the public in 1961 and was designated by the State Council in 1982 as the national focal point for the protection of cultural objects. It is the only well-maintained Ming Dynasty park in the centre of Shanghai and an important window of knowledge of the arts of the Gangnam Gardens and the style of the Ming Ching Building.
+豫园位于上海老城厢东北部，是江南古典园林的杰出代表，始建于明代嘉靖、万历年间（1559 年），由明朝官员潘允端为孝敬父母而建，取“豫悦老亲”之意，故名“豫园”。园内占地三十余亩，历经四百余载风雨，几经兴废，至今仍保持着明清江南园林的典型风貌。
+园林布局精巧，采用“小中见大”的造园手法，在有限的空间内营造出曲径通幽、移步换景的艺术效果。亭台楼阁、假山池沼、古树名木、雕梁画栋，处处体现着江南园林“虽由人作，宛自天开”的造园理念。豫园在 1961 年开始对公众开放，1982 年被国务院列为全国重点文物保护单位，是上海市中心唯一保存完好的明代园林，也是了解江南园林艺术和明清建筑风格的重要窗口。
 游览要点
-Oh, my God.
-Photo by: https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai   Yu Garden -0035.jpg
-Located in the northern part of the park, it is the oldest, most beautiful and largest yellowstone sham mountain in the Gangnam region. The fake mountain is about 14 metres high and was designed by the famous Ming Dynasty family, Zhang Namyang, and built using the Zhejiang Wukang Yellow Rock. The false mountains rise and fall, and the trenches are wide and high, and they look as if they were real mountains. And the trees of the mountains, and the vines, and the trails of the mountains twirled, and the top of the mountains overlooking the garden. The false mountains are designed so well that there are caves within them that they form the meaning of “the mountains are inconvenient and willow and bright”. This false mountain is not only a landmark view of the gardening, but also a masterpiece of Chinese classical gardening and superstition art.
-The Mandarin Building.
-Photo by: https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai   Yu Garden -0035.jpg
-One of the main buildings of the gardens is the best place to see the landscape. The Mandarin Building is a two-storey loft, an argon, and a beam of beams. Up on the second floor, the fence is so far away that the garden is full of scenery: a fake hill, a pavilion, arcade and arcade. In spring, the front of the building was full of flowers, known as the "Treasure House". The building is built with an ancient platitude and a vast cultural base, all of which are based on famous family pens. The artistic charisma of the Gangnam Gardens “one step at a time, one step at a time” can be felt in the Mandarin floor.
-Yoo-young!
-Photo by: https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai   Yu Garden -0035.jpg
-One of the three famous stones in Gangnam is the treasure of the town garden. It's about three meters tall, scrawny, thin, wrinkled, leaky, and ready through four big reward standards. The platitudes of the stone are so poignant that the wonders of “one blow, seventy-two smoke” are heard. Yu Linglong, a legacy of the Song Dynasty, has experienced a thousand years of wind and rain, and the stone is warm and the texture is flowing. He was bought by Ban Yoon to be placed in a park and became one of the most precious landscapes of the gardens. There's a pool around the jade Linglong, and there's a little bit of beauty. The scribe, the Quaker, is here to eulogy and hymns, leaving many good words.
-The Nine Curve Bridge.
-Photo by: https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai   Yu Garden -0035.jpg
-One of Shanghai ' s most famous ancient bridges is the iconic landscape linking the garden and the temple. The Nine Curved Bridge runs across the pool, about 30 metres long, nine turns and 18 turns, and turns and turns. The bridge is paved with a pyrotechnic tablet, well carved with fine sculpture and platitude. The design of the Nine Curve Bridge contains traditional Chinese cultural wisdom: firstly, the aesthetic concept of the "spread-through-the-curricular" makes it more fun to visit; secondly, the popular legend that "the demons can only walk straight" and that it avoids evil; and thirdly, the extension of the tour path to allow tourists to view the landscape from different angles. A lake heart kiosk is in the middle of the bridge and is an excellent place to rest. On every festival, the upper Nine Curve Bridge is woven, the flowers under the bridge bloom, and the walls are swung, forming a living river roll.
+🏔️ 大假山
+图片：https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai_-_Yu_Garden_-_0035.jpg
+位于园内北部，是江南地区现存最古老、最精美、最大的黄石假山。假山高约 14 米，由明代著名叠山家张南阳设计建造，采用浙江武康黄石堆砌而成。假山峰峦起伏，沟壑纵横，气势磅礴，远观如真山一般。山上古树参天，藤萝缠绕，山间小径蜿蜒曲折，登临山顶可俯瞰全园景色。假山设计巧妙，山体内部有洞穴相通，形成“山重水复疑无路，柳暗花明又一村”的意境。这座假山不仅是豫园的标志性景观，更是中国古典园林叠山艺术的杰作，被园林专家誉为“江南假山之冠”。
+🏛️ 万花楼
+图片：https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai_-_Yu_Garden_-_0035.jpg
+豫园的主体建筑之一，是观赏园林全景的最佳位置。万花楼为两层楼阁，飞檐翘角，雕梁画栋，尽显明代建筑风格。登上二楼，凭栏远眺，园内景色尽收眼底：假山池沼、亭台楼阁、曲桥游廊，层次分明，错落有致。春日里，楼前花木繁盛，故名“万花楼”。楼内陈设古朴典雅，匾额楹联皆出自名家手笔，文化底蕴深厚。站在万花楼上，可以感受到江南园林“一步一景、步移景异”的艺术魅力。
+💎 玉玲珑
+图片：https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai_-_Yu_Garden_-_0035.jpg
+被誉为“江南三大名石”之一，是豫园的镇园之宝。这块太湖石高约 3 米，玲珑剔透，瘦、皱、漏、透四大赏石标准兼备。石上孔窍密布，相传有“一孔吹烟，七十二孔出烟”的奇观。玉玲珑原为宋代花石纲遗物，历经千年风雨，石质温润如玉，纹理自然流畅。明代时被潘允端购得置于园中，成为豫园最珍贵的景观之一。玉玲珑周围环以水池，倒影婆娑，更添几分灵动之美。文人雅士常在此品茗赏石，吟诗作画，留下了无数佳话。
+🌉 九曲桥
+图片：https://upload.wikimedia.org/wikipedia/commons/4/45/Shanghai_-_Yu_Garden_-_0035.jpg
+连接豫园与城隍庙的标志性景观，是上海最著名的古桥之一。九曲桥横跨在荷花池上，全长约 30 米，九曲十八弯，曲折有致。桥身采用青石板铺设，栏杆雕刻精美，古朴典雅。九曲桥的设计蕴含着中国传统文化智慧：一是“曲径通幽”的审美理念，增加游览趣味；二是民间传说中“妖魔鬼怪只能走直线”，曲桥可避邪祛祸；三是延长游览路径，让游客从不同角度欣赏园林美景。桥中央设有湖心亭，是品茗休憩的绝佳之处。每逢节庆，九曲桥上游人如织，桥下荷花盛开，锦鲤游弋，构成一幅生动的江南水乡画卷。
 
 🍜 13:00-14:00 | 午餐：南翔馒头店
-Name of restaurant: Nanshang ' s Garbage Shop
-地址：Shanghai City, Yellow Po District, 87.
-人均消费：88 yuan.
-Observe:
-Queuing: 1 hour waiting during peak period +
-Tel.: 021-23029826
+餐厅名称：南翔馒头店
+地址：上海市黄浦区豫园路 87 号（豫园商城内）
+人均消费：88 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：高峰期等待 1 小时+
+📞 联系电话：021-23029826
 餐厅背景
-Founded in 1900, the Nanshang Lok Shop was founded by the Master of Lights, Wu Shang, of Nanshang Town, Shanghai, and has been in existence for more than 120 years and is the most famous little cage in Shanghai. Its small cage production skills are included in the Shanghai City Intangible Cultural Heritage List, representing the highest level of the Shanghai cage.
-The name of the shop, “bricks”, is the term used in Shanghai dialects to refer to buns, a traditional custom originating in the Gangnam region. The South Shang cage is known for its four main features, "skinned, big, juicy and tasteful", and each of the cages gathers the fine skills of the craftsmen. The skin needs to be made almost transparent in order to meet the criteria of “skin-to-paper”; the selection of the paps needs to be based on the best pork, with secret sauce, and then into the soup, creating the characteristic of “supplemented juice”; and steaming time and fire control are all the more crucial, both to ensure that the soup is full and to keep the skin intact, which requires years of experience.
-It is the flagship shop of the South Shang Lok shop, located in the City of the Bounty, which attracts a large number of predators every day. The shop is divided into eating areas and outside areas, which have an old environment and can sit down and taste them slowly; the outside area is suitable for time-consuming tourists. Whenever we visit, there is always a lot of noise here, and waiting in line has become one of the “ceremonial feelings” of the Nanshang cage.
+南翔馒头店创始于 1900 年，由上海嘉定南翔镇的点心师傅吴翔升创立，至今已有 120 多年历史，是上海最负盛名的小笼包老字号。其小笼包制作技艺被列入上海市非物质文化遗产名录，代表了上海小笼包的最高水准。
+店名中的“馒头”是上海方言对包子的称呼，这一称谓源自江南地区的传统习惯。南翔小笼以“皮薄、馅大、汁多、味鲜”四大特点闻名遐迩，每一个小笼包都凝聚着匠人的精湛技艺。面皮需要擀制到几乎透明的程度，才能达到“皮薄如纸”的标准；馅料选用上等猪肉，配以秘制调料，再灌入高汤，形成“馅大汁多”的特色；蒸制时间和火候的把控更是关键，既要保证汤汁充盈，又要让面皮不破，这需要多年的经验积累。
+豫园店是南翔馒头店的旗舰店，位于豫园商城内，每天都吸引着大量食客慕名而来。店内分为堂吃区和外带区，堂吃区环境古朴，可以坐下来慢慢品尝；外带区则适合赶时间的游客。无论何时到访，这里总是人声鼎沸，排队等候已成为品尝南翔小笼的“仪式感”之一。
 推荐菜品
-Crab puffs.
-This is a sign from the South Shang Garbage, which is available only during the crab season (September to January of the following year). Every Krabby Pink Cage is made by handsmiths: The skin is made in a state of semi-transparentness, with thin wings that are tenuous; the crab yellow and crab cream of the current gate, which are used in the selection of the pork, are allocated in proportion to the gold, then added to the high tortoise, which melts when steamed, and makes full soup.
-A little bit of crab powder can be seen through the skin of thin paper, and if the yellow crab powder is hidden inside, the soup juice shakes in the bun. The moment when the skin bites out, the fresh crab juice comes out, the fresh smell of crab powder, the thickness of pork, and the sweetness of the soup are perfectly integrated, and a layer of taste occurs in the mouth. Crab butter and the sweetness of Krabspad are woven, and it's so long, it's so hard to stop. This dish perfectly interprets the idea of "frequent food" in South America, and is delicious when it comes to Shanghai at the autumn and winter festival.
-♪ Scrambling, meat casserole ♪
-It's a classic from Nanshang, and it's the foundation of the master's power. It seems simple, but it's the most technical. Presumptuous pig front leg meat, weight ratio 3.7, fine meat elasticity. It's the key to make the pies: join the ginger and paste, add the yellow and the sugar and the sauce, and, above all, the home-made thaw, which is the secret of soup.
-The skin is much more delicate: flour needs to be smooth and smooth, wake-up is just right, and the skin needs to be thinner and thinner. When it's condensed, each cage must have more than 14 wrinkles, and the top entrance must be as delicate as the carp's mouth. When the upper cages evaporate, fire and time control is essential: time is short, skin is not ripe, time is long and soup is lost.
-The small cadavers of fresh meat come out of the cage, thin enough to be able to see light, and the soup is so full that it shakes. After a bite, the skin soft, then the freshness of the soup, and after that the odour of the meat, the three are distinct and integrated. This is the smell of the most authentic little cage in the memory of the old Shanghaiers, simple but most inspiring.
-Taste skills and manners
-"Slowly, slowly, open the window, then suck the juice, and then sweep the last light."
-1. Lightening: small wrinkles on the top of a small cage with chopsticks, lightening and avoiding breaking
-2. Move slowly: move the cages slowly into the spoons and move smoothly to prevent the loss of soup juice
-3. Open the window first: bit a small mouth with teeth on the side of a cage, let the heat out and avoid burning Wounded
-4. Post-sorture: point your small mouth at your lips, suck on the inside and feel the sweetness of the soup.
-5. One light: after sucking out the soup, a little vinegar and ginger-sniffed, a whole cage wrapped in the entrance, fine taste.
-With regard to the ingredients, the shopkeepers provide vinegar and ginger. The vinegar can be obscurous, but it is not appropriate to overdo it so as not to cover up the smell of the cage itself; and the young ginger can go to the fragrance and be the best partner to taste the crab powder cage.
+🦀 蟹粉小笼包（必点，时令推荐）
+这是南翔馒头店的招牌中的招牌，只在蟹季（每年 9 月至次年 1 月）供应。每一个蟹粉小笼包都是手工匠心之作：面皮擀制到半透明状态，薄如蝉翼却韧性十足；馅料选用当季大闸蟹的蟹黄和蟹膏，与精选猪肉按黄金比例调配，再加入高汤冻，蒸制时汤冻融化，形成饱满的汤汁。
+轻轻提起一只蟹粉小笼，透过薄如纸的外皮，可以清晰看到内里金黄色的蟹粉若隐若现，汤汁在包子内轻轻晃动。咬破外皮的瞬间，鲜美的蟹汁瞬间涌出，蟹粉的鲜香、猪肉的醇厚、高汤的鲜甜三者完美融合，在口腔中爆发出层次丰富的味觉体验。蟹黄的油润与蟹膏的鲜甜交织，回味悠长，让人欲罢不能。这道菜品完美诠释了江南美食“不时不食”的理念，是秋冬季节来上海必尝的时令美味。
+🥟 鲜肉小笼包（经典之选）
+这是南翔小笼的经典款，也是最能体现师傅功力的基础款。看似简单，实则最考验技艺。馅料选用上等猪前腿肉，肥瘦比例 3:7，肉质细腻有弹性。馅料调制是关键：加入姜末去腥提鲜，加入黄酒增香，加入白糖提鲜，加入酱油调色，最重要的是加入自制的肉皮冻，这是汤汁丰盈的秘密。
+面皮的制作更是精细活：面粉需要反复揉搓至光滑细腻，醒面时间恰到好处，擀皮时要做到厚薄均匀、边缘更薄。包制时，每个小笼包要捏出 14 个以上的褶皱，顶部收口处要像鲤鱼嘴一样精致。上笼蒸制时，火候和时间的把控至关重要：时间短了，面皮不熟；时间长了，汤汁流失。
+出笼的鲜肉小笼包晶莹剔透，皮薄到可以透光，汤汁饱满到轻轻一碰就颤动。一口咬下，先是面皮的软糯，随即是汤汁的鲜美，最后是肉馅的醇香，三者层次分明又融为一体。这就是老上海人记忆中最正宗的小笼包味道，简单却最能打动人心。
+🥢 品尝技巧与礼仪
+“轻轻提，慢慢移，先开窗，后吸汁，最后一扫光” - 这是品尝南翔小笼的标准流程：
+1.轻轻提：用筷子轻轻夹住小笼包顶部的褶皱处，力度要轻，避免夹破
+2.慢慢移：将小笼包缓缓移至汤匙中，动作要稳，防止汤汁流失
+3.先开窗：用牙齿在小笼包侧面轻轻咬开一个小口，让热气散出，避免烫伤
+4.后吸汁：将小口对准嘴唇，轻轻吸食内部的鲜美汤汁，感受汤汁的鲜甜
+5.一扫光：吸完汤汁后，蘸少许香醋和姜丝，将整个小笼包送入口中，细细品味
+配料方面，店家会提供香醋和嫩姜丝。香醋可以解腻提鲜，但不宜多蘸，以免掩盖小笼包本身的鲜味；嫩姜丝可以去腥增香，是品尝蟹粉小笼的最佳搭档。
 
 🚇 14:00-14:30 | 交通：前往外滩
-• Place of departure: the garden
-Walking route: 15 minutes to the outside beach, or on subway 10, ready garden station, station 1, Nanjing East Road Station
-Total time-consuming: approximately 15-20 minutes
+🟢 出发地点：豫园
+步行路线：步行 15 分钟至外滩，或乘坐地铁 10 号线豫园站 → 1 站 → 南京东路站
+⏱️ 总耗时：约 15-20 分钟
 
 📍 14:30-18:00 | 外滩万国建筑博览
-地址：Road to central Shandong, Huangpur District, Shanghai (Jan Andong Road to Suzhou River sector)
-开放时间：Open all day.
-门票：Free.
-建议游览时间：2-3 hours
+地址：上海市黄浦区中山东一路（延安东路至苏州河段）
+开放时间：全天开放
+门票：免费
+建议游览时间：2-3 小时
 景点介绍
-The outer beach, situated on the side of the Huangpo River, is about 1.5 kilometres long, rising south on East Yanan Road, and the White Bridge north to the Suzhou River, is the most iconic urban landscape in Shanghai, which has been hailed as the “Turkish Architectural Fair”. On the west side there are 52 different historical buildings, including the Gothic, Roman, Barlock, Renaissance and West China, built from the end of the 19th to the beginning of the 20th century, which were a concentration of the old Shanghai financial and foreign trade institutions.
-The history of the outer beach dates back to the port of Shanghai in 1843, when it was still a wasteland. With the establishment of the leasing community, foreign banks, comptoirs, general associations, etc. have built buildings here, forming today's nation-wide complex. These buildings are not only a testament to the recent history of Shanghai, but also to the convergence of Western and Central cultures, and witness the luxurious turn of Shanghai from small fishing villages to “Paris in the East”. In 1996, the Outer Beach was designated by the State Council as the national focal point for the protection of cultural objects, making it an important historical and representative building in China in recent times.
-On the east side is the wide river of Huangura, where cargo ships and cruise ships travel, across the coast is a modern land-speech financial zone, where skyscrapers, such as Myeongju Oriental, Kimmong House and Shanghai Center, rise up, separate from the historical complexes on the beach, creating a unique landscape of “one river, two banks, one hundred years of dialogue”, which gives a perfect interpretation of the urban spirit of Shanghai's “Hainakawa, one inclusive”.
+外滩位于黄浦江畔，全长约 1.5 公里，南起延安东路，北至苏州河上的外白渡桥，是上海最具标志性的城市景观，被誉为“万国建筑博览群”。西侧矗立着 52 幢风格迥异的历史建筑，包括哥特式、罗马式、巴洛克式、文艺复兴式、中西合璧式等多种建筑风格，这些建筑建于 19 世纪末至 20 世纪初，曾是旧上海金融、外贸机构的集中地。
+外滩的历史可以追溯到 1843 年上海开埠，当时这里还是一片荒滩。随着租界的建立，外国银行、商行、总会等机构纷纷在此兴建大楼，逐渐形成了今天的万国建筑群。这些建筑不仅是上海近代史的见证，更是中西文化交融的结晶，见证了上海从小渔村到“东方巴黎”的华丽转身。1996 年，外滩被国务院列为全国重点文物保护单位，成为中国近现代重要史迹及代表性建筑。
+东侧是宽阔的黄浦江，江面上货轮、游船往来穿梭，对岸是现代化的陆家嘴金融区，东方明珠、金茂大厦、上海中心等摩天大楼拔地而起，与外滩的历史建筑群隔江相望，形成了“一江两岸、百年对话”的独特景观，完美诠释了上海“海纳百川、兼容并蓄”的城市精神。
 建筑亮点
-Exterior Beach No. 3 (formerly British Consulate, Hwangpur)
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-It was built in 1916 as a typical British Renaissance Building. The outside of the building is constructed using granite, which is so ambitious and elegant. The structure is based on a classical three-part structure with a rough stone wall on the ground floor and a symbol of stability; the middle layer is the main layer, with the Ionii pillar and the elegance and valor; and the top layer is the lid, with fine decoration. This building was one of the most important British diplomatic agencies in the Far East and witnessed major historical events since Shanghai. Today, the transformation into a high-end restaurant, with interior improvements that preserve the historical architectural landscape while incorporating modern design elements, where meals are eaten, can feel the perfect mix of history and modernity.
-18th Exterior Beach (formerly McGill Bank, now AIA Building)
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-Established in 1923, it is one of the most decorative buildings in the outer beach complex. The 7th floor of the building, with the Greek Ionique pillar on the outside, has a Barlock dome on the top, which is beautifully decorated. The interior of the building is more luxuriant: Italian imported marble is used in the lobby, the ceiling is painted with fine murals, the chandelier is made of Czech crystals, and the stairwell is sculpted with brass, each detail of the year. The building, which was the headquarters of the British Bank of McGill, was one of the most luxury banking buildings in Upper Beach at that time. Today, there are many international top restaurants, bars and fine shops, one of the most fashionable landmarks on the outer beaches.
-• Peace Hotel (formerly Shasun Building)
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-Established in 1929, the most famous landmark building on the outer beach, known for its landmark green copper roof. The building was 77 metres tall, 12 floors in total, one of the highest buildings in Shanghai at the time. The architectural style combines the Gothic and decorative art styles, with granite and Tarzan bricks on the outside, with a high level of energy. The building was built with the investment of Victor Shason, a wealthy British Jewish businessman, and is therefore known as the “Shason Building”.
-The Peace Hotel is not only a masterpiece of architectural art, but also a symbol of Shanghai culture. In the 1930s, this was one of the most luxurious hotels in the Far East, hosting countless international figures. The jazz bar in the hotel, which is one of the sources of jazz in Shanghai, still has the tradition of playing jazz every night, as if it were bringing people back to the golden age of old Shanghai. The hotel also maintains a number of subject suites, which are renovated in different national styles and serve as a window for understanding the luxury of old Shanghai.
-• Customs building (Kang Customs)
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-Built in 1927, one of the most visible buildings in the outer beach complex. The 8th floor of the building, the top of which is a 13.7-metre-high bell tower, with a 5.4-metre diameter on all sides, is one of the largest bells in Asia. This bell, which is made by the United Kingdom, rings every 15 minutes, and at the end of the hour plays the Orient Red song, and the bells are so bright that they can be passed a few kilometres away that they become the "sound landmark" on the outer beach.
-The customs building follows a neo-classical construction style, with granite on its outer surface and a major gas. The interior of the building is also beautifully decorated, and the lobby is made with marbles and the ceiling is painted with fine sculptures. The building, which used to be the headquarters of China's customs, was responsible for the collection of customs duties in Shanghai and throughout the country and occupied an important position in the recent economic history of China. Today, the customs building is still in use and is one of the few buildings in the outer beach complex that remains functional.
+🏛️ 外滩 3 号（原英国领事馆，现黄浦会）
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+建于 1916 年，是一座典型的英国文艺复兴式建筑。大楼外立面采用花岗岩砌筑，气势恢宏，庄重典雅。建筑立面采用古典三段式构图，底层为粗石墙面，象征稳固；中间层为主体，设有爱奥尼柱式，优雅华贵；顶层为檐部，装饰精美。这座建筑曾是英国在远东最重要的外交机构之一，见证了上海开埠以来的重大历史事件。如今改建为高端餐饮场所，内部装修保留了历史建筑的原貌，同时融入现代设计元素，在这里用餐，可以感受到历史与现代的完美交融。
+🏢 外滩 18 号（原麦加利银行，现 AIA 大楼）
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+建于 1923 年，是外滩建筑群中最具装饰艺术风格的建筑之一。大楼高 7 层，外立面采用希腊爱奥尼克柱式，顶部设有巴洛克式穹顶，装饰华丽精美。建筑内部更是奢华至极：大堂采用意大利进口大理石铺设，天花板绘有精美壁画，吊灯由捷克水晶制成，楼梯扶手采用黄铜雕花，每一处细节都彰显着当年的辉煌。这座建筑曾是英资麦加利银行的总部，是当时上海滩最豪华的银行大楼之一。如今这里汇集了多家国际顶级餐厅、酒吧和精品店，成为外滩最时尚的地标之一。
+🏨 和平饭店（原沙逊大厦）
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+建于 1929 年，是外滩最著名的地标建筑，以其标志性的绿色铜顶而闻名。大楼高 77 米，共 12 层，是当时上海最高的建筑之一。建筑风格融合了哥特式和装饰艺术风格，外立面采用花岗岩和泰山面砖，气势磅礴。这座大楼由英籍犹太富商维克多·沙逊投资建造，因此又称“沙逊大厦”。
+和平饭店不仅是建筑艺术的杰作，更是上海文化的象征。20 世纪 30 年代，这里是远东最奢华的酒店之一，接待过无数国际名流。饭店内的爵士酒吧是上海爵士乐的发源地之一，至今仍保持着每晚演奏爵士乐的传统，那悠扬的乐声仿佛将人带回到旧上海的黄金时代。饭店内还保留着多个主题套房，分别以不同国家风格装修，是了解老上海奢华生活的窗口。
+🕰️ 海关大楼（江海关）
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+建于 1927 年，是外滩建筑群中最具辨识度的建筑之一。大楼高 8 层，顶部矗立着一座高达 13.7 米的钟楼，钟楼四面装有直径 5.4 米的大钟，是亚洲最大的钟之一。这座钟由英国制造，每隔 15 分钟鏗鸣一次，整点时会奏响《东方红》乐曲，钟声洪亮悠扬，可传至数公里之外，成为外滩的“声音地标”。
+海关大楼采用新古典主义建筑风格，外立面用花岗岩砌筑，庄重大气。大楼内部装饰同样精美，大堂采用大理石铺设，天花板绘有精美浮雕。这座建筑曾是中国海关的总部，掌管着上海乃至全国的关税征收，在中国近代经济史上占有重要地位。如今，海关大楼依然在使用中，是外滩建筑群中少数仍保持原有功能的建筑之一。
 最佳拍照点
-♪ Outside beach sighting platform ♪
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-This is the best location for viewing and filming the outer beach complex. The platform, which extends along the West Bank of the Huangpur River, has a wide-ranging vision and allows 52 historic buildings to be looked at. During the day, the sun is spilled on the surface of the building, the quality of the stone and the details of the engraving are clearly visible; at night, the sun will dye the building to gold and be particularly beautiful; and at night, the buildings will be luminous with the modern architecture of land and land across the shore, which constitutes a classic picture of the “one river, two banks, one hundred years of dialogue”. It is recommended to carry a wide-angle lens to capture a more complete view of the complex.
-The white bridge is north.
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-The White Bridge, a landmark bridge in Shanghai, was built in 1907 and the first steel-wide bridge in China. On the north side of the bridge, it is possible to photograph both the White Cross, the outer beach complex and the land mouth antenna, which is the perfect place for the “old Shanghai” and “new Shanghai”. In the morning, the mist covered the river, and when the white bridge appeared in the morning light, it was as painted in ink; and at night, the sun fell west, the bridge was dyed in gold, and the mirror was shining on the river, and it was a beautiful harvest.
-Chen Yi Square
-Photo by https://upload.wikimedia.org/wikipedia/commons/e/e5/A picture from China very day 101.jpg
-In the middle of the beach, there was a copper statue of Field Marshal Chen at the center of the square. This is the central location of the outer beach, with an excellent view of the east, overlooking the Yellow River and the Luk family, and looking west at the outer beach complex. The square is slightly higher and is the ideal location for filming the exterior landscape. In the evenings, the plaza lights shined, and the lights of the surrounding buildings shone with each other, creating a romantic atmosphere, a popular place for dating couples and for tourists to play cards.
+📸 外滩观光平台（中山东一路沿线）
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+这是观赏和拍摄外滩建筑群的最佳位置。平台沿黄浦江西岸延伸，视野开阔，可以将 52 幢历史建筑尽收眼底。白天，阳光洒在建筑立面上，石材的质感和雕刻的细节清晰可见；傍晚时分，夕阳将建筑染成金色，格外壮美；夜晚，建筑群灯光璀璨，与对岸陆家嘴的现代建筑交相辉映，构成“一江两岸、百年对话”的经典画面。建议携带广角镜头，可以拍摄到更完整的建筑群全景。
+🌉 外白渡桥北侧
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+外白渡桥是上海的标志性桥梁，建于 1907 年，是中国第一座全钢结构铆接桥梁。站在桥的北侧，可以同时拍摄到外白渡桥、外滩建筑群和陆家嘴天际线，是“老上海”与“新上海”同框的绝佳位置。清晨时分，薄雾笼罩江面，外白渡桥在晨光中若隐若现，如同水墨画一般；黄昏时分，夕阳西下，桥身被染成金色，倒影在江面上波光粼粼，美不胜收。
+🗿 陈毅广场
+图片：https://upload.wikimedia.org/wikipedia/commons/e/e5/A_picture_from_China_every_day_101.jpg
+位于外滩中段，广场中央矗立着陈毅元帅的铜像。这里是外滩的中心位置，视野极佳，向东可以俯瞰黄浦江和陆家嘴，向西可以仰望外滩建筑群。广场地势略高，是拍摄外滩全景的理想位置。夜晚时分，广场灯光亮起，与周围建筑的灯光交相辉映，营造出浪漫的氛围，是情侣约会和游客打卡的热门地点。
 
-Dinner: Yellowpool
-Cafeteria name: Huangpur
-地址：Shanghai City, Mid-Shot East.
-人均消费：Three hundred dollars.
-Observe:
-Queuing: requiring reservations
-Tel. 021-63298888
+🍽️ 18:00-19:15 | 晚餐：黄浦会
+餐厅名称：黄浦会
+地址：上海市黄浦区中山东一路 3 号外滩 3 号
+人均消费：300 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：需预订
+📞 联系电话：021-63298888
 餐厅背景
-Huangura will be located in the historic building No. 3 on the outer beach, which was originally built by the British Consulate in 1916 and is one of the most historic buildings in the outer beach complex. The restaurant perfects the essence of the traditional cuisine with the seafood, creating a unique high-end cuisine experience.
-The restaurant has an excellent view of the river, and outside the window is the haze of the Huang Po River and the land mouth line across the coast. This is a place where you can taste the cuisine while enjoying the night view on both sides of the river and feel the unique charm of Shanghai's “one river and two banks”. The interior renovation of the restaurant combines the classical hymn of historical architecture with the aesthetics of modern design, preserving historical elements such as arches, marble pillars and modern art devices and light designs, and creating an elegant and fashionable food environment.
-Huangpo's chefs team is from Guangdong and specializes in traditional cuisine cooking, while at the same time being innovative, combining local foods with cuisine techniques and creating creative foods that preserve the essence of cuisine and have a seafood character. The restaurant is selected and seafood comes by air from the place of production on a daily basis to ensure that it is fresh; the roast is baked on the spot by experienced teachers to ensure taste; and the snacks are made handmade and delicious by tasting landlords.
+黄浦会位于外滩 3 号历史建筑内，这座建筑原为英国领事馆，建于 1916 年，是外滩建筑群中最具历史价值的建筑之一。餐厅将传统粤菜的精髓与海派风情完美结合，打造出独具特色的高端粤菜餐饮体验。
+餐厅拥有绝佳的江景视野，落地窗外就是波光粼粼的黄浦江和对岸璀璨的陆家嘴天际线。在这里用餐，可以一边品尝精致粤菜，一边欣赏黄浦江两岸的璀璨夜景，感受上海“一江两岸”的独特魅力。餐厅内部装修融合了历史建筑的古典韵味与现代设计的简约美学，既保留了建筑原有的拱形窗、大理石柱等历史元素，又注入了当代艺术装置和灯光设计，营造出优雅而不失时尚的用餐氛围。
+黄浦会的主厨团队来自广东，精通传统粤菜烹饪技法，同时善于创新，将本地食材与粤菜技法相结合，创造出既保留粤菜精髓又具有海派特色的创意菜品。餐厅选料考究，海鲜每日从产地空运而来，确保新鲜；烧腊由经验丰富的师傅现场烤制，保证口感；点心则由点心房师傅手工制作，精致美味。
 推荐菜品
-Cracker.
-It's one of the Huangpo's specialty dishes, and it brings together the three classics of the kamikaze: forks, geese, meat. Each of them is the work of the master's master's mind, and the production process is complex.
-Fork-burning uses the best pork plum, and first a dozen sauces, soy sauces, five-caramels, etc., for 24 hours, so that the meat tastes well. The roast is made using a traditional fork burner, with precise temperature and time control, and a glamorous caramel to the surface, which remains pink inside. When cut open, you can see the flesh texture is clear, it's thin, it bites down, it's sweet, it's soft and juicy, it's salty, it's salty and it's rich.
-Burned geese are chosen to use the black geese, which are strong and thin. Before roasting, the goose needs to be inflated, the skin separated, the secret sauce painted, the hanger baked. The roasted goose skin is red, the oil shines brightly, the skin is as thin as paper, and the sound of a “single” is softly touched; the goose meat is juicy, fat, and fragrances with light fruit and wood. It's sour sauce, sour, sour, sour.
-Meat is a kung fu dish, and the test is master's control of the fire. The skin is to be baked like glass, and the skin is to be crushed; the meat is to be soft and juicy, and the fat part is to melt and the thin part is to chew. This double sense of “fruity” is the highest level of meat.
-Zip, steam seafood.
-The cuisine, which is “frequently food”, is the most plentiful species of seafood in the season, which comes daily by air from the source. Steaming is the best way to cook seafood and the best way to test fresh food.
-Steamed plaster is one of the signs, choosing wild plasters, white fish, fine texture. Only a small amount of ginger and onions will be added to the evaporation, and then boiled peanut oil and tar, stimulating the fresh smell of fish meat. The entrance to the fish is ready to melt, the sweetness of the fish, the absence of any fragrance, and the pure taste of the ocean.
-Time is also an indissoluble option for shrimp, crabs, algae, and each seafood preserves its most real taste, allowing its food to taste the gifts of the sea.
-♪ Tastes ♪
-Huangura's snack room is held by an experienced chef, and each snack is handmade and delicious.
-Shrimp dumplings are the representative of a cylindrical snack, thin as paper, and the clitoris can be seen clearly from inside. Shrimp dumplings are made of noodles (wheat starch) and are evaporated in a semi-transparent form, with soft tastes. The pretense is selected with fresh shrimp, each of which must contain at least three prawns, with a small amount of mackerel to increase the taste. Bite it down, and the shrimp gnaw its teeth, and the sweet and juicy ones, are a choice for the tea.
-Burning is another classic, where pork is packed in thin skins with mushrooms and horseshoes, where golden crab or shrimp seeds appear on the top, and colours are attractive. After steaming, the skin is burned, the pate is fresh, the soup is abundant, and the mouth is full.
+🍖 烧腊拼盘（粤菜经典，必点推荐）
+这是黄浦会的招牌菜之一，集合了粤式烧腊的三大经典：叉烧、烧鹅、烧肉。每一种烧腊都是师傅的匠心之作，制作工艺繁复考究。
+叉烧选用上等猪梅肉，先用蜜汁、酱油、五香粉等十几种调料腌制 24 小时，让肉质充分入味。烤制时采用传统的叉烧炉，温度和时间精确控制，烤至表面呈现诱人的焦糖色，内里依然保持粉嫩。切开后，可以看到肉质纹理清晰，肥瘦相间，一口咬下，外层微焦的蜜汁香甜，内里肉质软嫩多汁，甜中带咸，咸中有香，层次丰富。
+烧鹅选用清远黑鬃鹅，这种鹅肉质紧实，皮薄肉嫩。烤制前需要给鹅身充气，让皮肉分离，再刷上秘制的酱料，挂炉烤制。烤好的烧鹅皮色金红，油光发亮，皮脆如纸，轻轻一碰就发出“咔嚓”的声音；鹅肉鲜嫩多汁，肥而不腻，带着淡淡的果木香气。蘸上特制的酸梅酱，酸甜解腻，更添风味。
+烧肉则是功夫菜中的功夫菜，考验的是师傅对火候的把控。选用五花肉，皮要烤得酥脆如玻璃，一咬即碎；肉要保持软嫩多汁，肥肉部分入口即化，瘦肉部分紧实有嚼劲。这种“皮脆肉嫩”的双重口感，是烧肉的最高境界。
+🦞 清蒸海鲜（时令推荐，鲜味至上）
+粤菜讲究“不时不食”，黄浦会的海鲜都是当季最肥美的品种，每日从产地空运而来。清蒸是最能体现海鲜本味的烹饪方式，也是最考验食材新鲜度的做法。
+清蒸石斑鱼是招牌之一，选用野生石斑，鱼肉雪白细嫩，纹理清晰。蒸制时只加少许姜丝和葱段去腥，蒸好后淋上滚烫的花生油和豉油，激发出鱼肉的鲜香。鱼肉入口即化，鲜甜无比，没有一丝腥味，完全是海洋的纯净味道。
+时令海虾、花蟹、象拔蚌等也是不可错过的选择，每一种海鲜都保留了最本真的鲜味，让食客品尝到大海的馈赠。
+🥟 粤式点心（精致小食，茶点首选）
+黄浦会的点心房由经验丰富的点心师傅掌勺，每一款点心都是手工制作，精致美味。
+虾饺是粤式点心的代表，皮薄如纸，晶莹剔透，可以清晰看到内里粉红色的虾仁。虾饺皮采用澄面（小麦淀粉）制作，蒸熟后呈半透明状，口感软滑。馅料选用新鲜虾仁，每只虾饺至少要包入三只虾仁，配以少许竹笋粒增加口感。咬下去，虾仁爽脆弹牙，鲜甜多汁，是粤式早茶的必点之选。
+烧卖则是另一种经典，猪肉馅配以香菇、马蹄等配料，包裹在薄薄的面皮中，顶部露出金黄色的蟹籽或虾籽，色彩诱人。蒸熟后，烧卖皮软糯，馅料鲜香，汤汁丰盈，一口咬下满口生香。
 
 🚇 19:15-19:30 | 交通：前往十六铺码头
-Location of departure: Outer Beach 3
-Walking route: 10 minutes to the south along the Middle East
-Location of arrival: Pier XVI (501 Middle East)
+🟢 出发地点：外滩 3 号
+👣 步行路线：沿中山东一路向南步行 10 分钟
+🔴 到达地点：十六铺码头（中山东二路 501 号）
 
-1930-21 p.m. Night tour of the Huang Po River
-Location of boarding: 16 docks
-开放时间：10 - 22:00 (adjusted for flight)
-Ticket price: $100-300/person (different according to boat type and package)
-Travel time: 1-2 hours
-最佳游览季节：3-5, 9-11
-Project introduction
-The Huang Po River cruise is a flagship water-seeing project in Shanghai, which has been hailed as “Pura River One” and is one of the best ways to experience Shanghai's “no night city” charm. Huangura River is Shanghai's mother's river, 113 kilometres long, passing through Shanghai City, dividing the city into Pushi and Pudong. The cruise route was carefully designed to provide tourists with a view to the beauty of 100 years of history and modern development in Shanghai over a period of more than an hour.
-Nighttime is the best time for cruise ships. When the night came, at the dawn of Hua Lantern, the two banks of the Yangtze River became the stage of light and shadow. The history of the outer beach is marked by a golden light, which lasts for a hundred years, and the skyscrapers of Luk's mouth, which displays technology and the future with modern LED lights. The coloured lightball of the Orient Myeong Joo scintillation in the night sky, the turrets of the central tower of Shanghai pierced the clouds, and the “bottle opener” configuration of the Global Financial Centre was particularly visible in the light. The cruise ship is moving slowly on the river, with the wind on its side, the lights on both sides of the river shining brightly, and the reflections on the river displaying the unique charm of Shanghai's “No Night City”.
-The cruise ship is equipped with professional lecturers, who speak in Chinese and English about the history and story of the attractions and give tourists a deep understanding of the historical culture of Shanghai while enjoying the beauty. Some luxurious cruise ships also offer catering services, with dinner on board, while at the same time viewing.
-Watch it.
-♪ The world's buildings on the outside ♪
-Looking back on the beach from the river, the perspective is completely different from that of watching the shore. 52 A historic building was painted with a golden light, as was the case with the same flow of historical drawings. The green copper roof of the Peace Hotel is shining under the light, the bell towers of the customs building are high in the clouds, the dome of the HSBC Bank building is golden, and every building is telling the legends of Shanghai port. The light design of the complex was carefully planned to highlight the unique style of each building and to maintain the unity of the whole, with visions like a golden necklace embedded along the Yellow River.
-🏙️ Three sets of Lujia mouths (Oriental Ming-ju, Golden House, Worldwide Financial Centre)
-The viewing from the cruise ship of the skyline is the most striking view. The three landmark buildings are in print and in print, and each of the features echoes each other. The coloured lightballs of the Middle East continue to change colours in the night sky, as do bellows; the golden outer face of the Golden Moot House is glittered under the light, showing eastern aesthetics; and the “bottle openers” of the Global Financial Centre are unique in shape, with the top viewing holes glowing in the night, with a great sense of technology. The light shows of the three buildings have been carefully structured, sometimes synchronized, sometimes twinkling, in tandem with the reflection of the river, and constitute a dynamic picture.
-♪ Nampo Bridge, Yangura Bridge Nightscape ♪
-The cruise ship passes through two landmark bridges on the river. The Nanpo Bridge was established in 1991 as the first bridge in Shanghai to cross the Yellowpool River, with 423 metres in length and 154 metres in height, using a bi-tidal slant-tow bridge structure. At night, the lights of the bridge draw beautiful lines like a rainbow across the river. The Yangpo Bridge was built in 1993 to cross 602 metres, one of the world ' s largest slopes. In the night, the two bridges were like two giant dragons on the side of the river, displaying the power of engineering and urban development in Shanghai.
-It's the skyline on both sides of the river.
-The cruise ship sails on the Yangtze River and can view the city landscape on both sides at 360 degrees. On the Pushi side, in addition to the outer beach complex, there are lights in the popular squares, the Nanjing Road Walk Street, etc., and on the Pushong side, modern buildings in the emerging development areas of the World Bank Park, the front beach area, in addition to the Luk-sau financial area. The entire voyage is like a visual feast that allows tourists to grasp the historical depth of Shanghai in a short period of time with modern energy.
+🌃 19:30-21:00 | 黄浦江游船夜游
+登船地点：十六铺码头
+开放时间：10:00-22:00（根据航班调整）
+票价：100-300 元/人（根据船型和套餐不同）
+游览时间：1-2 小时
+最佳游览季节：3-5 月、9-11 月
+项目介绍
+黄浦江游船是上海标志性的水上观光项目，被誉为“浦江第一游”，也是体验上海“不夜城”魅力的最佳方式之一。黄浦江是上海的母亲河，全长 113 公里，流经上海市区，将城市分为浦西和浦东两部分。游船航线精心设计，串联起外滩万国建筑博览群、陆家嘴摩天大楼群、南浦大桥、杨浦大桥等上海地标，让游客在一个多小时的航程中，饱览上海百年历史与现代发展的精华。
+夜晚时分是乘坐游船的最佳时段。当夜幕降临，华灯初上，黄浦江两岸瞬间变成了光与影的舞台。外滩的历史建筑在金色灯光的映照下，尽显百年沧桑与优雅；陆家嘴的摩天大楼则以现代化的 LED 灯光秀展现着科技与未来。东方明珠的彩色灯球在夜空中闪烁变幻，上海中心的塔尖直刺云霄，环球金融中心的“开瓶器”造型在灯光中格外醒目。游船缓缓行驶在江面上，江风拂面，两岸灯火辉煌，倒影在江面上波光粼粼，展现出上海“不夜城”的独特魅力。
+游船上配有专业的讲解员，用中英文讲解沿途景点的历史和故事，让游客在欣赏美景的同时，深入了解上海的历史文化。部分豪华游船还提供餐饮服务，可以在船上享用晚餐，一边用餐一边赏景，别有一番情调。
+观赏亮点
+🌆 外滩万国建筑群夜景灯光秀
+从江面上回望外滩，视角完全不同于在岸上观赏。52 幢历史建筑在金色灯光的映照下，如同一幅流动的历史画卷徐徐展开。和平饭店的绿色铜顶在灯光下熠熠生辉，海关大楼的钟楼高耸入云，汇丰银行大楼的穹顶金碧辉煌，每一栋建筑都在诉说着上海开埠以来的传奇故事。建筑群的灯光设计经过精心规划，既突出了每栋建筑的独特风格，又保持了整体的和谐统一，远观如同一条金色的项链镶嵌在黄浦江畔。
+🏙️ 陆家嘴三件套（东方明珠、金茂大厦、环球金融中心）
+从游船上观赏陆家嘴天际线，是最震撼的视角。三座标志性建筑呈品字形排列，各具特色又相互呼应。东方明珠的彩色灯球在夜空中不断变换颜色，如同璀璨的明珠；金茂大厦的金色外立面在灯光下流光溢彩，展现着东方美学；环球金融中心的“开瓶器”造型独特，顶部的观光孔在夜晚发出幽蓝的光芒，科技感十足。三座建筑的灯光秀经过精心编排，有时同步变换，有时交替闪烁，配合着江面的倒影，构成一幅动态的光影画卷。
+🌉 南浦大桥、杨浦大桥夜景
+游船航行过程中会经过黄浦江上的两座标志性大桥。南浦大桥建于 1991 年，是上海第一座跨越黄浦江的大桥，主跨 423 米，桥塔高 154 米，采用双塔双索面斜拉桥结构。夜晚时分，大桥的灯光勾勒出优美的线条，如同一道彩虹横跨江面。杨浦大桥建于 1993 年，主跨 602 米，是世界上跨度最大的斜拉桥之一。两座大桥在夜色中如同两条巨龙横卧江面，气势磅礴，展现着上海的工程技术实力和城市发展成就。
+✨ 浦江两岸璀璨天际线
+游船航行在黄浦江上，可以 360 度全方位欣赏两岸的城市景观。浦西一侧，除了外滩建筑群，还可以看到人民广场、南京路步行街等繁华商业区的灯火；浦东一侧，除了陆家嘴金融区，还可以看到世博园区、前滩地区等新兴开发区的现代建筑。整个航程如同一场视觉盛宴，让游客在短时间内领略上海的历史底蕴与现代活力。
 
 🚇 21:00-21:30 | 交通：返回酒店
-• Location of departure: 16 pier
-On foot: 15 minutes. On the subway.
-🚊 Route by: subway 10, station 1 → Nanjing East Road to line 2 → Nanjing East Road Station
-Walk: 8 minutes
-Location of arrival: Hotel Perkinswana (427 Fukushima Road)
-Total time-consuming: about 30 minutes
+🟢 出发地点：十六铺码头
+👣 步行：15 分钟 → 地铁 10 号线豫园站
+🚊 乘坐路线：地铁 10 号线 → 1 站 → 南京东路站换乘 2 号线 → 1 站 → 南京东路站
+👣 步行：8 分钟
+🔴 到达地点：🏨 铂金万澳酒店（福州路 427 号）
+⏱️ 总耗时：约 30 分钟
 
-♪ 21:30 ♪ Get to the hotel and rest
+🏨 21:30 | 抵达酒店休息
 
 📅 Day 2: 水乡古韵·摩登新天地
-Cape Town, Zhu Jiu Jia The door.
-The hotel leaves at 0900.
+朱家角古镇->新天地石库门
+⏰ 09:00 | 酒店出发
 📍 出发地点：🏨 铂金万澳酒店（福州路 427 号）
 
 🚇 09:00-10:30 | 交通：前往朱家角古镇
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-• Route by:
-• Subway Line 2 (to the east of Xue)
-• Terminal: Cape Zhu
-Drop-off location: Cape Ju, walk 10 minutes or take a bus to the entrance to ancient town
-Total time taken: about 1.5 hours | fare: 7 yuan
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：
+•地铁 2 号线（往徐泾东方向）→ 换乘地铁 10 号线 → 换乘地铁 17 号线
+•终点站：朱家角站
+🔴 下车地点：朱家角站，步行 10 分钟或乘坐公交至古镇入口
+⏱️ 总耗时：约 1.5 小时 | 💰 票价：7 元
 
 📍 10:30-13:30 | 朱家角古镇
-地址：Zhu Jiawon, Qing Pu District, Shanghai.
-开放时间：Open 24 hours a day (partial spot 8:30-16:30)
-门票：Free of charge (partial spot combined $60)
-建议游览时间：4-6 hours
-最佳游览季节：3-5, 9-11
+地址：上海市青浦区朱家角镇新风路美周路交界处
+开放时间：全天开放（部分景点 8:30-16:30）
+门票：免费（部分景点联票 60 元）
+建议游览时间：4-6 小时
+最佳游览季节：3-5 月、9-11 月
 景点介绍
-The town of Zhu Jiu Jia Kuo, located in the city of Qingura in Shanghai, is one of the four historic and cultural towns of Shanghai, with a long history of 1,700 years and a reputation for “Venice in Shanghai”. The ancient town was built on the basis of water and the riverways intersected, creating a typical riverine pattern of “small bridges”. In the Mingqing period, Cape Zhu became an important commercial hub in Gangnam due to the development of water transport.
-As many as hundreds of well-maintained Ming buildings in ancient town, the Brick Deva, the Pink Wall Deva, the horse's wall, are at fault, showing the typical style of the construction in Gangnam. The most famous of the 36 ancient bridges, the liberation bridge built during the Millennium Year of Ming Dynasty (1571), is the largest, highest and longest five-cone archer bridge in the Shanghai area, with a length of 70.8 metres, a width of 5.8 metres and a height of 7.4 metres.
-On the Bluestone Road in the Old Town, the two sides are the common people of the White Wall, Deva, with red lanterns on the front of the door and beautiful windows. The boat swayed through the river, and the Queen grunted the soft tune of Wu Nung, and the oars beat the water with a rhythm of “squeaks”, as though she had crossed the water village of Gangnam in the time of return. In the ancient town, numerous historical monuments, such as the temple of the city, the school garden, the Grand Qing Post Office and the Humanities and Art Museum, were preserved, each carrying a heavy historical culture.
+朱家角古镇位于上海市青浦区，是上海四大历史文化名镇之一，拥有 1700 多年悠久历史，素有“上海威尼斯”之美誉。古镇地处淀山湖畔，依水而建，河道纵横交错，形成了“小桥流水人家”的典型江南水乡格局。明清时期，朱家角因水运发达而成为江南重要的商贸集散地，“长街三里，店铺千家”，繁华一时。
+古镇内保存完好的明清建筑多达数百处，青砖黛瓦，粉墙黛瓦，马头墙高低错落，呈现出江南建筑的典型风貌。36 座古桥横跨于河道之上，其中最著名的是建于明代万历年间（1571 年）的放生桥，是上海地区最大、最高、最长的五孔石拱桥，桥长 70.8 米，宽 5.8 米，高 7.4 米，气势恢宏。
+漫步在古镇的青石板路上，两旁是白墙黛瓦的江南民居，门前挂着红灯笼，窗棂雕刻精美。河道中摇橹船缓缓划过，船娘哼着吴侬软语的小调，橹桨拍打水面发出有节奏的“吱呀”声，恍如穿越回明清时代的江南水乡。古镇内保留了城隍庙、课植园、大清邮局、人文艺术馆等众多历史遗迹，每一处都承载着厚重的历史文化。
 游览要点
-♪ Let the bridge go ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%9B1%EE5%AE%B6%E8%A7%E2%E4%E4%D%E5%BF%83%E5%E5%E8C%BA%C2%B7%E6%E9C%B1%E5%AE5%EE6%E6%E6%E7%E7%A9%E9%E9%E9%95%C2%E7%E2%E7%EF%8%EF%F%E4%EF%E6%E6%E8B%E8%D%EF8D%EF%B%89.jpgg7%E1%E1%E1%E1%E1%E1%E1%E2%E2%E2%E9%E9%E9%E9%E9%C2%C2%E2%E7%E7%
-The release bridge is a landmark building in the town of Cape Chu and the largest five-cone archer in the Shanghai area. The length of the bridge is made of granite strips, without a nail, and is entirely dependent on the dice structure and gravity balance between the rocks, reflecting the great skills of ancient craftsmen. The bridge is wide and flat, with stone bars on both sides and fine drawings engraved on the plate.
-The name of the bridge “freedom” is derived from Buddhist philanthropy, where people used to give up fish and pray for merit. Standing on the bridge, you can see the whole of the town overlooking the river, the small boats, the people on both sides of the coast, the smoke, the water. The bridge was flooded, clear and clear, and the walls swam. In the morning, the mist shrouded the bridge as if it were in the morning light, as if it were painted in ink, and in the evening, when the sun was west, the bridge was dyed in gold, and the reflection was in the water in a position that was beautiful. This is also the best photo site in the town, from any angle, and it is possible to find the fragrance of Gangnam.
-🏡 School gardening (Kangnam Garden Forest Precise, Deep Experience)
-Photo: https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%9B1%EE5%AE%B6%E8%A7%E2%E4%E4%D%E5%BF%83%E5%E5%E8C%BA%C2%B7%E6%E9C%B1%E5%AE5%EE6%E6%E6%E7%E7%A9%E9%E9%E9%95%C2%E7%E2%E7%EF%8%EF%F%E4%EF%E6%E6%E8B%E8%D%EF8D%EF%B%89.jpgg7%E1%E1%E1%E1%E1%E1%E1%E2%E2%E2%E9%E9%E9%E9%E9%C2%C2%E2%E7%E7%
-It was built in 1912 by the town's rich businessman, Maven, for 15 years. The title of the park, “Senior planting”, is taken from the meaning of “Sun of Tuon, Shisang,” in the Tri-Language, and is used to study hard.
-The garden layout is divided into three areas, which reflect the traditional concept of “farmer-readers”. There are a large number of buildings, including halls, attics, galleries, bookstores, theatres, etc., with over 200 houses and over 5,000 square metres. The architectural style combines the fine atmosphere of the Gangnam Gardens with that of the northern buildings, with both the elegance of small bridges and the depth of the courtyard.
-The most distinctive feature of the park is the “Roseno Hall”, a building with a Western and Central West complex, which looks like the traditional construction style of Gangnam, but with a Western-style renovation, with coloured tiles on the floor, coloured glass on the wall, and Western Ocean oil on the ceilings, which is a feature of the era of the convergence of Western and Central cultures during the national period. There are also large pools of pottery, fake mountains, ancient trees, four seasons of different landscapes, spring with peach blossoms, summer with flowers, autumn with cinnamon flowers, winter with plum blossoms, which is an excellent place to experience the arts of the Gangnam Gardens.
-The temple of the city.
-Photo: https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%9B1%EE5%AE%B6%E8%A7%E2%E4%E4%D%E5%BF%83%E5%E5%E8C%BA%C2%B7%E6%E9C%B1%E5%AE5%EE6%E6%E6%E7%E7%A9%E9%E9%E9%95%C2%E7%E2%E7%EF%8%EF%F%E4%EF%E6%E6%E8B%E8%D%EF8D%EF%B%89.jpgg7%E1%E1%E1%E1%E1%E1%E1%E2%E2%E2%E9%E9%E9%E9%E9%C2%C2%E2%E7%E7%
-The Zhu Jiu Jiabong Temple was founded in Ming Dynasty and is a famous temple in the Gangnam region. The city is the god of China's civic belief that protects the city's pond. The temple architecture is based on the traditional medium-axis symmetrical layout, followed by the gates of the mountains, the front, the great house, the rear house, the horns of the fjords, the beams of the beams, and the beauty of the ancient buildings.
-The temple is full of fire, year after year. In the house are statues of the city, and they are divinely merciful, and they stand on the sides of a judge and a bull's head and a horse, as though they were living. And every day of the first and the fifteenth and the traditional holidays, the contacts of the believers who come to pray for the good. Monuments such as tablets, tablets and placards of the clear period are also kept in the temple and have high historical and artistic value. Here, the culture of folklore in the Gangnam region is strong.
-North Street.
-Photo: https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%9B1%EE5%AE%B6%E8%A7%E2%E4%E4%D%E5%BF%83%E5%E5%E8C%BA%C2%B7%E6%E9C%B1%E5%AE5%EE6%E6%E6%E7%E7%A9%E9%E9%E9%95%C2%E7%E2%E7%EF%8%EF%F%E4%EF%E6%E6%E8B%E8%D%EF8D%EF%B%89.jpgg7%E1%E1%E1%E1%E1%E1%E1%E2%E2%E2%E9%E9%E9%E9%E9%C2%C2%E2%E7%E7%
-North Street is the main commercial street in the town of Cape Chu, which is about 1 km long and is the old street of the dawn period. The streets were marooned, the bricks and divas, the wooden doors and windows, and the ancient town style that preserved the taste of juice. This is the best place to taste food and buy souvenirs.
-The old-name shop on the street is unique: it has a hundred-year-old pastry shop where traditional pastries are produced; it has a handicraft workshop where traditional skills such as masonry and embroidery are displayed; and it has a tea shop where you can sit down and drink a pot of fresh tea and listen to an evaluation. The smell of a snack stand on the street is so great that all special foods, such as grandmothers, gravy meat, bacon beans, white fish, are available to people who can't see and who can't see.
-♪ Rock and roll ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%9B1%EE5%AE%B6%E8%A7%E2%E4%E4%D%E5%BF%83%E5%E5%E8C%BA%C2%B7%E6%E9C%B1%E5%AE5%EE6%E6%E6%E7%E7%A9%E9%E9%E9%95%C2%E7%E2%E7%EF%8%EF%F%E4%EF%E6%E6%E8B%E8%D%EF8D%EF%B%89.jpgg7%E1%E1%E1%E1%E1%E1%E1%E2%E2%E2%E9%E9%E9%E9%E9%C2%C2%E2%E7%E7%
-Touring the town on a roller coaster is one of the most distinctive ways of experience. The Queen of the Boat, in her traditional dress, was standing on the back of the boat, shaking gently on the water and moving slowly. Sitting on board a ship has a completely different perspective: it is possible to look at the ancient buildings on both sides of the coast from the surface of the water, through a bridge hole of an ancient bridge, and to observe the lives of people on the banks of the river at close range. The Queen of the Boat will explain the road in Gonong, and occasionally hum a few of Gangnam's small tunes, so that people will be completely immersed in the poetic atmosphere of the village. The best way to experience the water culture of Gangnam is to travel about 30 to 40 minutes at a price of about 50 yuan/ship (with 4 to 6 passengers).
+🌉 放生桥（古镇标志，必游之地）
+图片：https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%B1%E5%AE%B6%E8%A7%92%E4%B8%AD%E5%BF%83%E5%8C%BA%C2%B7%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%C2%B7%EF%BC%88%E4%BF%AF%E6%8B%8D%EF%BC%89.jpg
+放生桥是朱家角古镇的标志性建筑，也是上海地区现存最大的五孔石拱桥。桥身全部采用花岗岩石条砌筑，没有使用一颗铁钉，完全依靠石材之间的榫卯结构和重力平衡，体现了古代工匠的高超技艺。桥面宽阔平坦，两侧设有石栏杆，栏板上雕刻着精美的图案。
+桥名“放生”源于佛教的慈悲理念，旧时人们常在此放生鱼鳖，祈求功德。站在桥上，可以俯瞰古镇全景：河道蜿蜒，小船穿梭，两岸民居鳞次栉比，炊烟袅袅，一派水乡风情。桥下水流湍急，清澈见底，锦鲤成群游弋。清晨时分，薄雾笼罩，放生桥在晨光中若隐若现，如同水墨画一般；傍晚时分，夕阳西下，桥身被染成金色，倒影在水中摇曳生姿，美不胜收。这里也是古镇最佳的拍照点，无论从哪个角度取景，都能拍出江南水乡的韵味。
+🏡 课植园（江南园林精品，深度体验）
+图片：https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%B1%E5%AE%B6%E8%A7%92%E4%B8%AD%E5%BF%83%E5%8C%BA%C2%B7%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%C2%B7%EF%BC%88%E4%BF%AF%E6%8B%8D%EF%BC%89.jpg
+课植园是朱家角古镇内最大的庄园式园林建筑，占地 96 亩，建于 1912 年，由镇上富商马文卿历时 15 年建造而成。园名“课植”取自《三国志》中“课农桑，植桑柘”之意，寓意勤耕苦读。
+园林布局分为课读、耕植、颐养三个区域，体现了“耕读传家”的传统理念。园内建筑众多，包括厅堂、楼阁、廊坊、书房、戏台等，共有房屋 200 余间，建筑面积 5000 多平方米。建筑风格融合了江南园林的精致与北方建筑的大气，既有小桥流水的雅致，又有庭院深深的气派。
+园内最具特色的是“逸野堂”，这是一座中西合璧的建筑，外观是江南传统建筑风格，内部却采用了西式装修，地板铺设彩色瓷砖，墙面镶嵌彩色玻璃，天花板绘有西洋油画，展现了民国时期中西文化交融的时代特征。园内还有大片的荷花池、假山、古树，四季景色各异，春有桃花，夏有荷花，秋有桂花，冬有梅花，是体验江南园林艺术的绝佳之地。
+⛩️ 城隍庙（香火鼎盛，祈福圣地）
+图片：https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%B1%E5%AE%B6%E8%A7%92%E4%B8%AD%E5%BF%83%E5%8C%BA%C2%B7%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%C2%B7%EF%BC%88%E4%BF%AF%E6%8B%8D%EF%BC%89.jpg
+朱家角城隍庙始建于明代，是江南地区著名的道教庙宇。城隍是中国民间信仰中守护城池的神灵，掌管一方平安。庙宇建筑采用传统的中轴对称布局，依次为山门、前殿、大殿、后殿，飞檐翘角，雕梁画栋，尽显古建筑之美。
+庙内香火鼎盛，终年不断。大殿内供奉着城隍爷塑像，神态威严慈祥，两旁站立着判官、牛头马面等神将，栩栩如生。每逢初一、十五和传统节日，前来祈福的信众络绎不绝。庙内还保存着明清时期的石碑、匾额、楹联等文物，具有较高的历史和艺术价值。在这里，可以感受到江南地区浓厚的民俗文化氛围。
+🛍️ 北大街（古镇主街，美食天堂）
+图片：https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%B1%E5%AE%B6%E8%A7%92%E4%B8%AD%E5%BF%83%E5%8C%BA%C2%B7%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%C2%B7%EF%BC%88%E4%BF%AF%E6%8B%8D%EF%BC%89.jpg
+北大街是朱家角古镇的主要商业街，全长约 1 公里，是明清时期的老街。街道两旁店铺林立，青砖黛瓦，木门木窗，保留着原汁原味的古镇风貌。这里汇集了各种江南特色小吃、手工艺品、特产商店，是品尝美食和购买纪念品的最佳去处。
+街上的老字号店铺各具特色：有百年历史的糕点铺，现场制作各种传统糕点；有手工艺作坊，展示竹编、刺绣等传统技艺；有茶馆酒肆，可以坐下来喝一壶清茶，听一段评弹。街边小吃摊位香气四溢，阿婆粽、扎肉、熏青豆、白水鱼等特色美食应有尽有，让人目不暇接，食指大动。
+🚣 摇橹船（水上视角，别样体验）
+图片：https://upload.wikimedia.org/wikipedia/commons/7/70/%E6%9C%B1%E5%AE%B6%E8%A7%92%E4%B8%AD%E5%BF%83%E5%8C%BA%C2%B7%E6%9C%B1%E5%AE%B6%E8%A7%92%E9%95%87%C2%B7%EF%BC%88%E4%BF%AF%E6%8B%8D%EF%BC%89.jpg
+乘坐摇橹船游览古镇，是最具江南特色的体验方式。船娘身着传统服饰，站在船尾摇橹，船身在水面上轻轻摇曳，缓缓前行。坐在船上，视角完全不同：可以从水面上仰望两岸的古建筑，穿过一座座古桥的桥洞，近距离观察河岸边的民居生活。船娘会用吴侬软语讲解沿途景点，偶尔还会哼唱几句江南小调，让人完全沉浸在水乡的诗意氛围中。摇橹船航程约 30-40 分钟，价格约 50 元/船（可乘坐 4-6 人），是体验江南水乡文化的最佳方式。
 
 🍜 13:30-15:00 | 午餐：古镇特色餐厅
-Advertising: The specialty restaurant in the town of Cape Chou
-人均消费：$60-80
-Specials
-♪ Grandma ♪
-The grandmother of the Zhu family is the most representative traditional snack of the town of ancient times, which was made by the local grandmothers, by hand, and inherited from them hundreds of years of production. The stings are selected with high-quality rice, which is immersed in a few hours and dried up with a fine choice of material. It is made of five flowers, salty yolk, mushrooms and shrimp, and it is sour, sour, sour, sour and fresh, and rich in layers; and it is made of red bean sand and date mud, sweet and not sour.
-The leaf chooses fresh leaf, fresh fragrance. When they were condensed, the grandmothers were skilled enough to wrap the rice and the pie in three or two pieces, so that they could cook the pot for hours, until the rice was completely soft and tasted. And the sprouts of the platinum, and the sweet fragrance of the porcelain lobes, and the fragrance of the platinum, and the platinum of the porcelain, and the porridge of the porcelain, and the sweetness of the porcelain, are full of porcelain, and the fragrance of the porcelain, and the sweetness of the ointment of the porcelain, and the sweetness of the porcelain, and the sweetness of the porcelain, and the sweetness of the porcelain, and the sweetness of the porcelain, and the sweetness of the porcelain, and the sweetness of the porcelain, and the sweetness of the sweetness of the porcelain, and the sweetness of the sweetness of the porcelain, and the sweetness of the porcelain, are in their mouth. This is the most fragrance of Gangnam, carrying the wisdom of life and the food culture of the people living in water.
-♪ Taste meat ♪
-Meat is a traditional dish in the Gangnam region, especially in the Zhu family. The name of the dish is derived from the method of making it, which binds the red-burned broccoli with a leaf or a leaf and then steams it up. The advantage of doing so is that the meat fully absorbs the fragrance of the leaves, while maintaining the softness of the meat and the thickness of the soup.
-The selections are very detailed and must be velvet, thin and proportional. The meat is cut into squares, which are first made of sauce, butter, glazed sugar, centipede, cinnamon, etc., and then boiled into soft red. The handling of the fire during a red burn is critical, with a small fire to slow down the stew so that the meat fully absorbs the scent of the sauce while maintaining the shape integrity. The burning flesh is red, the oil is bright, it is wrapped in leaves and then evaporated, and the fragrance of the leaves penetrates the flesh, adding to it.
-Open the leaves and come with a fragrance of fragrance and leaf. The Q-balls, the entrances to the fat part, the thin parts are soft, the soup is thick, the cuddly cuddly sauce is typical of the Gangnam style. It's fat and salty. It's the hard food that is necessary for the festival. It's also the smell of the family's memory.
-A white fish.
-White-water fish, a specialty of a starling lake, is known as the "sniffy-sniffy-snack" and is famous for its fine meaty snow. The fish is grown in clear waters of the Dynamite Lake and eats on small fish shrimps, which are particularly fresh, free from mud, and one of the most popular freshwater fish in the Gangnam region.
-The white fish practice in Cape Zhu maintains its original taste, most commonly in the form of fumigation and red burning. The evaporating white fish will be sprouted only with ginger and onions, and when evaporated, they will be soaked with hot oil and sauce, the fish will be white as white, the meat will be so tender as tofu, and they will spread out in one piece, the entrance will be ready, the sweetness of the lake will be perfect. Red-hot white fish are added to sauce, butter, ice cream, etc., and when they are cooked, the meat absorbs the smell of sauce, the colour is red and sweet, so don't taste like it.
-♪ Smoky beans ♪
-The fumigated beans are traditional snacks in the Zhu family and one of the most popular drinks in the Gangnam region. Locally grown soybeans are selected and made of multiple processes such as selection, cleaning, cooking and fumigation. The soybeans are boiled to half-cooked and then placed in a fumigator, made of natural materials such as tea, rice shells and orange peels, so that the soybeans absorb the fumes while maintaining the fracking capacity of the beans.
-The smoked green beans are dark brown, the surface is wrinkled, and a unique smell of smoke is emitted. It tastes soft, soft inside, salty, chewing. Such snacks can be used as snacks or beverages, accompanied by a glass of yellow wine or beer, as part of the leisure life of the Gangnam people. The fumigated beans can also be brought home as a handyman's gift, which can be kept in vacuum packs for months, so that relatives and friends can taste the specialty of Gangnam Water Village.
+推荐：朱家角古镇内特色餐厅
+人均消费：60-80 元
+特色菜品
+🍚 阿婆粽（古镇特色，传统风味）
+朱家角的阿婆粽是古镇最具代表性的传统小吃，由当地老阿婆们手工包制，传承了数百年的制作工艺。粽子选用优质糯米，浸泡数小时后沥干，配以精选的馅料。咸味粽以五花肉、咸蛋黄、香菇、虾米为馅，肉质酥烂，蛋黄沙软，香菇鲜美，层次丰富；甜味粽则以红豆沙、枣泥为馅，甜而不腻，糯而不粘。
+粽叶选用新鲜的箬叶，清香扑鼻。包制时，阿婆们手法娴熟，三两下就能将糯米和馅料包裹得严严实实，扎紧后下锅煮制数小时，直到糯米完全软糯，馅料入味。出锅的粽子散发着箬叶的清香和糯米的甜香，剥开粽叶，糯米晶莹剔透，馅料饱满，一口咬下，糯米的软糯、肉的酥香、蛋黄的沙润在口中交融，满足感油然而生。这是最地道的江南味道，承载着水乡人民的生活智慧和饮食文化。
+🥩 扎肉（传统江南菜，家的味道）
+扎肉是江南地区的传统名菜，朱家角的扎肉尤为出名。这道菜的名字来源于制作方法：将红烧好的五花肉用粽叶或荷叶包裹扎紧，再上笼蒸制。这样做的好处是让肉充分吸收叶子的清香，同时保持肉质的软糯和汤汁的浓郁。
+选料十分讲究，必须是带皮的五花肉，肥瘦相间，比例恰当。肉块切成方形，先用酱油、黄酒、冰糖、八角、桂皮等调料腌制入味，再下锅红烧至软烂。红烧时火候的把控是关键，要用小火慢炖，让肉质充分吸收调料的香味，同时保持形状完整。烧好的肉色泽红亮，油光发亮，用粽叶包裹后再蒸制，粽叶的清香渗入肉中，去腻增香。
+打开粽叶，一股混合着肉香和叶香的浓郁气息扑面而来。肉皮软糯 Q 弹，肥肉部分入口即化，瘦肉部分酥软不柴，汤汁浓稠，浓油赤酱的典型江南风味。这道菜肥而不腻，甜中带咸，是江南人家逢年过节必备的硬菜，也是游子记忆中家的味道。
+🐟 白水鱼（淀山湖特产，鲜嫩至极）
+白水鱼是淀山湖的特产，学名“翘嘴红鲌”，因其肉质雪白细嫩而得名。这种鱼生长在淀山湖清澈的水域中，以小鱼小虾为食，肉质特别鲜美，没有泥腥味，是江南地区最受欢迎的淡水鱼之一。
+朱家角的白水鱼做法讲究保持原味，最常见的是清蒸和红烧两种。清蒸白水鱼只加姜丝和葱段去腥，蒸好后淋上热油和酱油，鱼肉雪白如玉，肉质细嫩如豆腐，轻轻一夹就散开，入口即化，鲜甜无比，完全是湖鲜的纯净味道。红烧白水鱼则加入酱油、黄酒、冰糖等调料，烧制后鱼肉吸收了酱汁的香味，色泽红亮，咸甜适中，别有一番风味。
+🫘 熏青豆（下酒小菜，越嚼越香）
+熏青豆是朱家角的传统小吃，也是江南地区最受欢迎的下酒菜之一。选用当地种植的青豆，经过挑选、清洗、煮制、熏制等多道工序制作而成。青豆先煮至半熟，然后放入熏炉中，用茶叶、稻壳、橘皮等天然材料熏制，让青豆吸收烟熏的香气，同时保持豆子的脆度。
+熏好的青豆呈深褐色，表面微微起皱，散发着独特的烟熏香气。吃起来外壳酥脆，内里软糯，咸香适口，越嚼越香。这种小吃既可以当零食，也可以当下酒菜，配上一杯黄酒或啤酒，边吃边聊，是江南人休闲生活的一部分。熏青豆还可以作为伴手礼带回家，真空包装后可保存数月，让亲朋好友也能品尝到江南水乡的特色美味。
 
 🚇 15:00-17:30 | 交通：返回市区前往新天地
-Place of entry: Cape Ju
-🚊 Route: metro 17, metro 10, New Heaven Station
-Out of the car: New Heaven Station, on foot, 3 minutes to New Heaven
-Total time taken: about 1.5 hours
+🟢 上车地点：朱家角站
+🚊 乘坐路线：地铁 17 号线 → 换乘地铁 10 号线 → 新天地站
+🔴 下车地点：新天地站，步行 3 分钟至新天地
+⏱️ 总耗时：约 1.5 小时
 
 📍 17:30-19:00 | 新天地石库门风情
-地址：Wong Po District, Shanghai. 181.
-开放时间：Open all day.
-门票：Free.
-建议游览时间：2-3 hours
-Best tour time: better night
+地址：上海市黄浦区太仓路 181 弄
+开放时间：全天开放
+门票：免费
+建议游览时间：2-3 小时
+最佳游览时间：夜晚更佳
 景点介绍
-Building on the unique stone warehouse gates of the New World and above, which have resulted in a fashionable walking block that combines catering, commerce, entertainment and culture, is a successful example of urban renewal in Shanghai. The project, which was developed by the Hong Kong Ryan Group and officially opened in 2001, pioneered “protective development” by preserving the looks of traditional stone storage doors, while internalizing modern elements as one of the most distinctive urban tourist attractions in Shanghai.
-The stone gate building is a unique form of residential residence in Shanghai and originated in the middle of the nineteenth century and is the product of the convergence of Western and Central cultures. The “shirk door” is named after its landmark door: it is made of stone or stone, with a thick wooden door, with a fine brick or stone engraved on the door, and the usual pattern is the traditional sanctuaries such as “Fukuo succulence”, “grately happy”. The architecture has integrated the natural wells and compartments of the traditional inhabitants of Gangnam, and has absorbed the appearance and structure of Western housing complexes, creating a unique “central West West” style.
-The Stonegate complex was once the most important form of residence in Shanghai, where it occupied more than 60 per cent of the housing stock in downtown Shanghai. It contains the collective memory of generations of Shanghaiers: a narrow shop, where the neighbours watch each other; a well where children play and play; and in front of the storehouse where the residents put out a small bench to talk. This “72 Houses of Tenants” lifestyle has created a unique sea culture and neighbourhood relationship.
-The retrofitting of the new heavens and earth has preserved the appearance and spatial shape of the stone-gate buildings, with brick walls, paint doors, stone-storey doors, sculptor windows preserved in their original tastes, but has been modernized and embedded in international brand-made restaurants, bars, fine stores and art galleries. In the daytime, this is a fashionable shopping and recreation place; nightfalls, bright lights, bright lights in bars, restaurants, fine store shops, open-air seats full of wine and chatting people, live music, and the enchanting vibe of the rising sea.
+新天地以上海独特的石库门建筑为基础，改造成集餐饮、商业、娱乐、文化于一体的时尚休闲步行街区，是上海城市更新的成功典范。这个项目由香港瑞安集团开发，于 2001 年正式开业，开创了“保护性开发”的先河，将传统石库门里弄的外观完整保留，内部则注入现代元素，成为上海最具特色的都市旅游景点之一。
+石库门建筑是上海特有的民居形式，产生于 19 世纪中叶，是中西文化碰撞融合的产物。“石库门”得名于其标志性的门头：采用石条或石块砌成的门框，门扇为厚重的乌漆木门，门楣上雕刻着精美的砖雕或石雕，常见的图案有“福禄寿喜”、“吉祥如意”等传统吉祥纹样。建筑整体融合了江南传统民居的天井、厢房布局，又吸收了西方联排住宅的外观和结构，形成了独特的“中西合璧”风格。
+石库门建筑群曾是上海最主要的居住形式，鼎盛时期占据了上海市区住宅的 60% 以上。这里承载着几代上海人的集体记忆：狭窄的弄堂里，邻里之间守望相助；天井中，孩子们嬉戏玩耍；石库门前，居民们摆出小板凳纳凉聊天。这种“七十二家房客”式的生活方式，形成了独特的海派文化和邻里关系。
+新天地的改造保留了石库门建筑的外观和空间格局，青砖墙、乌漆门、石库门头、雕花窗棂都原汁原味地保存下来，但内部进行了现代化改造，植入了国际品牌餐厅、酒吧、精品店、艺术画廊等业态。白天，这里是时尚的购物休闲场所；夜幕降临，灯光璀璨，酒吧、餐厅、精品店铺灯火通明，露天座位上坐满了品酒聊天的人们，现场音乐悠扬，展现出摩登上海的迷人风情。
 游览要点
-• Archipelago complex (architectural arts, seafood essence)
-Photo by https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
-The Stonegate complex of the New World is one of the best preserved and most representative in Shanghai. Among them are the unique glamours of fine-savory stone-storey buildings: the walls of the bricks are baptized over the years, presenting a variety of colours of deep and shallow colours that pass through history; the doors of the rags are thick and thick, the doors are rusty, the copper doors are rusty, the bowing is light and the echoes dazzling; the bricks on the doors are beautiful, some are geometrical, some of them are species of fish, some of them are birds, and some of them are happy and happy, each of them are the heart of the craftsmen.
-The space layout of the tectonic doors is also unique: entrances are wells and luminous ventilation; on both sides are compartmentalized rooms, and back and back are flats, forming a “tribunal” or “quartet” pattern. There are new discoveries at every turn. Some of the stone gates have been converted into exhibition space, displaying the history of the stone gates and the life scene in the old Shanghai, and are freely accessible to provide insight into the previous generations of this unique form of construction.
-• One Chinese Congress site (red landmark, historical monument)
-Photo by https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
-The site of the first National Congress of the Communist Party of China, located in the North of New Heaven and the North, is a typical stone-storage gate building. On 23 July 1921, the first National Congress of the Communist Party of China (CPC) was held here to proclaim the birth of the Communist Party of China (CPC), which was an unprecedented event in China ' s history.
-The site is two-storey brick structures, brick walls, paintwood doors, and maintains the original image of the 20th century. The interior is retrofitted from the scenes of the year in which the conference rooms are kept simple, with long tables, wooden chairs, tea sets, etc., being the original or replicas of the year. On the wall were photographs of the 13 delegates who had attended the meeting and the introduction. A large number of valuable historical monuments, literature and photographs were also displayed at the memorial, detailing the founding history of the Communist Party of China and the early revolution.
-The visitors ' venue was a profound historical educational experience that reminded people of history and kept them alive. The venue is open free of charge, but an appointment is required in advance and is restricted for daily visits. It is recommended that an appointment be made in advance at the Official Microphone Public.
-♪ Fashion commercial neighborhood ♪
-Photo by https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
-New Heaven brings together many international front-line brands and home-grown designers, one of the most fashionable commercial neighbourhoods in Shanghai. The shop is not a traditional mall counter, but an independent branded flagship or concept shop, each with unique designs and displays, and shopping experiences are like art shows.
-International brands such as Dior, Cartier, Tiffany and others have established flagship stores or time-limited concept shops, which are designed to integrate historical elements and modern aesthetics of the stone-gate building. Local designer brands such as SHANG XIA (up and down), Blanc de Chine (White Factory) and others also have door shops here that showcase innovation and heritage of modern Chinese design.
-In addition to fashion and jewellery, the New Zone has a large number of houses, art and lifestyle stores, such as unprinted bookstores, bookstores, house shops, etc., which are used by youths of the arts and culture to beat the sacred places. Cultural events such as art exhibitions, fashion shows, music festivals, etc., are also not regularly held in the neighbourhoods to keep them alive and fresh.
-Nightlight (best photo time 18:00-21:00)
-Photo by https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
-The night view of the new heavens and the earth is the essence of life in Shanghai. When the night came, the light system in the neighbourhood was lighted up, and the yellow light was warmed by the brick walls of the Stonegate Gate building, creating a warm and romantic atmosphere. The light design of each building is carefully planned to highlight both the contours and details of the building and to avoid being too obscurant, with its overall effect being elegant and fashionable.
-The lamps, the walllights and the chandeliers in the halls are clearly structured to create a wealth of light. The windows of the restaurant and the bar, where the lights are lit, can see the excitement. The open-air area is full of lanterns and candles. Street artists often perform in the squares in the middle of the block, where music, laughter and cuddles are interwoven, constituting the unique symphonies of night life in the new world.
-This time is also the golden time for taking pictures: buildings have clear contours, lights are full of colours, and people can be able to take pictures that are both historical and modern. It is recommended that long exposure shots be taken using tripods that capture the movement of the light and the dynamic beauty of the neighbourhood.
+🏘️ 石库门建筑群（建筑艺术，海派精髓）
+图片：https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
+新天地的石库门建筑群是上海保存最完好、最具代表性的石库门建筑群之一。漫步其中，可以细细品味石库门建筑的独特魅力：青砖墙面经过岁月洗礼，呈现出深浅不一的色泽，透着历史的沧桑；乌漆木门厚重坚实，铜制门环锈迹斑斑，轻轻叩击，发出沉闷的回响；门楣上的砖雕精美绝伦，有的是几何图案，有的是花鸟鱼虫，有的是福禄寿喜，每一处都是匠人的心血。
+石库门的空间布局也很有特色：进门是天井，采光通风；两侧是厢房，前后是正房，形成“三合院”或“四合院”格局。弄堂蜿蜒曲折，移步换景，每转一个弯都有新的发现。有些石库门内部改造成了展览空间，展示着石库门的历史和老上海的生活场景，可以免费参观，深入了解这种独特建筑形式的前世今生。
+🚩 中共一大会址（红色地标，历史丰碑）
+图片：https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
+中国共产党第一次全国代表大会会址位于新天地北里，是一座典型的石库门建筑。1921 年 7 月 23 日，中国共产党第一次全国代表大会在这里召开，宣告了中国共产党的诞生，这是中国历史上开天辟地的大事件。
+会址建筑为两层砖木结构，青砖墙面，乌漆木门，保持着 20 世纪 20 年代的原貌。内部按照当年的场景复原，会议室内陈设简朴，长桌、木椅、茶具等都是当年的原物或复制品。墙上挂着参加会议的 13 位代表的照片和生平介绍。纪念馆内还陈列着大量珍贵的历史文物、文献和照片，详细介绍了中国共产党的创建历史和早期革命活动。
+参观会址是一次深刻的历史教育体验，让人们铭记历史，不忘初心。会址免费开放，但需要提前预约，每天限流参观，建议提前在官方微信公众号预约。
+🛍️ 时尚商业街区（国际范儿，潮流前沿）
+图片：https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
+新天地汇集了众多国际一线品牌和本土设计师品牌，是上海最时尚的商业街区之一。这里的店铺不是传统的商场柜台，而是独立的品牌旗舰店或概念店，每一家都有独特的设计和陈列，购物体验如同逛艺术展。
+国际品牌如 Dior、Cartier、Tiffany 等都在这里开设了旗舰店或限时概念店，店铺设计融合了石库门建筑的历史元素与品牌的现代美学，别具一格。本土设计师品牌如 SHANG XIA（上下）、Blanc de Chine（白厂）等也在这里设有门店，展示着中国当代设计的创新与传承。
+除了时装和珠宝，新天地还有众多家居、艺术、生活方式类店铺，如无印良品、方所书店、茑屋书店等，是文艺青年的打卡圣地。街区内还不定期举办艺术展览、时装秀、音乐节等文化活动，让这里始终保持着活力和新鲜感。
+💡 夜景灯光（最佳拍照时段 18:00-21:00）
+图片：https://upload.wikimedia.org/wikipedia/commons/3/31/Shanghai-Xintandi.jpg
+新天地的夜景是上海夜生活的精华所在。当夜幕降临，街区的灯光系统逐渐亮起，暖黄色的灯光映照着石库门建筑的砖墙，营造出温馨而浪漫的氛围。每栋建筑的灯光设计都经过精心规划，既突出了建筑的轮廓和细节，又不会过于刺眼，整体效果优雅而时尚。
+弄堂内的地灯、壁灯、吊灯层次分明，营造出丰富的光影效果。餐厅和酒吧的落地窗内灯火通明，透过窗户可以看到里面的热闹景象。露天座位区点缀着串灯和蜡烛，浪漫至极。街区中央的广场常有街头艺人表演，音乐声、欢笑声、碰杯声交织在一起，构成了新天地独特的夜生活交响曲。
+这个时段也是拍照的黄金时间：建筑的轮廓清晰，灯光的色彩饱满，人流适中，可以拍出既有历史韵味又充满现代气息的照片。建议使用三脚架进行长曝光拍摄，可以捕捉到灯光的流动感和街区的动态美。
 
-Dinner: Shanghai Beach
-Name of restaurant: Shanghai
-地址：Shanghai City, Yellow Po District, Taikura Road, 181.
-人均消费：Three hundred dollars.
-Observe:
-Queuing: medium, pre-arranged
-Tel. 021-631111234
+🍽️ 19:00-20:30 | 晚餐：上海滩
+餐厅名称：上海滩
+地址：上海市黄浦区太仓路 181 弄新天地北里 11 号楼
+人均消费：300 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：中等，需提前预订
+📞 联系电话：021-63111234 
 营业时间：11:30-14:00, 17:30-22:00
 餐厅背景
-The Shanghai Beach restaurant, located within the New Heaven and Heaven Stonegate Gate, is a high-end restaurant known for its excellence. The restaurant's name, Shanghai Beach, is a direct indicator of its location: it is the heritage of the old Shanghai diet, which demonstrates the essence of the sea-based dish. The restaurant is being renovated by a well-known designer who runs a knife and perfects the aesthetics of old Shanghai and modern design, creating a unique food atmosphere.
-Walked into the restaurant as if it was back in the 1930s. The walls were marked with black and white photographs of the old Shanghai, showing the street view and the characters of the day; retrofitted chandeliers had a soft light; redwood furniture, varnish, and tiara elements were visible; and background music was the euphemism of the old Shanghai jazz, creating a rich and nostalgia. The design of the compartments is more tactful, and each of them has different themes, either prototyped by the living room of the old Shanghai, or inspired by the natural wells of the stone gates, so that the eaters can eat while feeling the way of life in the old Shanghai.
-The chefship team in Shanghai is headed by a senior chef, who not only specializes in the cooking techniques of the traditional dishes, but also is better equipped to innovate on the basis of tradition, combines modern cooking ideas with traditional techniques, and creates creative dishes that preserve the essence of the dishes and are compatible with modern aesthetics. Dining room selection is conducted, with most of the food items coming from high-quality sites in the long triangle to ensure fresh and quality.
+上海滩餐厅位于新天地石库门建筑内，是一家以精致本帮菜闻名的高端餐厅。餐厅名称“上海滩”直接点明了其定位：传承老上海的饮食文化，展现海派菜肴的精髓。餐厅装修由著名设计师操刀，将老上海的怀旧风情与现代设计美学完美融合，营造出独特的用餐氛围。
+走进餐厅，仿佛穿越回上世纪三十年代的十里洋场。墙上挂着老上海的黑白照片，展示着当年的街景和人物；复古的吊灯散发着柔和的光芒；红木家具、青花瓷器、旗袍元素随处可见；背景音乐是悠扬的老上海爵士乐，营造出浓郁的怀旧氛围。包厢设计更是别具匠心，每个包厢都有不同的主题，有的以旧上海的客厅为原型，有的以石库门的天井为灵感，让食客在用餐的同时，感受老上海的生活方式。
+上海滩的主厨团队由资深本帮菜师傅领衔，他们不仅精通传统本帮菜的烹饪技法，更善于在传统基础上创新，将现代烹饪理念与传统技艺相结合，创造出既保留本帮菜精髓又符合现代审美的创意菜品。餐厅选料考究，食材大多来自长三角地区的优质产地，确保新鲜和品质。
 推荐菜品
-♪ Red meat ♪
-The red meat is the product of the Shanghai foods and is the most popular dish of the “heavy cuisine”. The red meat from Shanghai Beach is perfect, from the selection to the cooking, and every link is refined.
-The selection has to be skinned, and the proportion of fatty is gold (40% fat and 60% skinny), so that the roasted meat is fat and thin. The meat is cut into four centimetres of square size, and the shape is intact. Pre-cooking is preceded by the shoal of the meat, which is then boiled to the surface, which locks the gravy.
-The process of red fever is the key: first with onions, then with yellow wine, then with sauce, glucose, eight horns, cinnamon, etc., pour into the soup, and then with the fire, then turn the fire down. It takes at least two hours for the stew to fully absorb the flavor of the sauce while maintaining its shape. The period has to be constantly turned so that every piece of meat is evenly coloured. Finally, the fire gathered juice, so that the soup was thick and tightly wrapped on the surface of the meat.
-The red meat from the pot is as bright as amber, the oil is bright, and there is radiant sauce and meat. Picking up a piece, a soft Q bullet, and it's going to go away in a little bit; part of the fat is coming in, completely free of greasyness, but only greasy sweets; part of the thin is soft, fibrous and fragrance. The soup is thick, salted in sweetness, fresh in salt, rich in layers and full of rice. This is the most authentic red meat smell in the memory of the old Shanghaiers, sweet, unsick, unsaltered, and a perfect interpretation of "heavy lard."
-♪ Fried fish ♪
-Fried fish are frequent visitors to the table of Shanghaiers and appear to be simple, and are the most challenging. In Shanghai, fish from the dry-dry belts are selected for the east sea, which is far more fertilized and fertilized than fish farming.
-The fish is handled cleanly and cut in part, and tastes from salt, yellow wine, ginger pickle, etc. The pickle time is right, the time is short and the meat is old. This is the secret to keeping the fish fresh.
-When cooking, the oil is warmer, and when you get out of the pot, you don't rush to flip, so that the bottom is fully fertilized to the blisters, forming a layer of protection that locks the internal moisture and the smell. It's the same as a golden one, and both sides have to have the effect of “extra-characterium”. The sauce is made of soy sauce, vinegar, sugar, ginger, garlic, etc., sour, salty, fragrance.
-The dry-dry-dried fish-coloured yellow, with a soft skin and a soft touch, makes the sound of a “single”; the inside fish is white and soft, with its original taste, without any fragrance. Taste the sauce, sweet sauce with the greasyness of the fish, and eat more. This dish, which is beautiful in seafood as well as fried fragrances, is very popular in Shanghai.
+🥩 红烧肉（本帮菜之魂，必点经典）
+红烧肉是上海本帮菜的代表作，也是最能体现“浓油赤酱”烹饪风格的菜品。上海滩的红烧肉堪称一绝，从选料到烹制，每一个环节都精益求精。
+选料必须是带皮五花肉，肥瘦比例要达到黄金比例（肥肉占 40%，瘦肉占 60%），这样烧出来的肉才能肥而不腻，瘦而不柴。肉块切成 4 厘米见方的大块，保持形状完整。烹制前先将肉块焯水去血沫，然后下锅煎至表面微黄，锁住肉汁。
+红烧的过程是关键：先用葱姜爆香，加入黄酒去腥提香，再加入酱油、冰糖、八角、桂皮等调料，倒入高汤，大火烧开后转小火慢炖。炖制时间至少要 2 小时，让肉质充分吸收调料的香味，同时保持形状不散。期间要不断翻动，让每一块肉都均匀上色入味。最后大火收汁，让汤汁浓稠，紧紧包裹在肉块表面。
+出锅的红烧肉色泽红亮如琥珀，油光发亮，散发着浓郁的酱香和肉香。夹起一块，肉皮软糯 Q 弹，轻轻一抿就化开；肥肉部分入口即化，完全没有油腻感，只有浓郁的香甜；瘦肉部分酥软不柴，纤维分明，肉香十足。汤汁浓稠，甜中带咸，咸中有鲜，层次丰富，拌饭一绝。这就是老上海人记忆中最正宗的红烧肉味道，甜而不腻，浓而不咸，是“浓油赤酱”的完美诠释。
+🐟 干煎带鱼（海派功夫菜，外焦里嫩）
+干煎带鱼是上海人餐桌上的常客，看似简单，实则最考验功夫。上海滩的干煎带鱼选用东海野生带鱼，这种带鱼肉质细嫩，鲜味浓郁，远胜于养殖带鱼。
+带鱼处理干净后切成段，用盐、黄酒、姜汁腌制入味，去除腥味。腌制时间要恰到好处，时间短了不入味，时间长了肉质会变老。煎制前拍上一层薄薄的干淀粉，这是保持鱼肉鲜嫩的秘诀。
+煎制时油温要高，下锅后不要急于翻动，让底面充分煎至金黄酥脆，形成一层保护层，锁住内部的水分和鲜味。翻面后同样煎至金黄，两面都要达到“外焦里嫩”的效果。煎好后淋上调制好的酱汁，酱汁由酱油、醋、糖、姜末、蒜末等调制而成，酸甜咸鲜，香气扑鼻。
+出锅的干煎带鱼色泽金黄，外皮酥脆，轻轻一碰就发出“咔嚓”声；内里鱼肉雪白细嫩，保持着原有的鲜味，没有一丝腥味。蘸着酱汁品尝，酸甜的酱汁中和了鱼肉的油腻，更加开胃下饭。这道菜既有海鲜的鲜美，又有煎炸的香脆，是上海人百吃不厌的家常美味。
 🍜 素面（清淡养生，回归本味）
-After a taste of the oily cuddly sauce, a bowl of fresh paste that can adjust the taste and ease the pain. The surface of Shanghai Beach seems simple, but it is refined and refined.
-Noodles are chosen by hand-made sides, and the face is smooth. The bottom of the soup is made up of bones, old hens, hams, etc., for several hours, but the tastes are thick and clear. The “precipitine” of the face is not a vegetarian, but a simple ingredient that highlights the taste of the bottom and noodles. The ingredients are usually vegetable vegetables, such as vegetables, mushrooms, chips, tofu, etc.
-When you cook noodles, you have to be prepared, and the noodles can be cooked as long as they reach the age of eight. When it was recovered, it was put in a bowl, with hot soup, onions and white pepper powder, and a bowl of hot noodles was finished. It tastes soft, light and soft, and the sweetness of vegetables and the beauty of high soup are mutually reinforcing.
-Crab.
-Crabs are the best food for the fall and winter season, when the crabs are the most beautiful, full of crabs, and full of crabs. Shanghai Beach chose the Taihu Krabs or the Crabs, both of which are known as the Crabs of the Gangnam region, known for their sweet meat and their yellow and yellow.
-Cooking is based on evaporation, maximizing the original taste of crabs. It's evaporated with a couple of purple sows and ginger blades on the crabs, both poaching and fragrance. Steamed crabs, orange red, bright crab shells, fragrance. Crab husks open, yellow crab yellow like gels, the entrances are thin and fragrance; the crab paste is clenched, soft and sweet; the crab is full of white, silky and juicy.
-Crabs with ginger ale, ginger with a cold stomach, vinegar with a fresh acupuncture, and the best partner for crabs. And a warm glass of yellow wine, a mixture of wine and crab, which is even more delicious. In Shanghai, they eat “nine females and ten males”, i.e. female crabs in September and male crabs in October. This is the food wisdom that has been drawn up for thousands of years.
+在品尝了浓油赤酱的本帮菜后，来一碗清淡的素面，可以调节口味，清爽解腻。上海滩的素面看似简单，实则用料考究，制作精细。
+面条选用手工制作的细面，面质筋道爽滑。汤底用大骨、老母鸡、火腿等熬制数小时，鲜味浓郁却清澈见底。素面的“素”不是指素食，而是指配料简单，突出汤底和面条的本味。配料通常有青菜、香菇、笋片、豆腐等时令蔬菜，清爽可口。
+煮面时火候要掌握好，面条煮至八成熟即可，保持爽滑的口感。捞出后放入碗中，浇上滚烫的高汤，撒上葱花和白胡椒粉，一碗热气腾腾的素面就完成了。吃起来汤鲜面滑，清淡却不寡淡，蔬菜的清甜与高汤的鲜美相得益彰，是一种返璞归真的美味。
+🦀 膏蟹（时令海鲜，秋冬至味）
+膏蟹是秋冬季节的时令美食，此时的螃蟹最为肥美，蟹黄饱满，蟹膏丰腴。上海滩选用的是太湖大闸蟹或崇明清水蟹，这两种蟹都是江南地区的名蟹，以肉质鲜甜、膏黄丰厚著称。
+烹制方法以清蒸为主，最大限度保留螃蟹的原味。蒸制时在蟹身上放几片紫苏叶和姜片，既去腥又增香。蒸好的螃蟹色泽橙红，蟹壳光亮，香气四溢。打开蟹壳，金黄色的蟹黄如同凝脂，入口绵密细腻，鲜香浓郁；蟹膏晶莹剔透，口感软滑，鲜甜无比；蟹肉雪白饱满，丝丝分明，鲜嫩多汁。
+品蟹时配上姜醋汁，姜可以驱寒暖胃，醋可以提鲜解腻，是吃蟹的最佳搭档。再配上一杯温热的黄酒，酒香与蟹香交融，更添风味。上海人吃蟹讲究“九雌十雄”，即农历九月吃雌蟹（蟹黄饱满），十月吃雄蟹（蟹膏丰腴），这是千百年来总结出的饮食智慧。
 
 🚇 20:30-21:00 | 交通：返回酒店
-• Place of departure: New World
-On foot: 5 minutes. On the subway, 10, New Heaven Station.
-🚊 Route: subway 10 → Subway 2 → Nanjing East Road Station
-Walk: 8 minutes
-Location of arrival: Hotel Perkinswana (427 Fukushima Road)
-Total time-consuming: about 30 minutes
+🟢 出发地点：新天地
+👣 步行：5 分钟 → 地铁 10 号线新天地站
+🚊 乘坐路线：地铁 10 号线 → 换乘地铁 2 号线 → 南京东路站
+👣 步行：8 分钟
+🔴 到达地点：🏨 铂金万澳酒店（福州路 427 号）
+⏱️ 总耗时：约 30 分钟
 
-♪ 21:00 ♪ Get to the hotel and rest ♪
+🏨 21:00 | 抵达酒店休息
 
 📅 Day 3: 都市巅峰·陆家嘴璀璨
-Shanghai Centre - Lu's Mouth - East Myeong Ju
-The hotel leaves at 10:00.
+上海中心->陆家嘴->东方明珠
+⏰ 10:00 | 酒店出发
 📍 出发地点：🏨 铂金万澳酒店（福州路 427 号）
 
 🚇 10:00-10:20 | 交通：前往上海中心
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-🚊 Route: Subway 2 Line 3 Station Lu's Mouth Station
-Dropping off: Lu's mouth stop 6 exit, walk 5 minutes to Shanghai Center
-Total time spent: about 20 minutes
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：地铁 2 号线（往浦东国际机场方向）→ 3 站 → 陆家嘴站
+🔴 下车地点：陆家嘴站 6 号口出站，步行 5 分钟至上海中心
+⏱️ 总耗时：约 20 分钟 | 💰 票价：3 元
 
 📍 10:20-12:30 | 上海中心大厦观光厅
-地址：501 Silver Road, New District of Pudong, Shanghai
-开放时间：09:00-21:30 (21/1 Stopping entry)
-门票：Adult 180, child 90 (suggested to book online)
-建议游览时间：2-3 hours
-Visual height: 546 m (118 floor)
+地址：上海市浦东新区银城中路 501 号
+开放时间：09:00-21:30（21:00 停止入场）
+门票：成人 180 元，儿童 90 元（建议提前网上预订）
+建议游览时间：2-3 小时
+观光层高度：546 米（118 层）
 景点介绍
-The Shanghai Central Building, 632 metres high, is the first and second highest building in China (after Dubai Khalifa), and was officially opened to the public in 2016. This super-high-rise building is not only a new landmark in Shanghai, but also a central display of Chinese construction technology and engineering capabilities. Designed by the United States of America, Gensler architectural design firm, with a unique “long” spiral-up shape, the building stands up at 120 degrees, symbolizing the attitude of the Chinese dragon-flying and reflecting the philosophy of “one human being” in traditional Chinese culture.
-The visitors' hall of the building is located on the 118th floor, 546 metres high, and is known as the “top of Shanghai”, one of the highest in the world. It is an exciting experience to travel from the ground to one of the fastest elevators in the world, at a speed of 18 metres per second, to complete this vertical journey in 55 seconds. The elevator is equipped with LED screens, showing the speed and height of the rise in real time, and will also broadcast images of urban development in Shanghai, allowing passengers to begin to understand the history and modernity of Shanghai as they rise.
-Standing at 546 meters, 360 degrees of panorama overlooking Shanghai, with extremely wide horizons. At the bottom are the city buildings, organized like blocks; the Yellow River passes through the city, like a silver ribbon; the historical complex of the outer beach, the green areas of People's Square and the luxurious street view of Nanjing Road. Looking to the east, you can see the modern building complex in Pudong and the Yangtze in the far off into the sea mouth; looking to the west, you can see the old city in Pushi and the far-off Mount of Sichuan; looking to the south, you can see the downstream of the Huang Po River and the direction of the East Sea; looking to the north, you can see the convergence of the Suzhou River. When the weather is clear, it can be as visible as 80 kilometres, and the whole of Shanghai is in the eye, and the "smuggle of mountains" of the humongous sense is still alive.
-There are also interactive display areas in the Tour Chamber, where the history of urban development in Shanghai, planning for the future, building techniques, etc. are presented through high-tech means, allowing tourists to appreciate the beauty of the city and to gain insight into its past, present and future.
+上海中心大厦高 632 米，是中国第一、世界第二高楼（仅次于迪拜哈利法塔），于 2016 年正式对外开放。这座超高层建筑不仅是上海的新地标，更是中国建筑技术和工程能力的集中展现。大厦由美国 Gensler 建筑设计事务所设计，采用独特的“龙型”螺旋上升的外形，建筑立面呈 120 度旋转上升，象征着中国龙腾飞的姿态，也体现了中国传统文化中“天人合一”的哲学理念。
+大厦的观光厅位于 118 层，高度 546 米，名为“上海之巅”，是世界上最高的观光厅之一。从地面到观光厅，需要乘坐世界最快的电梯之一，电梯速度达到 18 米/秒，仅需 55 秒即可完成这段垂直距离的旅程，这本身就是一次令人激动的体验。电梯内部装有 LED 显示屏，实时显示上升速度和高度，还会播放上海城市发展的影像，让乘客在上升过程中就开始了解上海的历史与现代。
+站在 546 米的高空，360 度全景俯瞰上海，视野极其开阔。脚下是密密麻麻的城市建筑，如同积木般整齐排列；黄浦江蜿蜒穿城而过，如同一条银色的丝带；外滩的历史建筑群、人民广场的绿地、南京路的繁华街景尽收眼底。向东望去，可以看到浦东的现代化建筑群和远处的长江入海口；向西望去，可以看到浦西的老城区和远处的佘山；向南望去，可以看到黄浦江的下游和东海的方向；向北望去，可以看到苏州河汇入黄浦江的交汇点。天气晴朗时，能见度可达 80 公里，整个上海尽在眼底，那种“一览众山小”的豪迈感油然而生。
+观光厅内还设有多个互动展示区，通过高科技手段展示上海的城市发展历史、未来规划、建筑技术等内容，让游客在欣赏美景的同时，深入了解这座城市的过去、现在和未来。
 观光亮点
-♪ The clouds roam ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/8/f/Shanghai  Shanghai Tower   0003%28croped%29.jpg
-There is a transparent glass floor inside the visitors' room, approximately 20 metres long, about 2 metres wide, at 546 metres high. Standing on transparent glass, at the bottom of the feet is the abyss, where vehicles and pedestrians on the ground are clearly seen as tiny as ants. This feeling of suspension has given rise to a surge in adrenaline, which is both exciting and shocking. Many tourists are softened in their legs when they first set foot on the glass floor, but when they overcome fear, the sense of achievement that conquers the sky will remain unforgettable. It's also an excellent location to take pictures on transparent floors, with endless urban landscapes, with a shock.
-🔭 360 Degrees of Full Landscape Light
-Photo: https://upload.wikimedia.org/wikipedia/commons/8/f/Shanghai  Shanghai Tower   0003%28croped%29.jpg
-It's designed with a glass curtain wall, 360 degrees, with different landscapes in each direction. On the east side are the landmark buildings of the land, such as Mingju Oriental, Kimmao House, and Global Financial Center, which are not far below their feet and have a clear view of the details and structure of the buildings; on the south side, where the Yellow River flows southward and extends to the end of the horizon; on the west, where the outer beach complex, the People ' s Square, the Jian An Temple, etc., are marked by the city ' s prosperity; and on the north, where the Suzhou River, the Ionbong region, the Yangura region, and the distant Long River entrance.
-There are several viewing stations in the Tour Chamber, each equipped with a multi-telescope (used free of charge) which allows for a clearer view of the distant landscape. Also on the wall are signs indicating the main sites and buildings in all directions, which facilitate the identification of tourists. It is proposed to stay in the visitors' hall for more than two hours, slowly enjoying the different directions, and to feel the size and detail of the city.
-📱 Interactive presentation (technology experience, music)
-Photo: https://upload.wikimedia.org/wikipedia/commons/8/f/Shanghai  Shanghai Tower   0003%28croped%29.jpg
-There are multiple interactive display areas in the Tour Chamber, using high-tech tools such as AR, VR and holograms to enable tourists to understand Shanghai in a new way. The “Time Tunnel” exhibition area showcased the development of Shanghai from small fishing villages to large international cities through images and models; the “Cities of the Future” exhibition area showcased Shanghai's urban planning blueprint for 2035; and the “Building Miracles” exhibition area detailed the design concept, construction process and technological innovation of the Shanghai Central Building.
-Specially recommended is the “virtual flight” experience, with VR glasses, which can be simulated as flying up at sea, overlooking the urban landscape, and even “flying” inside some landmark buildings. These interactive projects are not only interesting but also educational and particularly suitable for family visitors with children.
-✉️ Air Post Office (cloudy blessing, special memorial)
-Photo: https://upload.wikimedia.org/wikipedia/commons/8/f/Shanghai  Shanghai Tower   0003%28croped%29.jpg
-There is a special “air post office”, the highest post office in China at sea. Here, you can purchase postcards, write wishes for relatives and friends or send messages to you, put on a special postmark “Shanghai top” and then put them into a mailbox. These postcards will “fly” from a height of 546 metres to all parts of the country and bring the blessing from the cloud to the recipients.
-The post office also sells various souvenirs, such as postcards, refrigerator stickers, key buttons, etc., with the Shanghai Center, with special commemorative stamps, which are unique travel souvenirs. Many visitors will write a postcard to themselves for the future, choosing to send it in a year, as a special memorial to the trip.
+☁️ 云端漫步（挑战胆量，终身难忘）
+图片：https://upload.wikimedia.org/wikipedia/commons/8/8f/Shanghai_-_Shanghai_Tower_-_0003%28cropped%29.jpg
+观光厅内设有一段透明玻璃地板，长约 20 米，宽约 2 米，位于 546 米的高空。站在透明玻璃上，脚下就是万丈深渊，可以清晰看到地面的车辆和行人如同蚂蚁般渺小。这种悬空的感觉让人肾上腺素飙升，既刺激又震撼。许多游客初次踏上玻璃地板时都会双腿发软，但克服恐惧后，那种征服高空的成就感会让人终身难忘。这里也是拍照的绝佳位置，站在透明地板上拍照，背景是无尽的城市景观，效果震撼。
+🔭 360 度全景观光（上帝视角，尽览全城）
+图片：https://upload.wikimedia.org/wikipedia/commons/8/8f/Shanghai_-_Shanghai_Tower_-_0003%28cropped%29.jpg
+观光厅采用落地玻璃幕墙设计，360 度无遮挡，每个方向都有不同的景观。东侧可以看到东方明珠、金茂大厦、环球金融中心等陆家嘴标志性建筑，它们就在脚下不远处，可以清晰看到建筑的细节和结构；南侧可以看到黄浦江蜿蜒向南，一直延伸到视野尽头；西侧可以看到外滩建筑群、人民广场、静安寺等浦西地标，密集的建筑群展现着城市的繁华；北侧可以看到苏州河、虹口区、杨浦区等区域，以及远处的长江入海口。
+观光厅内设有多个观景台，每个观景台都配有高倍望远镜（免费使用），可以更清晰地观察远处的景物。墙上还有标识牌，标注了各个方向的主要景点和建筑，方便游客辨识。建议在观光厅停留 2 小时以上，慢慢欣赏不同方向的景色，感受这座城市的宏大与细腻。
+📱 互动展示（科技体验，寓教于乐）
+图片：https://upload.wikimedia.org/wikipedia/commons/8/8f/Shanghai_-_Shanghai_Tower_-_0003%28cropped%29.jpg
+观光厅内设有多个互动展示区，运用 AR、VR、全息投影等高科技手段，让游客以全新的方式了解上海。“时光隧道”展区通过影像和模型，展示了上海从小渔村到国际大都市的发展历程；“未来之城”展区展示了上海 2035 年的城市规划蓝图；“建筑奇迹”展区详细介绍了上海中心大厦的设计理念、建造过程和技术创新。
+特别推荐的是“虚拟飞行”体验，戴上 VR 眼镜，可以模拟在上海上空飞行，俯瞰城市景观，甚至可以“飞入”一些标志性建筑内部参观。这些互动项目不仅有趣，还富有教育意义，特别适合带孩子的家庭游客。
+✉️ 空中邮局（云端祝福，特别纪念）
+图片：https://upload.wikimedia.org/wikipedia/commons/8/8f/Shanghai_-_Shanghai_Tower_-_0003%28cropped%29.jpg
+观光厅内设有一个特别的“空中邮局”，这是中国海拔最高的邮局。在这里可以购买明信片，写下对亲朋好友的祝福或对自己的寄语，盖上“上海之巅”的特殊邮戳，然后投入邮筒。这些明信片会从 546 米的高空“飞”向全国各地，将来自云端的祝福送达收件人手中。
+邮局还出售各种纪念品，如印有上海中心图案的明信片、冰箱贴、钥匙扣等，都盖有特殊的纪念邮戳，是独一无二的旅行纪念品。许多游客会给未来的自己写一张明信片，选择一年后寄出，作为对这次旅行的特别纪念。
 
 🚇 12:30-13:00 | 交通：前往午餐地点
-Location of departure: Shanghai Centre
-Walk: 8 minutes west of Silver City
-• Location of arrival: Seafood Great House
+🟢 出发地点：上海中心
+👣 步行路线：步行 8 分钟至银城西路
+🔴 到达地点：国记海鲜大酒楼
 
 🍜 13:00-14:30 | 午餐：国记海鲜大酒楼
-The name of the restaurant: Seafood.
-地址：Shanghai City, Silver City West, 17th, 19th.
-人均消费：150 yen.
-Observe:
-Queuing: low to medium
-Tel. 021-58776565
+餐厅名称：国记海鲜大酒楼
+地址：上海市浦东新区银城西路 17 弄 19 号
+人均消费：150 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：低-中等
+📞 联系电话：021-58776565 
 营业时间：11:00-22:00
 餐厅背景
-The Seafood Great House, a well-known seafood restaurant in the Lujia region, has a reputation in Shanghai for its food industry. In keeping with the traditional concept of cuisine “eating in Guangzhou”, the restaurant combines cooking techniques in the Guangdong tunnel with local food products in Shanghai, creating a good food experience that preserves the essence of the cuisine and has a sea-style character.
-The restaurant environment is elegant and comfortable, and the style of renovation combines the cultural elements of Spring South with modern design aesthetics. The lobby is wide and bright, with open seafood ponds displaying a variety of living seafood, which tourists can select on-site to ensure fresh. Packages are designed to be private and comfortable and suitable for business and family dinners. The service team in the restaurant is well-trained, from ordering to serving, and every step is professional.
-The chief chef of seafood is from Guangdong, an expert in cuisine cooking, especially in seafood. The cuisine, which is “frequently food”, is the most fertile species of seafood in the season and comes by air on a daily basis from its source, including wild seafish in the East Sea, lobster in the South Sea and crabs in the Yangtze Lake. Cooking is based mainly on evaporation and burning, maximizing the taste of the food and embodying the idea of “prejuice”.
+国记海鲜大酒楼是陆家嘴区域知名的粤式海鲜餐厅，在上海粤菜界享有盛誉。餐厅秉承粤菜“食在广州”的传统理念，将广东地道的烹饪技法与上海本地食材相结合，打造出既保留粤菜精髓又具有海派特色的美食体验。
+餐厅环境优雅舒适，装修风格融合了岭南文化元素与现代设计美学。大厅宽敞明亮，设有开放式海鲜池，展示着各种鲜活海鲜，游客可以现场挑选，确保新鲜。包厢设计私密舒适，适合商务宴请和家庭聚餐。餐厅的服务团队训练有素，从点菜到上菜，每个环节都专业周到。
+国记海鲜的主厨团队来自广东，精通粤菜烹饪技法，尤其擅长海鲜料理。粤菜讲究“不时不食”，餐厅的海鲜都是当季最肥美的品种，每日从产地空运而来，包括东海的野生海鱼、南海的龙虾、阳澄湖的大闸蟹等。烹饪方式以清蒸、白灼为主，最大限度保留食材的本味，体现“原汁原味”的粤菜理念。
 推荐菜品
-Zoo, Zoo.
-Steamed plasters represent seafood and are the best food for seafood and cooking. Seafood is chosen by wild plaster fish, which grow in the deep sea with a particularly fine body and high nutritional value, and is referred to as “sea bass”.
-They are treated in such a way as to keep the fish intact, to remove the gill from the body, to clean it and to draw knives on each side of the fish, so that it can taste and evaporate. Only a small amount of ginger silk and onions are added to the evaporation, without any other sauce, entirely dependent on the taste of the fish itself. The time of steam is precisely controlled, usually 8-10 minutes per 500 grams of fish, short and long enough to age.
-After the steam, the onions are removed, fresh onions are replaced with fresh onions, hot peanut oils are poured, onions are gassed, and special onions (sauce) are finally poured, which is the standard practice for cuisine to evaporate seafood. The pebble fish that comes out of the pot are white and white, the texture is clear, the chopstick is light, the fish is cut down and the entrance is ready. Fish is so sweet, without any fragrance, it is the pure taste of the sea, the scent of salty and onion oil, and its layers are rich and infinity.
-Crayfish.
-Burning is one of the most classic ways of cooking herbs, named "boiling", meaning cooking with fresh water, without any sauce, completely preserving the taste of the food. The national seafood burning shrimp selects live shrimp that fished on the day, which is transparent, requires completeness, jumps alive and fresh.
-In the white burning water, only ginger chips and wine are added to the water, and when the water boils, shrimp can be extracted until the shrimp is red and the shrimp meat is white, for a period not exceeding 3 minutes. Time control is crucial, and the shrimp will grow old and lose the taste of the Q bullet. Once extracted, iced water is allowed to cool the shrimp meat quickly and to maintain a soft taste.
-When they come to the table, the shrimp is bright orange red, its shells are bright and it must stand up. Shrimp husks, crumbs, full of crumbs. The special sauce (gang, onion, sauce, fragrance), the bite, the shrimp meat, the Q bullet, the sweet and juicy, the pure smell from the sea burst into the mouth, and it's too much. This dish is a perfect illustration of the nature of cuisine as a “sweet beauty” and a necessary choice for seafood lovers.
-Seafood congee.
-The porridge of seafood, which is a product of human gas inside the shop, boils rice to the point where it is smooth, the grains are completely melted and the porridge is thick and thin. Porridge preparation is the key, and it needs to be boiled with a big fire and slowed down, mixed and boiled for at least an hour, allowing rice to release starch and create a dense sense of quality.
-Seafood choices are diverse: shrimp, crab meat, fish chips, squid, dried bees, abalone, etc., which can be chosen or combined. Seafood is put in hot porridge at the table, and it is cooked with the rest of the porridge's temperature, so that both the freshness of seafood is preserved and the freshness of seafood is fully integrated into the porridge.
-A bowl of hot seafood porridge comes to the table, with fresh red shrimp, snow and white fish chips, yellow crab meat, onions and ginger silk, and a few drops of smelting oil and aroma. In a spoonful of portals, the base of porridge is silky, seafood is sweet and brittle, and the fragrance of ginger is fragrance, and the whole body is warm and nutritious and is a good thing to feed.
+🐟 清蒸石斑鱼（粤菜经典，鲜味至上）
+清蒸石斑鱼是粤菜海鲜料理的代表作，也是最能体现海鲜新鲜度和厨师功力的菜品。国记海鲜选用的是野生石斑鱼，这种鱼生长在深海，肉质特别细嫩，营养价值高，被誉为“海中鲈鱼”。
+石斑鱼处理时要保持鱼身完整，去鳞去鳃去内脏，清洗干净后在鱼身两侧各划几刀，便于入味和蒸熟。蒸制时只加少许姜丝和葱段去腥，不加任何其他调料，完全依靠鱼本身的鲜味。蒸的时间要精确控制，一般每 500 克鱼需要蒸 8-10 分钟，时间短了不熟，时间长了肉质变老。
+蒸好后，将姜丝葱段取出，换上新鲜的葱丝，淋上滚烫的花生油，激发出葱的香气，最后浇上特制的豉油（酱油），这是粤菜清蒸海鲜的标准做法。出锅的石斑鱼鱼肉雪白如玉，纹理清晰，用筷子轻轻一拨，鱼肉就片片剥落，入口即化。鱼肉鲜甜无比，没有一丝腥味，完全是海洋的纯净味道，配上豉油的咸鲜和葱油的香气，层次丰富，回味无穷。
+🦐 白灼海虾（简单至极，鲜美至极）
+白灼是粤菜最经典的烹饪方式之一，以“白灼”命名，意为用清水煮制，不加任何调料，完全保留食材的原味。国记海鲜的白灼海虾选用当日捕捞的活虾，虾身透明，虾须完整，活蹦乱跳，新鲜度一流。
+白灼时水中只加姜片和料酒去腥，水烧开后下虾，煮至虾身变红、虾肉变白即可捞出，整个过程不超过 3 分钟。时间的把控至关重要，煮久了虾肉会变老，失去 Q 弹的口感。捞出后立即过冰水，让虾肉迅速冷却，保持爽脆的口感。
+白灼海虾上桌时，虾身呈鲜艳的橙红色，虾壳光亮，虾须挺立。剥开虾壳，虾肉晶莹剔透，紧实饱满。蘸上特制的酱料（姜丝、葱丝、酱油、香油调制），一口咬下，虾肉 Q 弹爽脆，鲜甜多汁，那种来自大海的纯净鲜味在口腔中爆发，让人欲罢不能。这道菜完美诠释了粤菜“清淡鲜美”的特点，是海鲜爱好者的必点之选。
+🥘 海鲜粥（滋补养生，鲜美暖心）
+国记海鲜的海鲜粥是店内的人气单品，采用广东传统的煲粥技法，将大米熬煮至绵滑如糊，米粒完全化开，粥底浓稠细腻。粥底的熬制是关键，需要用大火煮开后转小火慢熬，不断搅拌，熬煮时间至少 1 小时，让大米充分释放淀粉，形成浓稠的质感。
+海鲜的选择丰富多样：鲜虾、蟹肉、鱼片、鱿鱼、干贝、鲍鱼等，可以单选也可以拼配。海鲜都是临上桌前才放入滚烫的粥中，利用粥的余温将海鲜烫熟，这样既能保持海鲜的鲜嫩，又能让海鲜的鲜味充分融入粥中。
+一碗热气腾腾的海鲜粥端上桌，粥面上漂浮着鲜红的虾、雪白的鱼片、金黄的蟹肉，撒上葱花和姜丝，淋上几滴麻油，香气扑鼻。舀一勺送入口中，粥底绵滑如丝，海鲜鲜甜爽脆，姜丝的辛香去腥提鲜，整体口感鲜美暖心，营养丰富，是滋补养生的佳品。
 
 🚇 14:30-15:00 | 交通：前往陆家嘴中心绿地
-Location of departure: Silver City West Road
-Walking: 5 minutes
-🔴 Location of arrival: Greenfield, Centre of Lu's Mouth
+🟢 出发地点：银城西路
+👣 步行路线：步行 5 分钟
+🔴 到达地点：陆家嘴中心绿地
 
 📍 15:00-17:30 | 陆家嘴金融中心
-地址：Shanghai City, 1st Century, Pudong New District.
-开放时间：Open all day.
-门票：Free.
-建议游览时间：3-4 hours
-最佳游览季节：All seasons are good. The night light shows recommend.
+地址：上海市浦东新区世纪大道 1 号
+开放时间：全天开放
+门票：免费
+建议游览时间：3-4 小时
+最佳游览季节：四季皆宜，夜晚灯光秀推荐 18:00-22:00
 景点介绍
-Lu Jiachi, China's financial centre in Shanghai and one of the most influential financial centres in China and Asia, has been dubbed “Manhattan East”. The region was a farm and a dock until 1990, and, in a short 30-year period, as the horn of Pudong was blown up, it was a skyscraper that formed a visible urban antenna, a symbol of China’s reform and opening up of the economy.
-The Lukmenu Financial Trading Zone, which brings together a large number of multinational banks, securities companies, and the headquarters or branches of insurance agencies, is one of China ' s most concentrated markets for financial factors, most intensive financial institutions and most active financial transactions. This is not just a business hub, but also a well-known tourist attraction that attracts global tourists.
-The most well-known “three sets of Lujia mouths” include: the Middle Tower in the East (468 metres, built in 1994), the Golden House (420 metres, built in 1999), the Shanghai Global Financial Centre (492 metres, built in 2008) and the Shanghai Central Building (632 metres, built in 2016), which together form a world-class skyline view. These four landmark architectures represent the technological and design concepts of construction over time and bear witness to the development journey from the opening up of Shanghai to becoming an international financial centre.
-The Green Land Centre is the best place to view these skyscrapers, with 100,000 square metres of green land, a triangle layout, 8,600 square metres of central lakes, and an oasis in the rich cities. The interior lawns of the green fields, the onions of trees, the clear waters of the lake and the raving of the wall, in stark contrast to the condensed concrete forests surrounding them, reflect the ecological concept of “city green lungs”.
+陆家嘴是中国上海的金融中心，也是中国乃至亚洲最具影响力的金融中心之一，被誉为“东方曼哈顿”。这片区域在 1990 年之前还是一片农田和码头，随着浦东开发开放的号角吹响，短短 30 年间，这里崛起了一座座摩天大楼，构成了举世瞩目的城市天际线，成为中国改革开放和经济腾飞的象征。
+陆家嘴金融贸易区汇聚了众多跨国银行、证券公司、保险机构的总部或分支机构，是中国金融要素市场最集中、金融机构最密集、金融交易最活跃的区域之一。这里不仅是商业枢纽，更是著名的旅游景点，吸引着全球游客前来观光。
+最著名的“陆家嘴三件套”包括：东方明珠电视塔（468 米，1994 年建成）、金茂大厦（420 米，1999 年建成）、上海环球金融中心（492 米，2008 年建成），加上上海中心大厦（632 米，2016 年建成），共同组成了世界级的天际线景观。这四座标志性建筑代表了不同时期的建筑技术和设计理念，见证了上海从改革开放到成为国际金融中心的发展历程。
+陆家嘴中心绿地是观赏这些摩天大楼的最佳位置，绿地面积 10 万平方米，呈三角形布局，中央湖泊面积 8600 平方米，是繁华都市中的一片绿洲。绿地内草坪如茵，树木葱茏，湖水清澈，锦鲤游弋，与周围的钢筋混凝土森林形成鲜明对比，体现了“城市绿肺”的生态理念。
 游览要点
-♪ The Green Land of Lu's Mouth ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu Park 1204-Shanghai %2832208802494%29.jpg
-The centre of the Luk family's mouth is known as the “urban green lung” and is the best place to watch the Luk family's mouth antenna. Standing in the middle of the green ground, looking up, surrounded by skyscrapers, the shock of being surrounded by buildings is unparalleled. The Shanghai Centre, the Worldwide Financial Centre, the Golden Moot Building and the Orient Myeong Joo are organized in fan formations, decreasing in descending heights and forming a fine outline of the antenna.
-The lake in the middle of the green field is the perfect location for the photograph, and the lake is mirrored by the surrounding high-rise buildings, forming symmetrical maps. In the early morning, the fog covered the towers, as if they were in the fog, as if they were in the mirage of the sea; in the middle of the day, the sun was pouring out on the wall of the glass screen, reflecting the bright light; in the evening, the sun was dyed with gold and the buildings were particularly beautiful; and at night, the buildings were lit, the reflections were in the lake, and the wheels were beautiful.
-There are also various sculptures and artistic devices in the green field, such as the “Light of the East” sculpture and the “financial cattle” sculpture, all of which are popular photographs and cards. On weekends and holidays, there are often citizens on green land who fly kites, picnics, yoga, and display the leisure side of urban life.
-♪ On the beach ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu Park 1204-Shanghai %2832208802494%29.jpg
-The Riverway runs along the eastern coast of the Huangpo River, approximately 2.5 kilometres long, and is the most beautiful riverway in Pudong. It's a wide-ranging view of the Yangtze River, and it's an exterior complex across the coast. From that perspective, it doesn't taste like it.
-The walkways are designed to be human, with flat walking bricks and resting facilities such as chairs, kiosks, viewing stands, etc. A large number of green plants have been planted along the road, with flowers running throughout the season. There are also a number of historical and cultural displays on the troupe, describing the history of the Yangtze River, the history of its development, the stories of coastal buildings, and so on, making hiking a cultural journey.
-The evening is the best time to walk the riverways, the sunset is west, the river is shining, and the outer beach buildings across the coast display a golden outline in the sunset. Following the nightfall, the lights on the outer beach were gradually lighted and resurfaced on the river, forming a moving picture. It's a beautiful time in the city.
+🌳 陆家嘴中心绿地（最佳观景点，必游之地）
+图片：https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg
+陆家嘴中心绿地被誉为“都市绿肺”，是观赏陆家嘴天际线的最佳位置。站在绿地中央，抬头仰望，四周被摩天大楼环绕，那种被建筑包围的震撼感无与伦比。上海中心、环球金融中心、金茂大厦、东方明珠呈扇形排列，高度依次递减，形成优美的天际线轮廓。
+绿地中央的湖泊是拍照的绝佳位置，湖面如镜，倒映着周围的高楼大厦，形成对称的构图。清晨时分，薄雾笼罩，高楼在雾中若隐若现，如同海市蜃楼；正午时分，阳光洒在玻璃幕墙上，反射出耀眼的光芒；傍晚时分，夕阳将建筑染成金色，格外壮美；夜晚时分，建筑灯光璀璨，倒影在湖中摇曳生姿，美轮美奂。
+绿地内还设有多个雕塑和艺术装置，如“东方之光”雕塑、“金融牛”雕塑等，都是热门的拍照打卡点。周末和节假日，绿地上常有市民放风筝、野餐、做瑜伽，展现着都市生活的休闲一面。
+🌊 滨江大道（江畔漫步，对望外滩）
+图片：https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg
+滨江大道沿黄浦江东岸延伸，全长约 2.5 公里，是浦东最美的滨江步道。这里视野开阔，可以近距离欣赏黄浦江的江景，对岸就是外滩万国建筑群，从这个角度观赏外滩，别有一番风味。
+步道设计人性化，铺设了平整的步道砖，设有座椅、凉亭、观景台等休憩设施。沿途种植了大量绿化植物，四季花开不断。步道上还设有多个历史文化展示牌，介绍黄浦江的历史、浦东开发的历程、沿岸建筑的故事等，让漫步成为一次文化之旅。
+傍晚时分是漫步滨江大道的最佳时段，夕阳西下，江面波光粼粼，对岸的外滩建筑在夕阳中呈现出金色的轮廓。夜幕降临后，外滩的灯光逐渐亮起，倒映在江面上，形成一幅流动的光影画卷。江风拂面，凉爽宜人，是都市中难得的惬意时光。
 
 📍 17:30-19:15 | 东方明珠电视塔
-地址：Shanghai City, 1st Century, Pudong New District.
-开放时间：09:00-21:30 (stop time 211)
+地址：上海市浦东新区世纪大道 1 号
+开放时间：09:00-21:30（停止售票时间 21:00）
 门票：
-• Second ball + gallery: $199
-• Three ball coupons: 220 dollars
-• Shuttle + upper sphere + lower sphere + galleries: 359 yuan
-建议游览时间：2-3 hours
-Best tour time: in the evening, watch the sunset and the night view
+•第二球+陈列馆：199 元
+•三球联票：220 元
+•太空舱+上球体+下球体+陈列馆：359 元
+建议游览时间：2-3 小时
+最佳游览时间：傍晚时分，可同时观赏日落与夜景
 景点介绍
-One of the iconic cultural landscapes of Shanghai is the Middle East Radio and Television Tower, which is about 468 metres high and lies at the tip of the mouth of the family of Pagoda, separated from the open sea and is the most visible building in the Shanghai Skyline. On July 30, 1991, Myeongju Oriental began work and was officially opened to the public on November 18, 1994, when he was Asia’s first and third highest towers, witnessing the historical process of opening up Pudong’s development.
-The tower is inspired by the poem of the Dom Dynasty poet, "Oad Joo-Yo falls on the Jade Disk" , supported by three pillars nine metres in diameter, and the tower is made up of 11 clusters of balls of different sizes, such as the same pearls from the sky. The body of the tower consists mainly of the capsule (350 m), upper sphere (263 m), lower sphere (90 m), five small balls, towers and squares, each with different functions and visual layers.
-An integrated tourism cultural facility, with multiple functions such as tourism, catering, shopping, entertainment, exhibitions, historical displays, etc. The capsule is the highest tourist range, allowing 360 degrees of view oversea; the upper sphere has a rotating restaurant where it can enjoy the urban landscape while eating; the lower sphere has an indoor playground and an exhibition of technology; and the tower contains the Shanghai City History and Development Museum, which vividly demonstrates the development of Shanghai from small fishing villages to international cities through waxes, models, multimedia, etc.
-At night, the eastern Ming Jule is more visible, and the LED light system of the tower can change many colours and patterns, while Chinese red is the symbol of joy and joy; it is blue purple, showing the future of technology; and it is rainbow, the color of color. On every major holiday, she will be the brightest star in Shanghai at night with a special light show with music and fireworks.
+东方明珠广播电视塔是上海的标志性文化景观之一，塔高约 468 米，位于浦东陆家嘴嘴尖，与外滩隔江相望，是上海天际线中最具辨识度的建筑。东方明珠于 1991 年 7 月 30 日动工，1994 年 11 月 18 日正式对外开放，在当时是亚洲第一、世界第三高塔，见证了浦东开发开放的历史进程。
+塔身设计灵感来自唐代诗人白居易的诗句“大珠小珠落玉盘”，由三根直径 9 米的立柱支撑，塔身由 11 个大小不一的球体串联而成，如同一串从天而降的明珠。塔身主要由太空舱（350 米）、上球体（263 米）、下球体（90 米）、五个小球、塔座和广场组成，每个球体都有不同的功能和观光层。
+塔内集观光、餐饮、购物、娱乐、会展、历史陈列等多功能于一体，是一座综合性的旅游文化设施。太空舱是最高的观光层，可以 360 度俯瞰上海全景；上球体设有旋转餐厅，可以一边用餐一边欣赏城市景观；下球体有室内游乐场和科技展览；塔座内有上海城市历史发展陈列馆，通过蜡像、模型、多媒体等手段，生动展示了上海从小渔村到国际大都市的发展历程。
+夜晚的东方明珠更加璀璨夺目，塔身的 LED 灯光系统可以变换出多种颜色和图案，时而是中国红，象征喜庆吉祥；时而是蓝紫色，展现科技未来；时而是彩虹色，绚丽多彩。每逢重大节日，东方明珠还会上演特别的灯光秀，配合音乐和烟火，成为上海夜空中最亮的明星。
 观光亮点
-Zoo, capsule.
-Photo by https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental Pearl Tower in Shanghai.jpg
-The capsule is located at a height of 350 metres at the highest point in the Orient, and is the most open view of the surface. Take the high-speed elevator, about two minutes. The design of the capsule is full of a sense of technology, with silver and grey metal decorations inside the spherical space, accompanied by blue lights, creating an atmosphere for the capsule.
-The tourist zone uses panorama landing glass, 360 degrees unshielded and can see the whole of Shanghai. From this height, the Yangpo River divides cities into Pushi and Pudong, as a smooth silver belt; the historical complex of the outer beach is organized like a fine model; the other high buildings of the land mouth are beneath their feet and can look down at their roofs; and the remote urban landscape extends to the skyline and is visible more than 50 kilometres in the clear weather.
-And there's also the Cloud Walking project in the capsule, which is a suspended, transparent glass corridor, and that's 350 meters deep, and it's more stimulating than jumping. Many tourists are here to challenge their courage and take memorable photographs. There is also a special service in the capsule: making an appointment here for a birthday party or proposal ceremony, making promises over the clouds, romantic and unforgettable.
-🔮 Full transparency gallery (259 meters high, challenging limits)
-Photo by https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental Pearl Tower in Shanghai.jpg
-At 259 meters above the upper sphere, there is an all-transparent suspension gallery, which is one of the most exciting experiences of the Orient Pearl. The gallery is about 1.5 metres wide and about 10 metres long. The floors, walls, ceilings are all steeled glass and are completely transparent.
-Standing on the porch, with transparent glass around and beneath its feet, the ground, vehicles and pedestrians below are clearly visible, and the feeling of vaccinating increases the heart beats and soft feet. Many tourists would hold their hands tight when they first set foot on the gallery and would not look down. But when fear is overcome, the sense of achievement that conquers high altitudes and the sense of euphoria that overlooks at cities will remain unforgettable for life.
-The gallery is an excellent location for taking photographs and can produce creative photographs: lying on the glass floor as if floating in the air; and making all kinds of exaggerating moves to create exciting effects. It is recommended that it be properly dressed, as transparent glass floors may reflect.
-City History Museum (over time and space, understanding Shanghai)
-Photo by https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental Pearl Tower in Shanghai.jpg
-The Shanghai City Museum of Historical Development, located in the Oriental Mindo, is an important window of understanding of Shanghai ' s historical culture. With an area of approximately 10,000 square metres, the pavilion has vividly recreated the development of Shanghai from ancient to modern times through various displays such as wax images, models, objects, and multimedia.
-The exhibition was divided into thematic areas: “Shanghai before the port” depicted the early history of Shanghai from small fishing villages to county towns; the “Ten Miles of the Ocean” exhibition area returned to the scenery of Shanghai in the 1930s, including the scenery of Nanjing Road, the outer beach, the Quaker Gate, where the wax figure was alive, as if it had passed back to that age; and the “Old Dreams at Sea” exhibition showcased the wells of Old Shanghai, including teahouses, barbershops, tailoring shops, pawnshops, etc., where each scene was equipped with a sound light effect that would put people at risk.
-Of particular interest is the restoration of the Old Shanghai Street View, which restored Shanghai Streets in the 1930s at 1:1, with tourists walking on the streets, taking pictures, as if they had actually returned to that era. The tickets to the pavilion have been included in the package of tickets for Myeongju Oriental, which takes approximately 1 to 1.5 hours.
-♪ Nightlight Show ♪
-Photo by https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental Pearl Tower in Shanghai.jpg
-The night view of the Middle of the East is one of the iconic landscapes of the Shanghai Nightscape. The tower is equipped with tens of thousands of LED lamps that can transform countless colors and patterns. Every night, the star of the Orient will be a light show, the colour of the tower will change, and it will change gradually, as if it were a rainbow; it will be a flash, as if it were a star; and it will flow as if it were a water wave.
-During major festivals, the light shows of the Orient Myeong Joo are much larger and will be specially designed in conjunction with music and themes. Chinese red and gold at the time of the Spring Festival, which symbolizes happy and happy times; the red and yellow colour of the five-star red flag at the time of the Fourth of July, which displays love; and the red and green colour at the time of Christmas, which creates a holiday atmosphere. The best sightings for the light show are the outer beaches, Ribbon Boulevard and the Huangpo River cruise ship, from which the whole of the pearls of the East can be seen, and the lights of the surrounding buildings make up a complete night view.
-If one chooses to observe within the Middle East, it is suggested that the towers be set up at nightfall. It is possible to enjoy the urban landscape at sunset, and then wait for the nightfall to come to Shanghai. From the inside of the tower, it can be seen that the whole city has changed from day to night, that lights have gradually lit up, and that the city has awakened in the night, displaying a different charm from the day.
+🚀 太空舱（最高观光层，视野极致）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg
+太空舱位于东方明珠的最高处，高度 350 米，是塔内视野最开阔的观光层。乘坐高速电梯，约 2 分钟即可到达。太空舱的设计充满科技感，球形空间内部采用银灰色金属装饰，配以蓝色灯光，营造出太空舱的氛围。
+观光层采用全景落地玻璃，360 度无遮挡，可以俯瞰整个上海。从这个高度看下去，黄浦江如同一条蜿蜒的银带，将城市分为浦西和浦东两部分；外滩的历史建筑群如同精致的模型，排列整齐；陆家嘴的其他高楼都在脚下，可以俯视它们的屋顶；远处的城市景观一直延伸到天际线，天气晴朗时能见度可达 50 公里以上。
+太空舱内还设有“云中漫步”项目，这是一段悬空的透明玻璃走廊，走在上面，脚下就是 350 米的深渊，刺激程度堪比蹦极。许多游客在这里挑战自己的胆量，拍下难忘的照片。太空舱还有一个特别的服务：可以预约在这里举办生日派对或求婚仪式，在云端之上许下承诺，浪漫而难忘。
+🔮 全透明观光廊（259 米高空，挑战极限）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg
+位于上球体的 259 米高度，有一条全透明的悬空观光廊，这是东方明珠最刺激的体验项目之一。观光廊宽约 1.5 米，长约 10 米，地板、墙壁、天花板全部采用钢化玻璃，完全透明。
+站在观光廊上，四周和脚下都是透明的玻璃，可以清晰看到下方的地面、车辆和行人，那种悬空的感觉让人心跳加速，腿脚发软。许多游客初次踏上观光廊时都会紧紧抓住扶手，不敢往下看。但克服恐惧后，那种征服高空的成就感和俯瞰城市的豪迈感会让人终身难忘。
+观光廊是拍照的绝佳位置，可以拍出各种创意照片：躺在玻璃地板上，仿佛漂浮在空中；做出各种夸张的动作，营造出惊险刺激的效果。建议穿着得体，因为透明玻璃地板可能会有反光效果。
+🏛️ 城市历史陈列馆（穿越时空，了解上海）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg
+位于东方明珠塔座内的上海城市历史发展陈列馆，是了解上海历史文化的重要窗口。陈列馆面积约 1 万平方米，通过蜡像、模型、实物、多媒体等多种展示手段，生动再现了上海从远古到现代的发展历程。
+展览分为多个主题区域：“开埠前的上海”展示了上海从小渔村到县城的早期历史；“十里洋场”展区还原了 20 世纪二三十年代上海的繁华景象，包括南京路、外滩、石库门里弄等场景，蜡像人物栩栩如生，仿佛穿越回那个时代；“海上旧梦”展区展示了老上海的市井生活，包括茶馆、理发店、裁缝铺、当铺等，每个场景都配有声光电效果，让人身临其境。
+特别值得一看的是“老上海街景”复原区，这里按照 1:1 的比例复原了 20 世纪 30 年代的上海街道，包括电车、黄包车、路灯、店铺招牌等，游客可以走在“街道”上，拍照留念，仿佛真的回到了那个年代。陈列馆的门票已包含在东方明珠的套票中，参观时间约需 1-1.5 小时。
+🌃 夜景灯光秀（璀璨明珠，夜空之星）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/1f/Oriental_Pearl_Tower_in_Shanghai.jpg
+东方明珠的夜景是上海夜景的标志性景观之一。塔身装有数万盏 LED 灯，可以变换出无数种颜色和图案组合。每天晚上，东方明珠都会上演灯光秀，塔身的颜色不断变换，时而是渐变色，如同彩虹般绚丽；时而是闪烁效果，如同星星般闪耀；时而是流动效果，如同水波般流淌。
+重大节日时，东方明珠的灯光秀更加盛大，会配合音乐和主题进行特别设计。春节时是中国红和金色，象征喜庆吉祥；国庆节时是五星红旗的红黄配色，展现爱国情怀；圣诞节时是红绿配色，营造节日氛围。灯光秀的最佳观赏点是外滩、滨江大道和黄浦江游船上，从这些位置可以看到东方明珠的全貌，配合周围建筑的灯光，构成一幅完整的夜景画卷。
+如果选择在东方明珠内部观光，建议傍晚时分上塔，可以先欣赏日落时分的城市景观，然后等待夜幕降临，观赏上海的夜景。从塔内向外看，可以看到整个城市从白天到黑夜的转变，万家灯火逐渐点亮，城市在夜色中苏醒，展现出不同于白天的魅力。
 
 🚇 19:15-19:30 | 交通：前往晚餐地点
-• Place of departure: Myeongju Oriental
-♪ Walking: Walking 10 minutes along Riverway ♪
-• Location of arrival: Tavola Dining Room (2,500 Coastal Avenue)
+🟢 出发地点：东方明珠
+👣 步行路线：步行 10 分钟沿滨江大道
+🔴 到达地点：Tavola 餐厅（滨江大道 2500 号）
 
-Dinner: Tavora
-Cafeteria name: Tavora
-地址：Shanghai City, 2500 River Avenue, Pudong-Sin.
-人均消费：Four hundred dollars.
-Observe:
-Queuing: Pre-arranged, river viewing
-Tel. 021-20228288
+🍽️ 19:30-21:00 | 晚餐：Tavola
+餐厅名称：Tavola 
+地址：上海市浦东新区滨江大道 2500 号
+人均消费：400 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：需提前预订，拥有河景美景
+📞 联系电话：021-20228288 
 营业时间：11:30-14:00, 17:30-22:00
 餐厅背景
-Tavora, a high-class Italian restaurant located on the side of the Yellow River, is well known in Shanghai as a restaurant. The restaurant's name, “Tavora”, in Italian, means “the table” in order to bring the Italian family-style carnival experience to everyone. The restaurant, designed by the Italian designer, combines the romantic culture of the Mediterranean with modern aesthetic aesthetics, creating a climate of elegance and undisturbed meals.
-The greatest feature of the restaurant is the excellent view of the river, with a whole window of glass facing Wong Po River, which allows for the night viewing of the nation's complex on the outside. During the day, the sun is pouring into the restaurant through the downwindows, and at night, the lights on the beach are shining, and they are on the river. This is one of the most romantic food options in the Lu's mouth region, especially for dating and business dinners.
-Tavora's chef, a senior chef from Italy, with over 20 years of cooking experience, worked in the Michelin restaurant in Milan, Rome, etc. He insisted on the use of Italian imported foods, such as Parma ham, Palmerson cheese, black truffles, olive oil, etc., while combining fresh food from Shanghai with fresh food from the mainland, creating an intuitive food that was both authentic and indigenous. The dining room list is also very rich and contains a collection of high-quality wine from all major Italian production regions, and the waiter recommends the most appropriate wine for the food to improve the whole meal experience.
+Tavola 是一家位于黄浦江畔的高级意大利餐厅，在上海意式餐饮界享有盛誉。餐厅名称“Tavola”在意大利语中意为“餐桌”，寓意着将意大利家庭式的温馨用餐体验带给每一位食客。餐厅由意大利设计师操刀设计，将地中海的浪漫风情与现代简约美学相结合，营造出优雅而不失温馨的用餐氛围。
+餐厅最大的特色是拥有绝佳的江景视野，整面落地玻璃窗面向黄浦江，可以将外滩万国建筑群的夜景尽收眼底。白天，阳光透过落地窗洒进餐厅，江面波光粼粼；夜晚，外滩的灯光璀璨，倒映在江面上，浪漫至极。在这里用餐，可以一边品尝地道的意式美食，一边欣赏上海最美的江景，是陆家嘴区域最浪漫的用餐选择之一，特别适合情侣约会和商务宴请。
+Tavola 的主厨是来自意大利的资深厨师，拥有超过 20 年的烹饪经验，曾在米兰、罗马等地的米其林餐厅工作。他坚持使用意大利进口的食材，如帕尔马火腿、帕玛森芝士、黑松露、橄榄油等，同时结合上海本地的新鲜食材，创造出既正宗又具有本地特色的意式料理。餐厅的酒单也非常丰富，收藏了来自意大利各大产区的优质葡萄酒，侍酒师会根据菜品推荐最合适的酒款，提升整体用餐体验。
 推荐菜品
-The truffles.
-Risotto al Tartufo is a traditional dish in northern Italy and one of Tavora's brands. This dish, which is one of the most expensive foods in the world, is referred to as “diamonds on the table” and is imported by Italy. The fragrance of truffles is unique and rich, and it carries a compound of forest, soil, musk and cannot be replaced with other food.
-Cooking is a process that requires patience and skill. Carnaroli or Arborio rice, imported from Italy, are selected to be of high starch content, which will maintain the integrity and smooth taste of the grain after cooking. Cooking is done with butter and onions, which are then added to the rice grains to be condensed to half-transparent, followed by high soup (usually chicken soup or vegetable soup), and after each addition, the rice is mixed to allow the rice grains to fully absorb the soup and to be added to the next one. It takes about 20 minutes for the whole process to finally reach the "soft inside hard" state of al dente, which is the standard taste of the pastry.
-Butter, Palmerson cheese and truffles are added to the pot so that the cheese can melt and the rice grains can be fully integrated. When the plate is installed, fresh truffles are scratched on the surface of the rice, and the fragrance of the truffle is released in a flash of heat, and the nose comes out. In a spoonful of portals, the grains of rice are chewed with a microcosm, the cream of cheese, the odour of butter, the unique fragrance of truffles, rich and harmonious. It's a luxurious dish that's the best of all. It's also the favorite of the eaters.
-Seafood pasta.
-Seafood pasta is the traditional dish in the Italian coastal area, and Tavora's seafood is used for fresh seafood of the day, including prawns, blue mouths, squids, clams, etc., in a rich variety and in great measure. The pasta is made of Italian imported Spaghetti, which is boiled to an al dente state, and which is smooth and chewing.
-They are prepared with olive oil, garlic chips, peppers, and fast-fried seafood, which heats up and releases fresh juice. Add white wine and fresh, then ketchup or white sauce (chosen by taste) and then boiled pasta, evenly folded, so that each one of the noodles would smell like sauce and seafood. Fresh lore leaves and Palmerson cheese are crushed and fragrance is added.
-The colours of seafood coming out of the pot are bright, red ketchup, white squid, pink shrimp, black cyanide, and visual. Spaghetti is chewy, seafood is juicy, sauce is thick but not greasy, and Roller's fragrance and cheese makes the whole sense. This dish is full of Mediterranean sunlight and is a necessary choice for seafood lovers.
-It's cold lamb.
-The low-temperature lamb is Tavora's creative dish, using modern molecular cooking techniques such as Sous Vide, which bring fresh and juicy lamb to the extreme. The choice of lamb meat imported by New Zealand, which is fine and tasteless, is the preferred option for producing high-quality food.
-The lamb first tastes of rosemary, centrifugal, garlic, olive oil, etc., and then is sealed in a vacuum and placed in a warm water bath at temperatures ranging from 55 to 60°C. This chronic low-temperature cooking allows the proteins of the lamb to change slowly, the meat to become extremely soft, while maintaining internal moisture and nutrients without losing juice as traditional cooking has done.
-After slow cooking, the surface of the lamb is made of high temperature and fast frying, forming a corocated shell that locks the internal juice, while producing a merad reaction and increasing the scent and taste. Cut off the lamb, and you can see a flat pink inside, which is perfect quarter-cut. The softness of the meat spreads with a soft fork, the entrance, the beauty of the lamb, the fragrance of the spices, the layer of flavour, and the abundance and harmony of the mouth.
-The lamb is accompanied by time-sensitive vegetables, such as beryllium, carrots, mashed potatoes, etc., the sweetness of the vegetables and the greasyness of the lamb are balanced. It's made of red wine, beef soup, vanilla, thick lynch, perfect for lamb. The dish shows a perfect combination of modern cooking techniques and traditional and intuitive cooking, and is a necessary sign for the restaurant.
-Tiramisu.
-Tiramisu is one of Italy's most famous desserts, whose name in Italian means “take me away” and which is delicious enough to make people want to take it. Tiramisu in Tavora is made strictly in accordance with the traditional formula, and each layer is carefully crafted.
-The bottom is Ladyfinger, which is immersed in a mixture of condensed coffee and rum, absorbs the bitter fragrance of coffee and rum; the middle is cream from the mascarpone mix of yolk and sugar, which is light and dense, which is impregnated; and the top is coated with cocoa powder, adding sweeter layers.
-Tastes with spoons cut vertically, and all layers are covered in a spoon. In the entrance, first, the bitterness of cocoa powder, then the sweetness of cheese cream, then the softness of finger crackers and the bitter smell of coffee, and finally the odour of rum. The combination of tastes in the mouth, bitterness, sweetness, perfume and harmony, is the charm of Tiramisu.
-This dessert is not only delicious, but also romantic. It is a legend that prior to the departure of the Italian soldiers, their wives would produce Tiramisu for them, hoping that the desserts would “take away” them and return safely. After Tavora had a good meal, a Tiramisu was perfected to draw a happy ending to this food trip.
+🍚 松露烩饭（意式经典，奢华至极）
+松露烩饭（Risotto al Tartufo）是意大利北部的传统名菜，也是 Tavola 的招牌菜之一。这道菜选用意大利进口的阿尔巴白松露或佩里戈黑松露，这是世界上最昂贵的食材之一，被誉为“餐桌上的钻石”。松露的香气独特而浓郁，带着森林、泥土、麝香的复合气息，无法用其他食材替代。
+烩饭的制作是一个需要耐心和技巧的过程。选用意大利进口的 Carnaroli 或 Arborio 大米，这两种米淀粉含量高，煮后能保持米粒的完整性和爽滑的口感。烹制时先用黄油和洋葱爆香，加入米粒翻炒至半透明，然后分次加入高汤（通常是鸡汤或蔬菜汤），每次加入后要不断搅拌，让米粒充分吸收汤汁，再加入下一次。整个过程需要约 20 分钟，最终米粒要达到“外软内硬”的 al dente 状态，这是意式烩饭的标准口感。
+起锅前加入黄油、帕玛森芝士和松露片，搅拌均匀，让芝士融化，与米粒充分融合。装盘后，在烩饭表面刨上新鲜的松露片，松露的香气在热气的作用下瞬间释放，扑鼻而来。舀一勺送入口中，米粒软糯中带着微微的嚼劲，芝士的奶香、黄油的醇香、松露的独特香气层层递进，口感丰富而和谐。这道菜奢华而不张扬，是意式料理中的极品，也是美食家们的最爱。
+🦞 海鲜意面（地中海风情，鲜美多汁）
+海鲜意面是意大利沿海地区的传统菜肴，Tavola 的海鲜意面选用当日新鲜的海鲜，包括大虾、青口贝、鱿鱼、蛤蜊等，种类丰富，分量十足。意面选用意大利进口的 Spaghetti（细长面），煮至 al dente 状态，保持爽滑和嚼劲。
+烹制时先用橄榄油、蒜片、辣椒爆香，加入海鲜快速翻炒，海鲜受热后释放出鲜美的汁液。加入白葡萄酒提鲜去腥，再加入番茄酱或白酱（根据口味选择），最后加入煮好的意面，翻炒均匀，让每一根面条都裹上酱汁和海鲜的鲜味。起锅前撒上新鲜的罗勒叶和帕玛森芝士碎，增添香气。
+出锅的海鲜意面色彩鲜艳，红色的番茄酱、白色的鱿鱼、粉色的虾、黑色的青口贝，视觉效果诱人。意面爽滑有嚼劲，海鲜鲜嫩多汁，酱汁浓郁但不油腻，罗勒的清香和芝士的奶香提升了整体的层次感。这道菜充满了地中海的阳光气息，是海鲜爱好者的必点之选。
+🥩 低温羊肉（现代技法，酥软入味）
+低温羊肉是 Tavola 的创意菜品，采用现代分子料理的低温慢煮技法（Sous Vide），将羊肉的鲜嫩和多汁发挥到极致。选用新西兰进口的羔羊肉，这种羊肉肉质细嫩，没有膻味，是制作高级料理的首选。
+羊肉先用迷迭香、百里香、大蒜、橄榄油等腌制入味，然后真空密封，放入恒温水浴中，以 55-60℃ 的温度慢煮 6-8 小时。这种低温长时间的烹饪方式，可以让羊肉的蛋白质缓慢变性，肉质变得极其酥软，同时保持内部的水分和营养，不会像传统烹饪那样流失汁液。
+慢煮完成后，羊肉表面用高温快速煎制，形成焦香的外壳，锁住内部的汁液，同时产生美拉德反应，增加香气和口感。切开羊肉，可以看到内部呈现均匀的粉红色，这是完美的五分熟状态。肉质酥软到用叉子轻轻一压就散开，入口即化，羊肉的鲜美、香料的芬芳、煎制的焦香层层递进，口感丰富而和谐。
+羊肉配以时令蔬菜，如芦笋、胡萝卜、土豆泥等，蔬菜的清甜中和了羊肉的油腻，营养均衡。再淋上特制的红酒酱汁，酱汁由红酒、牛肉高汤、香草熬制而成，浓郁醇厚，与羊肉完美搭配。这道菜展现了现代烹饪技术与传统意式料理的完美结合，是餐厅的必点招牌。
+🍰 提拉米苏（经典甜点，完美收官）
+提拉米苏（Tiramisu）是意大利最著名的甜点之一，名字在意大利语中意为“带我走”，寓意着这款甜点美味到让人想带走。Tavola 的提拉米苏严格按照传统配方制作，每一层都精心调制。
+底层是手指饼干（Ladyfinger），浸泡在浓缩咖啡和朗姆酒的混合液中，吸收了咖啡的苦香和朗姆酒的醇香；中间层是马斯卡彭芝士（Mascarpone）混合蛋黄和糖打发而成的奶油，质地轻盈绵密，入口即化；顶层撒上可可粉，增添苦甜的层次。
+品尝时，用勺子垂直切下，一勺中包含所有的层次。送入口中，首先是可可粉的微苦，随即是芝士奶油的香甜细腻，接着是手指饼干的松软和咖啡的苦香，最后是朗姆酒的醇厚回味。多种味道在口中交织融合，苦、甜、香、醇层次分明又和谐统一，这就是提拉米苏的魅力所在。
+这道甜点不仅美味，还充满了浪漫的寓意。传说中，意大利士兵出征前，妻子会为他们制作提拉米苏，希望甜点能“带走”他们，平安归来。在 Tavola 享用完丰盛的晚餐后，以一份提拉米苏作为完美收官，为这顿美食之旅画上圆满的句号。
 
 🚇 21:00-21:30 | 交通：返回酒店
-Location of departure: Littern Avenue
-Walk: 10 minutes.
-→ Route: Subway 2 Line 3 Station Nanjing East Road Station
-Walk: 8 minutes
-Location of arrival: Hotel Perkinswana (427 Fukushima Road)
-Total time-consuming: about 30 minutes
+🟢 出发地点：滨江大道
+👣 步行：10 分钟 → 地铁 2 号线陆家嘴站
+🚊 乘坐路线：地铁 2 号线（往徐泾东方向）→ 3 站 → 南京东路站
+👣 步行：8 分钟
+🔴 到达地点：🏨 铂金万澳酒店（福州路 427 号）
+⏱️ 总耗时：约 30 分钟
 
-♪ 21:30 ♪ Get to the hotel and rest
+🏨 21:30 | 抵达酒店休息
 
 📅 Day 4: 文艺创意·静安风华
-Wukanglu - Zheng An Temple
-The hotel leaves at 10:00.
+武康路->田子坊->静安寺
+⏰ 10:00 | 酒店出发
 📍 出发地点：🏨 铂金万澳酒店（福州路 427 号）
 
 🚇 10:00-10:35 | 交通：前往武康路
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-🚊 Route: subway line 2 (to the east of Xu) switch to metro line 10 or line 11 Transport university station
-Location of exit: Transport University Station, 8 minutes to Wukang Road
-Total time taken: about 35 minutes
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：地铁 2 号线（往徐泾东方向）→ 换乘地铁 10 号线或 11 号线 → 交通大学站
+🔴 下车地点：交通大学站，步行 8 分钟至武康路
+⏱️ 总耗时：约 35 分钟 | 💰 票价：4 元
 
 📍 10:35-13:00 | 武康路历史文化街区
-地址：Wukang Road, Shangxi District, Shanghai
-开放时间：Open all day.
-门票：Free.
-建议游览时间：2-3 hours
-最佳游览季节：Fall (October-November)
+地址：上海市徐汇区武康路
+开放时间：全天开放
+门票：免费
+建议游览时间：2-3 小时
+最佳游览季节：秋季（10-11 月）
 景点介绍
-Rute Ferguson, formerly known as Route Ferguson, was founded in 1907 and named after John Calvin Ferguson, an American missionary and scholar. This road, 1.17 kilometres long and 12 metres wide, is one of the most distinctive historical and cultural neighbourhoods in Shanghai, and is referred to as the “Celebrity Road” that has enriched Shanghai's recent centuries of history. In 2011, Wukang Road was selected as the "History and Cultural Street of China" and became an important business card for urban culture in Shanghai.
-Wukang Road, located in the area of Xuxie, Shanghai, was a high-level residential area of the French rental community, with shades on both sides of the road, mostly over 100 years old. They were planted by the French at the beginning of the 20th century, and now they're growing into giant trees, thick leaves and a green tunnel. In spring and summer, the sun forms a radiant light on the ground through the shrouds; in autumn, the yellow leaves are paved on the roads, slamming on the sand and romanticizing; and in winter, the luminous branches sew beautiful lines, with no rhyme.
-On this road, numerous historical buildings, including old houses of various styles such as Spanish, French Renaissance and British Village Houses, were preserved, with 37 outstanding historical buildings, 14 of which are Shanghai City cultural preservation units. Most of these buildings were built in the 1930s and were used by foreign nationals, dignitaries and cultural celebrities. Many historical celebrities such as Bagin, Wong Xing, Song Qingyu, Guo Moo-jo and Colin lived here, each with a legend.
-Today's Wukong Road, while preserving historic buildings, injects new cultural dynamism. A large number of fine cafés, independent bookstores, art galleries and designer workshops have been opened along the road, attracting youth and creative people. There is no commercial street noise, a climate of calm and elegance, and one of Shanghai ' s most suitable streets for walking. The convergence of history with modernity and the collision of tradition with innovation can be felt on the road to martial arts, which is the unique charm of this city in Shanghai.
+武康路原名福开森路（Route Ferguson），始建于 1907 年，以美国传教士、学者福开森（John Calvin Ferguson）的名字命名。这条全长 1.17 公里、宽 12 米的马路，是上海最具特色的历史文化街区之一，被誉为“浓缩了上海近代百年历史”的“名人路”。2011 年，武康路入选“中国历史文化名街”，成为上海城市文化的重要名片。
+武康路位于上海徐汇区，曾是法租界的高级住宅区，道路两旁梧桐成荫，树龄多在百年以上。这些法国梧桐是 20 世纪初法国人种植的，如今已长成参天大树，枝叶繁茂，形成了一条绿色的隧道。春夏时节，阳光透过梧桐叶洒下斑驳光影，在地面上形成流动的光斑；秋季时节，金黄的梧桐叶铺满路面，踩上去沙沙作响，浪漫至极；冬季时节，光秃的枝干勾勒出优美的线条，别有一番韵味。
+这条路上保留了众多历史建筑，包括西班牙式、法国文艺复兴式、英国乡村别墅式等多种风格的老洋房，共有 37 处优秀历史建筑，其中 14 处为上海市文物保护单位。这些建筑大多建于 20 世纪二三十年代，曾是外国侨民、民国政要、文化名人的住所。巴金、黄兴、宋庆龄、郭沫若、柯灵等众多历史名人都曾在这里居住，每一栋建筑都有一段传奇故事。
+如今的武康路，在保护历史建筑的同时，注入了新的文化活力。沿路开设了众多精品咖啡馆、独立书店、艺术画廊、设计师工作室，吸引着文艺青年和创意人士。这里没有商业街的喧嚣，保持着宁静优雅的氛围，是上海最适合漫步的街道之一。漫步在武康路上，可以感受到历史与现代的交融，传统与创新的碰撞，这正是上海这座城市的独特魅力所在。
 游览要点
-🏢 Wukang Building (insignative building, net-to-carve)
-Photo: https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang Road near Huaihai Road%2C Shanghai.jpg
-The Wukang Building, located at the intersection of Wukang Road and Huaihai Centre Road, Yuqing Road and Tianyang Road, is one of the most iconic buildings on Wukang Road and one of Shanghai ' s most famous cyber-blogging sites. The building was built in 1924 by the Hungarian architect Ladislaus Hudec, formerly known as the Normandy Apartment (I.S.S.S. Normandie Partnerships), and is known for its appearance as a cruise ship.
-The building, which follows the French Renaissance style of architecture, has a triangular layout adapted to the special terrain at the intersection. The building is 8 floors high, with red bricks on the outside, with white line feet, with sharp contrasts. The corner of the building is the most well handled and is designed in a circular arc, as if the head of the ship was ahead of the wave and was moving. They are finely decorated, they are finely carved from an iron bar on the balcony, and they use French long windows, which are elegant in proportion.
-The Wukang Building, which has been inhabited by a large number of celebrities, including film artists Zhao Dan, Qin Yi, Sun Doi, etc., is an important landmark for the cultural and artistic community in Shanghai. The Vukang Road Visitors Centre and Café are now located on the ground floor of the building, where tourists can learn about the history of Wukang Road, buy creative works, or sit on open seats, order a cup of coffee and enjoy the beauty of the 100-year-old building.
-The best photo angle is taken in the direction of the midway of the sea and can be seen on the full surface of the building and in a beautiful roundabout. The morning and evening is the best photo time, the light is soft and the flow is low. A lot of photographers are here to watch and capture the Wukang building in different light.
-Barkin's home.
-Photo: https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang Road near Huaihai Road%2C Shanghai.jpg
-Bagin is based at 113 Wukang Road, a three-storey garden house built in 1923. Mr. Buckin, China's modern literary giant, lived here for 50 years from 1955 to 2005, until he died. This is not only the home of Barkin, but also an important place for his literary creation, where important works such as " Do what you want " are done.
-The home has now been converted into the Barkin Museum, open to the public. It's like entering Mr. Bagin's spiritual world. The living room, the study room and the bedroom were kept in their original shape, with the pens and manuscripts used by Barkin on the bookboard, his collection of books on the shelf and a picture of him with his family and friends on the wall. Each item carries the temperature of history and tells the life story of the literary giant.
-Valuable objects such as Barkin ' s manuscripts, writings, letters and photographs are also displayed at the memorial, detailing his literary achievements and life experience. Of particular interest is the manuscript of The Dole, which is the work of Barkin's late years, reflecting history with a sincere pen and being dubbed “the work of the conscience of a generation of intellectuals”. Visiting Barkin's home is not only a literary journey, but also a spiritual baptism. Homes are open free of charge, but are required to make appointments in advance and are restricted to daily visits.
-♪ Wong Xing's home ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang Road near Huaihai Road%2C Shanghai.jpg
-Wong Xing is based at 393 Vukang Road (formerly 107 Vukang Road) and is a two-storey garden house. Mr. Wong Xing of the Singh Revolution lived here briefly in 1916. Huang Xing, a recent democratic revolutionary in China and known as Sun Zhongshan, has established an undying legacy to overthrow the Qing Dynasty and establish the Republic.
-The home is built in the form of a British countryside house, red-wall slopes, water-cleaning brick walls, surrounding the outer porch and a quiet garden. The interior has been simplistic, showing the history of Wong Xing, revolutionary activities and historical contributions. Although Wong Xing lived here for a short period of time, it is important to bear witness to the final days of his life. The opening up of their homes free of charge is an important place to learn about the history of the Xinhe revolution and to remember its pioneers.
-♪ Red cafés on the Net ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang Road near Huaihai Road%2C Shanghai.jpg
-Numerous fine cafés have been opened along the Wukang road, each with its own unique style and story, and it is the youth of the arts who fights for the holy places.
-FARINE is one of the most famous bakeries in Wukang Road, famous for handmade bread and fine coffee. The shop is equipped with a simple industrial wind, and an open kitchen can see the bakery making process on the ground. The branded products are beauties of bread and truncheons, soft skin, soft inside, and fragrance. It's a perfect tea mix.
-RAC Coffee is a fine café with mono-coffee, with beans from high-quality production sites around the world, made by professional coffeemakers. The shop is equipped with cozy, woody furniture, green dots, suitable for sitting and reading or working.
-These cafés provide not only delicious coffee and dessert, but also a space to relax and feel life. Sitting at the window, looking out of the window, watching the movie star, walking around, as if time was slowing down, that's the charm of Wukang Road.
-♪ The shades ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang Road near Huaihai Road%2C Shanghai.jpg
-The tree of Wukang Road is one of the most fascinating elements of this road. These trees, more than a hundred years old, bear witness to the 100-year transformation of the road. In the spring, the tree extracts green new leaves and is vibrant; in the summer, thick shades cover the sun and bring cooler to pedestrians; in the autumn, the yellow leaves are covered in roads, like golden carpets, romantic to extraordinary; and in the winter, the luminous branches draw fine lines and display another beauty.
-The shades are the best background for taking pictures, whether of humans or of buildings, and with the dots of the trees, they add a bit of art and history. It is recommended that this time line be taken early in the morning or late in the evening, and that it be smooth and smudged, and that the poetic atmosphere of Wu Kang Road be most visible.
+🏢 武康大楼（标志性建筑，网红打卡地）
+图片：https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang_Road_near_Huaihai_Road%2C_Shanghai.jpg
+武康大楼位于武康路与淮海中路、余庆路、天平路的交汇处，是武康路最标志性的建筑，也是上海最著名的网红打卡地之一。大楼建于 1924 年，由匈牙利建筑师邬达克（Ladislaus Hudec）设计，原名“诺曼底公寓”（I.S.S Normandie Apartments），因其外形酷似一艘航行的巨轮而得名。
+大楼采用法国文艺复兴式建筑风格，呈三角形布局，适应了道路交叉口的特殊地形。建筑高 8 层，外立面采用红砖砌筑，配以白色线脚，色彩对比鲜明。大楼的转角处理最为精彩，采用圆弧形设计，如同船头破浪前行，充满动感。立面装饰精美，阳台铁艺栏杆雕花精致，窗户采用法式长窗，比例优雅。
+武康大楼曾居住过众多名人，包括电影艺术家赵丹、秦怡、孙道临等，是上海文化艺术界的重要地标。如今大楼底层开设了武康路游客中心和咖啡馆，游客可以在这里了解武康路的历史，购买文创产品，或者坐在露天座位上，点一杯咖啡，静静欣赏这座百年建筑的风采。
+最佳拍照角度是从淮海中路方向拍摄，可以拍到大楼的完整立面和优美的转角线条。清晨和傍晚是最佳拍照时间，光线柔和，人流较少。许多摄影爱好者会在这里守候，捕捉不同光影下的武康大楼。
+📚 巴金故居（文学巨匠，精神家园）
+图片：https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang_Road_near_Huaihai_Road%2C_Shanghai.jpg
+巴金故居位于武康路 113 号，是一栋三层的花园洋房，建于 1923 年。中国现代文学巨匠巴金先生从 1955 年至 2005 年在这里居住了整整 50 年，直到去世。这里不仅是巴金的住所，更是他文学创作的重要场所，《随想录》等重要作品都在这里完成。
+故居现已改建为巴金文学纪念馆，对公众开放。走进故居，仿佛走进了巴金先生的精神世界。客厅、书房、卧室都保持着原貌，书桌上摆放着巴金使用过的钢笔和稿纸，书架上陈列着他收藏的书籍，墙上挂着他与家人、友人的合影。每一件物品都承载着历史的温度，诉说着这位文学巨匠的人生故事。
+纪念馆内还陈列着巴金的手稿、著作、信件、照片等珍贵文物，详细介绍了他的文学成就和人生经历。特别值得一看的是《随想录》的手稿，这部作品是巴金晚年的心血之作，以真诚的笔触反思历史，被誉为“一代知识分子的良心之作”。参观巴金故居，不仅是一次文学之旅，更是一次心灵的洗礼。故居免费开放，但需要提前预约，每天限流参观。
+🏛️ 黄兴故居（革命元勋，历史丰碑）
+图片：https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang_Road_near_Huaihai_Road%2C_Shanghai.jpg
+黄兴故居位于武康路 393 号（原武康路 107 号），是一栋两层的花园洋房。辛亥革命元勋黄兴先生 1916 年曾在此短暂居住。黄兴是中国近代民主革命家，与孙中山并称为“孙黄”，为推翻清朝统治、建立共和国立下了不朽功勋。
+故居建筑采用英国乡村别墅风格，红瓦坡顶，清水砖墙，外廊环绕，花园幽静。内部陈设简朴，展示了黄兴的生平事迹、革命活动和历史贡献。虽然黄兴在此居住时间不长，但这里见证了他生命的最后时光，具有重要的历史纪念意义。故居免费开放，是了解辛亥革命历史和缅怀革命先烈的重要场所。
+☕ 网红咖啡馆（文艺气息，休憩之所）
+图片：https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang_Road_near_Huaihai_Road%2C_Shanghai.jpg
+武康路沿线开设了众多精品咖啡馆，每一家都有独特的风格和故事，是文艺青年的打卡圣地。
+FARINE 是武康路最著名的面包咖啡馆之一，以手工面包和精品咖啡闻名。店内装修简约工业风，开放式厨房可以看到面包师现场制作面包的过程。招牌产品是可颂面包和法棍，外皮酥脆，内里松软，麦香浓郁。配上一杯手冲咖啡，是完美的下午茶组合。
+RAC Coffee 是一家精品咖啡馆，主打单品咖啡，咖啡豆来自世界各地的优质产地，由专业咖啡师手工冲制。店内装修温馨雅致，木质家具，绿植点缀，适合静坐阅读或工作。
+这些咖啡馆不仅提供美味的咖啡和甜点，更提供了一个放松身心、感受生活的空间。坐在临窗的位置，看着窗外梧桐树影婆娑，行人悠闲漫步，时光仿佛慢了下来，这就是武康路的魅力所在。
+🌳 梧桐树荫（最佳拍照背景，四季皆美）
+图片：https://upload.wikimedia.org/wikipedia/commons/c/cb/Wukang_Road_near_Huaihai_Road%2C_Shanghai.jpg
+武康路的梧桐树是这条路最迷人的元素之一。这些树龄超过百年的法国梧桐，见证了这条路的百年变迁。春天，梧桐树抽出嫩绿的新叶，生机勃勃；夏天，浓密的树荫遮蔽了烈日，为行人带来清凉；秋天，金黄的落叶铺满路面，如同金色的地毯，浪漫至极；冬天，光秃的枝干勾勒出优美的线条，展现着另一种美感。
+梧桐树荫是拍照的最佳背景，无论是人像还是建筑，有了梧桐树的点缀，照片都会增添几分文艺气息和历史韵味。建议在清晨或傍晚时分拍摄，此时光线柔和，树影斑驳，最能拍出武康路的诗意氛围。
 
 🍜 13:00-14:30 | 午餐：蘭心餐厅
-Name of restaurant: Lancée
-地址：Wong Po District, Shanghai. 130th.
-人均消费：138 yuan.
-Observe:
-Line up: Need to line up
-• Contact: 021-62530701
+餐厅名称：蘭心餐厅
+地址：上海市黄浦区进贤路 130 号
+人均消费：138 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：需要排队
+📞 联系电话：021-62530701 
 营业时间：11:00-20:30
 餐厅背景
-The Lancai restaurant is a very well-received, home-cooked, home-cooked restaurant, which has traditionally been home-cooked and home-cooked. The restaurant's name, “Lang heart”, is taken from “sweet heart”, meaning the heart of food and the heart of food.
-The restaurant is built with a platitude, full of old Shanghai style. The walls are covered with black and white photographs and posters showing the streets and characters of the last century; wooden tables and chairs, balconies and tiara elements; and warm yellow lights creating a warm atmosphere. The size of the restaurant is small, with just a dozen tables, but it is precisely because of its small size that the quality of each dish and the experience of each guest can be assured.
-Lan Chong's chef is a native Shanghaiian who has learned the cooking skills of his ancestors from childhood and has a deep understanding of and unique insight into traditional foods. He insisted on the use of local time foods, following traditional cooking techniques, while introducing appropriate innovations in palletization and tastes to regenerate traditional vegetables. Every course of the restaurant is now made, and there is no use of prefabricated food, a quality insistence that gives Lancheng the advantage of the Shanghai restaurant.
+蘭心餐厅是一家深受本地食客和游客喜爱的精致本帮菜餐厅，以传统上海家常菜为主打，坚持“家常菜不家常做”的理念，将普通的家常菜做出精致的味道和讲究的摆盘。餐厅名称“蘭心”取自“蕙质兰心”，寓意着对美食的用心和对食客的真心。
+餐厅装修古朴典雅，充满老上海风情。墙上挂着老上海的黑白照片和海报，展示着上世纪的街景和人物；木质桌椅、青花瓷餐具、旗袍元素随处可见；暖黄色的灯光营造出温馨的氛围。餐厅规模不大，只有十几张桌子，但正因为小而精，才能保证每一道菜的品质和每一位客人的用餐体验。
+蘭心的主厨是土生土长的上海人，从小跟随祖辈学习本帮菜烹饪技艺，对传统本帮菜有着深刻的理解和独到的见解。他坚持选用本地时令食材，遵循传统烹饪技法，同时在摆盘和口味上进行适当创新，让传统菜品焕发新的生命力。餐厅的每一道菜都是现点现做，绝不使用预制菜，这份对品质的坚持，让蘭心在上海本帮菜餐厅中脱颖而出。
 推荐菜品
-♪ Roasted onions roasted a large steak ♪
-Onions are a classic symbol of Shanghai foods and the smell of old Shanghai people's memories. It looks simple, but it's the best thing to do, from pick to pick, from fry to bake.
-The selection must be a pig's steak, which is the prettiest, thintest part and suitable for roasting. It's about a centimetre thick cut in the big row, slamming with a hammer, making the meat soft, easier to taste. Pickery is the key: it is made of sauce, butter, sugar, ginger juice, onion juice, etc., for at least four hours, allowing full penetration of the sauce into the deep body of the meat. The longer it takes to pick it up, the more it tastes.
-Cooking is done by frying the large chops to the yellow on both sides, locking the gravy and then putting it in the oven, slowly roasting it with the middle fire, further softening the meat, while also making the surface a fragrance shell. The roasting process must be constantly coated with pickled sauce to make the taste more plentiful. In the end, large amounts of onion flowers were spilled and the remaining temperatures were used to release onion flowers.
-The onions are baked with large steaks of gold and yellow, and the surfaces are fragrance, and the onions are green, and the scent snorts. Bite the next bite, the outer layer is soft, the inside is soft, the meat is chewy, the salty sauce, the sweetness of sugar, the fragrance of onion flowers, the fragrance of the fragrance, the resonance. This meal is the most satisfying meal, with a large meal with a bowl of rice.
-Oh, oh, oh, oh, oh.
-Scorch is the kung fu food in Shanghai, named after the “scrumptious oil”, which is famous for the sound of “sniffing” when it is finally poured. This dish, which is extremely demanding for food items and knives, is a litmus test of the cook ' s ability.
-The mackerel has to choose a fresh yellow cortex, so the meat is soft. Yellow platinum treatment is a technical task: to go to the bones, to go to the organs, to go to the blood, to leave only the meat of the fish, and then to cut it into thin silk, to be even, and to about a stick. The silk is to be washed repeatedly with fresh water, the slime and the smell removed, and then made of wine, salt and white pepper.
-Fire is the key: it's hotter, it can't last longer than a minute, and it's getting old. And when you're done with your plate, you're going to throw lots of onions and gingers, and then you're going to pour hot oil, and you're going to get "hot," and you're going to get the aroma of ginger, and you're going to mix it with the fresh aroma, and you're going to get the scent, and you're going to jump.
-Tastes soft and smooth with silk, no fragrance, only pure scent. The aroma of ginger goes to the fresh, and the caramel of hot oil adds a sense of hierarchy. It's the best food in the heat, the softness of silk, the beauty of sauce and the smell of ginger in the mouth, which is typical of Shanghai. And a bowl of rice, mixed with silk, fresh and venomous.
-♪ Jealousy little chops ♪
-One of the most popular dishes in Shanghai is the Jell-O, which has a special appetite for food. Lancée's juicy little rehearsal examination, fine cooking, is human food in the store.
-Choosing pork chops (ribs), which are fine, small bones, suitable for sugary vinegar. The small steak is cut to about 5 centimetres and tastes with wine, salt, ginger pickle. This is the key to creating a soothing sense.
-Sugar juice is the soul of this dish: it is made out of cosmopolitan vinegar, sugar, ketchup, soy sauce, water starch, etc., which is the right proportion, sour and sweet balances, sour and sour. The little emissions that are blown up into the vinegar are quickly turned out, so that every little steak is evenly covered with sauce, soup is thick and boiled, and white sesame sesame dots are covered.
-The cuddles are red, the oil is bright and the sauce is thickly wrapped on the ribs. One bite, the outer layer is soft, the inside is soft, and a soft bite breaks out. The sweetness of the soy sauce, the appetizer of the sour, the sweetness of the sweetness, and the sweetness of the tomato. It's a special meal, a sweet soup mix, which makes people eat more.
-I'll be back in Shanghai.
-The white chicken is a classic Shanghai snack and the best food for food. The term “white cut” is meant to be boiled with white water, without any sauce, entirely dependent on the smell of chicken itself. The blue-hearted chicken chooses to use a locally dispersed trichronic chicken, which has a long growth cycle, has a strong flesh and taste.
-Only ginger chips and onions go in the cooking water, and when the water boils, the chickens go down, and they can be extracted as soon as they are ready. Time control is essential, and the meat becomes old and woody, and it's just right to keep it tender and juicy. When boiled, iced water quickly cools the chicken, so that the meat becomes stronger, and the chicken skin gets better.
-The essence of the white chicken is the sauce -- the onion sauce. It's a special onion sauce in Shanghai. It's a little onion cut to the end, and it's hot oil that stimulates onions, and it's made of sauce, sugar, soy sauce. The fragrance of onion sauce, onions, oils and sauces are the best partners in a white chicken.
-When they taste, the chicken is cut into pieces, with onion sauce, the chicken is soft and smooth, the scent of the onion sauce immediately improves the whole flavor, the oil and the chicken is mixed, the salty mouth is salty. This dish is light and soft, and is not greasy. It is one of Shanghai's favorites in the summer, and it is a cold dish for the feast.
+🥩 葱烤大排（本帮经典，外焦里嫩）
+葱烤大排是上海本帮菜的经典代表，也是老上海人记忆中的味道。这道菜看似简单，实则最考验功夫，从选料到腌制，从煎制到烤制，每个环节都有讲究。
+选料必须是猪大排（猪里脊肉带骨），这个部位的肉质最嫩，瘦肉多，适合烤制。大排要切成约 1 厘米厚的片，用肉锤轻轻敲打，让肉质松软，更容易入味。腌制是关键：用酱油、黄酒、白糖、姜汁、葱汁等调料腌制至少 4 小时，让调料充分渗透到肉质深处。腌制时间越长，味道越浓郁。
+烹制时先将大排煎至两面金黄，锁住肉汁，然后放入烤箱，用中火慢烤，让肉质进一步软化，同时让表面形成焦香的外壳。烤制过程中要不断刷上腌制的酱汁，让味道更加浓郁。最后撒上大量的葱花，利用余温让葱花释放出香气。
+出锅的葱烤大排色泽金黄，表面焦香，葱花翠绿，香气扑鼻。咬下一口，外层酥脆，内里软嫩，肉质紧实有嚼劲，酱汁的咸鲜、白糖的微甜、葱花的辛香层层递进，回味无穷。这道菜下饭一绝，一块大排配上一碗白米饭，就是最满足的一餐。
+🐍 响油鳝丝（功夫菜，香气四溢）
+响油鳝丝是上海本帮菜中的功夫菜，以“响油”命名，因为最后浇热油时发出“滋啦”的响声而得名。这道菜对食材和刀工的要求极高，是考验厨师功力的试金石。
+鳝鱼必须选用鲜活的黄鳝，肉质才够嫩滑。黄鳝处理是个技术活：要去骨、去内脏、去血水，只留下鳝鱼肉，然后切成细丝，粗细要均匀，约火柴棍粗细。鳝丝要用清水反复漂洗，去除黏液和腥味，然后用料酒、盐、白胡椒粉腌制入味。
+炒制时火候是关键：油温要高，鳝丝下锅后快速翻炒，时间不能超过 1 分钟，炒久了肉质会变老。炒好后装盘，撒上大量的葱丝、姜丝，然后浇上滚烫的热油，“滋啦”一声，葱姜的香气瞬间爆发，与鳝鱼的鲜香混合，香气四溢，扑鼻而来，这就是“响油”的魅力所在。
+品尝时，鳝丝软嫩滑爽，没有一丝腥味，只有纯粹的鲜香。葱姜的辛香去腥提鲜，热油的焦香增添了层次感。这道菜趁热吃最美味，鳝丝的嫩滑、酱汁的鲜美、葱姜的香气在口中交融，是典型的上海味道。配上一碗白米饭，鳝丝的汤汁拌饭，鲜美无比，让人食欲大开。
+🍖 糖醋小排（酸甜开胃，老少皆宜）
+糖醋小排是上海本帮菜中最受欢迎的菜品之一，酸甜的口味特别开胃下饭，深受老人和孩子的喜爱。蘭心的糖醋小排选料考究，烹制精细，是店内的人气菜品。
+选用猪小排（肋排），这个部位肉质细嫩，骨头小，适合做糖醋口味。小排剁成约 5 厘米的段，用料酒、盐、姜汁腌制去腥入味。腌好后拍上一层薄薄的淀粉，下油锅炸至金黄酥脆，这一步是形成“外酥”口感的关键。
+糖醋汁的调制是这道菜的灵魂：用镇江香醋、白糖、番茄酱、酱油、水淀粉等调制而成，比例要恰到好处，酸甜平衡，不能过酸也不能过甜。炸好的小排放入糖醋汁中快速翻炒，让每一块小排都均匀裹上酱汁，汤汁收浓后起锅，撒上白芝麻点缀。
+出锅的糖醋小排色泽红亮，油光发亮，酱汁浓稠地包裹在排骨表面。咬下一口，外层酥脆，内里肉质软嫩，轻轻一咬就脱骨。糖醋汁酸甜适中，酸味开胃，甜味解腻，番茄的果香增添了清新感。这道菜特别下饭，酸甜的汤汁拌饭，能让人多吃一碗饭。
+🍗 上海白斩鸡（清淡本味，油葱点睛）
+白斩鸡是上海经典小吃，也是最能体现食材本味的菜品。“白斩”意为用白水煮制，不加任何调料，完全依靠鸡肉本身的鲜味。蘭心的白斩鸡选用本地散养的三黄鸡，这种鸡生长周期长，肉质紧实，鲜味浓郁。
+烹制时水中只加姜片和葱段去腥，水烧开后下鸡，煮至刚熟即可捞出，整个过程约 20 分钟。时间的把控至关重要，煮久了肉质会变老变柴，煮得刚好，肉质才能保持细嫩多汁。煮好后立即过冰水，让鸡肉迅速冷却，肉质更加紧实，鸡皮也会更加爽脆。
+白斩鸡的精髓在于蘸料——油葱酱。这是上海特有的调味料，用小葱切成细末，加入热油激发出葱香，再加入酱油、糖、麻油调制而成。油葱酱的香气浓郁，葱香、油香、酱香融为一体，是白斩鸡的最佳搭档。
+品尝时，鸡肉切成块，蘸上油葱酱，鸡肉细嫩滑爽，带着淡淡的鸡香，油葱酱的香气瞬间提升了整体的风味，油香与鸡香融合，咸鲜适口。这道菜清淡而不寡淡，鲜美而不油腻，是上海人夏季最爱的凉菜之一，也是宴席上必备的冷盘。
 
 🚇 14:30-15:00 | 交通：前往田子坊
-• Location of departure: towards Hyunlu
-Walk: 10 minutes or taxi Car
-🚊 Route: Subway 9 to Pohashi Station 1
-🔴 Location of arrival: Tanya (Tekang Road 210)
-Total time taken: about 20 minutes
+🟢 出发地点：进贤路
+👣 步行：10 分钟或乘坐出租车
+🚊 乘坐路线：地铁 9 号线打浦桥站 1 号口
+🔴 到达地点：田子坊（泰康路 210 弄）
+⏱️ 总耗时：约 20 分钟
 
 📍 15:00-17:30 | 田子坊创意园区
-地址：210 Tacon Road, Huangpur District, Shanghai
-开放时间：Open all day.
-门票：Free.
-建议游览时间：2-3 hours
-最佳游览季节：3-5, 9-11
+地址：上海市黄浦区泰康路 210 弄
+开放时间：全天开放
+门票：免费
+建议游览时间：2-3 小时
+最佳游览季节：3-5 月、9-11 月
 景点介绍
-The field is one of Shanghai ' s strongest cultural landmarks. The name of the "fields" came from the ancient Chinese painters' fields, meaning that they were a gathering place for artists and creative people.
-The fields were built in the twilight of the '20s and '30s, and used to be inhabited by ordinary citizens. Starting in 1998, some artists and designers discovered the unique glamour of the area and began renting houses as studios. Subsequently, a growing number of galleries, design companies, cafés and specialty shops were established, gradually forming today ' s creative parks. Unlike the New World, the transformation of the fields has become more “generic”, preserving the lives of the indigenous peoples and the confluence of artistic spaces with the lives of the inhabitants, creating a unique “living protection” model.
-In the kitchens of the fields, it can be seen that the stone-gates are well preserved: the bricks, the wooden doors and windows, and the bricks on the doors are still visible. The halls were convoluted, with two or three floors of rock-storey gates on both sides, most of the first floor being a commercial shop and three floors still inhabited. The dry clothes, the flowerpots on the windowsill and the small benches in front of the door all show real urban life.
-Life is intertwined with a strong artistic atmosphere: the corner may be an independent designer's studio, with a window display of the jewellery, costumes, pottery that began to be made; a small shop with a low profile may contain drawings of contemporary artists; and a coffee shop wall full of photographs. This combination of tradition and modernity, life and art has created the unique charm of the field, attracting tourists and art lovers worldwide.
+田子坊是由上海特有的石库门建筑群改建而成的创意产业聚集区，位于黄浦区泰康路 210 弄，是上海文艺气息最浓厚的地标之一。“田子坊”这个名字来源于中国古代画家田子方，寓意着这里是艺术家和创意人士的聚集地。
+田子坊的前身是建于 20 世纪二三十年代的石库门里弄住宅区，曾是普通市民的居住区。1998 年开始，一些艺术家和设计师发现了这片区域的独特魅力，开始在这里租用房屋作为工作室。随后，越来越多的画廊、设计公司、咖啡馆、特色小店入驻，逐渐形成了今天的创意园区。与新天地不同，田子坊的改造更加“原生态”，保留了原住民的生活，艺术空间与居民生活交织在一起，形成了独特的“活态保护”模式。
+漫步在田子坊的弄堂中，可以看到石库门建筑保存完好的原貌：青砖黛瓦，木门木窗，门楣上的砖雕依然清晰可见。弄堂狭窄曲折，两侧是两三层的石库门建筑，一楼多为商铺，二楼三楼仍有居民居住。晾晒的衣物、窗台上的花盆、门前的小板凳，都展现着真实的市井生活。
+与生活气息交织的是浓厚的艺术氛围：转角处可能就是一家独立设计师的工作室，橱窗里展示着手工制作的首饰、服装、陶艺；一间不起眼的小店里，可能陈列着当代艺术家的画作；一家咖啡馆的墙上，挂满了摄影作品。这种传统与现代、生活与艺术的混搭，形成了田子坊独特的魅力，吸引着全球的游客和艺术爱好者。
 游览要点
-• Archipelagic gate construction (formerly ecological protection, urban wells)
-Photo: https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai Tianzifang %E4B8%8A%E6%B5%B7%E7%94%E5%E5%D%90E5%9D%8A  panorramio.jpg
-The stone gate complex in the field is one of Shanghai's most ecologically friendly. Unlike the fine-tuning of the New heavens and the earth, the fields retain more life and historical traces. Through years of baptism, the walls of the bricks presented a wide variety of colours, and in some cases the traces of the past were visible; the wooden doors and windows, some of which had faded but were still strong; and the bricks on the doors, although somewhat vague, could still be identified.
-The spatial layout of the halls remains the same: the main halls are connected to multiple cachots, forming a structure of fish bones; the cachots are 2-3 metres wide, the buildings on both sides stand against each other and can only look up to a single sky. Instead, this narrow space creates a feeling of intimacy and warmth between the old Shanghai neighbours.
-There are many historical marks on the walls: some of them can also see signs from the times of civil and political times, some of them have old-style signposts and others have board notices. These details are a testimony to history, making the field a “living museum”.
-Art gallery (contemporary art, infinity)
-Photo: https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai Tianzifang %E4B8%8A%E6%B5%B7%E7%94%E5%E5%D%90E5%9D%8A  panorramio.jpg
-The field workshop, which brings together the largest independent art gallery and studio in Shanghai and the country, is an important display of contemporary art in Shanghai. The galleries are small, but they are unique, and they are presented in a variety of forms, including paintings, sculptures, plant art, photography and pottery.
-Many galleries are run by artists themselves, both as display spaces and creative workshops. Visitors are able to see the process of on-site creation by artists, to interact face-to-face with artists and to learn the stories and ideas behind their work. Some galleries also offer tailor-made art services to create unique works based on client needs.
-Art exhibitions, creative fairs, art salons, etc. are also regularly held in the fields to attract art lovers and creative people. During the first weekend of each month, the field workshop holds the Open Arts Day, which is free of charge for all galleries and studios, where artists lecture on their work and interact with the audience, and provides an excellent opportunity to learn more about contemporary art.
-• Handicrafts shop (unique souvenirs, work of craftsmen)
-Photo: https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai Tianzifang %E4B8%8A%E6%B5%B7%E7%94%E5%E5%D%90E5%9D%8A  panorramio.jpg
-The factory's handicraft shop is the best place to buy special souvenirs. Most of the goods here are handmade, unique, creative and entrepreneurial.
-The jewelry store displays handmade accessories made by designers, using natural materials such as silver, copper, wood and stone, which combine traditional Chinese elements with modern aesthetics, with a sense of eastern chord and fashion. The pottery store displays a variety of handmade pottery, from tea and vases to dishes, each of which is unique art. The shop sells handmade bags, scarfs, pillows, etc., using traditional dyes, embroidery, etc., which are colourful and excellent.
-In particular, old-name handicrafts such as “Shanghai-named carving”, “seacutting paper” and so on are recommended. These are traditional handicrafts, which are displayed on the spot by masters who can see for themselves the birth of an art. Some of the shops also offer a DEY experience where tourists, under the guidance of their master, can produce a work of their own, which is both interesting and commemorative.
-Oh, my God.
-Photo: https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai Tianzifang %E4B8%8A%E6%B5%B7%E7%94%E5%E5%D%90E5%9D%8A  panorramio.jpg
-The coffee shop in the field is the most artistic space here. Most of these cafés have been built from the old house of Stonegate, which preserves the original structure and historical elements of the building and injects modern design and coffee culture.
-Some of the cafes, located on the second or third floors, need to climb a narrow wooden stairwell and push open a squeaky wooden door, and not a cave: retrofitted furniture, scavenging walls, old-fashioned phonographs, black and white photographs of the walls, creating a strong nostalgic atmosphere. In some cafes there are terraces to look down at the view of the hall, to see the people who are coming and leaving and enjoying a moment of peace.
-The café provides not only coffee and dessert, but also a lifestyle and cultural experience. Order a cup of coffee with a piece of handmade cake, sit at the window, read a book, or get lost, as if time had slowed down. It is also a gathering place for youth in the arts, where people can often be seen writing, painting, taking pictures and enjoying their creativity.
-♪ Street art ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai Tianzifang %E4B8%8A%E6%B5%B7%E7%94%E5%E5%D%90E5%9D%8A  panorramio.jpg
-The charisma of the field is also visible in street art. The walls of the hall are made of graffiti and murals of all kinds, of abstract colours, of portraits of the person in writing, of cartoons full of imagination, and of modern art.
-There is also the art of various devices: sculptures made from old bicycles, devices made from coloured bottles, fabrics made from wires, each of which is the creative work of artists. These works of art are integrated with the building of the Stonegate and the life of the inhabitants, creating a unique artistic landscape.
-Walking in the fields, there may be new discoveries at every turn: a beautiful mural on a wall, an interesting sculpture in a corner, a warm light and the shape of art in a window. This experience of “striking treasures” fills the field with surprises and pleasures, and allows everyone to find their own memory of the field.
+🏘️ 石库门建筑（原生态保护，市井风情）
+图片：https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai_Tianzifang_%E4%B8%8A%E6%B5%B7%E7%94%B0%E5%AD%90%E5%9D%8A_-_panoramio.jpg
+田子坊的石库门建筑群是上海保存最原生态的石库门建筑之一。与新天地的精致改造不同，田子坊保留了更多的生活气息和历史痕迹。青砖墙面经过岁月的洗礼，呈现出深浅不一的色泽，有的地方还能看到历史的斑驳痕迹；木门木窗有些已经褪色，但依然坚固；门楣上的砖雕虽然有些模糊，但依然可以辨认出精美的图案。
+弄堂内的空间布局保持着原有的格局：主弄堂连接着多条支弄堂，形成鱼骨状的结构；弄堂宽度仅 2-3 米，两侧建筑相对而立，抬头只能看到一线天空。这种狭窄的空间反而营造出一种亲密感，让人感受到老上海邻里之间的温情。
+弄堂墙面上保留着许多历史印记：有的墙上还能看到文革时期的标语，有的墙上挂着老式的门牌号，有的墙上贴着居委会的通知。这些细节都是历史的见证，让田子坊成为一座“活着的博物馆”。
+🎨 艺术画廊（当代艺术，创意无限）
+图片：https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai_Tianzifang_%E4%B8%8A%E6%B5%B7%E7%94%B0%E5%AD%90%E5%9D%8A_-_panoramio.jpg
+田子坊汇集了上海乃至全国最多的独立艺术画廊和工作室，是上海当代艺术的重要展示平台。这里的画廊规模不大，但各具特色，展示的作品涵盖油画、雕塑、装置艺术、摄影、陶艺等多种形式。
+许多画廊由艺术家本人经营，既是展示空间，也是创作工作室。游客可以看到艺术家现场创作的过程，与艺术家面对面交流，了解作品背后的故事和创作理念。有些画廊还提供艺术品定制服务，可以根据客户的需求创作独一无二的作品。
+田子坊还经常举办艺术展览、创意市集、艺术沙龙等活动，吸引着艺术爱好者和创意人士。每个月的第一个周末，田子坊会举办“艺术开放日”，所有画廊和工作室免费开放，艺术家会在现场讲解作品，与观众互动，是深度了解当代艺术的绝佳机会。
+🎁 手工艺品店（独特纪念品，匠心之作）
+图片：https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai_Tianzifang_%E4%B8%8A%E6%B5%B7%E7%94%B0%E5%AD%90%E5%9D%8A_-_panoramio.jpg
+田子坊的手工艺品店是选购特色纪念品的最佳去处。这里的商品大多是手工制作，独一无二，充满创意和匠心。
+首饰店展示着设计师手工制作的饰品，采用银、铜、木、石等天然材料，设计融合了中国传统元素与现代美学，既有东方韵味又不失时尚感。陶艺店里陈列着各种手工陶器，从茶具、花瓶到摆件，每一件都是独特的艺术品。布艺店出售手工制作的包袋、围巾、抱枕等，采用传统的扎染、刺绣等工艺，色彩鲜艳，图案精美。
+特别推荐的是一些老字号手工艺店，如“上海老字号木雕”、“海派剪纸”等，这些店铺传承着传统手工艺，师傅现场展示技艺，游客可以亲眼看到一件件艺术品的诞生过程。有些店铺还提供 DIY 体验，游客可以在师傅的指导下，亲手制作一件属于自己的作品，既有趣又有纪念意义。
+☕ 特色咖啡馆（悠闲时光，文艺范儿）
+图片：https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai_Tianzifang_%E4%B8%8A%E6%B5%B7%E7%94%B0%E5%AD%90%E5%9D%8A_-_panoramio.jpg
+田子坊的咖啡馆是这里最具文艺气息的空间。这些咖啡馆大多由石库门老房子改造而成，保留了建筑的原有结构和历史元素，同时注入了现代设计和咖啡文化。
+有的咖啡馆设在二楼或三楼，需要爬上狭窄的木楼梯，推开吱呀作响的木门，别有洞天：复古的家具、斑驳的墙面、老式的留声机、墙上的黑白照片，营造出浓浓的怀旧氛围。有的咖啡馆设有露台，可以俯瞰弄堂的景色，看着下面人来人往，自己却置身事外，享受片刻的宁静。
+咖啡馆提供的不仅是咖啡和甜点，更是一种生活方式和文化体验。点一杯手冲咖啡，配上一块手工蛋糕，坐在临窗的位置，看一本书，或者发发呆，时光仿佛慢了下来。这里也是文艺青年的聚集地，常常可以看到有人在这里写作、画画、拍照，享受着创作的乐趣。
+🎭 街头艺术（随处可见，惊喜不断）
+图片：https://upload.wikimedia.org/wikipedia/commons/9/90/Shanghai_Tianzifang_%E4%B8%8A%E6%B5%B7%E7%94%B0%E5%AD%90%E5%9D%8A_-_panoramio.jpg
+田子坊的魅力还在于随处可见的街头艺术。弄堂的墙面上绘有各种涂鸦和壁画，有的是抽象的色彩构成，有的是写实的人物肖像，有的是充满想象力的卡通形象，为古老的建筑增添了现代艺术的活力。
+弄堂内还散布着各种装置艺术：用废旧自行车改造的雕塑、用彩色瓶子搭建的装置、用铁丝编织的造型等，每一件都是艺术家的创意之作。这些艺术作品与石库门建筑、居民生活融为一体，形成了独特的艺术景观。
+漫步在田子坊，每转一个弯都可能有新的发现：一面墙上突然出现一幅精美的壁画，一个角落里摆放着一件有趣的雕塑，一扇窗户里透出温暖的灯光和艺术品的身影。这种“寻宝”般的体验，让游览田子坊充满了惊喜和乐趣，也让每个人都能找到属于自己的田子坊记忆。
 
 🚇 17:30-17:55 | 交通：前往静安寺
-🟢 Place of embarkation: Subway 9 Pupashi station (5 minutes on foot in the field)
-🚊 Route by: metro 9 → metro 2 or 7 → Jeong An Temple Station
-Place of exit: Jing An Temple Station, on foot 2 minutes to Jing An Temple
-Total time taken: approximately 25 minutes
+🟢 上车地点：地铁 9 号线打浦桥站（田子坊步行 5 分钟）
+🚊 乘坐路线：地铁 9 号线 → 换乘地铁 2 号线或 7 号线 → 静安寺站
+🔴 下车地点：静安寺站，步行 2 分钟至静安寺
+⏱️ 总耗时：约 25 分钟
 
 📍 17:55-18:45 | 静安寺
-地址：1686 Nanjing West Road, Jingan City, Shanghai
-开放时间：7.30-17:00 (share time 4.30-17:00)
-门票：50 bucks.
-建议游览时间：1-2 hours
-最佳游览季节：All year
+地址：上海市静安区南京西路 1686 号
+开放时间：7:30-17:00（香期 4:30-17:00）
+门票：50 元
+建议游览时间：1-2 小时
+最佳游览季节：全年
 景点介绍
-The Temple is one of the oldest Buddhist temples in Shanghai and one of the oldest Buddhist temples in the south of China. The temple's name “silent peace” is taken from the Buddhist word “silent peace” in order to achieve inner peace through Zen.
-The history of the Temple dates back to the tri-national period, initially known as the Zhengjian Temple, which was built on the edge of the Wu Zhongjiang River. Song Dynasty moved to its current location and changed its name to “Jingan Temple”. The monasteries have been transformed from one generation to the next and have been abated, but the fire continues. In the Mingqing period, the Temple of Jing An was one of the Buddhist centres in the Gangnam region, with high-ranking monks coming out and believing in a crowd. During the civil period, the Temple evolved into a commercial centre in Shanghai, creating a unique landscape of “net soil in the city”.
-The current Temple complex was rebuilt in the 2000s, covering an area of approximately 22,000 square metres and construction of approximately 20,000 square metres. Monument architecture combines the distinctive features of Tibetan Buddhistism and Han Buddhist Buddhism, incorporating both the traditional pattern of Han Buddhist temples and the decorative elements of Tibetan Buddhist buildings, creating a unique architectural style. The whole monastery is rich in gold and luminous, and its main buildings are the gate, the temple of the Emperor, the palace of the Great Hung, the temple of the Three Holy Places, the chamber of the Abbey, and so on.
-The Temple is located in the most prosperous part of the centre of Shanghai, surrounded by a high-rised commercial area with a subway station at the entrance to the Temple, which is full of people. But as soon as they entered the temple, their noise was cut off from them, except the Brahmin, the cigarette, and the peace of mind. This pattern of “hidden city” reflects the spiritual context of Buddhism's “admission to the world and not to the world” and serves as a spiritual home for urban people seeking emotional comfort.
-When the night came, the night view of Jing An Temple was particularly charming. The temple's light system is carefully designed, and the gold light shines on the roofs, pillars and fjords of the building, making the entire monastery glow in the night sky, as a golden palace. Compared to the neon lights of modern buildings around it, the Shia Anh Temple's lights appear to be serious, yet they are not lost, and they display the charm of traditional and modern harmony.
+静安寺是上海著名的千年古刹，始建于三国孙吴赤乌十年（247 年），距今已有 1700 多年历史，是上海历史最悠久的佛寺之一，也是中国南方最古老的佛教寺院之一。寺名“静安”取自佛教“四禅八定”中的“静虑安般”，意为通过禅定达到内心的安宁。
+静安寺的历史可以追溯到三国时期，最初名为“沪渎重元寺”，建在吴淞江（今苏州河）畔。宋代时迁至现址，改名“静安寺”。寺院历经朝代更迭，几经兴废，但香火始终延续。明清时期，静安寺是江南地区的佛教中心之一，高僧辈出，信众云集。民国时期，静安寺周围逐渐发展成为上海的商业中心，形成了“闹市中的净土”的独特景观。
+现在的静安寺建筑群是 2000 年代重建的，占地面积约 2.2 万平方米，建筑面积约 2 万平方米。寺院建筑风格融合了藏传佛教和汉传佛教的特色，既有汉传佛教寺院的传统格局，又吸收了藏传佛教建筑的装饰元素，形成了独特的建筑风格。整个寺院金碧辉煌，气势恢宏，主要建筑有山门、天王殿、大雄宝殿、三圣殿、方丈室等，依次排列在中轴线上。
+静安寺位于上海市中心最繁华的地段，周围是高楼林立的商业区，地铁站就在寺门口，车水马龙，人流如织。但一踏入寺门，喧嚣立刻被隔绝在外，只有梵音缭绕，香烟袅袅，让人心境平和。这种“大隐隐于市”的格局，体现了佛教“入世而不染世”的精神境界，也成为都市人寻求心灵慰藉的精神家园。
+夜幕降临时，静安寺的夜景格外迷人。寺庙的灯光系统经过精心设计，金色的灯光映照着建筑的屋顶、立柱、飞檐，让整座寺院在夜空中熠熠生辉，如同一座金色的宫殿。与周围现代建筑的霓虹灯光相比，静安寺的灯光显得庄严肃穆，却又不失华美，展现出传统与现代和谐共存的魅力。
 游览要点
-♪ The House of the Greats ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%99%E9%99%E5%AE%89%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%A8%E6%B5%E9%E9%E5%AE%89.jpg
-The House is the main temple of the Temple of Jingan and the core building of the entire monastery. The tower is 26 metres high and covers an area of 1,200 square metres, with a structure of resting mountaintops, a golden guillotine, and a golden glow in the sun. The palace is headed by the head of the Chinese Buddhist Association.
-The house is served by a 15-metre-high sit-in of the Miegawai Buddha, one of the highest indoor Buddha statues in the Chinese monastery. The statues are carved with jade stones imported from Myanmar. They are warm, fine sculptor, and they have a nice and sweet face, and they are soothing. Buddhas are all golden, and the light is shining and solemn. There is a shelter in front of the Buddha, where the believers may pray and pray for peace.
-The temple offers 18 rohans on both sides. Each rohan has different shapes, faces, gestures, and displays the fine skills of Buddhist art. The ceiling of the temple is painted with fine algae paints, with traditional mineral paints, colours that are long-lasting, and is dominated by Buddhist elements such as the Lotus, the Tianchong and the Flying Sky.
-Throughout the house, the smokes are raging, and the Brahmin continues to create a solemn and sacred religious atmosphere. For every first, fifteenth and Buddhist festivals, there is a great law conference in the temple, where the monks recite the velvet, there is a gathering of believers, and there is a great opportunity to experience Buddhist culture.
-♪ The temple of heaven ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%99%E9%99%E5%AE%89%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%A8%E6%B5%E9%E9%E5%AE%89.jpg
-It is the first temple to enter the monastery, also known as the “Mountain Gate”. The temple is made up of four Kings, the King of the East, the King of Growth of the South, the King of the West, and the King of the North, who are the keepers of Buddhism and guard the laws of Buddha and the monasteries.
-The statues of the Four Kings are tall and mighty, about 6 metres tall, wearing armor, hand-held, and divine. The King of the East, who holds the Biwako, symbolizes the “twilight of the wind and rain”; the King of Growth of the South, who holds the sword, which symbolizes the wind; the King of the West, who holds the dragon or the snake, which symbolizes the “slowness”; and the King of the North, who hears so much about the umbrella, which symbolizes the “rain”. Together, the Four Kings are known as the “sweetness of the wind” and as the most joyful symbol of civil society.
-The heart of the temple is also served by the Merlov, whose smiles are often opened and defecated, meaning that “the belly is strong and leaves the world impervious; the smiles are open and the world laughs.” And behind Myleffer is Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei Wei The temple is also very beautifully decorated, with flying horns and beams painted and coloured, and displaying the charm of traditional Chinese architecture.
-Three temples.
-Photo: https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%99%E9%99%E5%AE%89%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%A8%E6%B5%E9%E9%E5%AE%89.jpg
-The three temples are served by the three lords of the West, namely the Buddha of Amida, the Buddha of the World, and the Great Buddha. The Buddha of the West is the Lord of the Happy World, and the Buddha of the World and the Buddha of the Great are his portents, all collectively known as the Three Holy Fathers of the West, representing the heart of Buddhist faith.
-The three temples have a noble architectural style, a golden and glorious temple and a magnificent Buddha. The Buddha sits down, with his hand on his head, and his face is merciful; the Buddha holds a bottle and a branch of Yang in his hand to save the suffering; and the Buddha is so powerful that he holds the flowers with his hand that he will lead the people to life. The three Buddha statues were decorated with gold, and the lights were shining.
-There are many believers in the house who observe Buddha, sit down and pray in peace and quiet. Even if not Buddhists, sitting here for a moment can feel a sense of calm and tranquillity in the heart, temporarily forgetting the city's noise and the troubles of life.
-♪ Nightlight ♪
-Photo: https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%99%E9%99%E5%AE%89%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%A8%E6%B5%E9%E9%E5%AE%89.jpg
-Evening is the best time to watch the evening view of the Temple. When the night came, the temple's light system was lighted and the golden light was shining on the roofs, pillars and roofs of the building, making the whole monastery glow in the night sky, like a golden palace. And the rays reflect the light under the light, and the contours of the crests are sculpted with clarity and beauty.
-Compared to the neon lights in modern buildings and the LED screens around them, the Shizuku lights are solemn and beautiful. This tradition, in contrast to modernity, religion and commerce, tranquillity and prosperity, is the unique charm of this city in Shanghai. Standing on the square of the Temple of Zion with the golden lights of the millennia and the rainbows of the modern mall, the visual experience of passing through time and space is a profound sense of the city spirit of Heinawakawa.
-The best position for the photographs is the Jingan Temple Square and the South Korean West Road, where a comparison of the temple's landscape and surrounding buildings can be found. It is suggested to shoot between 18:00 and 09:00, when the sky has some residual light, which is dark blue, and has beautiful contrasts with the golden temple light, which is the blue-telephone moment in photography, which is the most capable of capturing the level and atmosphere of the nightscape.
+🏛️ 大雄宝殿（主殿核心，庄严肃穆）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%9D%99%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%8A%E6%B5%B7%E9%9D%99%E5%AE%89.jpg
+大雄宝殿是静安寺的主殿，也是整个寺院的核心建筑。大殿高 26 米，面积约 1200 平方米，采用重檐歇山顶结构，金色琉璃瓦覆顶，在阳光下金光闪闪，气势恢宏。大殿正面悬挂着“大雄宝殿”匾额，由中国佛教协会会长赵朴初题写。
+殿内供奉着一尊高达 15 米的释迦牟尼佛坐像，这是目前中国寺院中最高的室内佛像之一。佛像采用缅甸进口的玉石雕刻而成，玉质温润，雕工精细，佛像面容慈祥，神态安详，给人以心灵的慰藉。佛像全身贴金，在灯光的映照下金碧辉煌，庄严肃穆。佛像前设有供台，信众可以在此上香礼拜，祈求平安吉祥。
+大殿两侧供奉着十八罗汉，每尊罗汉的造型、表情、姿态各不相同，栩栩如生，展现了佛教造像艺术的精湛技艺。大殿的天花板绘有精美的藻井彩画，采用传统的矿物颜料，色彩鲜艳持久，图案以莲花、祥云、飞天等佛教元素为主，寓意吉祥如意。
+大殿内终日香烟缭绕，梵音不断，营造出庄严神圣的宗教氛围。每逢初一、十五和佛教节日，大殿内会举行盛大的法会，僧众诵经礼佛，信众云集，场面庄严肃穆，是体验佛教文化的绝佳机会。
+👑 天王殿（护法天王，威武雄壮）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%9D%99%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%8A%E6%B5%B7%E9%9D%99%E5%AE%89.jpg
+天王殿是进入寺院的第一座殿宇，也称“山门殿”。殿内供奉着四大天王，分别是东方持国天王、南方增长天王、西方广目天王、北方多闻天王，他们是佛教的护法神，守护着佛法和寺院。
+四大天王的塑像高大威武，每尊高约 6 米，身披甲胄，手持法器，神态威严。东方持国天王手持琵琶，象征“风调雨顺”的“调”；南方增长天王手持宝剑，象征“风”；西方广目天王手持龙或蛇，象征“顺”；北方多闻天王手持宝伞，象征“雨”。四大天王合起来寓意“风调雨顺”，是民间最喜闻乐见的吉祥象征。
+天王殿中央还供奉着弥勒佛，笑口常开，大腹便便，寓意“大肚能容，容天下难容之事；笑口常开，笑世间可笑之人”。弥勒佛背后是韦驮菩萨，手持降魔杵，护持佛法。天王殿的建筑装饰也十分精美，飞檐翘角，雕梁画栋，彩绘鲜艳，展现了中国传统建筑艺术的魅力。
+🙏 三圣殿（西方三圣，接引众生）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%9D%99%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%8A%E6%B5%B7%E9%9D%99%E5%AE%89.jpg
+三圣殿供奉着西方三圣，即阿弥陀佛、观世音菩萨、大势至菩萨。阿弥陀佛是西方极乐世界的教主，观世音菩萨和大势至菩萨是他的左右胁侍，三者合称“西方三圣”，代表着佛教净土宗的信仰核心。
+三圣殿的建筑风格庄严华丽，殿内金碧辉煌，佛像高大庄严。阿弥陀佛结跏趺坐，手结说法印，面容慈悲；观世音菩萨手持净瓶和杨枝，救苦救难；大势至菩萨手持莲花，接引众生。三尊佛像均贴金装饰，在灯光映照下熠熠生辉。
+殿内常有信众在此念佛、打坐、礼拜，气氛宁静祥和。即使不是佛教信徒，在这里静坐片刻，也能感受到一种心灵的平静和安宁，暂时忘却都市的喧嚣和生活的烦恼。
+💡 夜景灯光（金色宝殿，夜空明珠）
+图片：https://upload.wikimedia.org/wikipedia/commons/1/17/%E9%9D%99%E5%AE%89%E5%AF%BA%C2%B7%E4%B8%8A%E6%B5%B7%E9%9D%99%E5%AE%89.jpg
+傍晚时分是观赏静安寺夜景的最佳时间。当夜幕降临，寺庙的灯光系统逐渐亮起，金色的灯光映照着建筑的屋顶、立柱、飞檐，让整座寺院在夜空中熠熠生辉，如同一座金色的宫殿。琉璃瓦在灯光下反射出璀璨的光芒，飞檐翘角的轮廓被勾勒得清晰而优美。
+与周围现代建筑的霓虹灯光、LED 屏幕相比，静安寺的灯光显得庄严而华美，形成了鲜明的对比。这种传统与现代、宗教与商业、宁静与繁华的对比，正是上海这座城市的独特魅力所在。站在静安寺广场，一边是千年古刹的金色灯光，一边是现代商场的璀璨霓虹，这种穿越时空的视觉体验，让人深刻感受到上海“海纳百川、兼容并蓄”的城市精神。
+最佳拍照位置是静安寺广场和南京西路路口，可以拍到寺庙的全景和周围建筑的对比。建议在 18:00-19:00 之间拍摄，此时天空还有一些余光，呈现出深蓝色，与金色的寺庙灯光形成美丽的色彩对比，这就是摄影中的“蓝调时刻”，最能拍出夜景的层次感和氛围感。
 
 🚇 18:45-19:00 | 交通：前往晚餐地点
-🟢 Place of departure: Jing An Temple Station
-Walk: 10 minutes to Jinning Road
-• Location of arrival: Fong 1088 Dining Room (Sunning Road 375)
+🟢 出发地点：静安寺站
+👣 步行路线：步行 10 分钟至镇宁路
+🔴 到达地点：福 1088 餐厅（镇宁路 375 号）
 
-Dinner: FUN 1088
-Cafeteria Name: FUN 1088
-地址：Shanghai City, Jung-an-Ning Road 375.
-人均消费：125 yen.
-Observe:
-Queuing: Required appointment
-Tel. 021-52376878
+🍽️ 19:00-20:30 | 晚餐：福 1088
+餐厅名称：福 1088 
+地址：上海市静安区镇宁路 375 号
+人均消费：125 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：需要预约
+📞 联系电话：021-52376878 
 营业时间：11:00-22:00
 餐厅背景
-FUN 1088 is a well-known catering restaurant in Shanghai, known for its fine and elegant food environment, and has a reputation in the catering industry. The restaurant is located in a historic preservation building on the Jinning Road in the Silent Zone, which was built in the 1930s as a private residence of the people of the Republic and was converted into a restaurant, preserving its historical landscape.
-The renovation of the restaurant combines elements of the culture of the sea with modern design aesthetics, both of the old style of Shanghai and of modern effigy. The first to enter the restaurant was a fine medium-shield, redwood furniture, balconies, a wall with the work of a sea-pane painter, creating a rich cultural atmosphere. The design of the compartments is more tactful, and each of them has different themes, either inspired by the Gangnam Gardens, or prototyped by the Old Shanghai living room, which allows the eaters to taste the glamour of the culture of the sea while eating.
-The team of chefs, Fong 1088, is led by senior cooks, who not only specialize in traditional cooking techniques but are better at innovation based on tradition, combining modern cooking concepts with traditional skills. Most of the food products are from high-quality production in the long triangle: the river freshness of Lake Tai, the luminous chow, and the seafood of the East Sea to ensure freshness and quality. Cooking follows the traditional style of "heavy caviar", but the use of oil and sugar has been adjusted appropriately to preserve the special features of the food and to better conform to modern human health concepts.
+福 1088 是上海知名的本帮菜餐厅，以精致的本帮菜和优雅的用餐环境著称，在上海本帮菜餐饮界享有盛誉。餐厅位于静安区镇宁路的一栋历史保护建筑内，这座建筑建于 20 世纪 30 年代，原为民国时期的私人宅邸，后改建为餐厅，完整保留了建筑的历史风貌。
+餐厅装修融合了海派文化元素与现代设计美学，既有老上海的怀旧韵味，又不失现代的精致感。走进餐厅，首先映入眼帘的是精致的中式屏风、红木家具、青花瓷器，墙上挂着海派画家的作品，营造出浓郁的文化氛围。包厢设计更是别具匠心，每个包厢都有不同的主题，有的以江南园林为灵感，有的以老上海客厅为原型，让食客在用餐的同时，感受海派文化的魅力。
+福 1088 的主厨团队由资深本帮菜师傅领衔，他们不仅精通传统本帮菜的烹饪技法，更善于在传统基础上创新，将现代烹饪理念与传统技艺相结合。餐厅选料考究，食材大多来自长三角地区的优质产地：太湖的河鲜、崇明的时蔬、东海的海鲜，确保新鲜和品质。烹饪时坚持传统的“浓油赤酱”风格，但在油和糖的用量上进行了适当调整，既保留了本帮菜的特色，又更符合现代人的健康理念。
 推荐菜品
-Shanghai.
-Shanghai smoke is the classic cold food in this dish and the master table of the Shanghai people's feast. The name of the dish is misleading as it is made of fumigated smoke and is actually immersed in halogenated juice after the frying, and is famous for its colour and taste similar to fumigation. The Shanghai smoke fish, which is fine and small, is suitable for making smoked fish.
-The fish are cleaned and cut into about 1 cm thick and tasted with salt, yellow wine and ginger pickle. This is the key to creating a soothing sense. The temperature should be high, the timing of the blast should be appropriate, and the outer layer should be precipitous and ripe.
-Halo juice is the soul of the smoked fish, made of soy sauce, yellow wine, ice cream, eight horns, cinnamon, platinum, lilac, etc., which is to be boiled to the point of thickness and fragrance. The fried fish chips are immersed in halogen juice while hot, allowing fish meat to fully absorb the fragrance of halogen juice for about 30 minutes. When immersed, it is extracted and placed in a freezer, where the halogen juice is condensed on the surface of the fish, forming a bright “sugar coat”.
-The smoked fish is red, the oil is bright and the fragrances of fragrances and spices are distributed. Bite it, it's soft, it's soft, it's soft, it's fresh. The salt of halogen juice, the sweetness of ice cream, the fragrance of spices are progressive, rich and harmonious. Fish bones, which have been fried, have also become fracking and can be eaten directly, calcium added and delicious. It's the best cold food in the world. It's also a classic cold dish on the table.
-Oh, oh, oh, oh.
-Scorch is one of the 1088 brands and the most representative kung fu dishes in Shanghai. This dish is extremely demanding for food items, knives and firework, and is a litmus test of the cooking skills.
-The yellow platinum must be chosen for the best in the 250-300 g mass, which is the prettiest. Yellowfish treatment is a fine job: to go to bone, to go to the inside, to go to the blood, to go to the slime, to leave only the meat of the fish, which requires skilled knifework and experience. It's about 10 centimetres long, and it's the best way to get the twilight out.
-When the silk is cut, it is repeated with fresh water, which removes the remaining slime and smelt, and then makes it with wine, salt, white pepper powder, ginger pickle for about 15 minutes. Fire is the key to making a boiler when it's hot, it's 80% hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot, it's hot.
-When you're done with it, load it up with lots of onions and gingers, and then the key step is: pour hot oil. The hot oil is going to burn to the smoke, a spoon pouring down, a loud sound of the aroma, the aroma of the ginger onion burst, mixed with the fresh aroma of the aphids, forming a strong, complex fragrance, which is the origin of the acoustic oil, and the best moment for this dish.
-Taste it while it's hot, it's soft, it's soft, it's ready to enter, it's not smelly, it's pure. The aroma of ginger goes to the fresh, the caramel of hot oil adds a sense of layering, the salt of sauce, the sweetness of sugar, and the layer of flavour. It's a very special dish, with twigs of soup, and it's so beautiful that people can eat more.
-Crab tofu.
-Crab powder tofu is a traditional dish in the Gangnam region and is one of the representative works of Shanghai ' s canteens. This dish is a perfect combination of tofu and crab powder with a rich taste and high nutritional value. The 1088 crab tofu contest, which is fine, is a necessary dish in the store.
-Tofu is selected as a green tofu (South tofu), which contains high volumes of water and is fine as fat, and is ready to enter. The tofu is cut into small pieces, and the water is pumped, the soybeans are removed and the shape is intact. Crab powder is used in the current season for crab yellow and crab meat, which is a source of fresh food.
-Cooking with a ginger and powdered corrugated with crab powder, when it's hot, when it releases golden crab oil, and when it's smelly. Add high soup, yellow wine, salt, white pepper, and then put it in tofu, with a light push, so that the tofu is equally warm and absorbs the taste of soup. The fire should be light when it's made, the movement should be light, and the tofu should be avoided. Finally, the soup is thick and tightly wrapped on the tofu surface, with onions of flowers.
-Crab bean curds are yellow, soup is thick and smelly. In a spoonful of portals, the tofu is soft as fat and the entrance is ready to melt; crab powder is fragrance, the butter of crab butter and the sweetness of crab meat explodes in the mouth; and the soup is thick and smells of yellow wine. The dish is delicate, fresh, smooth and glitter, a delicious meal for all ages.
-The herb ring.
-The herbs are the classic foods in Shanghai, “grasshead” is the term used in the Shanghai dialect to refer to thorium (also known as maran head), and “circle” refers to pig intestines. This dish combines the fragrance of the herbs with the odour of the pig's intestines and forms a unique flavor that is common in the memory of the old Shanghaiers.
-The handling of pig's intestines is the key, which is to be washed over and over again, removed from the aroma, then made of wine, ginger juice, salt salt, and then water. The processed intestines are coiled, red-burned, soy sauce, butter, sugar, eight horns, etc., and slow-cooked stew is sour and sour.
-The herbs are to be fresh, clean and made with fire, salt, garlic and paste, until they're dead and green and fresh. Finally, the red-burned coil is mixed with the well-made grass, evenly folded, so that the fragrance of the herb can penetrate the cologne, and the intestine is thick enough to wrap the grass.
-The essence of this dish is the blending of herbs and meats: thick intestines, salted with oil and red sauce, fresh and fresh grassheads with fresh fragrance of plants. The combination of the two, the enzymes, removes the greasyness of the large intestines and adds the smell of grass, a rich taste level and a balanced nutrition. This dish is a classic dish from the Shanghai-based restaurant, which carries the dietary memory of several generations of Shanghai-based people.
+🐟 上海熏鱼（本帮名菜，酥脆鲜香）
+上海熏鱼是本帮菜中的经典冷菜，也是上海人宴席上必备的头盘。这道菜的名字容易让人误解，以为是烟熏制作，实际上是用油炸后浸入卤汁的方法，因其色泽和口感类似熏制而得名。福 1088 的上海熏鱼选用东海野生青鱼或鲳鱼，这两种鱼肉质细嫩，刺少，适合制作熏鱼。
+鱼处理干净后切成约 1 厘米厚的片，用盐、黄酒、姜汁腌制去腥入味。腌好后拍上一层薄薄的淀粉，下油锅炸至金黄酥脆，这一步是形成“外酥”口感的关键。油温要高，炸的时间要恰当，炸至外层酥脆、内里刚熟即可。
+卤汁是熏鱼的灵魂，由酱油、黄酒、冰糖、八角、桂皮、陈皮、丁香等十几种调料熬制而成，要熬煮至浓稠，香气四溢。炸好的鱼片趁热浸入卤汁中，让鱼肉充分吸收卤汁的香味，浸泡时间约 30 分钟。浸好后捞出，放入冰箱冷藏，让卤汁凝固在鱼肉表面，形成一层亮晶晶的“糖衣”。
+冷藏后的熏鱼色泽红亮，油光发亮，散发着浓郁的酱香和香料的芬芳。咬下一口，外层酥脆，“咔嚓”一声，内里鱼肉细嫩，保持着原有的鲜味。卤汁的咸鲜、冰糖的甜润、香料的芬芳层层递进，口感丰富而和谐。鱼骨经过油炸也变得酥脆，可以直接食用，补钙又美味。这道菜冷食最佳，是佐酒的上品，也是宴席上的经典冷盘。
+🐍 响油鳝丝（功夫菜，香气逼人）
+响油鳝丝是福 1088 的招牌菜之一，也是上海本帮菜中最具代表性的功夫菜。这道菜对食材、刀工、火候的要求都极高，是考验厨师综合功力的试金石。
+黄鳝必须选用鲜活的，重量在 250-300 克之间的最佳，这个大小的鳝鱼肉质最嫩。黄鳝处理是个精细活：要去骨、去内脏、去血水、去黏液，只留下鳝鱼肉，这需要熟练的刀工和经验。处理好的鳝鱼肉切成细丝，粗细要均匀，约火柴棍粗细，长度约 10 厘米，这样的鳝丝炒出来口感最好。
+鳝丝切好后要用清水反复漂洗，去除残留的黏液和腥味，然后用料酒、盐、白胡椒粉、姜汁腌制入味，时间约 15 分钟。炒制时火候是关键：锅要烧到冒烟，油温要达到八成热，鳝丝下锅后快速翻炒，加入酱油、黄酒、白糖调味，整个过程不能超过 1 分钟，炒久了鳝丝会变老变硬。
+炒好后迅速装盘，撒上大量的葱丝、姜丝，然后关键的一步来了：浇热油。热油要烧到冒烟，一勺浇下去，“滋啦”一声巨响，葱姜的香气瞬间爆发，与鳝鱼的鲜香混合，形成一股浓烈的复合香气，扑鼻而来，这就是“响油”的由来，也是这道菜最精彩的时刻。
+趁热品尝，鳝丝软嫩滑爽，入口即化，没有一丝腥味，只有纯粹的鲜香。葱姜的辛香去腥提鲜，热油的焦香增添了层次感，酱汁的咸鲜、白糖的微甜、黄酒的醇香层层递进。这道菜特别下饭，鳝丝的汤汁拌饭，鲜美无比，能让人多吃一碗饭。
+🧈 蟹粉豆腐（江南名菜，鲜香软滑）
+蟹粉豆腐是江南地区的传统名菜，也是上海本帮菜的代表作之一。这道菜将豆腐的嫩滑与蟹粉的鲜香完美结合，口感丰富，营养价值高。福 1088 的蟹粉豆腐选料考究，制作精细，是店内的必点菜品。
+豆腐选用嫩豆腐（南豆腐），这种豆腐含水量高，质地细腻如脂，入口即化。豆腐切成小块，用开水焯一下，去除豆腥味，保持形状完整。蟹粉选用当季大闸蟹的蟹黄和蟹肉，这是菜品鲜味的来源。
+烹制时先用姜末爆香，加入蟹粉翻炒，蟹黄受热后释放出金黄色的蟹油，香气四溢。加入高汤、黄酒、盐、白胡椒粉调味，然后放入豆腐块，轻轻推动，让豆腐均匀受热，吸收汤汁的鲜味。烧制时火候要小，动作要轻，避免豆腐破碎。最后勾芡，让汤汁浓稠，紧紧包裹在豆腐表面，撒上葱花点缀。
+出锅的蟹粉豆腐色泽金黄，汤汁浓稠，香气扑鼻。舀一勺送入口中，豆腐软滑如脂，入口即化；蟹粉鲜香浓郁，蟹黄的油润、蟹肉的鲜甜在口中爆发；汤汁鲜美醇厚，带着淡淡的黄酒香气。这道菜口感细腻，鲜而不腥，滑而不腻，是老少皆宜的美味佳肴。
+🥬 草头圈子（老字号经典，草香肉美）
+草头圈子是上海本帮菜中的经典菜品，“草头”是上海方言对苜蓿（又称马兰头）的称呼，“圈子”则是指猪大肠。这道菜将草头的清香与猪大肠的醇厚结合，形成独特的风味，是老上海人记忆中的家常美味。
+猪大肠的处理是关键，要反复清洗，去除异味，然后用料酒、姜汁、盐腌制，再焯水去腥。处理好的大肠切成圈状，下锅红烧，加入酱油、黄酒、冰糖、八角等调料，慢火炖煮至软烂入味。
+草头要选用新鲜的嫩苗，清洗干净后用大火快炒，加入盐、蒜末调味，炒至断生即可，保持草头的翠绿和清香。最后将红烧好的大肠圈与炒好的草头混合，翻炒均匀，让草头的清香渗入大肠，大肠的醇厚包裹草头。
+这道菜的精妙之处在于草香与肉香的融合：大肠软糯醇厚，带着浓油赤酱的咸鲜；草头清爽脆嫩，带着植物的清香。两者结合，荤素搭配，既解了大肠的油腻，又增添了草头的鲜味，口感层次丰富，营养均衡。这道菜是上海老字号餐厅的经典菜品，承载着几代上海人的饮食记忆。
 
 🚇 20:30-21:00 | 交通：返回酒店
-🟢 Place of embarkation: Metro 7 Jinning Road Station (10 minutes walk)
-🚊 Route: subway 7 → Subway 2 → Nanjing East Road Station
-Walk: 8 minutes
-Location of arrival: Hotel Perkinswana (427 Fukushima Road)
-Total time-consuming: about 30 minutes
+🟢 上车地点：地铁 7 号线镇宁路站（餐厅步行 10 分钟）
+🚊 乘坐路线：地铁 7 号线 → 换乘地铁 2 号线 → 南京东路站
+👣 步行：8 分钟
+🔴 到达地点：🏨 铂金万澳酒店（福州路 427 号）
+⏱️ 总耗时：约 30 分钟
 
-♪ 21:00 ♪ Get to the hotel and rest ♪
+🏨 21:00 | 抵达酒店休息
 
 📅 Day 5: 文化归途
-Shanghai Museum
-The hotel leaves at 10:00.
+上海博物馆
+⏰ 10:00 | 酒店出发
 📍 出发地点：🏨 铂金万澳酒店（福州路 427 号）
 
 🚇 10:00-10:15 | 交通：前往上海博物馆
-Place of departure: Hotel Perkinwana
-Walking: 15 minutes to Shanghai Museum
-or
-🚊 Route: Subway 2 Nanjing East Road Station 1 Station People's Square Station
-• Location of arrival: Shanghai Museum (201 Peoples' Avenue)
-Total time: walk 15 minutes or subway 10 minutes
+🟢 出发地点：铂金万澳酒店
+👣 步行路线：步行 15 分钟至上海博物馆
+或
+🚊 乘坐路线：地铁 2 号线南京东路站 → 1 站 → 人民广场站
+🔴 到达地点：上海博物馆（人民大道 201 号）
+⏱️ 总耗时：步行 15 分钟或地铁 10 分钟
 
 📍 10:15-13:00 | 上海博物馆
-地址：201 Hwangpur People's Avenue, Shanghai
-开放时间：9 a.m.-17:00 (16 p.m.) Discontinuation, Monday closed, except for official holidays)
-门票：Free (on-site or official public appointments)
-建议游览时间：3-4 hours
-最佳游览季节：Yearly fit
+地址：上海市黄浦区人民大道 201 号
+开放时间：9:00-17:00（16:00 停止入馆，周一闭馆，法定节假日除外）
+门票：免费（需现场或官方公众号预约）
+建议游览时间：3-4 小时
+最佳游览季节：全年适宜
 景点介绍
-The Shanghai Museum was created in 1952 as a large Chinese museum of ancient art and one of China ' s most important museums. The museum is located on the south side of People ' s Square, geographically superior and accessible. The new complex was opened in 1996 with an area of 39200 square metres, an height of 29.5 metres, five floors above the ground, two floors below, and a collection of nearly 120,000 artefacts, of which 120,000 are fine, especially in the form of copper, ceramics, calligraphy and drawings, and is well known at home and abroad.
-Museum buildings are comprehensible and designed by well-known architects and are unique and far-reaching. The whole architecture is shaped by round roofs, square bases, and symbolizes the view of the universe in China's traditional culture as “the circle of the sky”. The round roof uses glass and steel structures, like a giant mirror, which mirrors the sky and surrounding buildings; the square base is built with granite and stabilizes the gas. Not only is the design beautiful, it also reflects the idea of “one human being” in traditional Chinese philosophy and is an example of a perfect combination of modern architecture and traditional culture.
-The museum has 11 exhibition rooms and 3 exhibition halls showing the beauty of ancient Chinese art. It presents a systematic picture of the remarkable achievements of China ' s 5,000-year civilization, classified according to historical development and art. The displays are not only numerous but also of high quality. Many of them are national treasures, such as Da Keteng of Kandai, Mao Ding of Xie Chow, Tung Dynasty and Song Dynasty, and so on.
-Museums use modern displays, using technologies such as multimedia, interactive devices and virtual realities, in addition to traditional displays, to “live” and “move” historical objects. Each exhibition hall is equipped with a detailed description in Chinese and English, and some of the exhibits are accompanied by audio guides to facilitate an in-depth understanding of the history and culture behind the objects. The Museum also regularly organizes ad hoc exhibitions and academic lectures, which are important windows for understanding traditional Chinese culture and for improving artistic maintenance.
+上海博物馆创建于 1952 年，是一座大型的中国古代艺术博物馆，也是中国最重要的博物馆之一。博物馆位于人民广场南侧，地理位置优越，交通便利。新馆于 1996 年建成开放，建筑面积 39200 平方米，建筑高度 29.5 米，地上五层，地下两层，馆藏文物近百万件，其中精品文物 12 万件，尤以青铜器、陶瓷器、书法、绘画为特色，在国内外享有盛誉。
+博物馆建筑由著名建筑师邢同和设计，造型独特，寓意深远。建筑整体呈圆形屋顶、方形基座的造型，象征着中国传统文化中“天圆地方”的宇宙观。圆形屋顶采用玻璃和钢结构，如同一面巨大的镜子，倒映着天空和周围的建筑；方形基座采用花岗岩砌筑，稳重大气。这种设计不仅美观，还体现了中国传统哲学中“天人合一”的理念，是现代建筑与传统文化完美结合的典范。
+博物馆共有 11 个专题陈列室和 3 个展览厅，展示了中国古代艺术的精华。陈列按照历史发展脉络和艺术门类分类，系统地展现了中国五千年文明的辉煌成就。展品不仅数量众多，而且质量上乘，许多都是国宝级文物，如商代的大克鼎、西周的毛公鼎、唐代的青花瓷、宋代的书画等，都是中国文物中的瑰宝。
+博物馆采用现代化的展陈手段，除了传统的陈列展示，还运用多媒体、互动装置、虚拟现实等技术，让文物“活”起来，让历史“动”起来。每个展厅都配有详细的中英文说明，部分展品还有语音导览，方便观众深入了解文物背后的历史和文化。博物馆还定期举办临时展览和学术讲座，是了解中国传统文化、提升艺术修养的重要窗口。
 游览要点
-The Bronze Museum.
-Photo: https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai %28322255501024%29.jpg
-The Bronze Museum, one of the most important displays of the Shanghai Museum, has a collection of more than 400 ancient Chinese copper instruments, ranging from summer merchants to Qinhan, which show systematically the evolution of Chinese copper. The collection is of the highest quality and quantity in the country ' s museums.
-The treasures of the town include copies of Da Keteng and Mao ' s capital (the real treasure is stored in the storage of the Shanghai Museum and in the Palace House in Taipei, respectively). It's a high, 93.1 centimetres tall, 201.5 kilos heavy, powerful, well-written, inner-wall engraving with 290 words, recording the important western-week historical events, which are important in studying western-week history.
-The exhibition halls are shown according to the functions of the brass instruments: edibles (docks, beans, soybeans, soybeans, soybeans, soybeans, soybeans, soybdenums, soybdenums, soybdenums, soybdenums, soybdenums, etc.), musical instruments (bells, bells, soybdenums, etc.), weapons (go, spears, swords, etc.). Each type of object is described in detail, describing its use, manufacturing process, the meaning of the tattoo, etc.
-Of particular concern are the stripes of brass, including thongs, dragons, fowls, etc., which are not only decorative but also deeply cultural and religious. By observing the evolution of these tattoos, it is possible to learn about the development of ancient Chinese society and changes in aesthetic attitudes. The exhibition hall also showcases the foundry process of the brass, including pottery, wax loss, etc., and provides an audience with the wisdom and skill of ancient craftsmen.
-Porcelain temple (Porcelain beauty, millennium heritage)
-Photo: https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai %28322255501024%29.jpg
-It contains more than 500 pieces of past Chinese ceramics, ranging from neo-rock-era ceramics to Qing Dynasty ceramics, over a period of almost 10,000 years, which systematically demonstrates the evolution of Chinese ceramics. China is home to china, and the word “china” itself has the meaning of “ china,” as shown by its place in the world.
-The exhibition halls are presented by historical dynasty and kilns. New Stone Age colours and glossy glories show the beauty of the original people; commercial week ' s primitive china has created the first river of Chinese china; Tang Dynasty ' s tricolored pottery is coloured and fashioned; Song Dynasty ' s green, white and black ceramics are unique, reflecting the Song 's aesthetic quest for "Carosun Sooa"; Moyuan ' s green balconies have ushered in a new era of chastity; and Qing Dynasty has reached the top of Chinese china art.
-Of particular interest are the works of five major kilns: the skylight of your kiln, the ice cracks of the official kiln, the gold wire of the kiln, the kiln's curvature, and the curvature of the kiln, each of which is a masterpiece of china art. There are also the cuisine, chalk, porcelain and porcelain, which displays the unique style of the major Chinese kilns.
-There is also an interactive display area in the exhibition hall, where the process of making china is demonstrated through multimedia technology, including the selection of materials, zipping, repairing, upholstery, burning, etc., to inform the audience about the complete process of a china from clay to art.
-The library.
-Photo: https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai %28322255501024%29.jpg
-The Gallery contains a collection of the works of successive generations of famous artists, including the book law and drawings of various periods of time. Because of their sensitivity to light and humidity, exhibits are presented on a rotating basis, each showing approximately 50-80 works, which is replaced every three months, meaning that different works can be seen each time.
-The calligraphy exhibition area shows the dynamics of the development of the calligraphy arts in China: from Oracle, gold to books, books, role models, books, sketches, each of which is representative. The writings of the calligraphies of Wang Zhengxi, Yan Zhengqing, Su Dongpo, Mi Zheng and Zhao Meng Zhu are a good example of Chinese calligraphy.
-The painting shows are divided into three main categories: character drawings, mountain water drawings, and florist drawings. Tang Dynasty's characters are well-spreaded and coloured; Song Dynasty's painting of mountains is far-reaching and ink is fine; the Ren Dynasty's writings emphasize writing and pursue “twisting grass”; and the luminous flower painter's writings are well written, with distinctive features. The work of a number of distinguished individuals, such as Gu Jia, Wu Doko, Fan Hong, Guo Hee, Zhao Meng Yi, Tang Xie, Tsui Myu, the eight mountain people and Zheng Panhashi, shows the unique beauty of Chinese painting.
-Advantage of the work requires a certain degree of artistic preparation and patience, and it is suggested that the rental of a voice guide or participation in a free lecture service provide a deeper understanding of the artistic value and cultural content of the work.
-The Jade Museum.
-Photo: https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai %28322255501024%29.jpg
-The Jade Museum has a collection of more than 400 China ' s ancient jade instruments, from the New Stone Age to the Qing Dynasty, showing the evolution of Chinese jade culture. The Chinese people love Yu and Zhong Yu, who see Jade as a symbol of virtue, “The gentleman is better than Te Yuyu”, and the jade instrument is not only an ornament, but also a vehicle of culture and spirituality.
-Exhibits include a variety of types, such as ceremonial instruments, ornaments, vessels, etc. The jade made in the era of the Neostones was made in a simple fashion, with many ceremonial objects and tools; during the week of commerce, the jade tattoos were varied and used for rituals and rituals; the Handai jade sculptor was fine, with a large number of funerals such as jade coats and jade sculptors; and during the period of dawn, the jade reached the peak of the process, with a variety of engraving techniques and a wealth of subject matter, ranging from large mountain displays to fine dressings.
-Of particular interest are the works of the famous jade stones, such as Tanayu and jade, which are warm, pure in colour and fine in sculptor. The exhibition hall also introduced the appreciation of the jade device, which includes the six words “colour, penetrator, shape, knock, light”, to enable viewers to appreciate its beauty.
-• Architectural appearance (twilight, cultural symbols)
-Photo: https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai %28322255501024%29.jpg
-The Shanghai Museum is itself a work of art that deserves careful appreciation. From a distance, the roof of a circle is like a giant glass of copper, glowing in the sun; and the base of a square is as solid as the earth. This shape of the “twilight space” reflects China's traditional view of the universe: the sky is round, the land is square, and it is inhabited between the heavens and the earth.
-The details of the construction are also detailed: the glass curtain wall on the roof uses special membrane techniques, which can see through light and reflect and produce unique visual effects; the granite wall on the base is rich in muscles by cutting and aggregating in different ways; and the entrance is wide and smooth, with ramps on both sides to facilitate access by the disabled and the elderly.
-The building is surrounded by open squares, with granite floors laid and extensive greening plants planted. The square contains several sculptures and art devices, which are a good place for citizens ' leisure and for tourists to take photographs. It is proposed that the museum landscape be taken from the direction of People's Boulevard and that it capture the whole architecture and the design concept of the “twilight place”.
+🏺 青铜器馆（镇馆之宝，国之重器）
+图片：https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai_%2832225501024%29.jpg
+青铜器馆是上海博物馆最重要的陈列馆之一，收藏了 400 多件中国古代青铜器，时间跨度从夏商到秦汉，系统地展示了中国青铜器的发展历程。这里的藏品质量之高、数量之多，在国内博物馆中名列前茅。
+镇馆之宝包括大克鼎和毛公鼎的复制品（真品分别藏于上海博物馆库房和台北故宫博物院）。大克鼎是西周晚期的青铜器，高 93.1 厘米，重 201.5 公斤，器形雄伟，纹饰精美，内壁铸有铭文 290 字，记录了西周时期的重要历史事件，是研究西周历史的重要文物。
+展厅按照青铜器的功能分类展示：食器（鼎、簋、豆等）、酒器（爵、觚、觯等）、水器（盘、匜等）、乐器（编钟、钲等）、兵器（戈、矛、剑等）。每一类器物都有详细的说明，介绍其用途、制作工艺、纹饰含义等。
+特别值得关注的是青铜器的纹饰，包括饕餮纹、夔龙纹、凤鸟纹等，这些纹饰不仅具有装饰作用，还蕴含着深刻的文化内涵和宗教意义。通过观察这些纹饰的演变，可以了解中国古代社会的发展和审美观念的变化。展厅还展示了青铜器的铸造工艺，包括陶范法、失蜡法等，让观众了解古代工匠的智慧和技艺。
+🏺 陶瓷馆（瓷器之美，千年传承）
+图片：https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai_%2832225501024%29.jpg
+陶瓷馆收藏了 500 多件中国历代陶瓷精品，从新石器时代的彩陶到清代的粉彩瓷，时间跨度近万年，系统地展示了中国陶瓷艺术的发展历程。中国是瓷器的故乡，“China”这个词本身就有“瓷器”的含义，可见中国瓷器在世界上的地位。
+展厅按照历史朝代和窑口分类展示。新石器时代的彩陶色彩鲜艳，纹饰古朴，展现了原始先民的审美情趣；商周时期的原始瓷器开创了中国瓷器的先河；唐代的三彩陶器色彩斑斓，造型生动；宋代的青瓷、白瓷、黑瓷各具特色，体现了宋人“简约素雅”的审美追求；元代的青花瓷开创了釉下彩的新时代；明清时期的彩瓷达到了中国瓷器艺术的巅峰。
+特别值得关注的是五大名窑的作品：汝窑的天青色、官窑的冰裂纹、哥窑的金丝铁线、钧窑的窑变釉、定窑的刻花装饰，每一件都是瓷器艺术的杰作。还有景德镇窑的青花瓷、粉彩瓷，龙泉窑的青瓷，德化窑的白瓷等，展现了中国各大窑口的独特风格。
+展厅内还有互动展示区，通过多媒体技术展示瓷器的制作工艺，包括选料、拉坯、修坯、上釉、烧制等环节，让观众了解一件瓷器从泥土到艺术品的完整过程。
+🖋️ 书画馆（翰墨丹青，文人雅韵）
+图片：https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai_%2832225501024%29.jpg
+书画馆收藏了历代名家书画作品，包括晋唐宋元明清各个时期的书法和绘画精品。由于书画作品对光线和湿度敏感，展品采用轮换展出的方式，每次展出约 50-80 件作品，每 3 个月更换一次，这意味着每次来都能看到不同的作品。
+书法展区展示了中国书法艺术的发展脉络：从甲骨文、金文到篆书、隶书、楷书、行书、草书，每一种字体都有代表性的作品。王羲之、颜真卿、苏东坡、米芾、赵孟頫等书法大家的作品，让人领略到中国书法艺术的博大精深。
+绘画展区分为人物画、山水画、花鸟画三大类。唐代的人物画线条流畅，设色艳丽；宋代的山水画意境深远，笔墨精妙；元代的文人画强调写意，追求“逸笔草草”；明清的花鸟画工笔写意并存，各具特色。顾恺之、吴道子、范宽、郭熙、赵孟頫、唐寅、徐渭、八大山人、郑板桥等历代名家的作品，展现了中国绘画艺术的独特魅力。
+欣赏书画作品需要一定的艺术修养和耐心，建议租用语音导览器或参加免费的讲解服务，可以更深入地了解作品的艺术价值和文化内涵。
+💎 玉器馆（温润如玉，君子之德）
+图片：https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai_%2832225501024%29.jpg
+玉器馆收藏了 400 多件中国历代玉器，从新石器时代到清代，展示了中国玉文化的发展历程。中国人爱玉、崇玉，将玉视为美德的象征，“君子比德于玉”，玉器不仅是装饰品，更是文化和精神的载体。
+展品包括礼器、佩饰、器皿、摆件等多种类型。新石器时代的玉器造型古朴，多为礼器和工具；商周时期的玉器纹饰繁复，多用于祭祀和礼仪；汉代的玉器雕工精细，出现了大量的玉衣、玉璧等丧葬用玉；明清时期的玉器达到了工艺的巅峰，雕刻技法多样，题材丰富，既有大型的山子摆件，也有精巧的佩饰挂件。
+特别值得关注的是和田玉、翡翠等名贵玉石的作品，这些玉石质地温润，色泽纯正，雕工精湛，是玉器中的精品。展厅还介绍了玉器的鉴赏知识，包括“色、透、匀、形、敲、照”六字诀，让观众学会欣赏玉器之美。
+🏛️ 建筑外观（天圆地方，文化象征）
+图片：https://upload.wikimedia.org/wikipedia/commons/a/a7/20694-Shanghai_%2832225501024%29.jpg
+上海博物馆的建筑本身就是一件艺术品，值得细细欣赏。从远处看，圆形的屋顶如同一面巨大的铜镜，在阳光下熠熠生辉；方形的基座稳重大气，如同大地般坚实。这种“天圆地方”的造型，体现了中国传统宇宙观：天是圆的，地是方的，人居于天地之间。
+建筑的细节也很讲究：屋顶的玻璃幕墙采用特殊的镀膜技术，既能透光，又能反射，形成独特的视觉效果；基座的花岗岩墙面采用不同的切割和拼接方式，形成丰富的肌理；入口处的大台阶宽阔平缓，两侧设有坡道，方便残疾人和老年人通行。
+建筑周围是开阔的广场，铺设了花岗岩地面，种植了大量绿化植物。广场上设有多个雕塑和艺术装置，是市民休闲和游客拍照的好地方。建议从人民大道方向拍摄博物馆全景，可以拍到建筑的完整造型和“天圆地方”的设计理念。
 
 🍜 13:00-14:15 | 午餐：老正兴菜馆
-Cafeteria name: Old Jung-hing restaurant
-地址：556 Hwangpur, Shanghai.
-人均消费：125 yen.
-Observe:
-Queuing: Required appointment
-Tel.: 021-63222624
+餐厅名称：老正兴菜馆
+地址：上海市黄浦区福州路 556 号
+人均消费：125 元
+必吃指数：⭐⭐⭐⭐⭐
+排队情况：需要预约
+📞 联系电话：021-63222624 
 营业时间：11:00-22:00
 餐厅背景
-The Old Jung-Hing restaurant was created during the Qingcheng era (1862), one of the oldest restaurants in Shanghai, with a long history of over 160 years, and a living fossil in Shanghai. The restaurant was originally founded by Cai Jinchang, a Zhejiang Ningbo, and then changed to “Old Shing”, meaning “Orthodox boom”. After more than a century of development, Jung-Hing has become the representative brand of the Shanghai foods and has been designated as the “old Chinese word”.
-It's the history of Shanghai food. At the beginning of the year, Shanghai Port became the first city in the Far East, with an influx of immigrants from all over the country, bringing about a different diet culture. The founders of the Old Jung-Hung have combined Ningbo's cooking techniques with local foods in Shanghai, absorbing the advantages of soybeans, insignias and cuisine, and have evolved into a unique “basket” style. The course is characterized by “heavy cuddly sauce, brackish brackishness, original juice tastes, and the thickness and beauty of the alcohol”, which preserves the freshness of the Gangnam food and adds to the fragrance of the soy sauce, creating a unique seafood flavor.
-He has witnessed the centenary change in Shanghai and has received countless celebrities. Many cultural figures, such as Luxur, Guo Moo Ro, and Melanfang, used to be guests here. There are many historical photographs and relics in the restaurant that record the glory of the old. Today ' s momentum is still being maintained, but it is also constantly being innovative, innovative and rejuvenating the old word.
-The restaurant is maintained in the old Shanghai style, with redwood furniture, sculpting windows, porcelains, ceremonial lanterns, and a platitude. The walls are marked by the names and links of famous individuals, with a deep cultural background. The waiter is in a traditional medium-style dress, and his services are carefully designed to make the odor feel the hospitality of the old word.
+老正兴菜馆创建于清同治年间（1862 年），是上海最古老的本帮菜餐厅之一，拥有 160 多年的悠久历史，是上海餐饮界的“活化石”。餐厅最初由浙江宁波人蔡仁昌创办，取名“正兴馆”，后改名“老正兴”，寓意“正统兴旺”。经过一个多世纪的发展，老正兴已成为上海本帮菜的代表品牌，被认定为“中华老字号”。
+老正兴的历史就是上海本帮菜的发展史。清末民初，上海开埠后成为远东第一大都市，各地移民涌入，带来了不同的饮食文化。老正兴的创始人将宁波菜的烹饪技法与上海本地食材相结合，吸收了苏菜、徽菜、粤菜的优点，逐渐形成了独特的“本帮菜”风格。本帮菜的特点是“浓油赤酱、咸淡适中、原汁原味、醇厚鲜美”，既保留了江南菜的清鲜，又增加了浓郁的酱香，形成了独特的海派风味。
+老正兴见证了上海的百年变迁，接待过无数名人雅士。鲁迅、郭沫若、梅兰芳等文化名人都曾是这里的常客。餐厅内陈列着许多历史照片和文物，记录着老正兴的辉煌历史。如今的老正兴在保持传统的同时，也在不断创新，将传统菜品做出新意，让老字号焕发新的生命力。
+餐厅装修保持着老上海的风格，红木家具、雕花窗棂、青花瓷器、宫灯吊饰，处处透着古朴典雅的气息。墙上挂着名家题写的匾额和楹联，文化底蕴深厚。服务员身着传统的中式服装，服务周到细致，让食客感受到老字号的待客之道。
 推荐菜品
-Shrimp.
-Shrimp is one of the most popular and most representative shrimp dishes in Shanghai. This dish is made of fresh shrimp (crayfish), which grows in freshwater lakes such as Ta-Lake and Sun-Link, but which are particularly sweet, and which do not taste like shrimp, is the best option to make a boiled shrimp.
-Shrimps are selected for live shrimp and are treated with shrimp shavings and shrimp feet to keep them intact. Repeated washing with clean water and drying of moisture are important steps, and too much moisture can affect the effect of the blast. Shrimp is processed and made of wine, salt and white pepper for a moment to taste.
-The oil boom is the key technique for this dish: the boiler is about 80% hot (about 200°C) and the shrimp goes down with the sound of the hysteria, which is the effect of the blast. Scrambled quickly to keep the shrimp heated evenly, and the shrimp shells became red and brittle quickly after high temperatures, while the shrimp meat remained fresh. Add soy sauce, butter, sugar, vinegar and fire, so that the spices can fully penetrate the shrimp. The whole process does not last more than two minutes, so that the shrimps are fresh and brittle.
-The boiler is red, the oil is bright and the sauce and the shrimp smells are thick. Shrimp shells are so soft, they're broken, they can eat together, they're calcified, they're so juicy, Q's good, they're sweet. The sauce is salty, sour balance, especially appetizers. This dish, which is the favorite of the Shanghai people, is given with a glass of yellow wine or beer, which is the most enjoyable summer night.
-Scrambling, oil-coated silk.
-The oil-coated silk is a traditional, traditional dish that has been in existence for 100 years and has been passed on from generation to generation. The old hot oil twirl is well known in Shanghai, and many old Shanghaiers have come to taste this classic dish.
-In particular, the old shoal selection must be a wild shoal of a lake or a luminous lake, which grows in clear waters with particularly fine meat and fragrance. Swordwork is required for the treatment of yellow larvae: debones, debones, de-blooded water, de-glute, leaving only pure larvae meat, and then cutting into thin, thin, even and consistent lengths, which requires years of experience.
-The only secret in making a fire is to make it hot and hot: it's 90% hot, it's fixed immediately after the twirl, it's ready to flip, it's made with special sauce (sauce, butter, sugar, vinegar, ginger, etc.) and it's going to flow through the process. When you're done with your plate, you're gonna throw lots of onions and gingers, and then you're gonna pour hot oil, you're gonna make a big bang, and you're gonna blow up the scent.
-Tastes with soft silk, ready to enter, completely free of smell, only pure scent. What's special about old-fashioned silk is the mix of sauce, salty sour, rich and balanced layers, the exclusive recipe of a hundred-year-old store. With a bowl of rice, with twilight, it's beautiful and it's the most authentic taste in old Shanghai.
-♪ The grass ♪
-The grass-head ring is another popular dish and one of the most distinctive items in Shanghai. The course, which dates back to the end of the day, is one of the originals of the past, and still maintains traditional methods of production.
-The old green herbs must be scalded, the pig's intestines must be fresh, cleaned at least 10 times over and over again, with all the odors removed, then made with wine, ginger juice, salt pickles, then watered. It takes at least two hours for a well-processed intestine to be coiled, red-cooked, old hot secret sauce, slow-cooked stew to taste softly.
-The herbs are selected for the youngest seedlings in the spring, which are washed and made of fire, with salt, garlic paste, yellow wine, until they are cut off, and the green and fragrance of the herb is preserved. It can't last longer than a minute, and it'll turn yellow and old, and it'll lose fragrance.
-Finally, the red-burned coil is mixed with the well-made grass, which is quickly turned over, so that the fresh scent of the herb can penetrate into the big intestine, which is thick enough to wrap the grass. The essence of this dish lies in the combination of enzymes and the fineness of the cologne: the thick intestines, the fragrance of salt and spices with thick oil and red sauce, and the fresh and fresh head of grass, with the fresh scent of plants and the light taste of bitterness. The combination of the two removes the greasyness of the intestines and adds the smell of grass, a rich sense of taste and a balanced nutrition.
-♪ Ta-da-da-da-da-da-da
-Sakashi is a traditional dish in the Gangnam region and a necessary soup for the Shanghai people's spring table. The word "sweet" refers to salted meat, the word "fresh" to fresh pork, and the word "d" is a Shanghai dialect meaning slow stew for small fire. It combines the salty scent of salted meat with the sweetness of fresh meat and the fresh smell of springing, creating a unique complex smell.
-In particular, the scavenging selections are: salted meat is made from its own home for at least a month, so that the meat is fully odoured; fresh meat is chosen from the husks or ribs, and the flesh is tender; and spring is chosen from the pretentious tenderness, the tenderest of which is not bitter. The formulations also include mushrooms, leaf swigs, tofu bubbles, etc., which increase taste and nutrition.
-When the stew is made, the salty meat and the fresh meat are put in the cold water, and the fire is burned out, then the foam is thrown away, and the small fire is slowly roasted. The stew takes at least two hours to make the meat soft, soupy milk white. Spring stings into roller blades, and joins the soup 30 minutes before it's ready, so that it absorbs the taste of the soup, and so that the fresh fragrance is incorporated into the soup. Finally, we'll add the mushrooms, the mussels, and then we'll cook for 10 minutes.
-The casseroles are sour and white, and the scent snorts. A spoonful of soup, salty and sweet of fresh meat, fresh of springs and fungus of mushrooms, with fresh and rich. The salty meat tastes soft, the meat is soft, the spring is soft, the mouth is soft, each food is its own speciality, and is integrated into a harmonious whole. This soup is especially delicious, and it's very beautiful, and it's the best meal in the spring.
+🦐 油爆虾（本帮名菜，鲜香酥脆）
+油爆虾是老正兴的招牌菜之一，也是上海本帮菜中最具代表性的虾类菜品。这道菜选用新鲜的河虾（青虾），这种虾生长在太湖、阳澄湖等淡水湖泊中，个头不大，但肉质特别鲜甜，没有海虾的腥味，是制作油爆虾的最佳选择。
+河虾要选用活虾，处理时剪去虾须和虾脚，保持虾身完整。用清水反复冲洗，沥干水分，这一步很重要，水分太多会影响爆炒的效果。虾处理好后用料酒、盐、白胡椒粉腌制片刻，去腥入味。
+油爆是这道菜的关键技法：锅要烧到冒烟，油温要达到八成热（约 200℃），虾下锅后发出“滋啦”的响声，这就是“爆”的效果。快速翻炒，让虾均匀受热，虾壳受高温后迅速变红变脆，虾肉则保持鲜嫩。加入酱油、黄酒、白糖、醋调味，大火快炒，让调料的香味充分渗入虾肉。整个过程不超过 2 分钟，这样才能保持虾的鲜嫩和酥脆。
+出锅的油爆虾色泽红亮，油光发亮，散发着浓郁的酱香和虾香。虾壳酥脆，轻轻一咬就碎，可以连壳一起吃，补钙又美味；虾肉鲜嫩多汁，Q 弹爽口，带着淡淡的甜味。酱汁咸鲜适中，酸甜平衡，特别开胃。这道菜是上海人最爱的下酒菜，配上一杯黄酒或啤酒，边吃边聊，是夏日夜晚最惬意的享受。
+🐍 响油鳝丝（老字号经典，代代相传）
+响油鳝丝是老正兴的传统名菜，已有百年历史，制作技艺代代相传。老正兴的响油鳝丝在上海滩享有盛誉，许多老上海人专程来此品尝这道经典菜品。
+老正兴的鳝丝选料特别讲究，必须是太湖或阳澄湖的野生黄鳝，这种鳝鱼生长在清澈的水域中，肉质特别细嫩，鲜味浓郁。黄鳝的处理需要熟练的刀工：去骨、去内脏、去血水、去黏液，只留下纯净的鳝鱼肉，然后切成细丝，粗细均匀，长度一致，这需要多年的经验积累。
+炒制时火候的把控是老正兴的独门秘诀：油温要达到九成热，鳝丝下锅后瞬间定型，快速翻炒，加入特制的酱料（酱油、黄酒、白糖、醋、姜汁等按秘方比例调制），整个过程行云流水，一气呵成。炒好后装盘，撒上大量的葱丝、姜丝，然后浇上滚烫的热油，“滋啦”一声巨响，香气瞬间爆发，这是老正兴响油鳝丝的标志性时刻。
+品尝时，鳝丝软嫩滑爽，入口即化，完全没有腥味，只有纯粹的鲜香。老正兴的鳝丝特别之处在于酱汁的调配，咸鲜中带着微微的酸甜，层次丰富而平衡，这是百年老店的独家秘方。配上一碗白米饭，鳝丝的汤汁拌饭，鲜美无比，是老上海人记忆中最正宗的味道。
+🥬 草头圈子（老字号招牌，草香肉美）
+草头圈子是老正兴的另一道招牌菜，也是上海本帮菜中最具特色的菜品之一。这道菜的历史可以追溯到清末，是老正兴的创始菜品之一，至今仍保持着传统的制作方法。
+老正兴的草头圈子用料考究，猪大肠必须选用新鲜的，反复清洗至少 10 遍，去除所有异味，然后用料酒、姜汁、盐腌制，再焯水去腥。处理好的大肠切成圈状，下锅红烧，加入老正兴的秘制酱料，慢火炖煮至软烂入味，这个过程至少需要 2 小时。
+草头要选用春季最嫩的苜蓿苗，清洗干净后用大火快炒，加入盐、蒜末、黄酒调味，炒至断生即可，保持草头的翠绿和清香。炒制时间不能超过 1 分钟，时间长了草头会变黄变老，失去清香。
+最后将红烧好的大肠圈与炒好的草头混合，快速翻炒，让草头的清香渗入大肠，大肠的醇厚包裹草头。这道菜的精妙之处在于荤素搭配、浓淡相宜：大肠软糯醇厚，带着浓油赤酱的咸鲜和香料的芬芳；草头清爽脆嫩，带着植物的清香和淡淡的苦味。两者结合，既解了大肠的油腻，又增添了草头的鲜味，口感层次丰富，营养均衡。
+🍲 腌笃鲜（春季时令，咸鲜香浓）
+腌笃鲜是江南地区的传统名菜，也是上海人春季餐桌上的必备汤品。“腌”指咸肉，“鲜”指新鲜的猪肉，“笃”是上海方言，意为小火慢炖。这道菜将咸肉的咸香与鲜肉的鲜甜结合，再加上春笋的清香，形成独特的复合鲜味。
+老正兴的腌笃鲜选料特别讲究：咸肉要选用自家腌制的，腌制时间至少一个月，让肉质充分入味；鲜肉要选用猪五花肉或排骨，肉质细嫩；春笋要选用清明前后的嫩笋，这时的笋最鲜嫩，没有苦涩味。配料还有冬菇、百叶结、豆腐泡等，增加口感和营养。
+炖制时先将咸肉和鲜肉冷水下锅，大火烧开后撇去浮沫，转小火慢炖。炖制时间至少 2 小时，让肉质软烂，汤色乳白。春笋切成滚刀块，在汤炖好前 30 分钟加入，让笋吸收汤的鲜味，同时让笋的清香融入汤中。最后加入冬菇、百叶结等配料，再炖 10 分钟即可。
+出锅的腌笃鲜汤色乳白，香气扑鼻。舀一勺汤，咸肉的咸香、鲜肉的鲜甜、春笋的清香、冬菇的菌香层层递进，鲜味浓郁却不油腻。咸肉软烂入味，鲜肉酥软不柴，春笋脆嫩爽口，每一种食材都保持着自己的特色，又融合成一个和谐的整体。这道汤特别下饭，汤汁拌饭，鲜美无比，是春季最滋补的美食。
 
 🚇 14:15-14:30 | 交通：返回酒店
-Location of departure: Fukuo Road
-Walking: 10 minutes
-Location of arrival: Hotel Perkinswana (427 Fukushima Road)
+🟢 出发地点：福州路
+👣 步行路线：步行 10 分钟
+🔴 到达地点：🏨 铂金万澳酒店（福州路 427 号）
 
-1430-1530 Return to the hotel for baggage
-Check-out: baggage removal, check-out
-Stay: approximately 1 hour
+🏨 14:30-15:30 | 返回酒店取行李
+办理退房：取行李，办理退房手续
+停留时间：约 1 小时
 
-15:30 to the airport.
+✈️ 15:30 | 前往机场
 🚇 虹桥机场路线
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-🚊 Route: Subway 2 (to the east) to the terminal
-Location of exit: Terminal 2 or Terminal 1 Station
-Total time taken: about 50 minutes
-Suggested departure time: 3 hours before flight takes off
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：地铁 2 号线（往徐泾东方向）→ 直达终点站
+🔴 下车地点：虹桥 2 号航站楼站或虹桥 1 号航站楼站
+⏱️ 总耗时：约 50 分钟 | 💰 票价：6 元
+🔴 建议出发时间：航班起飞前 3 小时
 🚇 浦东机场路线
-🟢 Entry: Metro 2 Nanjing East Road (8 minutes walk)
-• Route: Subway 2 (in the direction of Pudong International Airport) to the terminal
-Location of exit: Pudong International Airport
-Total time taken: about 1.5 hours | fare: 7 yuan
-Suggested departure time: 3 hours before flight takes off
-An important reminder.
-• Make sure that sufficient time is set aside for access to the airport
-• Recommend prior confirmation of flight information and terminal buildings
-• The metro is the easiest way to reach the airport and avoid congestion
-• More luggage may be considered for taxis or airport buses
+🟢 上车地点：地铁 2 号线南京东路站（酒店步行 8 分钟）
+🚊 乘坐路线：地铁 2 号线（往浦东国际机场方向）→ 直达终点站
+🔴 下车地点：浦东国际机场站
+⏱️ 总耗时：约 1.5 小时 | 💰 票价：7 元
+🔴 建议出发时间：航班起飞前 3 小时
+⚠️ 重要提醒
+•请务必预留充足时间前往机场
+•建议提前确认航班信息和航站楼
+•地铁是前往机场最便捷的方式，避免交通拥堵
+•行李较多可考虑打车或机场大巴
 
-Travel stickers
-We'll make an appointment.
-Site appointment
+📝 旅行贴士
+预约信息速查
+景点预约
 
-Click on a picture to view the complete spreadsheet
-A restaurant appointment.
+点击图片可查看完整电子表格
+餐厅预约
 
-Click on a picture to view the complete spreadsheet
+点击图片可查看完整电子表格
 
-The hotel bed bag.
-Pelican Van Austro Hotel (427 Fukushima Road)
-Proposed room selection
-• The upper room has a better view of the river.
-• Relatively quiet near Nanjing East Road
-• Advising the choice of an advanced or luxurious room with more comfortable space
-Hotel characteristics
-• Geographically superior, walking on the streets, on the beaches of Nanking Road
-• East Nanjing Road, line 2, line 10 Station
-• A rich breakfast, a Chinese-Western combination
-• 24-hour protocol service
-Peripheral facilities
-• Commissary: 7-11, family (walk within 5 minutes)
-• Pharmacy: National pharmacy (3 minutes on foot)
-• Supermarkets: UCW (8 minutes on foot)
-• Banks: business banks, construction banks (5 minutes walk)
+酒店下榻锦囊
+🏨 铂金万澳酒店（福州路 427 号）
+选房建议
+•高层房间视野更佳，可远眺黄浦江
+•靠近南京东路一侧相对安静
+•建议选择高级房或豪华房，空间更舒适
+酒店特色
+•地理位置优越，步行可达南京路步行街、外滩
+•毗邻地铁 2 号线、10 号线南京东路站
+•早餐丰富，中西式结合
+•24 小时礼宾服务
+周边便利设施
+•便利店：7-11、全家（步行 5 分钟内）
+•药店：国大药房（步行 3 分钟）
+•超市：世纪联华（步行 8 分钟）
+•银行：工商银行、建设银行（步行 5 分钟）
 
-Practical information
-Weather and dress
-• Spring (March-May): 15-25°C, light coat + long sleeve
-• Summer (June-August): 25-35°C, sun-proof, thin air-for-air clothing
-• Autumn (September-November): 15-25°C, Best tourist season, thin jacket
-• Winter (December-February): 0-10°C with thick coats or feathers
-Required items
-• Identity card/passport
-• Cell phone chargers
-• An umbrella (shanghai heavy rain)
-• Comfortable walking shoes
-• Sunproofing supplies (summer)
-Guidelines for the use of iron in upper Haiti
-• Download “Metro Metropolis” APP, which allows direct sweep codes to travel by car
-• Purchase of a cartoon that can be used at a convenience store
-• Operating time: approximately 5.30 to 23:00
-• Peak period: 7.30-9:00, 17:00-1900
-Urgent call.
-• Call the police: 110
-• First aid telephone: 120
-• Tourism counselling: 962020
-• Hotel reception: assistance in calling cars, booking restaurants, etc.
+实用信息
+天气与着装
+•春季（3-5 月）：15-25℃，建议轻薄外套+长袖
+•夏季（6-8 月）：25-35℃，防晒必备，轻薄透气衣物
+•秋季（9-11 月）：15-25℃，最佳旅游季节，薄外套
+•冬季（12-2 月）：0-10℃，需厚外套或羽绒服
+必备物品
+•身份证/护照
+•手机充电宝
+•雨伞（上海多雨）
+•舒适的步行鞋
+•防晒用品（夏季）
+上海地铁使用指南
+•下载“Metro 大都会”APP，可直接扫码乘车
+•购买一卡通，可在便利店充值
+•运营时间：约 5:30-23:00
+•高峰期：7:30-9:00，17:00-19:00
+紧急联系
+•报警电话：110
+•急救电话：120
+•旅游咨询：962020
+•酒店前台：可协助叫车、预订餐厅等
 
-A little snack.
-Shanghai food characteristics
-• Rich oil caviar, sweet taste
-• Focus on fresh food
-• Specialized in cooking techniques such as red burning, steaming, drunken
-It's a snack.
-• Small cage packs, pancakes
-Onion noodles
-♪ Bone cake ♪
-• Crab shell yellow
-• Fresh meat moon cakes (in mid-fall and around autumn)
-Food time advice
-• Lunch: 11.30-1300
-• Dinner: 1730-1900
-• Avoiding food peaks can reduce the equivalent time
+美食小贴士
+上海菜特点
+•浓油赤酱，口味偏甜
+•讲究原汁原味，注重食材新鲜
+•擅长红烧、清蒸、糟醉等烹饪技法
+必尝小吃
+•小笼包、生煎包
+•葱油拌面
+•排骨年糕
+•蟹壳黄
+•鲜肉月饼（中秋前后）
+用餐时间建议
+•午餐：11:30-13:00
+•晚餐：17:30-19:00
+•避开用餐高峰期可减少等位时间
 
-Take a picture and make a card.
-Best photo time
-• Sunrise: Outside beach, landfront river lane ( 6-7:00)
-• Sunset: Shanghai Centre Tourist's Hall, Middle East (1730-1830)
-• Blue-tone moments: Outside beaches, land mouths (1830-1930)
-• Nightscape: Huangpur River Cruiser, External Beach, New Heaven (1900-2100)
-Net-red card points
-• Wukang Building
-• The Tanaka Rock Gate
-Chen Yi Square on the outside
-• Green Land at the Lu's Mouth Center
-• The Stonegate of New Heaven
+拍照打卡点
+最佳拍照时间
+•日出：外滩、陆家嘴滨江大道（6:00-7:00）
+•日落：上海中心观光厅、东方明珠（17:30-18:30）
+•蓝调时刻：外滩、陆家嘴（18:30-19:30）
+•夜景：黄浦江游船、外滩、新天地（19:00-21:00）
+网红打卡点
+•武康大楼
+•田子坊石库门
+•外滩陈毅广场
+•陆家嘴中心绿地
+•新天地石库门
 
-Cost statement:
-The price includes:
-• Passage: 1-20 local tourist vehicles, one person guaranteed for a free-riding trip. For reference purposes only, whichever is the actual.
-• Tickets: First door tickets for the attraction, excluding tickets for the garden.
-• Other: arrange for only the Director of the Division to be responsible for reception services and the provision of guided tours (unaccompanied access areas) for travel activities and, if required, offer or purchase additional guided tours (other than the original mission fee).
-The price does not include:
-• Small transactions: vehicles in view areas.
-• Tickets: The itinerary indicates a self-funded attraction (excluding tickets to the park).
-• Other: arrange for only the Director of the Division to be responsible for reception services and the provision of guided tours (unaccompanied access areas) for travel activities and, if required, offer or purchase additional guided tours (other than the original mission fee).
-• Complement: additional costs incurred as a result of force majeure factors such as traffic delays, strikes, weather, aircraft and machine malfunctions, cancellation or change of flight time; self-payment for local participation and other items not included in the above "costs include"
-• Travel accident insurance: for your personal safety and security of property, you are advised to opt for travel accident insurance and travel cancellation on booking
+费用说明：
+价格包含：
+•交      通：当地旅游用车1~20人，独立包车游，保证1人1座。以上用车方案仅供参考，以实际为准。
+•门      票：行程中所含的景点首道大门票，不含园中园门票。
+•其      他：仅安排司导负责行程活动中接待服务并提供游玩指引（不陪同进景区），如需“导游服务”，可主动提出或额外购买导游服务（原团费不含此项）。
+价格不包含：
+•小  交  通：景区内用车。
+•门      票：行程中注明需要另行支付的自费景点（不含景区园中园门票）。
+•其      他：仅安排司导负责行程活动中接待服务并提供游玩指引（不陪同进景区），如需“导游服务”，可主动提出或额外购买导游服务（原团费不含此项）。
+•补      充：因交通延阻、罢工、天气、飞机机器故障、航班取消或更改时间等不可抗力原因所引致的额外费用；当地参加的自费以及以上"费用包含"中不包含的其它项目
+•旅游意外险：为了您的人身安全和财产保障，建议您在预订时选购旅游意外险及旅程取消险
 
-Information on reservations
-/ Comment: Fixed template for this section
-Special restrictions
-Patients, pregnant women and persons with reduced mobility
-In order to ensure smooth travel and prevent accidents involving personal injury during travel, tourists are required to perform the necessary medical examination prior to travel and are unable to receive them because of service constraints if:
-(1) Persons with infectious diseases such as infectious hepatitis, active tuberculosis and typhoid;
-(2) Patients with cardiovascular diseases such as severe hypertension, heart failure, myocardial aerobics and myocardial infarction;
-(3) Persons with cerebrovascular diseases such as cerebral embolism, brain haemorrhage, brain tumor, etc.;
-(4) Persons with respiratory diseases, such as emphysema and pulmonary heart disease;
-(5) Persons with mental illness, such as epilepsy and all kinds of mental illness;
-(6) Persons with severe anaemia, such as those with haemoglobin levels below 50 g/l;
-(7) Persons with resuscitation of large- and medium-sized operations;
-(8) Pregnant women and persons with reduced mobility.
-Older persons
-An elderly person aged 1.70 years or older may travel with a Health Certificate signed with our department and accompanied by a family or friend (except for those who are unable to receive them because of service constraints and restrictions).
-2. It is not possible to receive tourists over the age of 81 due to service constraints.
-3. To ensure that the health of the person is fit to travel, depending on the intensity of the itinerary on the different routes, and that service may be consulted for a specific age limit.
-Minors
-1. Tourists under the age of 18 are required to be accompanied by family members, except those who are unable to receive them due to service constraints and restrictions.
-2. It is not possible to receive tourists under 18 years of age on a separate basis due to service constraints.
-Foreign friends
-The online offer for this product applies to tourists holding continental identity cards. If you have a passport from another country or region, please indicate when making the reservation.
+预订须知
+//备注：此部分固定模板
+特殊限制
+病患者、孕妇及行动不便者
+为了确保旅游顺利出行，防止旅途中发生人身意外伤害事故，请旅游者在出行前做一次必要的身体检查，如存在下列情况，因服务能力所限无法接待：
+（1）传染性疾病患者，如传染性肝炎、活动期肺结核、伤寒等传染病人；
+（2）心血管疾病患者，如严重高血压、心功能不全、心肌缺氧、心肌梗塞等病人；
+（3）脑血管疾病患者，如脑栓塞、脑出血、脑肿瘤等病人；
+（4）呼吸系统疾病患者，如肺气肿、肺心病等病人；
+（5）精神病患者，如癫痫及各种精神病人；
+（6）严重贫血病患者，如血红蛋白量水平在50克/升以下的病人；
+（7）大中型手术的恢复期病患者；
+（8）孕妇及行动不便者。
+老年人
+1.70周岁(含)以上老年人预订出游，须与我司签订《健康证明》并有家属或朋友（因服务能力所限无法接待及限制接待的人除外）陪同方可出游。
+2.因服务能力所限，无法接待81周岁以上的旅游者报名出游，敬请谅解。
+3.因不同线路行程强度不一样，请确保身体健康适宜出游，具体年龄限制可咨询客服。
+未成年人
+1.未满18周岁的旅游者请由家属（因服务能力所限无法接待及限制接待的人除外）陪同参团。
+2.因服务能力所限，无法接待18周岁以下旅游者单独报名出游，敬请谅解。
+外籍友人
+本产品网上报价适用持有大陆居民身份证的游客。如您持有其他国家或地区的护照，请在预订过程中注明。
 
-Signature
-Online contracting
-The contract is signed on the online page, and when the payment is successful, the electronic contract will be received by e-mail, with the same validity as the door-market and fax contracts.
-Method of payment
-Online payments:
-• Credit cards: no online banking is required to support large payments, including: China Bank of Commerce and Industry, Bank of Construction, Bank of China, Bank of Agriculture, Bank of Commerce and Industry, Bank of China, Bank of China, Bank of Guangda, Bank of Hengye, China National Bank, Bank of China, Bank of China for Development, Bank of China for Development in Shanghai, Bank of Guangdong, Bank of Peace, Shanghai Bank.
-• Third-party payments: third-party payments: payment of treasures, micro-trust.
-For public transfers:
-• Remittance of funds through banks to designated accounts.
+签约方式
+在线签约
+通过在线签约页面进行签约，付款成功后，将通过电子邮件接收电子版合同，与门市签约及传真签约同等有效。
+付款方式
+网上支付：
+•信用卡：无需开通网上银行，支持大额支付，包括：中国工商银行、建设银行、中国银行、中国农业银行、招商银行、中国光大银行、兴业银行、中国民生银行、中信银行、上海浦东发展银行、广东发展银行、平安银行、上海银行。
+•第三方支付：第三方支付：支付宝、微信。
+对公汇款：
+•通过银行将相关款项汇至指定账户。

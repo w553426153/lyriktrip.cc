@@ -1,14 +1,16 @@
 
 import React from 'react';
 import { WHY_TRUST_DATA } from '../constants';
+import { Language } from '../types';
 import { TRANSLATIONS } from '../translations';
 
 interface WhyTrustProps {
   onOpenConsult: (source: string) => void;
+  language: Language;
 }
 
-const WhyTrust: React.FC<WhyTrustProps> = ({ onOpenConsult }) => {
-  const t = TRANSLATIONS.en.whyTrust;
+const WhyTrust: React.FC<WhyTrustProps> = ({ onOpenConsult, language }) => {
+  const t = TRANSLATIONS[language].whyTrust;
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">

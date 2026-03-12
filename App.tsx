@@ -1,6 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
-import { Page, RouteSummary } from './types';
+import { Page, Language, RouteSummary } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhyTrust from './components/WhyTrust';
@@ -26,6 +26,8 @@ const App: React.FC = () => {
   const [selectedDestinationId, setSelectedDestinationId] = useState<string | null>(null);
   const [selectedTourId, setSelectedTourId] = useState<string | null>(null);
   const [selectedRestaurantId, setSelectedRestaurantId] = useState<string | null>(null);
+  const [language, setLanguage] = useState<Language>('en');
+
   const [routeDestinationSlug, setRouteDestinationSlug] = useState<string | null>(null);
   const [selectedDestinationSlug, setSelectedDestinationSlug] = useState<string | null>(null);
   const [resolveDestinationLoading, setResolveDestinationLoading] = useState(false);
@@ -264,15 +266,14 @@ const App: React.FC = () => {
       case Page.Home:
         return (
           <>
-            <Hero onStartQuiz={() => handleOpenConsult('Readiness Quiz')} />
-            <WhyTrust onOpenConsult={handleOpenConsult} />
-            <SurvivalKits onOpenConsult={handleOpenConsult} />
+            <Hero onStartQuiz={() => handleOpenConsult('Readiness Quiz')} language={language} />
+            <WhyTrust onOpenConsult={handleOpenConsult} language={language} />
+            <SurvivalKits onOpenConsult={handleOpenConsult} language={language} />
             <FeaturedTours 
               onOpenConsult={handleOpenConsult} 
               wishlist={wishlist}
               onToggleWishlist={toggleWishlist}
               onSelectTour={handleSelectTour}
-              onViewAll={() => navigateToPage(Page.Tours)}
             />
             <Testimonials />
           </>
@@ -414,13 +415,15 @@ const App: React.FC = () => {
         onNavigate={handleNavigate} 
         onOpenConsult={() => handleOpenConsult('Header Navigation')} 
         wishlistCount={wishlist.length}
+        language={language}
+        onLanguageChange={setLanguage}
       />
       
       <main>
         {renderPage()}
       </main>
 
-      <Footer onNavigate={handleNavigate} />
+      <Footer language={language} onNavigate={handleNavigate} />
       
       <FloatingContact />
 

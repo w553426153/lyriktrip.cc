@@ -1,117 +1,117 @@
 行程主标题
-"My son and daughter travels 5 days in Beijing"
+<亲子游 丨北京多交通5日>8人拼小团 丨品牌全季&维也纳&原拓&和颐 丨故宫精讲 丨citywalk胡同 丨探索科技馆 丨军事博物馆 丨清华艺博 丨专车专导 丨儿童赠早
 
 📅 Day 1: 出发地 北京 【接机/接站】 - 自由活动
-Free movement.
+自由活动
 
 📍 09:00-13:00 | 自由活动
 景点介绍
-Welcome to Beijing. It's an ancient charisma of history, a vast path, a magnificent doorway, a great palace, everything is like a distant, long history story.
-When you arrive in Beijing, take the driver to the hotel (usually you will not be able to reach you until you reach the airport or the high iron station for half an hour. Keep your mobile phone open). Please check in at the front desk, using the guided tour alerts.
-Connector/station service: We offer you 24 hours free of charge. (If special circumstances such as flight/train delays, re-signing, etc. do not permit access, the guide will inform the guest to call to the hotel, so that the invoice is stored and reimbursed.)
-Free movement.
-Suggested time: 4 hours for recommended activities
-It's your choice of purpose, based on your interests. Land
-Beijing is a fascinating city, with small alleys, old teahouses, new tide bar streets, luxurious commercial areas, infinite Morden elements that intersect with the taste of the old Beijing tunnel, building a deeply rooted cultural base and a decent and decent lifestyle.
-Ho: South Twilight Lane, Scephatia, Five Camps, East Punctuation Road, Yang Mei-sheung Street, etc.
-Net reds: Drumhouse Street, Peace Bureau, Fretilation Museum, 798 art districts, Bell Books, etc.
-Parent-child category: Museum of Nature, Museum of Animals, Museum of Automobiles, Museum of Star Art, etc.
-Religions: Zhutai Palace, White Cloudview, 8 major places, Queen's Dill Lords Cathedral, Fargen Temple, etc.
-Shopping type: West single, Royal Well, SKP, World Trade Class, Blue Harbor, Taiguri, etc.
-Foods: Cattle Street, Bull Street, Front Street, Back Sea, Triton, Temple of the Protector, Temple of the Nation, etc.
-1. The hotel complexes are not moving, the house is not being held, and daily baggage problems are being saved;
-2. Urban hotels are mostly bed-sized, and if you need a space, we will try to schedule it, but we cannot guarantee that it is actually occupied.
-3. It is understood that random arrangements for reference hotels do not accept designation;
-Since Beijing is the center of politics, hotels are often requisitioned by the government and various meetings, such as those in the hot seasons, government expropriations, etc., we will arrange for a standard hotel that is not below its original level.
+欢迎来到北京 ，这是一个具有无穷历史魅力的古都 ，宽敞的大道、 辉煌的门楼牌坊、 宏伟的宫殿 ，一切的一切都像在诉说遥远、 漫长的历史故事~
+抵达北京后 ，由司机师傅接机/接站 ，送至酒店（通常您到达机场或高铁站前半小时接送师傅才会与您联系 ，请保持手机畅通） ，请您按导游提示信息自行到前台办理入住 ，之后自由活动。
+接机/站服务 ：我们贴心地为您提供24小时免费接机/站服务。（如因航班/列车延误、 改签等特殊情况无法提供接机/站服务时 ，导游会通知客人打车至酒店 ，请您存好发票 ，凭发票报销 ）
+自由活动
+建议时间 ：4小时推荐活动
+根据个人兴趣喜好自行选择出行目的地
+北京是一座迷人的城市 ，小胡同儿、 老茶馆、 新潮酒吧街、 繁华商业区 ，无限的摩登元素与老北京地道的京味儿相互交融 ，构筑了北京城博大精深的文化底蕴和正统而不失清雅的生活方式。
+胡同类 ：南锣鼓巷、 史家胡同、 五道营胡同、 东交民巷、 杨梅竹斜街等等
+网红类 ：鼓楼大街、 和平菓局、 失恋博物馆、 798艺术区、 钟书阁等等
+亲子类 ：自然博物馆、 动物博物馆、 汽车博物馆、 星空艺术馆等等
+宗教类 ：雍和宫、 白云观、 八大处、 王府井天主大教堂、 法源寺等等
+购物类 ：西单、 王府井、 SKP、 世贸天阶、 蓝色港湾、 太古里等等
+美食类 ：簋街、 牛街、 前门大街、 后海、 三里屯 ，护国寺、 报国寺等等
+1、 酒店连住不挪窝 ，拖家带口不折腾 ，省去每日搬行李的烦恼 ；
+2、 市区酒店多以大床为主 ，如需要标间请提前备注 ，我们将尽量安排 ，但不能保证 ，已实际入住为准 ；
+3、 行程参考备选酒店随机安排不接受指定 ，请谅解 ；
+4、 由于北京为政治中心 ，酒店常被政府及各种会议征用 ，如遇旺季团队满房 ，政府征用等情况 ，我们将安排不低于原档次的同标准酒店 ，请知晓 ；
 
 📅 Day 2: 天安门广场 故宫深度游 citywalk胡同游
-Tiananmen Square.
+天安门广场 -> 故宫博物院 -> citywalk胡同游
 
 🍜 08:00-09:00 | 早餐推荐
 餐厅背景
-..a hotel morning ca11 .
+. 酒店温馨morning ca11 ，享用酒店自助早餐
 
 📍 08:30-14:30 | 天安门广场
-建议游览时间：About an hour.
+建议游览时间：约1小时
 景点介绍
-To Beijing City Center Square - Tiananmen Square, which documents the history of the Chinese people’s indomitable revolution and the great achievements of the world, is the venue for China’s major state events, as well as an important venue for China’s major festivals and observances, has become a place for all the Chinese people to aspire and has left a strong mark on the history of China’s modern revolution, as well as a place where countless major political and historical events have taken place.
-1 More than 10 members of President Mao's Memorial Hall may make appointments for team visits, and up to 10 persons require a customer's appointment by name.
-2. President Mao will be expected to enter in line at the designated position of the staff member with valid papers, or, if the appointment is scheduled to be completed or the policy will be closed, to appear.
-3. President Mao ' s Memorial Hall shall not be allowed to enter the stadium with bags, cameras, canteens, etc., and should be referred to the guided tour and then lined up for screening.
-4. The Tiananmen Square is heavily populated, so please take care of your luggage so as not to lose it.
+前往北京城市中心广场——【天安门广场】天安门广场记载了中国人民不屈不挠的革命历史和开天辟地的伟大成就 ，是中国重大国事活动的举办地 ，也是中国重大节日庆典和纪念日的重要场所 ，成为全国人民向往的地方为中国现代革命史留下了浓重的色彩 ，同时还是无数重大政治、 历史事件的发生地 ，是中国从衰落到崛起的历史见证。
+1、 毛主席纪念堂10人以上才可预约团队参观 ，10人以下需客人实名预约 ，如需入内瞻仰请自行预约 ，可向客服索要预约指南。
+2、 瞻仰毛主席遗容请凭有效证件按工作人员指定位置排队入场 ，如指定预约场次已约满或政策性闭馆 ，则改为外观。
+3、 毛主席纪念堂不得携带大小包、 照相机、 水壶等入场参观 ，请交至导游后再排队参观 ，期间需进行景点安检。
+4、 天安门广场人流量大 ，请注意看管自身的行李物品 ，以免丢失。
 
 📍 14:30-17:30 | 故宫博物院
-建议游览时间：About 3 hours
+建议游览时间：约3小时
 景点介绍
-A tour of the world's larger ancient Royal Palace complex, which contains gate tickets (three hours in depth), feels the luxuries of the Royal Palace.
-So the palace is in the center of Beijing, formerly known as the Forbidden City. It was built in the 18th year (1420) of Ming Dynasty Young Lok, an ancient palace of Ming and Qing, an unmatched masterpiece of ancient buildings, and an ancient complex of larger and more complete wood structures. The entire palace is made up of two parts, the “Face” and the “Needs”, surrounded by walls. All around the river. The corner of town has an corner. There's a door on each side, the noon gate on the south side for the front door of the palace.
-1. There shall be no parking areas and no parking areas in the vicinity of the Movimentary Landscape.
-The lunch schedule was late that day, so please prepare your own snacks to eat.
-3. If it is impossible to get tickets to the Royal Palace, make arrangements for the Park, or the North Sea Park or the Qilong Palace.
+游览世界上规模较大的古代皇家宫殿建筑群——【故宫】含大门票（ 3小时深度游） ，感受皇家宫殿的豪华气派。
+故宫位于北京市中心 ，旧称紫禁城。 于明代永乐十八年（ 1420年）建成 ，是明、 清两代的皇宫 ，无与伦比的古代建筑杰作 ，世界现存较大、 较完整的木质a结构的古建筑群。 故宫全部建筑由 “前朝”与 “ 内廷”两部分组成 ，四周有城墙围绕。 四面由筒子河环抱。城四角有角楼。 四面各有一门 ，正南是午门 ，为故宫的正门。
+1、 故宫景区周边无停车场及停车区域 ，临时上下车点需步行一段距离及等候若干时间 ，敬请谅解。
+2、 当天午餐安排较晚 ，请自备零食充饥。
+3、 如实在无法抢到故宫门票 ，则安排 ：景山公园（远眺故宫 ）或北海公园或恭王府景区
 
 📍 17:30-19:00 | citywalk胡同游
-建议游览时间：About an hour and 30 minutes.
+建议游览时间：约1小时30分钟
 景点介绍
-"Citywalk's Walking in Old Beijing's Plumbstone Road, which has been polished over the years, next to the ancient fragrances,
+【citywalk胡同游】漫步在老北京的胡同儿 ，脚下是历经岁月打磨的青石板路 ，身旁是古色古香的四合院 ，
 
 📅 Day 3: 八达岭长城 中国科学技术馆 外观鸟巢水立方
-The Great Wall of the Eight Dynasty, the Chinese Science and Technology Museum, the Bird's nest of water, the ice strip, the excursion.
+八达岭长城 -> 中国科学技术馆 -> 鸟巢水立方冰丝带 游览外观
 
 🍜 08:00-09:00 | 早餐推荐
 餐厅背景
-Hotel morning ca11. Breakfast packed.
-1. Due to the distance of the Wall from the urban area (about 80 km), the call for a tour of the Wall was made earlier that day.
-After boarding the Wall, you will be freely visited by tourists, and the tour guide will take you to the Wallscape.
-3. The option is to climb the Wall on foot or in a taxi/cable, at a cost of $140 per person.
+酒店温馨morning ca11 ，早餐打包
+1、 因长城距市区距离较远（约80公里） ，游览长城当天的叫早时间较早 ，请做好早起准备。
+2、登上长城后为游客自由参观 ，导游将您送到长城景区 ，检票后不跟团讲解。
+3、 可以选择徒步登长城或乘长城滑道/缆车登长城 ，长城缆车费用自理140元/人。
 
 📍 11:00-13:00 | 八达岭长城
-建议游览时间：About two hours.
+建议游览时间：约2小时
 景点介绍
-The Great Wall of the Great Wall of the Great Wall and the Great River Mountain of the Great Wall and beyond.
-The Great Wall of the Eight Dynasty is a very fine section of the Great Wall's architecture. It's one of the most beautiful places in the country.
-In 1972, the President of the United States, Nixon, said on the Wall, "Only a great nation can make such a great Wall." In 2009, United States President Barack Obama also said on the Wall: "Here, we would like to express our great admiration for Chinese civilization." (Travel time is about two hours)
+登【八达岭长城】 ，观长城内外祖国大好河山 ，抒发 “登长城做好汉”的雄心壮志~
+八达岭长城是长城建筑中十分精华的一段 ，集巍峨险峻、 秀丽苍翠于一体 ，为全国十大风景名胜区之首。
+1972年 ，美国总统尼克松在长城上说 ， “只有一个伟大的民族 ，才能造得出这样一座伟大的长城”。 2009年 ，美国总统奥巴马同样在长城上说 ： “在这里 ，我们要对中华文明表示极大的崇敬”。（游览时间约2小时）
 
 📍 13:00-15:30 | 中国科学技术馆
-建议游览时间：About two hours and 30 minutes.
+建议游览时间：约2小时30分钟
 景点介绍
-To go into a technology library, to let the Chinese dream go, the Chinese technology library, which has many experiences of interaction in each part of the country, so that children can become involved, deepen their understanding and awareness of science and technology, stimulate interest and curiosity in science, and improve the quality of science in the process of submersion.
+走进科技馆 ，放飞中国梦 ，【中国科技馆】作为我国综合性科技馆 ，场馆每一部分都有许多的互动体验 ，让孩子们可以通过亲身参与 ，加深对科学与技术的理解和感悟 ，激发对科学的兴趣和好奇心 ，在潜移默化中提高科学素质。
 
 📍 16:30-18:00 | 鸟巢水立方冰丝带 游览外观
 
 📅 Day 4: 军事博物馆 颐和园 清华大学艺术博物馆
-Chinese People ' s Revolutionary Military Museum - > 颐 颐 颐
+中国人民革命军事博物馆 -> 颐和园
 
 🍜 08:00-09:00 | 早餐推荐
 餐厅背景
-Hotel morning ca11. Hotel breakfast.
+酒店温馨morning ca11 ，享用酒店自助早餐
 
 📍 11:00-13:00 | 中国人民革命军事博物馆
-建议游览时间：About two hours.
+建议游览时间：约2小时
 景点介绍
-The history of the Chinese People ' s Revolutionary Military Museum is intertwined with the military power, and each exhibit carries a vast story. You visit with your children, explore in the sea of military history, improve parent-child relations, and reap knowledge and joy
-1. Guided tours are not allowed in, so they provide guidance and do not follow in.
-The hot-season museum does not ensure a successful appointment, or, if the appointment fails, replace it with other museums, such as the Capital Museum or the Chinese Archaeology Museum.
+【中国人民革命军事博物馆】历史的厚重与军事的威严交织 ，每一件展品都承载着一段波澜壮阔的故事。 您和孩子一同参观 ，在军事历史的海洋中探索 ，增进亲子关系 ，收获知识与欢乐
+1、 军博不允许导游入内讲解 ，故导游提供向导服务 ，不跟随入馆
+2、 热门博物馆旺季无法确保预约成功 ，如预约失败 ，则更换为首都博物馆或中国考古馆等其他博物馆
 
 📍 16:00-18:00 | 颐和园
-建议游览时间：About two hours.
+建议游览时间：约2小时
 景点介绍
-"The Royal Home Forest Museum."
-Lake Kunming of Beibo, a beautiful mountain of life, a tour of the Fao-Chang, a long porch, a stone, Suzhou Street, a 17-kun bridge, a fun park, a grand stage, etc.
+游览 “皇家园林博物馆”——【颐和园】
+赏碧波涟漪的昆明湖 ，观苍翠如黛的万寿山 ，游览佛香阁、 长廊、 石舫、 苏州街、 十七孔桥、 谐趣园、 大戏台等家喻户晓的代表性景点。
 
 📅 Day 5: 自由活动 【送机/送站】 温馨的家 ！
-Free movement.
+自由活动
 
 🍜 08:00-12:00 | 早餐推荐
 餐厅背景
-Hotel morning ca11. Hotel breakfast.
-Free movement.
-Recommended activities
-I don't know. Voluntary activities
-Free day, no schedule.
-You can sleep in a nice laziness, get up and enjoy your hotel breakfast, and set your time free.
-[Sender/port]
-Please check out the hotel by 12 o'clock. The staff will make an early agreement with you on the delivery time. Keep your cell phone open and gather at the specified assembly location to return home.
+酒店温馨morning ca11 ，享用酒店自助早餐
+自由活动
+推荐活动
+。 自 由活动
+★全天自由活动 ，无行程安排★
+您可以睡个美美的懒觉 ，起床后享用酒店自助早餐 ，自由安排您的时间 ；
+【送机/送站】
+今日全部自由活动 ，无司机导游陪同 ，请于12点之前办理酒店退房 ，工作人员会与您提前约定送机/站时间 ，请您保持手机畅通 ，并于指定集合地点集合 ，返回温馨的家 ！
 
 🍜 12:00-13:00 | 午餐推荐
 餐厅背景
-Take care of yourself today.
+今日正餐自理 ，请自行品尝北京当地美食

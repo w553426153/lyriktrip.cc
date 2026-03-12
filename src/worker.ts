@@ -1,7 +1,5 @@
 export interface Env {
   FEISHU_WEBHOOK_URL: string;
-  BREVO_API_KEY?: string;
-  BREVO_TEMPLATE_ID?: string;
   ALLOWED_ORIGINS?: string;
 
   // Provided by Wrangler when `assets.directory` is configured.
@@ -13,10 +11,6 @@ type FeishuRequestBody = {
   email?: unknown;
   message?: unknown;
   wishlist?: unknown;
-};
-
-type BrevoRequestBody = {
-  email?: unknown;
 };
 
 function jsonResponse(body: unknown, init: ResponseInit = {}): Response {
@@ -140,75 +134,9 @@ async function handleFeishu(request: Request, env: Env): Promise<Response> {
   return jsonResponse({ ok: true }, { status: 200, headers: corsHeaders(check.origin) });
 }
 
-async function handleBrevo(request: Request, env: Env): Promise<Response> {
-  const check = assertOriginAllowed(request, env);
-  if ("response" in check) return check.response;
-
-  if (request.method === "OPTIONS") {
-    return new Response(null, { status: 204, headers: corsHeaders(check.origin) });
-  }
-
-  if (request.method !== "POST") {
-    return jsonResponse(
-      { ok: false, error: "Method not allowed." },
-      { status: 405, headers: corsHeaders(check.origin) }
-    );
-  }
-
-  if (!env.BREVO_API_KEY) {
-    return jsonResponse(
-      { ok: false, error: "Server misconfigured: BREVO_API_KEY is not set." },
-      { status: 500, headers: corsHeaders(check.origin) }
-    );
-  }
-
-  let data: BrevoRequestBody;
-  try {
-    data = (await request.json()) as BrevoRequestBody;
-  } catch {
-    return jsonResponse(
-      { ok: false, error: "Invalid JSON body." },
-      { status: 400, headers: corsHeaders(check.origin) }
-    );
-  }
-
-  const email = typeof data.email === "string" ? data.email.trim() : "";
-  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return jsonResponse({ ok: false, error: "Invalid email." }, { status: 400, headers: corsHeaders(check.origin) });
-  }
-
-  const templateId = Number(env.BREVO_TEMPLATE_ID || "1");
-  const payload = {
-    to: [{ email }],
-    templateId: Number.isFinite(templateId) && templateId > 0 ? templateId : 1,
-  };
-
-  const upstream = await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "api-key": env.BREVO_API_KEY,
-    },
-    body: JSON.stringify(payload),
-  });
-
-  if (!upstream.ok) {
-    return jsonResponse(
-      { ok: false, error: "Upstream email send failed.", status: upstream.status },
-      { status: 502, headers: corsHeaders(check.origin) }
-    );
-  }
-
-  return jsonResponse({ ok: true }, { status: 200, headers: corsHeaders(check.origin) });
-}
-
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-
-    if (url.pathname === "/api/brevo") {
-      return handleBrevo(request, env);
-    }
 
     if (url.pathname === "/api/feishu") {
       return handleFeishu(request, env);
@@ -218,3 +146,4 @@ export default {
     return env.ASSETS.fetch(request);
   },
 };
+

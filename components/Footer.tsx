@@ -1,14 +1,15 @@
 
 import React from 'react';
-import { Page } from '../types';
+import { Language, Page } from '../types';
 import { TRANSLATIONS } from '../translations';
 
 interface FooterProps {
+  language: Language;
   onNavigate: (page: Page) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const t = TRANSLATIONS.en.footer;
+const Footer: React.FC<FooterProps> = ({ language, onNavigate }) => {
+  const t = TRANSLATIONS[language].footer;
   
   return (
     <footer className="bg-brand-blue text-white pt-20 pb-10">

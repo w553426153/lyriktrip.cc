@@ -1,5 +1,7 @@
 
-export const TRANSLATIONS = {
+import { Language } from './types';
+
+export const TRANSLATIONS: Record<Language, any> = {
   en: {
     nav: {
       destinations: 'Destinations',
