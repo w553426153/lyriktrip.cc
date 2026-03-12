@@ -1,5 +1,5 @@
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Page, Language, RouteSummary } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -18,7 +18,6 @@ import RestaurantDetailPage from './components/RestaurantDetailPage';
 import RouteDetailPage from './components/RouteDetailPage';
 import WishlistPage from './components/WishlistPage';
 import SmartFormModal from './components/SmartFormModal';
-import { TOURS } from './constants';
 import { fetchDestinations, fetchRoutes } from './apiClient';
 
 const App: React.FC = () => {
@@ -204,7 +203,7 @@ const App: React.FC = () => {
   }, [currentPage, routeDestinationSlug, selectedDestinationId, selectedDestinationSlug]);
 
   useEffect(() => {
-    if (currentPage !== Page.Tours) return;
+    if (currentPage !== Page.Tours && currentPage !== Page.Home) return;
     let cancelled = false;
     setRoutesLoading(true);
     setRoutesError('');
@@ -274,6 +273,9 @@ const App: React.FC = () => {
               wishlist={wishlist}
               onToggleWishlist={toggleWishlist}
               onSelectTour={handleSelectTour}
+              onViewAll={() => navigateToPage(Page.Tours)}
+              items={routesList.slice(0, 3)}
+              loading={routesLoading}
             />
             <Testimonials />
           </>
@@ -303,11 +305,10 @@ const App: React.FC = () => {
             </div>
           );
         }
-        const related = TOURS.filter(t => t.destinationId === selectedDestinationId);
         return (
           <DestinationDetailPage
             destinationId={selectedDestinationId}
-            relatedTours={related}
+            relatedTours={[]}
             onOpenConsult={handleOpenConsult}
             wishlist={wishlist}
             onToggleWishlist={toggleWishlist}
@@ -366,6 +367,7 @@ const App: React.FC = () => {
                 title="Hand-crafted Itineraries"
                 subtitle="Every route is tested and verified by our local experts."
                 items={routesList}
+                loading={routesLoading}
                 hideViewAll
               />
             )}
@@ -382,11 +384,10 @@ const App: React.FC = () => {
         );
       case Page.TourDetail:
         if (!selectedTourId) return <div className="pt-32 text-center h-screen">Tour Not Found</div>;
-        const fallbackTour = TOURS.find(t => t.id === selectedTourId) || null;
         return (
           <RouteDetailPage 
             routeId={selectedTourId}
-            fallbackTour={fallbackTour}
+            fallbackTour={null}
             onOpenConsult={handleOpenConsult}
             wishlist={wishlist}
             onToggleWishlist={toggleWishlist}

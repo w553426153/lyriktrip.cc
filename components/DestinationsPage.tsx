@@ -49,8 +49,8 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
     'Macau'
   ];
   const provinceNameMap = new Map(provinceOrder.map((p) => [p.toLowerCase(), p]));
-  const provinceSet = new Set(provinceNameMap.keys());
-  const municipalitySet = new Set(['Beijing', 'Tianjin', 'Shanghai', 'Chongqing']);
+  const provinceOrderIndex = new Map(provinceOrder.map((p, i) => [p.toLowerCase(), i]));
+  const municipalitySet = new Set(['Beijing', 'Tianjin', 'Shanghai', 'Chongqing', '北京', '天津', '上海', '重庆']);
 
   const normalizeProvince = (province?: string, city?: string, name?: string) => {
     const raw = String(province || '').trim();
@@ -58,6 +58,7 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
     if (!p) {
       const c = String(city || name || '').trim();
       if (municipalitySet.has(c)) p = c;
+      if (!p) p = c;
     }
     if (!p) return '';
     if (/\\s*Special Administrative Region$/i.test(p)) p = p.replace(/\\s*Special Administrative Region$/i, '');
@@ -65,6 +66,7 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
     if (/\\s*Autonomous Region$/i.test(p)) p = p.replace(/\\s*Autonomous Region$/i, '');
     if (/\\s*Province$/i.test(p)) p = p.replace(/\\s*Province$/i, '');
     if (/\\s*Municipality$/i.test(p)) p = p.replace(/\\s*Municipality$/i, '');
+    p = p.replace(/(省|市|自治区|特别行政区|行政区)$/g, '');
     return p;
   };
 
@@ -116,8 +118,8 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
     for (const dest of items) {
       const cityLabel = normalizeCityLabel(dest.city, dest.name);
       const provinceName = normalizeProvince(dest.province, cityLabel, dest.name);
-      const provinceKey = provinceName ? provinceNameMap.get(provinceName.toLowerCase()) : null;
-      if (!provinceKey || !provinceSet.has(provinceKey.toLowerCase())) continue;
+      const provinceLabel = provinceName || 'Other';
+      const provinceKey = provinceNameMap.get(provinceLabel.toLowerCase()) || provinceLabel;
 
       const byCity = grouped.get(provinceKey) || new Map<string, Destination>();
       const existing = byCity.get(cityLabel);
@@ -126,16 +128,21 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
       grouped.set(provinceKey, byCity);
     }
 
-    return provinceOrder
-      .map((province) => {
-        const byCity = grouped.get(province);
-        if (!byCity) return null;
-        const destinations = Array.from(byCity.values()).sort((a, b) =>
-          String(a.city || a.name).localeCompare(String(b.city || b.name), 'en')
-        );
-        return { province, destinations };
-      })
-      .filter((group): group is { province: string; destinations: Destination[] } => Boolean(group && group.destinations.length));
+    const groups = Array.from(grouped.entries()).map(([province, byCity]) => {
+      const destinations = Array.from(byCity.values()).sort((a, b) =>
+        String(a.city || a.name).localeCompare(String(b.city || b.name), 'en')
+      );
+      return { province, destinations };
+    });
+
+    groups.sort((a, b) => {
+      const aIndex = provinceOrderIndex.get(a.province.toLowerCase()) ?? 9999;
+      const bIndex = provinceOrderIndex.get(b.province.toLowerCase()) ?? 9999;
+      if (aIndex !== bIndex) return aIndex - bIndex;
+      return String(a.province).localeCompare(String(b.province));
+    });
+
+    return groups.filter((group) => group.destinations.length > 0);
   }, [items]);
 
   const provinceNav = useMemo(

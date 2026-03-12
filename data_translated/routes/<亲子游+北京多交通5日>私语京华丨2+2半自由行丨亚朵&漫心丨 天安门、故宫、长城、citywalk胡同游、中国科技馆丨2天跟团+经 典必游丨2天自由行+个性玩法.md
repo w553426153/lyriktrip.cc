@@ -1,5 +1,7 @@
 Main Itinerary Title
 <Parent-Child Tour + Multiple Transportation in Beijing 5-Day> Whispering Beijing | 2 + 2 Half-Free Travel | Atour & Mantis | Tiananmen, Forbidden City, Great Wall, Citywalk Hutong Tour, China Science and Technology Museum | 2 Days Group Tour + Classic Must-See | 2 Days Free Travel + Personalized Play
+image:
+https://lyricktrip-1304007227.cos.na-siliconvalley.myqcloud.com/routes/<亲子游+北京多交通5日>私语京华丨2+2半自由行丨亚朵&漫心丨 天安门、故宫、长城、citywalk胡同游、中国科技馆丨2天跟团+经典必游丨2天自由行+个性玩法.webp
 
 price
 $894

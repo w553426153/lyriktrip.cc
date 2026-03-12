@@ -1,6 +1,9 @@
 Main Itinerary Title
 <Family Tour丨Beijing Multi-Transport 5-Day>8-Person Small Group丨Branded Ji Hotel & Vienna & Yuantuo & Heyue丨In-Depth Forbidden City Tour丨Citywalk Hutong丨Explore Science Museum丨Military Museum丨Tsinghua Art Museum丨Private Car & Guide丨Children Receive Breakfast
 
+image:
+https://lyricktrip-1304007227.cos.na-siliconvalley.myqcloud.com/routes/<亲子游丨北京多交通5日>8人拼小团丨品牌全季&维也纳&原拓& 和颐丨故宫精讲丨citywalk胡同丨探索科技馆丨军事博物馆丨清华 艺博丨专车专导丨儿童赠早.webp
+
 price:
 $793
 

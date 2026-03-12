@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { TOURS } from '../constants';
 import { RouteSummary, Tour } from '../types';
 
 interface FeaturedToursProps {
@@ -8,10 +7,12 @@ interface FeaturedToursProps {
   wishlist: string[];
   onToggleWishlist: (tourId: string) => void;
   onSelectTour: (tourId: string) => void;
+  onViewAll?: () => void;
   title?: string;
   subtitle?: string;
   items?: Array<Tour | RouteSummary>;
   hideViewAll?: boolean;
+  loading?: boolean;
 }
 
 const DEFAULT_ROUTE_IMAGE =
@@ -26,10 +27,12 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
   wishlist, 
   onToggleWishlist,
   onSelectTour,
+  onViewAll,
   title = "Popular China Tours",
   subtitle = "Hand-picked itineraries designed for unforgettable experiences.",
-  items = TOURS,
-  hideViewAll = false
+  items = [],
+  hideViewAll = false,
+  loading = false
 }) => {
   return (
     <section className="py-20 bg-brand-lightBlue">
@@ -39,14 +42,24 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
             <h2 className="text-4xl font-bold text-brand-blue mb-4">{title}</h2>
             <p className="text-gray-600">{subtitle}</p>
           </div>
-          {!hideViewAll && (
-            <button className="mt-6 md:mt-0 text-brand-orange font-bold flex items-center hover:translate-x-1 transition-transform">
+          {!hideViewAll && onViewAll && (
+            <button
+              type="button"
+              onClick={onViewAll}
+              className="mt-6 md:mt-0 text-brand-orange font-bold flex items-center hover:translate-x-1 transition-transform"
+            >
               View All Tours <i className="fa-solid fa-arrow-right ml-2"></i>
             </button>
           )}
         </div>
 
-        {items.length === 0 ? (
+        {loading ? (
+          <div className="bg-white rounded-2xl p-20 text-center border-2 border-dashed border-gray-200">
+            <i className="fa-solid fa-circle-notch text-4xl text-gray-300 mb-6 block animate-spin"></i>
+            <h3 className="text-xl font-bold text-brand-blue mb-2">Loading tours...</h3>
+            <p className="text-gray-500">Fetching the latest itineraries from our database.</p>
+          </div>
+        ) : items.length === 0 ? (
           <div className="bg-white rounded-2xl p-20 text-center border-2 border-dashed border-gray-200">
             <i className="fa-regular fa-folder-open text-5xl text-gray-300 mb-6 block"></i>
             <h3 className="text-xl font-bold text-brand-blue mb-2">No items found</h3>

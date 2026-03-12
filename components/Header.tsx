@@ -23,6 +23,7 @@ const Header: React.FC<HeaderProps> = ({
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const t = TRANSLATIONS[language].nav;
+  const showLanguage = currentPage !== Page.Home;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -69,32 +70,38 @@ const Header: React.FC<HeaderProps> = ({
         </nav>
 
         <div className="flex items-center space-x-4">
-          <div className="hidden lg:flex items-center space-x-4 border-r pr-4 border-gray-300">
+          <div
+            className={`hidden lg:flex items-center space-x-4 ${
+              showLanguage ? 'border-r pr-4 border-gray-300' : ''
+            }`}
+          >
             {/* Language Switcher */}
-            <div className="relative">
-              <button 
-                onClick={() => setShowLangMenu(!showLangMenu)}
-                className="flex items-center space-x-1 hover:text-brand-orange transition-colors uppercase font-bold text-sm"
-              >
-                <i className="fa-solid fa-globe"></i> <span>{language}</span>
-              </button>
-              {showLangMenu && (
-                <div className="absolute top-full mt-2 right-0 bg-white shadow-xl rounded-lg overflow-hidden border border-gray-100 min-w-[80px] animate-scale-in">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        onLanguageChange(lang.code);
-                        setShowLangMenu(false);
-                      }}
-                      className={`w-full px-4 py-2 text-left text-sm hover:bg-orange-50 transition-colors ${language === lang.code ? 'text-brand-orange font-bold' : 'text-gray-600'}`}
-                    >
-                      {lang.label}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            {showLanguage && (
+              <div className="relative">
+                <button 
+                  onClick={() => setShowLangMenu(!showLangMenu)}
+                  className="flex items-center space-x-1 hover:text-brand-orange transition-colors uppercase font-bold text-sm"
+                >
+                  <i className="fa-solid fa-globe"></i> <span>{language}</span>
+                </button>
+                {showLangMenu && (
+                  <div className="absolute top-full mt-2 right-0 bg-white shadow-xl rounded-lg overflow-hidden border border-gray-100 min-w-[80px] animate-scale-in">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => {
+                          onLanguageChange(lang.code);
+                          setShowLangMenu(false);
+                        }}
+                        className={`w-full px-4 py-2 text-left text-sm hover:bg-orange-50 transition-colors ${language === lang.code ? 'text-brand-orange font-bold' : 'text-gray-600'}`}
+                      >
+                        {lang.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             <div 
               className="relative cursor-pointer group"
