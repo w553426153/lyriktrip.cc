@@ -247,18 +247,18 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                           </div>
                         </div>
 
-                        {/* 餐品简介 */}
+                        {/* Dish intro */}
                         <div className="bg-gray-50/50 p-5 rounded-2xl border border-gray-100 mb-6">
                           <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2 flex items-center">
                             <i className="fa-solid fa-quote-left text-brand-orange mr-2"></i>
                             Intro
                           </div>
                           <p className="text-gray-700 text-sm leading-relaxed">
-                            {food.reason || '（暂无简介）'}
+                            {food.reason || 'No description available yet.'}
                           </p>
                         </div>
                         
-                        {/* 推荐餐厅（聚合） */}
+                        {/* Recommended restaurants (aggregated) */}
                         {(food.restaurants || []).length > 0 ? (
                           <div>
                             <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-3 flex items-center">
@@ -298,7 +298,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                               <i className="fa-solid fa-circle-info"></i>
                             </div>
                             <div>
-                              <p>该美食暂未匹配到推荐餐厅数据（请确认 foods 表已导入“推荐餐厅”列）。</p>
+                              <p>This dish has no linked restaurant data yet (confirm the foods table includes the “Recommended Restaurant” column).</p>
                               <span className="text-[9px] font-bold uppercase text-gray-400 mt-1 block">Data Hint</span>
                             </div>
                           </div>

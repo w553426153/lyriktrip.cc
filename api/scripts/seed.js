@@ -58,22 +58,42 @@ function toJson(v) {
 }
 
 const MUNICIPALITY_NAME_MAP = new Map([
-  ['北京', '北京市'],
-  ['北京市', '北京市'],
-  ['上海', '上海市'],
-  ['上海市', '上海市'],
-  ['天津', '天津市'],
-  ['天津市', '天津市'],
-  ['重庆', '重庆市'],
-  ['重庆市', '重庆市']
+  ['Beijing', 'Beijing'],
+  ['Beijing City', 'Beijing'],
+  ['Shanghai', 'Shanghai'],
+  ['Shanghai City', 'Shanghai'],
+  ['Tianjin', 'Tianjin'],
+  ['Tianjin City', 'Tianjin'],
+  ['Chongqing', 'Chongqing'],
+  ['Chongqing City', 'Chongqing']
 ]);
+
+const PROVINCE_SUFFIXES = [
+  ' Province',
+  ' Autonomous Region',
+  ' Special Administrative Region',
+  ' SAR',
+  ' Municipality'
+];
+
+const CITY_SUFFIXES = [' City'];
 
 function normalizeLocationToken(v) {
   if (v == null) return '';
   return String(v)
     .normalize('NFKC')
     .trim()
-    .replace(/\s+/g, '');
+    .replace(/\s+/g, ' ');
+}
+
+function stripSuffix(value, suffixes) {
+  let out = value;
+  for (const suffix of suffixes) {
+    if (out.toLowerCase().endsWith(suffix.toLowerCase())) {
+      out = out.slice(0, -suffix.length).trim();
+    }
+  }
+  return out;
 }
 
 function normalizeProvinceName(v) {
@@ -81,10 +101,7 @@ function normalizeProvinceName(v) {
   if (!p) return '';
   const mapped = MUNICIPALITY_NAME_MAP.get(p);
   if (mapped) return mapped;
-  if (/特别行政区$/u.test(p)) return p.replace(/特别行政区$/u, '');
-  if (/自治区$/u.test(p)) return p.replace(/自治区$/u, '');
-  if (/省$/u.test(p)) return p.replace(/省$/u, '');
-  return p;
+  return stripSuffix(p, PROVINCE_SUFFIXES);
 }
 
 function normalizeCityName(cityRaw, provinceRaw) {
@@ -101,13 +118,11 @@ function normalizeCityName(cityRaw, provinceRaw) {
 
   const provinceMapped = MUNICIPALITY_NAME_MAP.get(province);
   if (provinceMapped) {
-    const provinceBase = provinceMapped.replace(/市$/, '');
+    const provinceBase = stripSuffix(provinceMapped, CITY_SUFFIXES);
     if (c === provinceBase || c === provinceMapped) return provinceMapped;
   }
 
-  if (/(特别行政区|地区|自治州|盟|林区|县)$/u.test(c)) return c;
-  if (/市$/u.test(c)) return c;
-  return `${c}市`;
+  return stripSuffix(c, CITY_SUFFIXES);
 }
 
 
@@ -454,30 +469,30 @@ function normalizeAttractions(rows) {
 
   const out = [];
   for (const row of rows) {
-    const nameZh = firstNonEmpty(row, ['景点名称（中文）', '景点名称']) || '';
-    const nameEn = row['景点名称（英文）'] || '';
-    const provinceRaw = firstNonEmpty(row, ['省', '所属省份']) || '';
-    const cityRaw = firstNonEmpty(row, ['市', '所属地级市']) || '';
-    const district = firstNonEmpty(row, ['区', '所属区县']) || '';
-    const regionFromSource = firstNonEmpty(row, ['所属区域']) || '';
-    const address = firstNonEmpty(row, ['地址', '详细地址']) || '';
-    const lng = row['经度'];
-    const lat = row['纬度'];
-    const category = firstNonEmpty(row, ['景区分类']) || '';
-    const nearbyTransport = firstNonEmpty(row, ['附近交通']) || '';
-    const openingHours = firstNonEmpty(row, ['开放时间']) || '';
-    const ticketPrice = firstNonEmpty(row, ['门票价格']) || '';
-    const ticketPurchase = firstNonEmpty(row, ['购票方式']) || '';
-    const suggestedDuration = firstNonEmpty(row, ['建议游览时长']) || '';
-    const bestVisitDate = firstNonEmpty(row, ['最佳游览日期', '最佳游览月份']) || '';
-    const introduction = firstNonEmpty(row, ['景区介绍']) || '';
-    const suitableFor = firstNonEmpty(row, ['适合人群']);
-    const sellingPoints = firstNonEmpty(row, ['景区卖点']);
-    const photos = firstNonEmpty(row, ['景点照片', '景点照片URL']);
-    const coreCategory = firstNonEmpty(row, ['核心分类']);
-    const themeTags = firstNonEmpty(row, ['主题标签']);
-    const scenicLevel = firstNonEmpty(row, ['景区等级']);
-    const feeType = firstNonEmpty(row, ['是否收费']);
+    const nameLocal = firstNonEmpty(row, ['Attraction Name (Local)', 'Attraction Name', 'Attraction Name (English)']) || '';
+    const nameEn = firstNonEmpty(row, ['Attraction Name (English)', 'Attraction Name']) || '';
+    const provinceRaw = firstNonEmpty(row, ['Province']) || '';
+    const cityRaw = firstNonEmpty(row, ['City']) || '';
+    const district = firstNonEmpty(row, ['District']) || '';
+    const regionFromSource = firstNonEmpty(row, ['Region']) || '';
+    const address = firstNonEmpty(row, ['Address']) || '';
+    const lng = row['Longitude'];
+    const lat = row['Latitude'];
+    const category = firstNonEmpty(row, ['Category']) || '';
+    const nearbyTransport = firstNonEmpty(row, ['Nearby Transport']) || '';
+    const openingHours = firstNonEmpty(row, ['Opening Hours']) || '';
+    const ticketPrice = firstNonEmpty(row, ['Ticket Price']) || '';
+    const ticketPurchase = firstNonEmpty(row, ['Ticket Purchase']) || '';
+    const suggestedDuration = firstNonEmpty(row, ['Suggested Duration']) || '';
+    const bestVisitDate = firstNonEmpty(row, ['Best Visit Date', 'Best Visit Months']) || '';
+    const introduction = firstNonEmpty(row, ['Introduction']) || '';
+    const suitableFor = firstNonEmpty(row, ['Suitable For']);
+    const sellingPoints = firstNonEmpty(row, ['Selling Points']);
+    const photos = firstNonEmpty(row, ['Attraction Photos', 'Photo URL']);
+    const coreCategory = firstNonEmpty(row, ['Core Category']);
+    const themeTags = firstNonEmpty(row, ['Theme Tags']);
+    const scenicLevel = firstNonEmpty(row, ['Scenic Level']);
+    const feeType = firstNonEmpty(row, ['Fee Type']);
     let province = normalizeProvinceName(provinceRaw);
     const city = normalizeCityName(cityRaw, provinceRaw);
     if (!province && MUNICIPALITY_NAME_MAP.has(city)) {
@@ -485,7 +500,8 @@ function normalizeAttractions(rows) {
     }
     const cityForKey = city || province || 'Other';
 
-    const stableKey = [nameZh, address, province, city, district].filter(Boolean).join('|') || nameZh || nameEn;
+    const name = String(nameEn || nameLocal || '').trim();
+    const stableKey = [name, address, province, city, district].filter(Boolean).join('|') || name;
     const id = makeId('attr', stableKey);
 
     const regionParts = [province, city, district].map((x) => String(x || '').trim()).filter(Boolean);
@@ -505,9 +521,9 @@ function normalizeAttractions(rows) {
     out.push({
       id,
       destinationKey: `${province || 'Other'}|${cityForKey}`,
-      name: String(nameZh || nameEn || '').trim(),
-      nameZh: String(nameZh || '').trim() || null,
-      nameEn: String(nameEn || '').trim() || null,
+      name,
+      nameZh: null,
+      nameEn: String(nameEn || nameLocal || '').trim() || null,
       province: String(province || '').trim() || null,
       city: String(city || '').trim() || null,
       district: String(district || '').trim() || null,
@@ -539,22 +555,22 @@ function normalizeAttractions(rows) {
 function normalizeRestaurants(rows) {
   const byId = new Map();
   for (const row of rows) {
-    const name = row['餐厅名称'] || '';
+    const name = row['Restaurant Name'] || '';
     if (!String(name).trim()) continue;
-    // Accept both variants: 数据文件里可能用「餐厅图片」或「餐厅照片」。
-    const photo = row['餐厅照片'] || row['餐厅图片'] || '';
-    const cuisineType = row['菜品类型'] || '';
-    const recommendedDishes = row['推荐菜品'];
-    const address = row['餐厅地址'] || '';
-    const lng = row['经度'];
-    const lat = row['纬度'];
-    const nearbyTransport = row['附近交通'] || '';
-    const phone = row['餐厅电话'] || '';
-    const openingHours = row['开放时间'] || '';
-    const mustEatIndex = row['必吃指数'];
-    const avgCost = row['人均消费'] || '';
-    const queueStatus = row['排队情况'] || '';
-    const nearbyAttractions = row['附近景点'];
+    // Accept both variants: data files may use "Restaurant Photo" or "Restaurant Image".
+    const photo = row['Restaurant Photo'] || row['Restaurant Image'] || '';
+    const cuisineType = row['Cuisine Type'] || '';
+    const recommendedDishes = row['Recommended Dishes'];
+    const address = row['Restaurant Address'] || '';
+    const lng = row['Longitude'];
+    const lat = row['Latitude'];
+    const nearbyTransport = row['Nearby Transport'] || '';
+    const phone = row['Phone'] || '';
+    const openingHours = row['Opening Hours'] || '';
+    const mustEatIndex = row['Must-Try Index'];
+    const avgCost = row['Avg Cost'] || '';
+    const queueStatus = row['Queue Status'] || '';
+    const nearbyAttractions = row['Nearby Attractions'];
 
     const stableKey = [name, address, phone].filter(Boolean).join('|') || name;
     const id = makeId('rest', stableKey);
@@ -618,23 +634,23 @@ function normalizeRestaurants(rows) {
 function normalizeFoods(rows) {
   const out = [];
   for (const row of rows) {
-    const name = row['菜品名称'] || '';
+    const name = row['Dish Name'] || '';
     if (!String(name).trim()) continue;
-    const photo = row['菜品照片'] || '';
-    // Accept both variants: 数据文件里可能用「餐品简介」或「菜品简介」。
-    const reason = row['菜品简介'] || row['餐品简介'] || '';
-    // Accept both variants: 数据文件里可能用「推荐餐厅」或「推荐餐厅名称」。
-    const restaurantName = row['推荐餐厅名称'] || row['推荐餐厅'] || '';
-    const restaurantAddress = row['餐厅地址'] || '';
-    const phone = row['联系电话'] || '';
-    const lng = row['经度'];
-    const lat = row['纬度'];
-    const nearbyTransport = row['附近交通'] || '';
-    const openingHours = row['开放时间'] || '';
-    const mustEatIndex = row['必吃指数'];
-    const avgCost = row['人均消费'] || '';
-    const queueStatus = row['排队情况'] || '';
-    const nearbyAttractions = row['附近景点'];
+    const photo = row['Dish Photo'] || '';
+    // Accept both variants: data files may use "Dish Description".
+    const reason = row['Dish Description'] || '';
+    // Accept both variants: data files may use "Recommended Restaurant" or "Recommended Restaurant Name".
+    const restaurantName = row['Recommended Restaurant Name'] || row['Recommended Restaurant'] || '';
+    const restaurantAddress = row['Restaurant Address'] || '';
+    const phone = row['Phone'] || '';
+    const lng = row['Longitude'];
+    const lat = row['Latitude'];
+    const nearbyTransport = row['Nearby Transport'] || '';
+    const openingHours = row['Opening Hours'] || '';
+    const mustEatIndex = row['Must-Try Index'];
+    const avgCost = row['Avg Cost'] || '';
+    const queueStatus = row['Queue Status'] || '';
+    const nearbyAttractions = row['Nearby Attractions'];
 
     const stableKey = [name, restaurantName, restaurantAddress].filter(Boolean).join('|') || name;
     const id = makeId('food', stableKey);
@@ -695,15 +711,15 @@ function diffMinutes(startHhmm, endHhmm) {
 function parseApproxDurationMinutes(line) {
   const s = String(line || '');
   // Examples:
-  // - "⏱️ 总耗时：约 15 分钟"
-  // - "⏱️ 总耗时：约 1.5 小时"
-  // - "总耗时：约 2 小时"
-  const min = s.match(/约?\s*([\d.]+)\s*分钟/);
+  // - "⏱️ Total time: about 15 minutes"
+  // - "⏱️ Total time: about 1.5 hours"
+  // - "Total time: about 2 hours"
+  const min = s.match(/(?:~|about)?\s*([\d.]+)\s*(minutes?|mins?|min)\b/i);
   if (min) {
     const n = Number(min[1]);
     return Number.isFinite(n) ? Math.round(n) : null;
   }
-  const hr = s.match(/约?\s*([\d.]+)\s*小时/);
+  const hr = s.match(/(?:~|about)?\s*([\d.]+)\s*(hours?|hrs?|hr|h)\b/i);
   if (hr) {
     const n = Number(hr[1]);
     return Number.isFinite(n) ? Math.round(n * 60) : null;
@@ -728,7 +744,7 @@ function countStars(line) {
 function isEmojiTitleLine(line) {
   const s = String(line || '').trim();
   if (!s) return false;
-  if (s.includes('：')) return false;
+  if (s.includes('：') || s.includes(':')) return false;
   // Exclude itinerary node headers (they also start with emoji).
   if (/^(📅|📍|🚇|🍜|🍽️)\s*/u.test(s)) return false;
   // A loose heuristic: highlight/dish titles tend to be short.
@@ -739,7 +755,7 @@ function isEmojiTitleLine(line) {
 function extractImageUrl(line) {
   const s = String(line || '').trim();
   if (!s) return null;
-  const imageLabelMatch = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  const imageLabelMatch = s.match(/^Image[：:]\s*(https?:\/\/\S+)$/iu);
   if (imageLabelMatch) return imageLabelMatch[1].trim();
   const markdownImageMatch = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
   if (markdownImageMatch) return markdownImageMatch[1].trim();
@@ -813,16 +829,16 @@ function parseRouteMarkdown(routeId, markdown) {
   const firstDayIdx = dayMarkers.length ? dayMarkers[0].idx : lines.length;
   const headerLines = lines.slice(0, firstDayIdx);
 
-  const routeName = collectKeyValue(headerLines, '行程主标题') || routeId;
-  const routeAlias = collectKeyValue(headerLines, '行程副标题');
+  const routeName = collectKeyValue(headerLines, 'Main Itinerary Title') || routeId;
+  const routeAlias = collectKeyValue(headerLines, 'Itinerary Subtitle');
 
-  const priceRaw = collectKeyValue(headerLines, '价格');
+  const priceRaw = collectKeyValue(headerLines, 'Price');
   const price = priceRaw ? parseMoneyNumber(priceRaw) : null;
   const priceUnit = priceRaw ? String(priceRaw).replace(/^[\s\d.]+/, '').trim() || null : null;
 
-  const recIdx = headerLines.findIndex((l) => String(l || '').trim() === '推荐理由');
-  const introIdx = headerLines.findIndex((l) => String(l || '').trim() === '行程简介');
-  const hlIdx = headerLines.findIndex((l) => String(l || '').trim() === '核心亮点');
+  const recIdx = headerLines.findIndex((l) => String(l || '').trim() === 'Why We Recommend');
+  const introIdx = headerLines.findIndex((l) => String(l || '').trim() === 'Itinerary Overview');
+  const hlIdx = headerLines.findIndex((l) => String(l || '').trim() === 'Key Highlights');
   const overviewIdx = headerLines.findIndex((l) => String(l || '').trim().startsWith('🗓️'));
 
   const recommendation =
@@ -879,7 +895,7 @@ function parseRouteMarkdown(routeId, markdown) {
     const nodeStarts = [];
     for (let i = 0; i < dayLines.length; i++) {
       const l = String(dayLines[i] || '').trim();
-      const mt = l.match(/^🚇\s*(\d{1,2}:\d{2})-(\d{1,2}:\d{2})\s*\|\s*交通：(.+)$/u);
+      const mt = l.match(/^🚇\s*(\d{1,2}:\d{2})-(\d{1,2}:\d{2})\s*\|\s*Transport:\s*(.+)$/u);
       if (mt) {
         nodeStarts.push({ idx: i, type: 'transport', m: mt });
         continue;
@@ -911,28 +927,35 @@ function parseRouteMarkdown(routeId, markdown) {
         const duration = diffMinutes(startHhmm, endHhmm) ?? block.map(parseApproxDurationMinutes).find((x) => x != null) ?? null;
 
         const fromLine =
-          block.find((l) => /^(🟢\s*)?(上车地点|出发地点)：/u.test(String(l || '').trim())) ||
-          block.find((l) => /^📍\s*出发地点：/u.test(String(l || '').trim())) ||
+          block.find((l) => /^(🟢\s*)?(Pickup Location|Departure Location):/i.test(String(l || '').trim())) ||
+          block.find((l) => /^📍\s*Departure Location:/i.test(String(l || '').trim())) ||
           null;
         const toLine =
-          block.find((l) => /^(🔴\s*)?(下车地点|到达地点)：/u.test(String(l || '').trim())) || null;
+          block.find((l) => /^(🔴\s*)?(Drop-off Location|Arrival Location):/i.test(String(l || '').trim())) || null;
 
-        const fromLocation = fromLine ? String(fromLine).replace(/^(🟢\s*)?(上车地点|出发地点)：\s*/u, '').replace(/^📍\s*出发地点：\s*/u, '').trim() : null;
-        const toLocation = toLine ? String(toLine).replace(/^(🔴\s*)?(下车地点|到达地点)：\s*/u, '').trim() : null;
+        const fromLocation = fromLine
+          ? String(fromLine)
+              .replace(/^(🟢\s*)?(Pickup Location|Departure Location):\s*/i, '')
+              .replace(/^📍\s*Departure Location:\s*/i, '')
+              .trim()
+          : null;
+        const toLocation = toLine
+          ? String(toLine).replace(/^(🔴\s*)?(Drop-off Location|Arrival Location):\s*/i, '').trim()
+          : null;
 
-        const costLine = block.find((l) => String(l || '').includes('票价'));
+        const costLine = block.find((l) => String(l || '').toLowerCase().includes('fare'));
         const cost = costLine ? parseMoneyNumber(costLine) : null;
 
         const method =
-          block.some((l) => String(l || '').includes('步行') || String(l || '').trim().startsWith('👣'))
-            ? '步行'
-            : block.some((l) => String(l || '').includes('地铁') || String(l || '').trim().startsWith('🚊'))
-              ? '地铁'
-              : block.some((l) => String(l || '').includes('公交'))
-                ? '公交'
-                : block.some((l) => String(l || '').includes('打车') || String(l || '').includes('出租车'))
-                  ? '打车'
-                  : '交通';
+          block.some((l) => /walk/i.test(String(l || '')) || String(l || '').trim().startsWith('👣'))
+            ? 'Walk'
+            : block.some((l) => /(subway|metro)/i.test(String(l || '')) || String(l || '').trim().startsWith('🚊'))
+              ? 'Subway'
+              : block.some((l) => /bus/i.test(String(l || '')))
+                ? 'Bus'
+                : block.some((l) => /(taxi|ride-hail)/i.test(String(l || '')))
+                  ? 'Taxi'
+                  : 'Transport';
 
         const detailLines = block
           .slice(1)
@@ -961,14 +984,16 @@ function parseRouteMarkdown(routeId, markdown) {
         const duration = diffMinutes(startHhmm, endHhmm) ?? null;
         const name = curNode.m[3].trim();
 
-        const address = (block.find((l) => String(l || '').trim().startsWith('地址：')) || '').replace(/^地址：\s*/, '').trim() || null;
-        const openingHours = (block.find((l) => String(l || '').trim().startsWith('开放时间：')) || '').replace(/^开放时间：\s*/, '').trim() || null;
-        const ticketPrice = (block.find((l) => String(l || '').trim().startsWith('门票：')) || '').replace(/^门票：\s*/, '').trim() || null;
-        const suggestedDuration = (block.find((l) => String(l || '').trim().startsWith('建议游览时间：')) || '').replace(/^建议游览时间：\s*/, '').trim() || null;
-        const bestSeason = (block.find((l) => String(l || '').trim().startsWith('最佳游览季节：')) || '').replace(/^最佳游览季节：\s*/, '').trim() || null;
+        const address = (block.find((l) => String(l || '').trim().startsWith('Address:')) || '').replace(/^Address:\s*/i, '').trim() || null;
+        const openingHours = (block.find((l) => String(l || '').trim().startsWith('Opening Hours:')) || '').replace(/^Opening Hours:\s*/i, '').trim() || null;
+        const ticketPrice = (block.find((l) => String(l || '').trim().startsWith('Ticket:')) || '').replace(/^Ticket:\s*/i, '').trim() || null;
+        const suggestedDuration = (block.find((l) => String(l || '').trim().startsWith('Suggested Duration:')) || '').replace(/^Suggested Duration:\s*/i, '').trim() || null;
+        const bestSeason = (block.find((l) => String(l || '').trim().startsWith('Best Season:')) || '').replace(/^Best Season:\s*/i, '').trim() || null;
 
-        const introMarkerIdx = block.findIndex((l) => String(l || '').trim() === '景点介绍');
-        const highlightMarkerIdx = block.findIndex((l) => /^(游览要点|观光亮点|建筑亮点|最佳拍照点)$/u.test(String(l || '').trim()));
+        const introMarkerIdx = block.findIndex((l) => String(l || '').trim() === 'Attraction Overview');
+        const highlightMarkerIdx = block.findIndex((l) =>
+          /^(Visit Highlights|Sight Highlights|Architecture Highlights|Best Photo Spots)$/i.test(String(l || '').trim())
+        );
 
         const desc =
           introMarkerIdx !== -1
@@ -1006,8 +1031,8 @@ function parseRouteMarkdown(routeId, markdown) {
         }
 
         const notes = block
-          .filter((l) => /：/.test(String(l || '').trim()))
-          .filter((l) => !/^(地址|开放时间|门票|建议游览时间|最佳游览季节)[:：]/u.test(String(l || '').trim()))
+          .filter((l) => /:/.test(String(l || '').trim()))
+          .filter((l) => !/^(Address|Opening Hours|Ticket|Suggested Duration|Best Season):/i.test(String(l || '').trim()))
           .join('\n')
           .trim() || null;
 
@@ -1039,22 +1064,22 @@ function parseRouteMarkdown(routeId, markdown) {
         const duration = diffMinutes(startHhmm, endHhmm) ?? null;
 
         const headerLabel = curNode.m[4].trim();
-        const headerName = headerLabel.includes('：') ? headerLabel.split('：').slice(1).join('：').trim() : headerLabel;
-        const nameLine = block.find((l) => String(l || '').trim().startsWith('餐厅名称：'));
-        const name = nameLine ? String(nameLine).replace(/^餐厅名称：\s*/, '').trim() : headerName;
+        const headerName = headerLabel.includes(':') ? headerLabel.split(':').slice(1).join(':').trim() : headerLabel;
+        const nameLine = block.find((l) => String(l || '').trim().startsWith('Restaurant Name:'));
+        const name = nameLine ? String(nameLine).replace(/^Restaurant Name:\s*/i, '').trim() : headerName;
 
-        const address = (block.find((l) => String(l || '').trim().startsWith('地址：')) || '').replace(/^地址：\s*/, '').trim() || null;
-        const avgCostLine = block.find((l) => String(l || '').trim().startsWith('人均消费：'));
+        const address = (block.find((l) => String(l || '').trim().startsWith('Address:')) || '').replace(/^Address:\s*/i, '').trim() || null;
+        const avgCostLine = block.find((l) => String(l || '').trim().startsWith('Avg Cost:'));
         const avgCost = avgCostLine ? parseMoneyNumber(avgCostLine) : null;
-        const mustEatLine = block.find((l) => String(l || '').trim().startsWith('必吃指数：'));
+        const mustEatLine = block.find((l) => String(l || '').trim().startsWith('Must-Try Index:'));
         const mustEatRating = mustEatLine ? countStars(mustEatLine) : null;
-        const queueStatus = (block.find((l) => String(l || '').trim().startsWith('排队情况：')) || '').replace(/^排队情况：\s*/, '').trim() || null;
-        const phoneLine = block.find((l) => String(l || '').includes('联系电话'));
-        const phone = phoneLine ? String(phoneLine).replace(/^.*联系电话：\s*/u, '').trim() : null;
-        const businessHours = (block.find((l) => String(l || '').trim().startsWith('营业时间：')) || '').replace(/^营业时间：\s*/, '').trim() || null;
+        const queueStatus = (block.find((l) => String(l || '').trim().startsWith('Queue Status:')) || '').replace(/^Queue Status:\s*/i, '').trim() || null;
+        const phoneLine = block.find((l) => /Phone/i.test(String(l || '')));
+        const phone = phoneLine ? String(phoneLine).replace(/^.*Phone:\s*/i, '').trim() : null;
+        const businessHours = (block.find((l) => String(l || '').trim().startsWith('Business Hours:')) || '').replace(/^Business Hours:\s*/i, '').trim() || null;
 
-        const bgIdx = block.findIndex((l) => String(l || '').trim() === '餐厅背景');
-        const dishesIdx = block.findIndex((l) => String(l || '').trim() === '推荐菜品');
+        const bgIdx = block.findIndex((l) => String(l || '').trim() === 'Restaurant Background');
+        const dishesIdx = block.findIndex((l) => String(l || '').trim() === 'Recommended Dishes');
 
         const background =
           bgIdx !== -1
@@ -1131,13 +1156,30 @@ function parseRouteMarkdown(routeId, markdown) {
   };
 }
 
-async function loadRouteMarkdownFiles(dataDir) {
-  const routesDir = path.join(dataDir, 'routes');
-  try {
-    await access(routesDir);
-  } catch {
-    return [];
+async function resolveRoutesDir(dataDir) {
+  const envDir = String(process.env.ROUTES_DIR || process.env.ROUTES_DATA_DIR || '').trim();
+  const candidates = [
+    envDir ? path.resolve(envDir) : null,
+    path.join(path.dirname(dataDir), 'data_translated', 'routes'),
+    path.join(dataDir, 'routes')
+  ].filter(Boolean);
+
+  for (const candidate of candidates) {
+    try {
+      await access(candidate);
+      // eslint-disable-next-line no-console
+      console.log(`Using routes source: ${candidate}`);
+      return candidate;
+    } catch {
+      // ignore
+    }
   }
+  return null;
+}
+
+async function loadRouteMarkdownFiles(dataDir) {
+  const routesDir = await resolveRoutesDir(dataDir);
+  if (!routesDir) return [];
 
   const entries = await readdir(routesDir, { withFileTypes: true });
   const mdFiles = entries.filter((e) => e.isFile() && e.name.toLowerCase().endsWith('.md'));

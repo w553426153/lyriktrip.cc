@@ -70,7 +70,7 @@ const RestaurantDetailPage: React.FC<RestaurantDetailPageProps> = ({ restaurantI
       await navigator.clipboard.writeText(text);
     } catch {
       // Clipboard APIs may be blocked; fallback to a prompt for manual copy.
-      window.prompt('复制内容', text);
+      window.prompt('Copy content', text);
     }
   };
 
@@ -295,4 +295,3 @@ const RestaurantDetailPage: React.FC<RestaurantDetailPageProps> = ({ restaurantI
 };
 
 export default RestaurantDetailPage;
-

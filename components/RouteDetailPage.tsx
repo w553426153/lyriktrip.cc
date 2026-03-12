@@ -32,7 +32,7 @@ function nodeTypeMeta(type: RouteNodeType): { label: string; icon: string; tone:
   switch (type) {
     case 'transport':
       return {
-        label: '交通',
+        label: 'Transport',
         icon: 'fa-solid fa-train-subway',
         tone: 'text-sky-700',
         ring: 'ring-sky-200/80',
@@ -40,7 +40,7 @@ function nodeTypeMeta(type: RouteNodeType): { label: string; icon: string; tone:
       };
     case 'restaurant':
       return {
-        label: '餐厅',
+        label: 'Restaurant',
         icon: 'fa-solid fa-utensils',
         tone: 'text-orange-700',
         ring: 'ring-orange-200/80',
@@ -49,7 +49,7 @@ function nodeTypeMeta(type: RouteNodeType): { label: string; icon: string; tone:
     case 'attraction':
     default:
       return {
-        label: '景点',
+        label: 'Attraction',
         icon: 'fa-solid fa-landmark',
         tone: 'text-emerald-700',
         ring: 'ring-emerald-200/80',
@@ -64,11 +64,11 @@ function getNodeTitle(node: RouteNode): string {
     const from = t?.fromLocation ? String(t.fromLocation).trim() : '';
     const to = t?.toLocation ? String(t.toLocation).trim() : '';
     if (from && to) return `${from} → ${to}`;
-    return t?.transportMethod ? `交通：${t.transportMethod}` : '交通';
+    return t?.transportMethod ? `Transport: ${t.transportMethod}` : 'Transport';
   }
-  if (node.nodeType === 'attraction') return node.attraction?.name || '景点';
-  if (node.nodeType === 'restaurant') return node.restaurant?.name || '餐厅';
-  return '节点';
+  if (node.nodeType === 'attraction') return node.attraction?.name || 'Attraction';
+  if (node.nodeType === 'restaurant') return node.restaurant?.name || 'Restaurant';
+  return 'Node';
 }
 
 function SafeText({ text, className }: { text?: string | null; className?: string }) {
@@ -79,7 +79,7 @@ function SafeText({ text, className }: { text?: string | null; className?: strin
 function extractImageUrlFromLine(line?: string | null): string | null {
   const s = String(line || '').trim();
   if (!s) return null;
-  const labeled = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  const labeled = s.match(/^Image[：:]\s*(https?:\/\/\S+)$/iu);
   if (labeled) return labeled[1].trim();
   const markdownImage = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
   if (markdownImage) return markdownImage[1].trim();
@@ -121,7 +121,7 @@ function normalizeAttractionHighlights(node: RouteNode): RouteAttractionHighligh
     }
 
     const content = kept.join('\n').trim() || null;
-    const finalTitle = title || `要点 ${idx + 1}`;
+    const finalTitle = title || `Highlight ${idx + 1}`;
     const finalImage = image || fallbackImages[idx] || null;
     out.push({ title: finalTitle, content, image: finalImage });
   });
@@ -167,7 +167,7 @@ function ImageBlock({
   heightClass = 'h-44',
   icon,
   tone,
-  label = '暂无图片'
+  label = 'No image'
 }: {
   src?: string | null;
   alt: string;
@@ -315,7 +315,7 @@ function NodeCard({
               <div className="overflow-hidden rounded-xl ring-1 ring-emerald-100/80 bg-white">
                 <ImageBlock
                   src={attractionCover}
-                  alt={node.attraction?.name || '景点'}
+                  alt={node.attraction?.name || 'Attraction'}
                   icon="fa-regular fa-image"
                   tone="text-emerald-600"
                 />
@@ -323,11 +323,11 @@ function NodeCard({
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div className="rounded-xl bg-emerald-50/60 ring-1 ring-emerald-100 p-4">
-                  <div className="text-[11px] uppercase tracking-widest text-emerald-700/80 font-bold mb-1">地址</div>
+                  <div className="text-[11px] uppercase tracking-widest text-emerald-700/80 font-bold mb-1">Address</div>
                   <div className="text-slate-800">{node.attraction?.address || '—'}</div>
                 </div>
                 <div className="rounded-xl bg-emerald-50/60 ring-1 ring-emerald-100 p-4">
-                  <div className="text-[11px] uppercase tracking-widest text-emerald-700/80 font-bold mb-1">开放时间</div>
+                  <div className="text-[11px] uppercase tracking-widest text-emerald-700/80 font-bold mb-1">Opening Hours</div>
                   <div className="text-slate-800">{node.attraction?.openingHours || '—'}</div>
                 </div>
               </div>
@@ -362,7 +362,7 @@ function NodeCard({
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
-                    <div className="font-display font-semibold text-slate-900">游览要点</div>
+                    <div className="font-display font-semibold text-slate-900">Visit Highlights</div>
                   </div>
                   <div className="grid grid-cols-1 gap-3">
                     {attractionHighlights.map((h, idx) => (
@@ -382,7 +382,7 @@ function NodeCard({
               <div className="overflow-hidden rounded-xl ring-1 ring-orange-100/80 bg-white">
                 <ImageBlock
                   src={restaurantCover}
-                  alt={node.restaurant?.name || '餐厅'}
+                  alt={node.restaurant?.name || 'Restaurant'}
                   icon="fa-regular fa-image"
                   tone="text-orange-600"
                 />
@@ -390,11 +390,11 @@ function NodeCard({
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div className="rounded-xl bg-orange-50/60 ring-1 ring-orange-100 p-4">
-                  <div className="text-[11px] uppercase tracking-widest text-orange-700/80 font-bold mb-1">地址</div>
+                  <div className="text-[11px] uppercase tracking-widest text-orange-700/80 font-bold mb-1">Address</div>
                   <div className="text-slate-800">{node.restaurant?.address || '—'}</div>
                 </div>
                 <div className="rounded-xl bg-orange-50/60 ring-1 ring-orange-100 p-4">
-                  <div className="text-[11px] uppercase tracking-widest text-orange-700/80 font-bold mb-1">营业时间</div>
+                  <div className="text-[11px] uppercase tracking-widest text-orange-700/80 font-bold mb-1">Business Hours</div>
                   <div className="text-slate-800">{node.restaurant?.businessHours || '—'}</div>
                 </div>
               </div>
@@ -403,7 +403,7 @@ function NodeCard({
                 {node.restaurant?.avgCost != null && node.restaurant.avgCost !== '' && (
                   <span className="inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-semibold ring-1 ring-slate-200">
                     <i className="fa-solid fa-wallet mr-2 text-orange-600"></i>
-                    人均 {String(node.restaurant.avgCost)}
+                    Avg cost {String(node.restaurant.avgCost)}
                   </span>
                 )}
                 {node.restaurant?.queueStatus && (
@@ -425,7 +425,7 @@ function NodeCard({
 
               {node.restaurant?.mustEatRating != null && (
                 <div className="text-sm text-slate-700 flex items-center gap-2">
-                  <span className="font-semibold">必吃指数</span>
+                  <span className="font-semibold">Must-Try Index</span>
                   <span className="text-orange-600">
                     {Array.from({ length: Math.max(0, Math.min(5, node.restaurant.mustEatRating)) }).map((_, i) => (
                       <i key={i} className="fa-solid fa-star"></i>
@@ -443,7 +443,7 @@ function NodeCard({
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-orange-500"></div>
-                    <div className="font-display font-semibold text-slate-900">推荐菜品</div>
+                    <div className="font-display font-semibold text-slate-900">Recommended Dishes</div>
                   </div>
                   <div className="grid grid-cols-1 gap-3">
                     {node.restaurant!.recommendedDishes!.map((d, idx) => (
@@ -489,7 +489,7 @@ function Itinerary({
       <div className="flex items-end justify-between gap-4">
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">Itinerary</div>
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">行程安排</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">Itinerary</h2>
         </div>
       </div>
 
@@ -510,7 +510,7 @@ function Itinerary({
           </div>
           <div className="text-xs text-slate-500 font-semibold">
             <i className="fa-solid fa-list-check mr-2"></i>
-            {active.nodes.length} 个节点
+            {active.nodes.length} nodes
           </div>
         </div>
 
@@ -622,9 +622,9 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
 
               {error && !loading && (
                 <div className="mt-6 rounded-2xl bg-red-50 ring-1 ring-red-200 p-4 text-sm text-red-800">
-                  <div className="font-bold mb-1">无法加载线路数据</div>
+                  <div className="font-bold mb-1">Unable to load route data</div>
                   <div className="opacity-90">{error}</div>
-                  <div className="opacity-80 mt-2">提示：如果你刚新增了表结构，请先执行 seed 或迁移。</div>
+                  <div className="opacity-80 mt-2">Tip: If you just added new tables, run seed or migrations first.</div>
                 </div>
               )}
             </div>
@@ -648,7 +648,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold">Overview</div>
-                  <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">行程概览</h2>
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">Itinerary Overview</h2>
                 </div>
                 <button
                   onClick={() => onToggleWishlist(routeId)}
@@ -676,8 +676,8 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                 </div>
                 <div className="rounded-2xl bg-slate-50 ring-1 ring-slate-200/70 p-4">
                   <div className="text-[11px] uppercase tracking-widest text-slate-500 font-bold">Style</div>
-                  <div className="mt-1 text-slate-700 font-semibold">高精度 · 百科式导览</div>
-                  <div className="mt-1 text-xs text-slate-500">以动线与时间节点为核心</div>
+                  <div className="mt-1 text-slate-700 font-semibold">High-precision · Encyclopedic guidance</div>
+                  <div className="mt-1 text-xs text-slate-500">Built around route flow and time checkpoints</div>
                 </div>
               </div>
 
@@ -685,7 +685,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                 <div className="mt-7">
                   <div className="flex items-center gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-brand-orange"></div>
-                    <div className="font-display font-semibold text-slate-900">推荐理由</div>
+                    <div className="font-display font-semibold text-slate-900">Why We Recommend</div>
                   </div>
                   <div className="mt-3 whitespace-pre-line leading-relaxed text-slate-700">{route.recommendation}</div>
                 </div>
@@ -695,7 +695,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                 <div className="mt-7">
                   <div className="flex items-center gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-brand-blue"></div>
-                    <div className="font-display font-semibold text-slate-900">行程简介</div>
+                    <div className="font-display font-semibold text-slate-900">Itinerary Overview</div>
                   </div>
                   <div className="mt-3 whitespace-pre-line leading-relaxed text-slate-700">{route.introduction}</div>
                 </div>
@@ -709,7 +709,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
             {!route && loading && (
               <div className="mt-10 rounded-3xl bg-white/60 ring-1 ring-slate-200/70 p-10 text-center text-slate-600">
                 <i className="fa-solid fa-compass text-2xl mb-3 text-slate-400"></i>
-                <div className="font-semibold">正在加载线路数据…</div>
+                <div className="font-semibold">Loading route data…</div>
               </div>
             )}
           </div>
@@ -718,17 +718,17 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
           <div className="lg:col-span-4">
             <div className="sticky top-28 space-y-4">
               <div className="rounded-3xl bg-white/75 ring-1 ring-slate-200/70 p-6 shadow-[0_25px_70px_-55px_rgba(15,23,42,0.8)]">
-                <div className="font-display text-lg font-bold text-slate-900">咨询与定制</div>
+                <div className="font-display text-lg font-bold text-slate-900">Consultation & Customization</div>
                 <div className="mt-2 text-sm text-slate-600 leading-relaxed">
-                  想把这条路线改成更适合你的节奏？告诉我们你的偏好（步行强度、亲子/情侣、预算、饮食忌口），我们会给出可落地的版本。
+                  Want to tailor this route to your pace? Tell us your preferences (walking intensity, family/couple, budget, dietary needs) and we will provide a practical, bookable version.
                 </div>
                 <button
                   onClick={() => onOpenConsult(`Route: ${route?.routeName || routeId}`)}
                   className="mt-5 w-full rounded-2xl bg-brand-orange text-white py-3.5 font-bold hover:bg-brand-darkOrange transition-all shadow-lg"
                 >
-                  预约行程咨询
+                  Schedule a Trip Consultation
                 </button>
-                <div className="mt-3 text-center text-xs text-slate-500">不需要立即付款 • 先沟通再决定</div>
+                <div className="mt-3 text-center text-xs text-slate-500">No payment needed now • Talk first, decide later</div>
               </div>
 
               {route?.days && route.days.length > 1 && (

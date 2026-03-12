@@ -129,21 +129,21 @@ export interface Attraction {
   topReview?: string;
 
   // Scenic spot extended fields (used by the desktop expanded card).
-  nameZh?: string; // 景点名称（中文）
-  nameEn?: string; // 景点名称（英文）
-  region?: string; // 省市区
-  address?: string; // 地址
-  category?: string; // 景区分类
-  nearbyTransport?: string; // 附近交通
-  openingHours?: string; // 开放时间
-  ticketPrice?: string; // 门票价格
-  ticketPurchase?: string; // 购票方式
-  suggestedDuration?: string; // 建议浏览时长
-  bestVisitDate?: string; // 最佳浏览日期
-  introduction?: string; // 景区介绍
-  suitableFor?: string[]; // 适合人群
-  sellingPoints?: string[]; // 景区卖点
-  photos?: string[]; // 景点照片（补充图）
+  nameZh?: string; // Attraction name (Chinese)
+  nameEn?: string; // Attraction name (English)
+  region?: string; // Province/City/District
+  address?: string; // Address
+  category?: string; // Attraction category
+  nearbyTransport?: string; // Nearby transport
+  openingHours?: string; // Opening hours
+  ticketPrice?: string; // Ticket price
+  ticketPurchase?: string; // Ticket purchase method
+  suggestedDuration?: string; // Suggested visit duration
+  bestVisitDate?: string; // Best visit date
+  introduction?: string; // Attraction introduction
+  suitableFor?: string[]; // Suitable for
+  sellingPoints?: string[]; // Selling points
+  photos?: string[]; // Attraction photos (extra)
 }
 
 export interface Food {

@@ -56,6 +56,8 @@
 这些变量用于安全转发飞书表单提交，避免在浏览器中暴露 webhook URL：
 
 - `FEISHU_WEBHOOK_URL`：飞书触发器 webhook URL
+- `BREVO_API_KEY`：Brevo API Key（用于 Download Now 邮件发送）
+- `BREVO_TEMPLATE_ID`：Brevo 模板 ID（默认 1）
 - `ALLOWED_ORIGINS`：允许的 Origin 列表（精确匹配，逗号分隔），例如：
   - `https://yourdomain.com,https://your-project.pages.dev,http://localhost:3000`
 

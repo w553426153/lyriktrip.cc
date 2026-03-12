@@ -23,9 +23,12 @@ services:
       API_PORT: ${API_PORT}
       DATABASE_URL: ${DATABASE_URL}
       FEISHU_WEBHOOK_URL: ${FEISHU_WEBHOOK_URL}
+      BREVO_API_KEY: ${BREVO_API_KEY}
+      BREVO_TEMPLATE_ID: ${BREVO_TEMPLATE_ID}
       ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}
     volumes:
       - ../data:/data:ro
+      - ../data_translated:/data_translated:ro
     depends_on:
       db:
         condition: service_healthy

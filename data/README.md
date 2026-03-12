@@ -1,49 +1,50 @@
-# 数据文件说明（用于导入 PostgreSQL）
+# Data File Instructions (for PostgreSQL Import)
 
-本项目采用“只读展示”为主，不做管理后台；因此推荐用 CSV/JSON 文件做离线导入。
+This project primarily uses "read-only display" without a management backend; therefore, it is recommended to use CSV/JSON files for offline import.
 
-## 文件清单（支持 CSV 或 JSON）
+## File List (Supports CSV or JSON)
 
-优先读取同名的 `.csv`，不存在时回退到 `.json`。
+Priority is given to reading files with the same name in `.csv` format; if not found, it falls back to `.json`.
 
-- `data/destinations.csv` / `data/destinations.json`：目的地列表
-- `data/attractions.csv` / `data/attractions.json`：景点列表（每条包含 destinationId）
-- `data/foods.csv` / `data/foods.json`：美食列表（每条包含 destinationId）
-- `data/restaurants.csv` / `data/restaurants.json`：餐厅列表（每条包含 destinationId）
-- `data/hotels.csv` / `data/hotels.json`：酒店列表（每条包含 destinationId）
-- `data/routes/*.md`：线路行程（Markdown）。文件名（不含扩展名）会作为 `routes.id`，用于 `/api/v1/routes/:id`
+- `data/destinations.csv` / `data/destinations.json`: Destination list
+- `data/attractions.csv` / `data/attractions.json`: Attractions list (each includes destinationId)
+- `data/foods.csv` / `data/foods.json`: Food list (each includes destinationId)
+- `data/restaurants.csv` / `data/restaurants.json`: Restaurant list (each includes destinationId)
+- `data/hotels.csv` / `data/hotels.json`: Hotel list (each includes destinationId)
+- `data/routes/*.md`: Route itineraries (Markdown). The filename (without extension) becomes `routes.id`, used for `/api/v1/routes/:id`
+  - If `data_translated/routes` exists, route seeding will prefer that directory.
 
-### 路线 Markdown（游览要点图片）
+### Route Markdown (Sightseeing Highlights Images)
 
-在“游览要点”中，每个要点标题下可选增加一行图片地址，seed 时会写入 `attraction_nodes.highlights` 的 `image` 字段：
+In the "Sightseeing Highlights" section, an optional image URL line can be added under each highlight title; during seeding, it will be written into the `image` field of `attraction_nodes.highlights`:
 
-- `图片：https://example.com/spot.jpg`
-- `![图片说明](https://example.com/spot.jpg)`
+- `Image: https://example.com/spot.jpg`
+- `![Image caption](https://example.com/spot.jpg)`
 
-如果未提供图片，seed 会尝试按景点名称从 `attractions` 数据中自动匹配并补全图片。
+If no image is provided, the seed will attempt to automatically match and fill in the image from the `attractions` data by attraction name.
 
-## CSV 约定（默认规则）
+## CSV Conventions (Default Rules)
 
-- 编码：UTF-8（可带 BOM）
-- 第一行：表头（header），字段名区分大小写
-- 分隔符：逗号（`,`），支持双引号转义
-- 数组字段：用 `|` 连接，例如 `tags`：`宫廷菜|驰名中外`
-- 空字符串表示 NULL
-- `amenities`（酒店）如需使用，建议单元格内放 JSON 字符串
+- Encoding: UTF-8 (may include BOM)
+- First row: Header (header), field names are case-sensitive
+- Delimiter: Comma (`,`), supports double-quote escaping
+- Array fields: Connected by `|`, e.g., `tags`: `Palace cuisine|World-famous`
+- Empty string represents NULL
+- `amenities` (for hotels): If needed, it is recommended to place a JSON string inside the cell
 
-## 你当前已有的 3 张 CSV 表
+## You Currently Have 3 CSV Tables
 
-如果你当前只有这三张表，也可以先导入并运行站点：
-- `data/attractions.csv`（景点表）
-- `data/restaurants.csv`（餐厅表）
-- `data/foods.csv`（美食表）
+If you currently only have these three tables, you can still import and run the site:
+- `data/attractions.csv` (Attractions table)
+- `data/restaurants.csv` (Restaurants table)
+- `data/foods.csv` (Foods table)
 
-`destinations` 会在导入时从景点表的「市」自动生成；餐厅/美食会优先通过「附近景点」匹配到对应目的地。
+`destinations` will be automatically generated during import from the "City" field in the attractions table; restaurants and foods will preferentially match to the corresponding destination via "Nearby Attraction".
 
-## 导入方式
+## Import Method
 
-在 `deploy/` 目录执行（容器内运行导入脚本）：
+Execute in the `deploy/` directory (run the import script inside the container):
 
 `docker compose --env-file .env run --rm api node scripts/seed.js`
 
-注意：`deploy/db/schema.sql` 只会在 **首次创建 pgdata volume** 时执行。如果你改了 schema，需要自行迁移或删除 volume 重新初始化（会丢数据）。
+Note: `deploy/db/schema.sql` will only be executed when the **pgdata volume is first created**. If you modify the schema, you must manually migrate or delete the volume to reinitialize (data will be lost).

@@ -12,19 +12,41 @@ interface SurvivalKitsProps {
 const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult, language }) => {
   const [showModal, setShowModal] = useState<SurvivalKit | null>(null);
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const t = TRANSLATIONS[language].survival;
 
-  const handleDownload = (e: React.FormEvent) => {
+  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
-    setSubmitted(true);
-    setTimeout(() => {
+    if (!email || !isEmailValid) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
+
+    setErrorMessage('');
+    setIsSubmitting(true);
+    try {
+      const res = await fetch('/api/brevo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      if (!res.ok) {
+        const details = await res.text().catch(() => '');
+        throw new Error(`Brevo API failed: ${res.status} ${details}`);
+      }
+
       setShowModal(null);
-      setSubmitted(false);
       setEmail('');
       alert('Check your inbox! The guide is on its way.');
-    }, 1500);
+    } catch (error) {
+      console.error('Brevo request failed:', error);
+      setErrorMessage('We could not send the guide right now. Please try again in a moment.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -43,7 +65,11 @@ const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult, language }) 
               <h3 className="text-xl font-bold text-brand-blue mb-2">{kit.title}</h3>
               <p className="text-gray-500 text-sm mb-6 flex-grow">{kit.description}</p>
               <button 
-                onClick={() => setShowModal(kit)}
+                onClick={() => {
+                  setShowModal(kit);
+                  setEmail('');
+                  setErrorMessage('');
+                }}
                 className="bg-brand-orange text-white px-6 py-2 rounded-md font-bold hover:bg-brand-darkOrange transition-all w-full"
               >
                 {t.cta}
@@ -88,17 +114,29 @@ const SurvivalKits: React.FC<SurvivalKitsProps> = ({ onOpenConsult, language }) 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                {errorMessage && (
+                  <p className="text-red-500 text-xs mb-3 font-semibold">{errorMessage}</p>
+                )}
                 <button 
                   type="submit"
-                  disabled={submitted}
+                  disabled={isSubmitting}
                   className={`w-full py-4 rounded-md font-bold text-white transition-all shadow-lg ${
-                    submitted ? 'bg-gray-400' : 'bg-brand-orange hover:bg-brand-darkOrange'
+                    isSubmitting ? 'bg-gray-400' : 'bg-brand-orange hover:bg-brand-darkOrange'
                   }`}
                 >
-                  {submitted ? 'Sending...' : t.cta}
+                  {isSubmitting ? 'Sending...' : t.cta}
                 </button>
               </form>
-              <button onClick={() => setShowModal(null)} className="w-full mt-4 text-gray-400 text-sm">Close</button>
+              <button
+                onClick={() => {
+                  setShowModal(null);
+                  setEmail('');
+                  setErrorMessage('');
+                }}
+                className="w-full mt-4 text-gray-400 text-sm"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>

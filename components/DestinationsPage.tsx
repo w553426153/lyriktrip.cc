@@ -14,42 +14,43 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
   const provinceOrder = [
-    '北京',
-    '天津',
-    '河北',
-    '山西',
-    '内蒙古',
-    '辽宁',
-    '吉林',
-    '黑龙江',
-    '上海',
-    '江苏',
-    '浙江',
-    '安徽',
-    '福建',
-    '江西',
-    '山东',
-    '河南',
-    '湖北',
-    '湖南',
-    '广东',
-    '广西',
-    '海南',
-    '重庆',
-    '四川',
-    '贵州',
-    '云南',
-    '西藏',
-    '陕西',
-    '甘肃',
-    '青海',
-    '宁夏',
-    '新疆',
-    '香港',
-    '澳门'
+    'Beijing',
+    'Tianjin',
+    'Hebei',
+    'Shanxi',
+    'Inner Mongolia',
+    'Liaoning',
+    'Jilin',
+    'Heilongjiang',
+    'Shanghai',
+    'Jiangsu',
+    'Zhejiang',
+    'Anhui',
+    'Fujian',
+    'Jiangxi',
+    'Shandong',
+    'Henan',
+    'Hubei',
+    'Hunan',
+    'Guangdong',
+    'Guangxi',
+    'Hainan',
+    'Chongqing',
+    'Sichuan',
+    'Guizhou',
+    'Yunnan',
+    'Tibet',
+    'Shaanxi',
+    'Gansu',
+    'Qinghai',
+    'Ningxia',
+    'Xinjiang',
+    'Hong Kong',
+    'Macau'
   ];
-  const provinceSet = new Set(provinceOrder);
-  const municipalitySet = new Set(['北京', '天津', '上海', '重庆']);
+  const provinceNameMap = new Map(provinceOrder.map((p) => [p.toLowerCase(), p]));
+  const provinceSet = new Set(provinceNameMap.keys());
+  const municipalitySet = new Set(['Beijing', 'Tianjin', 'Shanghai', 'Chongqing']);
 
   const normalizeProvince = (province?: string, city?: string, name?: string) => {
     const raw = String(province || '').trim();
@@ -59,20 +60,21 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
       if (municipalitySet.has(c)) p = c;
     }
     if (!p) return '';
-    if (p.endsWith('特别行政区')) p = p.replace(/特别行政区$/, '');
-    if (p.endsWith('自治区')) p = p.replace(/自治区$/, '');
-    if (p.endsWith('省')) p = p.replace(/省$/, '');
-    if (p.endsWith('市')) p = p.replace(/市$/, '');
+    if (/\\s*Special Administrative Region$/i.test(p)) p = p.replace(/\\s*Special Administrative Region$/i, '');
+    if (/\\s*SAR$/i.test(p)) p = p.replace(/\\s*SAR$/i, '');
+    if (/\\s*Autonomous Region$/i.test(p)) p = p.replace(/\\s*Autonomous Region$/i, '');
+    if (/\\s*Province$/i.test(p)) p = p.replace(/\\s*Province$/i, '');
+    if (/\\s*Municipality$/i.test(p)) p = p.replace(/\\s*Municipality$/i, '');
     return p;
   };
 
   const normalizeCityLabel = (city?: string, fallback?: string) => {
     const raw = String(city || fallback || '').trim();
     if (!raw) return '';
-    if (raw.endsWith('市')) return raw;
-    if (/(特别行政区|地区|自治州|盟|林区|县)$/.test(raw)) return raw;
-    if (municipalitySet.has(raw)) return `${raw}市`;
-    return `${raw}市`;
+    if (/\\bCity$/i.test(raw)) return raw;
+    if (/(\\bRegion|\\bPrefecture|\\bLeague|\\bCounty)$/i.test(raw)) return raw;
+    if (municipalitySet.has(raw)) return raw;
+    return raw;
   };
 
   useEffect(() => {
@@ -114,13 +116,14 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
     for (const dest of items) {
       const cityLabel = normalizeCityLabel(dest.city, dest.name);
       const provinceName = normalizeProvince(dest.province, cityLabel, dest.name);
-      if (!provinceName || !provinceSet.has(provinceName)) continue;
+      const provinceKey = provinceName ? provinceNameMap.get(provinceName.toLowerCase()) : null;
+      if (!provinceKey || !provinceSet.has(provinceKey.toLowerCase())) continue;
 
-      const byCity = grouped.get(provinceName) || new Map<string, Destination>();
+      const byCity = grouped.get(provinceKey) || new Map<string, Destination>();
       const existing = byCity.get(cityLabel);
       const next = { ...dest, city: cityLabel };
       byCity.set(cityLabel, existing ? pickBetter(existing, next) : next);
-      grouped.set(provinceName, byCity);
+      grouped.set(provinceKey, byCity);
     }
 
     return provinceOrder
@@ -128,7 +131,7 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
         const byCity = grouped.get(province);
         if (!byCity) return null;
         const destinations = Array.from(byCity.values()).sort((a, b) =>
-          String(a.city || a.name).localeCompare(String(b.city || b.name), 'zh-Hans-CN')
+          String(a.city || a.name).localeCompare(String(b.city || b.name), 'en')
         );
         return { province, destinations };
       })

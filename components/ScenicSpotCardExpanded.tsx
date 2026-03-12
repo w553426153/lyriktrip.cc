@@ -43,7 +43,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
       await navigator.clipboard.writeText(spot.address);
     } catch {
       // Clipboard APIs may be blocked; fallback to a prompt for manual copy.
-      window.prompt('复制地址', spot.address);
+      window.prompt('Copy address', spot.address);
     }
   };
 
@@ -88,10 +88,10 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
               isLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
             }`}
             aria-pressed={isLiked}
-            title={isLiked ? '已加入心愿单' : '加入心愿单'}
+            title={isLiked ? 'In wishlist' : 'Add to wishlist'}
           >
             <i className={`${isLiked ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
-            <span className="text-xs font-bold hidden sm:inline">{isLiked ? '已种草' : '想去'}</span>
+            <span className="text-xs font-bold hidden sm:inline">{isLiked ? 'Saved' : 'Want to go'}</span>
           </button>
 
           {/* Photo strip (desktop hint) */}
@@ -128,7 +128,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
               onClick={() => setExpanded((v) => !v)}
               className="shrink-0 text-sm font-bold text-brand-blue hover:text-brand-orange transition-colors"
             >
-              {expanded ? '收起详情' : '展开详情'} <i className={`fa-solid ${expanded ? 'fa-chevron-up' : 'fa-chevron-down'} ml-1`}></i>
+              {expanded ? 'Collapse details' : 'Expand details'} <i className={`fa-solid ${expanded ? 'fa-chevron-up' : 'fa-chevron-down'} ml-1`}></i>
             </button>
           </div>
 
@@ -149,7 +149,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
           {/* Selling points */}
           {sellingPoints.length > 0 && (
             <div className="mb-4">
-              <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">景区卖点</div>
+              <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">Selling Points</div>
               <div className="flex flex-wrap gap-2">
                 {sellingPoints.map((p, i) => (
                   <span key={`${p}-${i}`} className="text-xs bg-orange-50 text-brand-orange px-3 py-1 rounded-full font-bold">
@@ -162,12 +162,12 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
 
           {/* Quick facts */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mb-6">
-            <Fact icon="fa-solid fa-location-dot" label="省市区" value={spot.region} />
-            <Fact icon="fa-solid fa-train-subway" label="附近交通" value={spot.nearbyTransport} />
-            <Fact icon="fa-solid fa-ticket" label="门票价格" value={spot.ticketPrice} />
-            <Fact icon="fa-solid fa-clock" label="开放时间" value={spot.openingHours} />
-            <Fact icon="fa-solid fa-hourglass-half" label="建议时长" value={spot.suggestedDuration} />
-            <Fact icon="fa-solid fa-calendar-days" label="最佳日期" value={spot.bestVisitDate} />
+            <Fact icon="fa-solid fa-location-dot" label="Region" value={spot.region} />
+            <Fact icon="fa-solid fa-train-subway" label="Nearby Transport" value={spot.nearbyTransport} />
+            <Fact icon="fa-solid fa-ticket" label="Ticket Price" value={spot.ticketPrice} />
+            <Fact icon="fa-solid fa-clock" label="Opening Hours" value={spot.openingHours} />
+            <Fact icon="fa-solid fa-hourglass-half" label="Suggested Duration" value={spot.suggestedDuration} />
+            <Fact icon="fa-solid fa-calendar-days" label="Best Visit Date" value={spot.bestVisitDate} />
           </div>
 
           {/* Intro */}
@@ -185,7 +185,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
                 <div>
                   {(spot.introduction || spot.reason) && (
                     <div className="mb-6">
-                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">景区介绍</div>
+                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">Attraction Overview</div>
                       <div className="text-sm text-gray-600 leading-relaxed">
                         {spot.introduction || spot.reason}
                       </div>
@@ -194,7 +194,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
 
                   {spot.suitableFor && spot.suitableFor.length > 0 && (
                     <div>
-                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">适合人群</div>
+                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">Suitable For</div>
                       <div className="flex flex-wrap gap-2">
                         {spot.suitableFor.slice(0, 10).map((p, i) => (
                           <span key={`${p}-${i}`} className="text-xs bg-gray-50 text-gray-700 px-3 py-1 rounded-full font-bold border border-gray-100">
@@ -210,20 +210,20 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
                 <div>
                   {(spot.address || spot.ticketPurchase) && (
                     <div className="mb-6">
-                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">位置与票务</div>
+                      <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wide mb-2">Location & Tickets</div>
 
                       {spot.address && (
                         <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100 mb-3">
                           <div className="flex items-start justify-between gap-3">
                             <div className="min-w-0">
-                              <div className="text-xs font-bold text-gray-500 mb-1">地址</div>
+                              <div className="text-xs font-bold text-gray-500 mb-1">Address</div>
                               <div className="text-sm text-gray-700 leading-relaxed">{spot.address}</div>
                             </div>
                             <button
                               onClick={copyAddress}
                               className="shrink-0 text-xs font-bold text-brand-blue hover:text-brand-orange transition-colors"
                             >
-                              复制
+                              Copy
                             </button>
                           </div>
                         </div>
@@ -231,7 +231,7 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
 
                       {spot.ticketPurchase && (
                         <div className="bg-white rounded-2xl p-4 border border-gray-100">
-                          <div className="text-xs font-bold text-gray-500 mb-1">购票方式</div>
+                          <div className="text-xs font-bold text-gray-500 mb-1">Ticket Purchase</div>
                           <div className="text-sm text-gray-700 leading-relaxed">{spot.ticketPurchase}</div>
                         </div>
                       )}
@@ -256,4 +256,3 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
 };
 
 export default ScenicSpotCardExpanded;
-

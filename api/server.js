@@ -34,10 +34,39 @@ function corsHeaders(origin) {
   };
 }
 
+function parseJsonBody(rawBody) {
+  let body = rawBody;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      body = {};
+    }
+  } else if (body && typeof body === 'object') {
+    const ctor = body.constructor && typeof body.constructor === 'function' ? body.constructor.name : '';
+    if (ctor === 'Buffer' && typeof body.toString === 'function') {
+      try {
+        body = JSON.parse(body.toString('utf8'));
+      } catch {
+        body = {};
+      }
+    }
+    if (ctor === 'Uint8Array') {
+      try {
+        body = JSON.parse(Buffer.from(body).toString('utf8'));
+      } catch {
+        body = {};
+      }
+    }
+  }
+  if (!body || typeof body !== 'object') body = {};
+  return body;
+}
+
 function extractImageUrlFromLine(line) {
   const s = String(line || '').trim();
   if (!s) return null;
-  const labeled = s.match(/^图片[：:]\s*(https?:\/\/\S+)$/u);
+  const labeled = s.match(/^Image[：:]\s*(https?:\/\/\S+)$/iu);
   if (labeled) return labeled[1].trim();
   const markdownImage = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
   if (markdownImage) return markdownImage[1].trim();
@@ -76,7 +105,7 @@ function normalizeAttractionHighlights(highlights, images) {
     }
 
     out.push({
-      title: title || `要点 ${i + 1}`,
+      title: title || `Highlight ${i + 1}`,
       content: kept.join('\n').trim() || null,
       image: image || fallbackImages[i] || null
     });
@@ -127,37 +156,7 @@ app.post('/api/feishu', async (request, reply) => {
   }
 
   const contentType = String(request.headers?.['content-type'] || '');
-
-  // Fastify usually parses JSON bodies into an object, but depending on proxy/content-type
-  // it can still arrive as a string/buffer. Be defensive so we don't drop fields silently.
-  let body = request.body;
-  if (typeof body === 'string') {
-    try {
-      body = JSON.parse(body);
-    } catch {
-      body = {};
-    }
-  } else if (body && typeof body === 'object') {
-    // If it's a Buffer-like object, attempt to parse it as JSON.
-    // (We avoid importing node types; runtime check only.)
-    const ctor = body.constructor && typeof body.constructor === 'function' ? body.constructor.name : '';
-    if (ctor === 'Buffer' && typeof body.toString === 'function') {
-      try {
-        body = JSON.parse(body.toString('utf8'));
-      } catch {
-        body = {};
-      }
-    }
-    // Some setups may pass a Uint8Array (or similar) instead of a Buffer.
-    if (ctor === 'Uint8Array') {
-      try {
-        body = JSON.parse(Buffer.from(body).toString('utf8'));
-      } catch {
-        body = {};
-      }
-    }
-  }
-  if (!body || typeof body !== 'object') body = {};
+  const body = parseJsonBody(request.body);
 
   const keys = body && typeof body === 'object' ? Object.keys(body).slice(0, 30) : [];
 
@@ -222,6 +221,82 @@ app.post('/api/feishu', async (request, reply) => {
       reply,
       502,
       { ok: false, error: 'Upstream webhook failed.', status: upstream.status },
+      corsHeaders(check.origin)
+    );
+  }
+
+  return jsonReply(reply, 200, { ok: true }, corsHeaders(check.origin));
+});
+
+app.options('/api/brevo', async (request, reply) => {
+  const check = assertOriginAllowed(request, reply);
+  if (!check.ok) return check.response;
+  reply.code(204).headers(corsHeaders(check.origin)).send();
+});
+
+app.post('/api/brevo', async (request, reply) => {
+  const check = assertOriginAllowed(request, reply);
+  if (!check.ok) return check.response;
+
+  const apiKey = String(process.env.BREVO_API_KEY || '').trim();
+  if (!apiKey) {
+    return jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: BREVO_API_KEY is not set.' }, corsHeaders(check.origin));
+  }
+
+  const templateIdRaw = String(process.env.BREVO_TEMPLATE_ID || '1').trim();
+  const templateId = Number(templateIdRaw);
+  if (!Number.isFinite(templateId)) {
+    return jsonReply(reply, 500, { ok: false, error: 'Server misconfigured: BREVO_TEMPLATE_ID is invalid.' }, corsHeaders(check.origin));
+  }
+
+  const contentType = String(request.headers?.['content-type'] || '');
+  const body = parseJsonBody(request.body);
+  const keys = body && typeof body === 'object' ? Object.keys(body).slice(0, 30) : [];
+
+  const email = typeof body.email === 'string' ? body.email.trim() : '';
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    request.log.warn(
+      { contentType, bodyType: typeof request.body, parsedKeys: keys, emailType: typeof body.email },
+      'Brevo payload invalid email'
+    );
+    return jsonReply(
+      reply,
+      400,
+      {
+        ok: false,
+        error: 'Invalid email.',
+        debug: {
+          contentType,
+          bodyType: typeof request.body,
+          parsedKeys: keys,
+          emailType: typeof body.email,
+        },
+      },
+      corsHeaders(check.origin)
+    );
+  }
+  if (email.length > 320) {
+    return jsonReply(reply, 413, { ok: false, error: 'Email too long.' }, corsHeaders(check.origin));
+  }
+
+  const upstream = await fetch('https://api.brevo.com/v3/smtp/email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'api-key': apiKey
+    },
+    body: JSON.stringify({
+      to: [{ email }],
+      templateId
+    })
+  });
+
+  if (!upstream.ok) {
+    const details = await upstream.text().catch(() => '');
+    return jsonReply(
+      reply,
+      502,
+      { ok: false, error: 'Upstream Brevo API failed.', status: upstream.status, details: details.slice(0, 500) },
       corsHeaders(check.origin)
     );
   }

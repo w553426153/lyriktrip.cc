@@ -25,6 +25,7 @@
 3) 配置环境变量
 - 复制 `deploy/.env.example` 为 `deploy/.env`
 - 修改 `DOMAIN/LETSENCRYPT_EMAIL/POSTGRES_PASSWORD` 等
+- 如果启用「Download Now」邮件发送，需要设置 `BREVO_API_KEY`（可选 `BREVO_TEMPLATE_ID`）
 
 4) 生成前端构建产物
 在仓库根目录执行：
@@ -47,6 +48,7 @@
 ## CSV 导入说明（你当前的表头为中文）
 
 `api/scripts/seed.js` 支持优先读取 `data/*.csv`（不存在则回退 `data/*.json`）。
+当存在 `data_translated/routes` 时，路线入库会优先读取该目录的 Markdown。
 
 你目前只有：
 - `data/attractions.csv`（景点表，含 省/市/区）

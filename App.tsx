@@ -348,14 +348,14 @@ const App: React.FC = () => {
             {routesError && (
               <div className="container mx-auto px-6 pt-12">
                 <div className="rounded-2xl bg-red-50 ring-1 ring-red-200 p-4 text-sm text-red-800">
-                  <div className="font-bold mb-1">无法加载线路列表</div>
+                  <div className="font-bold mb-1">Unable to load routes list</div>
                   <div className="opacity-90">{routesError}</div>
                 </div>
               </div>
             )}
             {routesLoading ? (
               <div className="container mx-auto px-6 py-20 text-center text-slate-500">
-                正在加载线路数据…
+                Loading route data…
               </div>
             ) : (
               <FeaturedTours 
