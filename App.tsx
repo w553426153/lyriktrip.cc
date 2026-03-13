@@ -25,7 +25,7 @@ const App: React.FC = () => {
   const [selectedDestinationId, setSelectedDestinationId] = useState<string | null>(null);
   const [selectedTourId, setSelectedTourId] = useState<string | null>(null);
   const [selectedRestaurantId, setSelectedRestaurantId] = useState<string | null>(null);
-  const [language, setLanguage] = useState<Language>('en');
+  const [language] = useState<Language>('en');
 
   const [routeDestinationSlug, setRouteDestinationSlug] = useState<string | null>(null);
   const [selectedDestinationSlug, setSelectedDestinationSlug] = useState<string | null>(null);
@@ -417,7 +417,6 @@ const App: React.FC = () => {
         onOpenConsult={() => handleOpenConsult('Header Navigation')} 
         wishlistCount={wishlist.length}
         language={language}
-        onLanguageChange={setLanguage}
       />
       
       <main>
