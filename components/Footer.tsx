@@ -73,7 +73,7 @@ const Footer: React.FC<FooterProps> = ({ language, onNavigate }) => {
         </div>
 
         <div className="pt-10 border-t border-white/10 text-center text-gray-500 text-sm">
-          <p>© 2024 LyrikTrip Travel Co., Ltd. All rights reserved.</p>
+          <p>© 2024 LyrikTrip Travel Co., Ltd. All rights reserved. 浙ICP备2025202509号-1</p>
         </div>
       </div>
     </footer>
