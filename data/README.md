@@ -12,7 +12,8 @@ Priority is given to reading files with the same name in `.csv` format; if not f
 - `data/restaurants.csv` / `data/restaurants.json`: Restaurant list (each includes destinationId)
 - `data/hotels.csv` / `data/hotels.json`: Hotel list (each includes destinationId)
 - `data/routes/*.md`: Route itineraries (Markdown). The filename (without extension) becomes `routes.id`, used for `/api/v1/routes/:id`
-  - If `data_translated/routes` exists, route seeding will prefer that directory.
+  - If `ROUTES_DIR` / `ROUTES_DATA_DIR` is set, it will be used.
+  - Otherwise the seed prefers `data/routes`, then falls back to `data_translated/routes` if present.
 
 ### Route Markdown (Sightseeing Highlights Images)
 

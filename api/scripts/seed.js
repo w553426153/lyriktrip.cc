@@ -731,9 +731,9 @@ function parseApproxDurationMinutes(line) {
 
 function parseMoneyNumber(line) {
   const s = String(line || '');
-  const m = s.match(/([\d.]+)/);
+  const m = s.match(/([\d.,]+)/);
   if (!m) return null;
-  const n = Number(m[1]);
+  const n = Number(m[1].replace(/,/g, ''));
   return Number.isFinite(n) ? n : null;
 }
 
@@ -757,7 +757,7 @@ function isEmojiTitleLine(line) {
 function extractImageUrl(line) {
   const s = String(line || '').trim();
   if (!s) return null;
-  const imageLabelMatch = s.match(/^Image[：:]\s*(https?:\/\/\S+)$/iu);
+  const imageLabelMatch = s.match(/^(Image|图片)[：:]\s*(https?:\/\/\S+)$/iu);
   if (imageLabelMatch) return imageLabelMatch[1].trim();
   const markdownImageMatch = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
   if (markdownImageMatch) return markdownImageMatch[1].trim();
@@ -780,6 +780,54 @@ function collectKeyValue(lines, key) {
     if (v) return v;
   }
   return null;
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function collectKeyValueAny(lines, keys) {
+  const normalizedKeys = (Array.isArray(keys) ? keys : [])
+    .map((k) => String(k || '').trim())
+    .filter(Boolean);
+  if (!normalizedKeys.length) return null;
+
+  const keySet = new Set(normalizedKeys.map((k) => k.toLowerCase()));
+  const labelPattern = normalizedKeys.map(escapeRegExp).join('|');
+  const inlinePattern = labelPattern ? new RegExp(`^(${labelPattern})\\s*[：:]\\s*(.+)$`, 'iu') : null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = String(lines[i] || '').trim();
+    if (!raw) continue;
+
+    if (inlinePattern) {
+      const inline = raw.match(inlinePattern);
+      if (inline) {
+        const value = String(inline[2] || '').trim();
+        if (value) return value;
+      }
+    }
+
+    if (keySet.has(raw.toLowerCase())) {
+      for (let j = i + 1; j < lines.length; j++) {
+        const v = String(lines[j] || '').trim();
+        if (v) return v;
+      }
+    }
+  }
+
+  return null;
+}
+
+function parsePriceUnit(raw) {
+  const s = String(raw || '').trim();
+  if (!s) return null;
+  const m = s.match(/[\d.,]+/);
+  if (!m || m.index == null) return null;
+  const after = s.slice(m.index + m[0].length).trim();
+  if (after) return after;
+  const before = s.slice(0, m.index).trim();
+  return before || null;
 }
 
 function normalizeNameToken(value) {
@@ -814,6 +862,64 @@ function buildAttractionImageResolver(attractions) {
   };
 }
 
+const ROUTE_HEADER_TITLE_KEYS = ['Main Itinerary Title', '行程主标题', '行程标题', '行程名称', '产品名称'];
+const ROUTE_HEADER_ALIAS_KEYS = ['Itinerary Subtitle', '行程副标题', '副标题'];
+const ROUTE_HEADER_PRICE_KEYS = ['Price', '价格', '价位', '费用'];
+const ROUTE_COVER_KEYS = ['Cover Image', 'Cover', '封面图', '封面图片', '封面', 'Image', '图片', 'Image URL'];
+
+function extractCoverImageUrl(line, opts = {}) {
+  const { allowBare = false } = opts;
+  const s = String(line || '').trim();
+  if (!s) return null;
+  const labelPattern = ROUTE_COVER_KEYS.map(escapeRegExp).join('|');
+  const labeled = labelPattern ? s.match(new RegExp(`^(${labelPattern})\\s*[：:]\\s*(https?:\\/\\/\\S+)$`, 'iu')) : null;
+  if (labeled) return labeled[2].trim();
+  const markdownImageMatch = s.match(/^!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)$/u);
+  if (markdownImageMatch) return markdownImageMatch[1].trim();
+  if (allowBare) {
+    const bareUrlMatch = s.match(/^(https?:\/\/\S+)$/u);
+    if (bareUrlMatch) return bareUrlMatch[1].trim();
+  }
+  return null;
+}
+
+function collectCoverImagesFromLines(lines, opts = {}) {
+  const { allowBare = false } = opts;
+  const out = [];
+  const keySet = new Set(ROUTE_COVER_KEYS.map((k) => String(k).toLowerCase()));
+  const isKeyLine = (s) => keySet.has(String(s || '').trim().toLowerCase());
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = String(lines[i] || '').trim();
+    if (!raw) continue;
+
+    const direct = extractCoverImageUrl(raw, { allowBare });
+    if (direct) {
+      out.push(direct);
+      continue;
+    }
+
+    if (isKeyLine(raw)) {
+      for (let j = i + 1; j < lines.length; j++) {
+        const next = String(lines[j] || '').trim();
+        if (!next) continue;
+        const url = extractCoverImageUrl(next, { allowBare: true });
+        if (url) out.push(url);
+        break;
+      }
+    }
+  }
+
+  return Array.from(new Set(out));
+}
+
+function collectCoverImages(headerLines, allLines) {
+  const headerImages = collectCoverImagesFromLines(headerLines, { allowBare: true });
+  if (headerImages.length) return headerImages;
+  const bodyImages = collectCoverImagesFromLines(allLines, { allowBare: false });
+  return bodyImages.length ? [bodyImages[0]] : [];
+}
+
 function parseRouteMarkdown(routeId, markdown) {
   const lines = String(markdown || '')
     .replace(/\r\n/g, '\n')
@@ -831,12 +937,12 @@ function parseRouteMarkdown(routeId, markdown) {
   const firstDayIdx = dayMarkers.length ? dayMarkers[0].idx : lines.length;
   const headerLines = lines.slice(0, firstDayIdx);
 
-  const routeName = collectKeyValue(headerLines, 'Main Itinerary Title') || routeId;
-  const routeAlias = collectKeyValue(headerLines, 'Itinerary Subtitle');
+  const routeName = collectKeyValueAny(headerLines, ROUTE_HEADER_TITLE_KEYS) || routeId;
+  const routeAlias = collectKeyValueAny(headerLines, ROUTE_HEADER_ALIAS_KEYS);
 
-  const priceRaw = collectKeyValue(headerLines, 'Price');
+  const priceRaw = collectKeyValueAny(headerLines, ROUTE_HEADER_PRICE_KEYS);
   const price = priceRaw ? parseMoneyNumber(priceRaw) : null;
-  const priceUnit = priceRaw ? String(priceRaw).replace(/^[\s\d.]+/, '').trim() || null : null;
+  const priceUnit = priceRaw ? parsePriceUnit(priceRaw) : null;
 
   const recIdx = headerLines.findIndex((l) => String(l || '').trim() === 'Why We Recommend');
   const introIdx = headerLines.findIndex((l) => String(l || '').trim() === 'Itinerary Overview');
@@ -1151,7 +1257,7 @@ function parseRouteMarkdown(routeId, markdown) {
     recommendation,
     introduction,
     highlights,
-    coverImages: [],
+    coverImages: collectCoverImages(headerLines, lines),
     totalDays: days.length || dayMarkers.length || null,
     status: 1,
     days
@@ -1162,8 +1268,8 @@ async function resolveRoutesDir(dataDir) {
   const envDir = String(process.env.ROUTES_DIR || process.env.ROUTES_DATA_DIR || '').trim();
   const candidates = [
     envDir ? path.resolve(envDir) : null,
-    path.join(path.dirname(dataDir), 'data_translated', 'routes'),
-    path.join(dataDir, 'routes')
+    path.join(dataDir, 'routes'),
+    path.join(path.dirname(dataDir), 'data_translated', 'routes')
   ].filter(Boolean);
 
   for (const candidate of candidates) {

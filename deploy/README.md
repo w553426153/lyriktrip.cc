@@ -48,7 +48,7 @@
 ## CSV 导入说明（你当前的表头为中文）
 
 `api/scripts/seed.js` 支持优先读取 `data/*.csv`（不存在则回退 `data/*.json`）。
-当存在 `data_translated/routes` 时，路线入库会优先读取该目录的 Markdown。
+路线入库优先使用 `ROUTES_DIR/ROUTES_DATA_DIR` 指定目录；否则默认优先 `data/routes`，再回退到 `data_translated/routes`。
 
 你目前只有：
 - `data/attractions.csv`（景点表，含 省/市/区）
