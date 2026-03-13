@@ -1440,8 +1440,19 @@ async function main() {
     }
 
     function normalizeCityKey(value) {
-      let key = String(value || '').normalize('NFKC').trim().toLowerCase();
-      if (!key) return '';
+      const raw = String(value || '').normalize('NFKC').trim();
+      if (!raw) return '';
+      const compact = raw.replace(/\s+/g, '');
+      const zhAliasMap = new Map([
+        ['北京', 'beijing'],
+        ['上海', 'shanghai'],
+        ['天津', 'tianjin'],
+        ['重庆', 'chongqing']
+      ]);
+      for (const [cn, en] of zhAliasMap) {
+        if (compact.includes(cn)) return en;
+      }
+      let key = raw.toLowerCase();
       key = key.replace(/[\s\p{P}\p{S}]+/gu, '');
       key = key.replace(/city$/, '');
       key = key.replace(/市$/, '');

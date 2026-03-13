@@ -129,6 +129,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   const dbImage = typeof destination.image === 'string' ? destination.image.trim() : '';
   const manualFallbackImage = String(DESTINATION_HERO_IMAGE_FALLBACKS_BY_ID[destination.id] || '').trim();
   const heroImage = dbImage || manualFallbackImage || fallbackImage;
+  const displayName = String(destination.name || '').trim().replace(/\s*City$/i, '').replace(/市$/, '') || destination.name;
 
   const [showAllHighlights, setShowAllHighlights] = useState(false);
   const [showAllFoods, setShowAllFoods] = useState(false);
@@ -148,7 +149,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
         <img src={heroImage} alt={destination.name} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-6 mt-16">
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-2xl">{destination.name}</h1>
+            <h1 className="text-6xl md:text-8xl font-bold mb-4 drop-shadow-2xl">{displayName}</h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto font-light drop-shadow-lg">{destination.description}</p>
           </div>
         </div>
@@ -164,7 +165,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Info */}
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold text-brand-blue mb-6">About {destination.name}</h2>
+            <h2 className="text-3xl font-bold text-brand-blue mb-6">About {displayName}</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-12">
               {destination.longDescription || destination.description}
             </p>
@@ -207,7 +208,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-brand-blue mb-8 flex items-center">
                 <i className="fa-solid fa-utensils mr-3 text-brand-orange"></i>
-                Taste of {destination.name}
+                Taste of {displayName}
               </h3>
               <div className="grid grid-cols-1 gap-8">
                 {visibleFoods.map((food, i) => {
@@ -332,9 +333,9 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                    <i className="fa-solid fa-compass"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-4 relative z-10">Plan Your Visit</h3>
-                <p className="text-white/70 text-sm mb-6 relative z-10">Our local butlers in {destination.name} are ready to help you navigate this amazing city.</p>
+                <p className="text-white/70 text-sm mb-6 relative z-10">Our local butlers in {displayName} are ready to help you navigate this amazing city.</p>
                 <button 
-                  onClick={() => onOpenConsult(`Destination Detail: ${destination.name}`)}
+                  onClick={() => onOpenConsult(`Destination Detail: ${displayName}`)}
                   className="w-full bg-brand-orange text-white py-4 rounded-xl font-bold hover:bg-brand-darkOrange transition-all shadow-lg relative z-10"
                 >
                   Request Custom Roadbook
@@ -386,7 +387,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
         onToggleWishlist={onToggleWishlist}
         onSelectTour={onSelectTour}
         items={relatedTours}
-        title={`Routes including ${destination.name}`}
+        title={`Routes including ${displayName}`}
         subtitle="Explore our hand-picked itineraries featuring this destination."
         hideViewAll
       />

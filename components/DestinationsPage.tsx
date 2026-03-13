@@ -71,12 +71,13 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
   };
 
   const normalizeCityLabel = (city?: string, fallback?: string) => {
-    const raw = String(city || fallback || '').trim();
+    let raw = String(city || fallback || '').trim();
     if (!raw) return '';
-    if (/\\bCity$/i.test(raw)) return raw;
-    if (/(\\bRegion|\\bPrefecture|\\bLeague|\\bCounty)$/i.test(raw)) return raw;
-    if (municipalitySet.has(raw)) return raw;
-    return raw;
+    if (!/(\\bRegion|\\bPrefecture|\\bLeague|\\bCounty)$/i.test(raw) && !municipalitySet.has(raw)) {
+      raw = raw.replace(/\\s*City$/i, '');
+    }
+    raw = raw.replace(/市$/, '');
+    return raw.trim();
   };
 
   useEffect(() => {

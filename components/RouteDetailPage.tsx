@@ -614,9 +614,9 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                 ROADBOOK • LYR I KTRIP
               </div>
 
-              <h1 className="mt-5 font-display text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.02]">
+              <h2 className="mt-5 font-display text-2xl md:text-3xl font-bold text-slate-900 leading-[1.1] truncate">
                 {route?.routeName || (loading ? 'Loading…' : 'Route')}
-              </h1>
+              </h2>
 
               {route?.routeAlias && <div className="mt-4 text-lg md:text-xl text-slate-700 font-medium">{route.routeAlias}</div>}
 
