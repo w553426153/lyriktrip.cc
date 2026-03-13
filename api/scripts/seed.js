@@ -651,6 +651,7 @@ function normalizeFoods(rows) {
     const avgCost = row['Avg Cost'] || '';
     const queueStatus = row['Queue Status'] || '';
     const nearbyAttractions = row['Nearby Attractions'];
+    const city = row['City'] || row['city'] || '';
 
     const stableKey = [name, restaurantName, restaurantAddress].filter(Boolean).join('|') || name;
     const id = makeId('food', stableKey);
@@ -675,7 +676,8 @@ function normalizeFoods(rows) {
       mustEatIndex: toNumberOrNull(mustEatIndex),
       avgCost: String(avgCost || '').trim() || null,
       queueStatus: String(queueStatus || '').trim() || null,
-      nearbyAttractions: splitMulti(nearbyAttractions)
+      nearbyAttractions: splitMulti(nearbyAttractions),
+      city: String(city || '').trim() || null
     });
   }
   return out;
@@ -1437,6 +1439,24 @@ async function main() {
       }
     }
 
+    function normalizeCityKey(value) {
+      let key = String(value || '').normalize('NFKC').trim().toLowerCase();
+      if (!key) return '';
+      key = key.replace(/[\s\p{P}\p{S}]+/gu, '');
+      key = key.replace(/city$/, '');
+      key = key.replace(/市$/, '');
+      return key;
+    }
+
+    const cityToDestinationId = new Map();
+    for (const dest of destinationsByKey.values()) {
+      const key = normalizeCityKey(dest?.name);
+      if (!key) continue;
+      if (!cityToDestinationId.has(key)) {
+        cityToDestinationId.set(key, dest.id);
+      }
+    }
+
     function resolveDestinationIdByNearbyAndAddress(nearbyAttractions, address) {
       const near = splitMulti(nearbyAttractions) || [];
       for (const n of near) {
@@ -1456,7 +1476,12 @@ async function main() {
       r.destinationId = resolveDestinationIdByNearbyAndAddress(r.nearbyAttractions, r.address);
     }
     for (const f of foods) {
-      f.destinationId = resolveDestinationIdByNearbyAndAddress(f.nearbyAttractions, f.restaurantAddress);
+      const cityKey = normalizeCityKey(f.city);
+      if (cityKey && cityToDestinationId.has(cityKey)) {
+        f.destinationId = cityToDestinationId.get(cityKey);
+      } else {
+        f.destinationId = resolveDestinationIdByNearbyAndAddress(f.nearbyAttractions, f.restaurantAddress);
+      }
     }
 
     await pool.query('BEGIN');
