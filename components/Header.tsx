@@ -58,7 +58,12 @@ const Header: React.FC<HeaderProps> = ({
           >
             {t.tours}
           </span>
-          <span className="cursor-pointer hover:text-brand-orange">{t.about}</span>
+          <span
+            className={`cursor-pointer hover:text-brand-orange transition-colors ${currentPage === Page.About ? 'text-brand-orange' : ''}`}
+            onClick={() => onNavigate(Page.About)}
+          >
+            {t.about}
+          </span>
         </nav>
 
         <div className="flex items-center space-x-4">

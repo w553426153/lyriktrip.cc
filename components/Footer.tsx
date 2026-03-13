@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = ({ language, onNavigate }) => {
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fa-solid fa-envelope text-brand-orange"></i>
-                <span>hello@lyriktrip.com</span>
+                <span>media@lyriktrip.com</span>
               </li>
             </ul>
           </div>

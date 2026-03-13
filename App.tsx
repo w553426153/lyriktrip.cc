@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import ContactPage from './components/ContactPage';
+import AboutUsPage from './components/AboutUsPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import BookingTermsPage from './components/BookingTermsPage';
 import DestinationsPage from './components/DestinationsPage';
@@ -104,6 +105,7 @@ const App: React.FC = () => {
     if (parts.length === 0) return { page: Page.Home };
 
     if (parts[0] === 'contact') return { page: Page.Contact };
+    if (parts[0] === 'about') return { page: Page.About };
     if (parts[0] === 'privacy-policy') return { page: Page.PrivacyPolicy };
     if (parts[0] === 'booking-terms') return { page: Page.BookingTerms };
     if (parts[0] === 'tours') {
@@ -126,6 +128,8 @@ const App: React.FC = () => {
         return '/';
       case Page.Contact:
         return '/contact';
+      case Page.About:
+        return '/about';
       case Page.PrivacyPolicy:
         return '/privacy-policy';
       case Page.BookingTerms:
@@ -317,6 +321,8 @@ const App: React.FC = () => {
         );
       case Page.Contact:
         return <ContactPage />;
+      case Page.About:
+        return <AboutUsPage />;
       case Page.PrivacyPolicy:
         return <PrivacyPolicyPage />;
       case Page.BookingTerms:

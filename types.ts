@@ -252,6 +252,7 @@ export interface Testimonial {
 
 export enum Page {
   Home = 'home',
+  About = 'about',
   Contact = 'contact',
   PrivacyPolicy = 'privacy-policy',
   BookingTerms = 'booking-terms',

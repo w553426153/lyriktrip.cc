@@ -13,7 +13,7 @@
 - `App.tsx`：应用主入口，基于本地状态切换页面（非 URL 路由）。
 - `index.tsx` / `index.html`：应用挂载入口。
 - `components/`：页面与模块组件。
-  - 页面级组件：`DestinationsPage.tsx`、`DestinationDetail.tsx`、`TourDetail.tsx`、`WishlistPage.tsx`、`ContactPage.tsx`
+  - 页面级组件：`DestinationsPage.tsx`、`DestinationDetail.tsx`、`TourDetail.tsx`、`WishlistPage.tsx`、`ContactPage.tsx`、`AboutUsPage.tsx`
   - 首页模块：`Hero.tsx`、`WhyTrust.tsx`、`SurvivalKits.tsx`、`FeaturedTours.tsx`、`Testimonials.tsx`
   - 通用模块：`Header.tsx`、`Footer.tsx`、`FloatingContact.tsx`、`SmartFormModal.tsx`
 - `constants.tsx`：目的地/路线/口碑/生存指南等静态数据。
@@ -34,6 +34,7 @@
 - 路线详情（Tour Detail）：路线概览、行程日历、包含/不包含项与预约咨询。
 - 心愿单（Wishlist）：收藏的路线/景点/美食汇总与一键咨询。
 - 联系我们（Contact）：客服入口、管家团队与常见问题。
+- 关于我们（About Us）：支付流程、服务保障与支持范围说明。
 
 ## 本地运行
 
