@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from 'react';
-import { Attraction } from '../types';
+import { Attraction, WishlistItem } from '../types';
 
 type Props = {
   spot: Attraction;
   isLiked: boolean;
-  onToggleWishlist: (id: string) => void;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
 };
 
 const clampArray = (arr: string[] | undefined, max: number) => (arr || []).slice(0, max);
@@ -82,7 +82,16 @@ const ScenicSpotCardExpanded: React.FC<Props> = ({ spot, isLiked, onToggleWishli
           <button
             onClick={(e) => {
               e.stopPropagation();
-              onToggleWishlist(spot.id);
+              const wishlistItem: WishlistItem = {
+                id: spot.id,
+                kind: 'attraction',
+                title: spot.name,
+                subtitle: spot.reason,
+                image: spot.image,
+                rating: spot.rating,
+                tags: spot.tags
+              };
+              onToggleWishlist(spot.id, wishlistItem);
             }}
             className={`absolute top-4 right-4 px-3 h-10 rounded-full shadow-lg flex items-center justify-center gap-2 transition-all transform active:scale-90 z-10 ${
               isLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'

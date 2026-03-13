@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import type { RouteAttractionHighlight, RouteDay, RouteDetail, RouteNode, RouteNodeType, Tour } from '../types';
+import type { RouteAttractionHighlight, RouteDay, RouteDetail, RouteNode, RouteNodeType, Tour, WishlistItem } from '../types';
 import { fetchRouteDetail } from '../apiClient';
 import TourDetail from './TourDetail';
 
@@ -8,7 +8,7 @@ type RouteDetailPageProps = {
   fallbackTour?: Tour | null;
   onOpenConsult: (source: string) => void;
   wishlist: string[];
-  onToggleWishlist: (id: string) => void;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
   onBack: () => void;
 };
 
@@ -596,6 +596,22 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
       ? route.coverImages[0]
       : 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?auto=format&fit=crop&q=80&w=1600';
 
+  const wishlistRouteItem: WishlistItem = {
+    id: routeId,
+    kind: 'route',
+    title: route?.routeName || fallbackTour?.title || 'Route',
+    subtitle: route?.routeAlias || fallbackTour?.tagline || null,
+    image: cover,
+    priceLabel:
+      route?.price != null
+        ? `${route.price}${route.priceUnit ? ` ${route.priceUnit}` : ''}`
+        : fallbackTour?.price != null
+          ? `From $${fallbackTour.price}`
+          : null,
+    days: route?.totalDays ?? null,
+    tags: route?.highlights || fallbackTour?.highlights || []
+  };
+
   return (
     <div className="min-h-screen font-body bg-[radial-gradient(circle_at_15%_10%,rgba(255,107,53,0.16),transparent_45%),radial-gradient(circle_at_75%_20%,rgba(26,54,93,0.14),transparent_45%),linear-gradient(to_bottom,#ffffff,#f6f8fb)]">
       {/* Hero */}
@@ -651,7 +667,7 @@ const RouteDetailPage: React.FC<RouteDetailPageProps> = ({
                   <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mt-2">Itinerary Overview</h2>
                 </div>
                 <button
-                  onClick={() => onToggleWishlist(routeId)}
+                  onClick={() => onToggleWishlist(routeId, wishlistRouteItem)}
                   className={[
                     'h-12 w-12 rounded-2xl grid place-items-center ring-1 transition-all active:scale-95',
                     isInWishlist ? 'bg-brand-orange text-white ring-brand-orange/30' : 'bg-white text-slate-500 ring-slate-200 hover:ring-slate-300'

@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Page, Language, RouteSummary } from './types';
+import { Page, Language, RouteSummary, WishlistItem } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhyTrust from './components/WhyTrust';
@@ -51,9 +51,33 @@ const App: React.FC = () => {
     }
   });
 
+  const [wishlistItems, setWishlistItems] = useState<Record<string, WishlistItem>>(() => {
+    try {
+      const saved = localStorage.getItem('lyriktrip_wishlist_items');
+      if (!saved) return {};
+      const parsed = JSON.parse(saved);
+      if (!parsed || typeof parsed !== 'object') return {};
+      const raw = parsed as Record<string, WishlistItem>;
+      const next: Record<string, WishlistItem> = {};
+      Object.keys(raw).forEach((id) => {
+        if (wishlist.includes(id)) {
+          next[id] = { ...raw[id], id };
+        }
+      });
+      return next;
+    } catch (e) {
+      console.warn("Failed to parse wishlist item cache from local storage", e);
+      return {};
+    }
+  });
+
   useEffect(() => {
     localStorage.setItem('lyriktrip_wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
+
+  useEffect(() => {
+    localStorage.setItem('lyriktrip_wishlist_items', JSON.stringify(wishlistItems));
+  }, [wishlistItems]);
 
   // Keep Unicode letters/numbers so Chinese destination names can form stable slugs.
   // (The final URL segment is still encoded via encodeURIComponent.)
@@ -228,10 +252,21 @@ const App: React.FC = () => {
     };
   }, [currentPage]);
 
-  const toggleWishlist = (id: string) => {
-    setWishlist(prev => 
-      prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
-    );
+  const toggleWishlist = (id: string, item?: WishlistItem) => {
+    setWishlist((prev) => {
+      const isInWishlist = prev.includes(id);
+      setWishlistItems((prevItems) => {
+        if (isInWishlist) {
+          if (!prevItems[id]) return prevItems;
+          const next = { ...prevItems };
+          delete next[id];
+          return next;
+        }
+        if (!item) return prevItems;
+        return { ...prevItems, [id]: { ...item, id } };
+      });
+      return isInWishlist ? prev.filter((entry) => entry !== id) : [...prev, id];
+    });
   };
 
   const handleOpenConsult = (source: string = 'General Header') => {
@@ -398,10 +433,12 @@ const App: React.FC = () => {
         return (
           <WishlistPage 
             wishlist={wishlist} 
+            wishlistItems={wishlistItems}
             onToggleWishlist={toggleWishlist} 
             onOpenConsult={handleOpenConsult}
             onNavigate={handleNavigate}
             onSelectTour={handleSelectTour}
+            onSelectDestination={handleSelectDestination}
           />
         );
       default:

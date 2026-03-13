@@ -208,6 +208,20 @@ export interface Destination {
   tourCount: number;
 }
 
+export type WishlistItemKind = 'route' | 'destination' | 'attraction' | 'food';
+
+export interface WishlistItem {
+  id: string;
+  kind: WishlistItemKind;
+  title: string;
+  subtitle?: string | null;
+  image?: string | null;
+  rating?: number | string | null;
+  priceLabel?: string | null;
+  days?: number | string | null;
+  tags?: string[];
+}
+
 export interface SurvivalKit {
   id: string;
   title: string;

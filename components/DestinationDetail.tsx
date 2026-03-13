@@ -1,6 +1,6 @@
 
 import React, { useMemo, useState } from 'react';
-import { Destination, Tour, Attraction, Food } from '../types';
+import { Destination, Tour, Attraction, Food, WishlistItem } from '../types';
 import FeaturedTours from './FeaturedTours';
 import ScenicSpotCardExpanded from './ScenicSpotCardExpanded';
 import { DESTINATION_HERO_IMAGE_FALLBACKS_BY_ID } from '../config';
@@ -107,7 +107,7 @@ interface DestinationDetailProps {
   relatedTours: Tour[];
   onOpenConsult: (source: string) => void;
   wishlist: string[];
-  onToggleWishlist: (id: string) => void;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
   onSelectTour: (id: string) => void;
   onSelectRestaurant: (id: string) => void;
   onBack: () => void;
@@ -130,6 +130,7 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
   const manualFallbackImage = String(DESTINATION_HERO_IMAGE_FALLBACKS_BY_ID[destination.id] || '').trim();
   const heroImage = dbImage || manualFallbackImage || fallbackImage;
   const displayName = String(destination.name || '').trim().replace(/\s*City$/i, '').replace(/市$/, '') || destination.name;
+  const isDestinationLiked = wishlist.includes(destination.id);
 
   const [showAllHighlights, setShowAllHighlights] = useState(false);
   const [showAllFoods, setShowAllFoods] = useState(false);
@@ -158,6 +159,25 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
           className="absolute top-24 left-6 md:left-10 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-3 rounded-full transition-all z-20 shadow-lg"
         >
           <i className="fa-solid fa-arrow-left text-xl"></i>
+        </button>
+        <button
+          onClick={() =>
+            onToggleWishlist(destination.id, {
+              id: destination.id,
+              kind: 'destination',
+              title: displayName,
+              subtitle: destination.description,
+              image: heroImage,
+              tags: destination.highlights
+            })
+          }
+          className={`absolute top-24 right-6 md:right-10 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all transform active:scale-90 z-20 ${
+            isDestinationLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
+          }`}
+          aria-pressed={isDestinationLiked}
+          title={isDestinationLiked ? 'In wishlist' : 'Add destination'}
+        >
+          <i className={`${isDestinationLiked ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
         </button>
       </div>
 
@@ -223,7 +243,15 @@ const DestinationDetail: React.FC<DestinationDetailProps> = ({
                         <button 
                           onClick={(e) => {
                             e.stopPropagation();
-                            onToggleWishlist(food.id);
+                            onToggleWishlist(food.id, {
+                              id: food.id,
+                              kind: 'food',
+                              title: food.name,
+                              subtitle: food.reason,
+                              image: food.image || fallbackImage,
+                              priceLabel: food.priceRange || null,
+                              tags: food.tags
+                            });
                           }}
                           className={`absolute top-4 right-4 w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition-all transform active:scale-90 z-10 ${
                             isLiked ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'

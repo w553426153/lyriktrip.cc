@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import type { Tour, Destination } from '../types';
+import type { Tour, Destination, WishlistItem } from '../types';
 import DestinationDetail from './DestinationDetail';
 import { fetchDestinationDetail } from '../apiClient';
 
@@ -8,7 +8,7 @@ interface DestinationDetailPageProps {
   relatedTours: Tour[];
   onOpenConsult: (source: string) => void;
   wishlist: string[];
-  onToggleWishlist: (id: string) => void;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
   onSelectTour: (id: string) => void;
   onSelectRestaurant: (id: string) => void;
   onBack: () => void;

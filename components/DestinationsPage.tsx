@@ -207,7 +207,7 @@ const DestinationsPage: React.FC<DestinationsPageProps> = ({ onNavigate, onSelec
           <aside className="hidden lg:block lg:w-64 shrink-0">
             <div className="sticky top-28">
               <div className="text-sm font-semibold text-gray-500 mb-4">Browse by Province</div>
-              <div className="space-y-2">
+              <div className="space-y-2 max-h-[calc(100vh-12rem)] overflow-y-auto pr-2 -mr-2">
                 {provinceNav.map((item) => (
                   <a
                     key={item.id}

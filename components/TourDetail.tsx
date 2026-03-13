@@ -1,12 +1,12 @@
 
 import React, { useState } from 'react';
-import { Tour } from '../types';
+import { Tour, WishlistItem } from '../types';
 
 interface TourDetailProps {
   tour: Tour;
   onOpenConsult: (source: string) => void;
   wishlist: string[];
-  onToggleWishlist: (id: string) => void;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
   onBack: () => void;
 }
 
@@ -169,7 +169,18 @@ const TourDetail: React.FC<TourDetailProps> = ({
                   <div className="text-4xl font-extrabold text-brand-blue">${tour.price}</div>
                 </div>
                 <button 
-                  onClick={() => onToggleWishlist(tour.id)}
+                  onClick={() =>
+                    onToggleWishlist(tour.id, {
+                      id: tour.id,
+                      kind: 'route',
+                      title: tour.title,
+                      subtitle: tour.tagline,
+                      image: tour.image,
+                      priceLabel: tour.price != null ? `From $${tour.price}` : null,
+                      days: tour.itinerary?.length ?? null,
+                      tags: tour.highlights
+                    })
+                  }
                   className={`w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all ${
                     isInWishlist ? 'bg-brand-orange text-white' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'
                   }`}

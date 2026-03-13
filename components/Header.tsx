@@ -38,9 +38,11 @@ const Header: React.FC<HeaderProps> = ({
           className="flex items-center space-x-2 cursor-pointer"
           onClick={() => onNavigate(Page.Home)}
         >
-          <span className={`text-2xl font-bold ${isScrolled ? 'text-brand-orange' : 'text-white'}`}>
-            Lyrik<span className={isScrolled ? 'text-brand-blue' : 'text-brand-orange'}>Trip</span>
-          </span>
+          <img
+            src="https://lyricktrip-1304007227.cos.na-siliconvalley.myqcloud.com/LyrikTrip_white_h.svg"
+            alt="LyrikTrip"
+            className={`h-8 md:h-9 w-auto transition-all ${isScrolled ? 'brightness-0' : 'brightness-100'}`}
+          />
         </div>
 
         <nav className="hidden md:flex items-center space-x-8 font-medium">

@@ -2,45 +2,121 @@
 import React from 'react';
 import { TOURS, DESTINATIONS } from '../constants';
 import FeaturedTours from './FeaturedTours';
-import { Page, Attraction, Food } from '../types';
+import { Page, Attraction, Food, RouteSummary, WishlistItem } from '../types';
 
 interface WishlistPageProps {
   wishlist: string[];
-  onToggleWishlist: (id: string) => void;
+  wishlistItems?: Record<string, WishlistItem>;
+  onToggleWishlist: (id: string, item?: WishlistItem) => void;
   onOpenConsult: (source: string) => void;
   onNavigate: (page: Page) => void;
   onSelectTour: (id: string) => void;
+  onSelectDestination: (id: string, name?: string) => void;
 }
 
 const WishlistPage: React.FC<WishlistPageProps> = ({ 
   wishlist, 
+  wishlistItems,
   onToggleWishlist, 
   onOpenConsult,
   onNavigate,
-  onSelectTour
+  onSelectTour,
+  onSelectDestination
 }) => {
-  const wishlistTours = TOURS.filter(tour => wishlist.includes(tour.id));
+  const wishlistItemMap = wishlistItems || {};
+  const wishlistItemList = Object.values(wishlistItemMap);
+  const fallbackImage =
+    'https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1600';
+
+  const toRouteSummary = (item: WishlistItem): RouteSummary => ({
+    id: item.id,
+    routeName: item.title,
+    routeAlias: item.subtitle || null,
+    price: item.priceLabel ?? null,
+    priceUnit: null,
+    highlights: item.tags || [],
+    coverImages: item.image ? [item.image] : [],
+    totalDays: Number(item.days) || 0
+  });
+
+  const metaRoutes = wishlistItemList.filter((item) => item.kind === 'route');
+  const wishlistTours = [
+    ...metaRoutes.map(toRouteSummary),
+    ...TOURS.filter((tour) => wishlist.includes(tour.id) && !wishlistItemMap[tour.id])
+  ];
+
+  type DestinationCard = {
+    id: string;
+    name: string;
+    description: string;
+    image?: string | null;
+  };
+
+  const metaDestinations = wishlistItemList.filter((item) => item.kind === 'destination');
+  const wishlistDestinations: DestinationCard[] = [
+    ...metaDestinations.map((item) => ({
+      id: item.id,
+      name: item.title,
+      description: item.subtitle || '',
+      image: item.image || null
+    })),
+    ...DESTINATIONS.filter((dest) => wishlist.includes(dest.id) && !wishlistItemMap[dest.id]).map((dest) => ({
+      id: dest.id,
+      name: dest.city || dest.name,
+      description: dest.description,
+      image: dest.image || null
+    }))
+  ];
   
   // Extract all attractions and food items across all destinations that are in the wishlist
   const wishlistAttractions: Attraction[] = [];
   const wishlistFoods: Food[] = [];
 
+  wishlistItemList
+    .filter((item) => item.kind === 'attraction')
+    .forEach((item) => {
+      if (!wishlist.includes(item.id)) return;
+      wishlistAttractions.push({
+        id: item.id,
+        name: item.title,
+        image: item.image || fallbackImage,
+        tags: item.tags || [],
+        reason: item.subtitle || '',
+        rating: typeof item.rating === 'number' ? item.rating : Number(item.rating) || 0
+      });
+    });
+
+  wishlistItemList
+    .filter((item) => item.kind === 'food')
+    .forEach((item) => {
+      if (!wishlist.includes(item.id)) return;
+      wishlistFoods.push({
+        id: item.id,
+        name: item.title,
+        image: item.image || fallbackImage,
+        tags: item.tags || [],
+        priceRange: item.priceLabel || null,
+        reason: item.subtitle || null
+      });
+    });
+
   DESTINATIONS.forEach(dest => {
     (dest.attractions || []).forEach(attr => {
-      if (wishlist.includes(attr.id)) wishlistAttractions.push(attr);
+      if (wishlist.includes(attr.id) && !wishlistItemMap[attr.id]) wishlistAttractions.push(attr);
     });
     (dest.famousFoods || []).forEach(food => {
-      if (wishlist.includes(food.id)) wishlistFoods.push(food);
+      if (wishlist.includes(food.id) && !wishlistItemMap[food.id]) wishlistFoods.push(food);
     });
   });
 
-  const hasItems = wishlistTours.length > 0 || wishlistAttractions.length > 0 || wishlistFoods.length > 0;
+  const hasItems = wishlistTours.length > 0 || wishlistDestinations.length > 0 || wishlistAttractions.length > 0 || wishlistFoods.length > 0;
 
   const handleConsultAll = () => {
-    const tourNames = wishlistTours.map(t => t.title).join(', ');
+    const tourNames = wishlistTours.map((t) => ('routeName' in t ? t.routeName : t.title)).join(', ');
+    const destinationNames = wishlistDestinations.map((d) => d.name).join(', ');
     const attrNames = wishlistAttractions.map(a => a.name).join(', ');
     const foodNames = wishlistFoods.map(f => f.name).join(', ');
-    const summary = `Wishlist: Tours [${tourNames}], Places [${attrNames}], Food [${foodNames}]`;
+    const summary = `Wishlist: Destinations [${destinationNames}], Routes [${tourNames}], Places [${attrNames}], Food [${foodNames}]`;
     onOpenConsult(summary);
   };
 
@@ -99,6 +175,51 @@ const WishlistPage: React.FC<WishlistPageProps> = ({
               />
             )}
 
+            {wishlistDestinations.length > 0 && (
+              <section>
+                <div className="mb-12">
+                  <h2 className="text-4xl font-bold text-brand-blue mb-4">Favorite Destinations</h2>
+                  <p className="text-gray-600">Cities and regions you want to explore deeper.</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {wishlistDestinations.map((dest) => (
+                    <div
+                      key={dest.id}
+                      className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all cursor-pointer"
+                      onClick={() => onSelectDestination(dest.id, dest.name)}
+                    >
+                      <div className="relative h-56 overflow-hidden">
+                        <img
+                          src={dest.image || fallbackImage}
+                          alt={dest.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onToggleWishlist(dest.id, {
+                              id: dest.id,
+                              kind: 'destination',
+                              title: dest.name,
+                              subtitle: dest.description,
+                              image: dest.image || null
+                            });
+                          }}
+                          className="absolute top-4 right-4 w-10 h-10 rounded-full bg-brand-orange text-white shadow-lg flex items-center justify-center transition-all transform active:scale-90"
+                        >
+                          <i className="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                      <div className="p-6">
+                        <h4 className="text-xl font-bold text-brand-blue mb-2">{dest.name}</h4>
+                        <p className="text-gray-500 text-sm line-clamp-2">{dest.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {wishlistAttractions.length > 0 && (
               <section>
                 <div className="mb-12">
@@ -111,7 +232,17 @@ const WishlistPage: React.FC<WishlistPageProps> = ({
                       <div className="relative h-48 overflow-hidden">
                         <img src={attr.image} alt={attr.name} className="w-full h-full object-cover" />
                         <button 
-                          onClick={() => onToggleWishlist(attr.id)}
+                          onClick={() =>
+                            onToggleWishlist(attr.id, {
+                              id: attr.id,
+                              kind: 'attraction',
+                              title: attr.name,
+                              subtitle: attr.reason,
+                              image: attr.image,
+                              rating: attr.rating,
+                              tags: attr.tags
+                            })
+                          }
                           className="absolute top-4 right-4 w-10 h-10 rounded-full bg-brand-orange text-white shadow-lg flex items-center justify-center transition-all transform active:scale-90"
                         >
                           <i className="fa-solid fa-heart"></i>
@@ -142,7 +273,17 @@ const WishlistPage: React.FC<WishlistPageProps> = ({
                       <div className="relative h-48 overflow-hidden">
                         <img src={food.image} alt={food.name} className="w-full h-full object-cover" />
                         <button 
-                          onClick={() => onToggleWishlist(food.id)}
+                          onClick={() =>
+                            onToggleWishlist(food.id, {
+                              id: food.id,
+                              kind: 'food',
+                              title: food.name,
+                              subtitle: food.reason || null,
+                              image: food.image || null,
+                              priceLabel: food.priceRange || null,
+                              tags: food.tags
+                            })
+                          }
                           className="absolute top-4 right-4 w-10 h-10 rounded-full bg-brand-orange text-white shadow-lg flex items-center justify-center transition-all transform active:scale-90"
                         >
                           <i className="fa-solid fa-heart"></i>

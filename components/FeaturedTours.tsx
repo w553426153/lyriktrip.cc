@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { RouteSummary, Tour } from '../types';
+import { RouteSummary, Tour, WishlistItem } from '../types';
 
 interface FeaturedToursProps {
   onOpenConsult: (source: string) => void;
   wishlist: string[];
-  onToggleWishlist: (tourId: string) => void;
+  onToggleWishlist: (tourId: string, item?: WishlistItem) => void;
   onSelectTour: (tourId: string) => void;
   onViewAll?: () => void;
   title?: string;
@@ -95,7 +95,17 @@ const FeaturedTours: React.FC<FeaturedToursProps> = ({
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();
-                        onToggleWishlist(id);
+                        const wishlistItem: WishlistItem = {
+                          id,
+                          kind: 'route',
+                          title: titleText,
+                          subtitle: tagline,
+                          image,
+                          priceLabel,
+                          days: isRoute ? item.totalDays : item.itinerary?.length ?? null,
+                          tags: highlights
+                        };
+                        onToggleWishlist(id, wishlistItem);
                       }}
                       className={`absolute top-4 right-4 p-2.5 rounded-full shadow-md transition-all active:scale-90 z-10 ${
                         isInWishlist ? 'bg-brand-orange text-white' : 'bg-white/90 text-brand-orange hover:bg-white'
